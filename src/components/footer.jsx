@@ -20,6 +20,7 @@ import {
 } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
+import z2clogo from './z2clogo.jpg';
 
 
 export default function Footer() {
@@ -108,18 +109,17 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <div className="relative w-12 h-12">
                 <Link href="/" className="flex items-center gap-2">
-              <span className="relative w-10 h-10 block">
-                <Image
-                  src={require('./z2clogo.jpg')}
-                  alt="Zero2Career Logo"
-                  width={40}
-                  height={40}
-                  className="rounded-xl shadow-lg object-cover"
-                  priority
-                />
-              </span>
-             
-            </Link>
+                  <span className="relative w-10 h-10 block">
+                    <Image
+                      src={z2clogo}
+                      alt="Zero2Career Logo"
+                      width={40}
+                      height={40}
+                      className="rounded-xl shadow-lg object-cover"
+                      priority
+                    />
+                  </span>
+                </Link>
               </div>
               <h2 className="text-2xl font-bold">Zero2Career</h2>
             </div>
