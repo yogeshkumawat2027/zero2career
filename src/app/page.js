@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { HiArrowRight, HiStar, HiUsers, HiAcademicCap, HiArrowTrendingUp } from 'react-icons/hi2';
 
@@ -187,7 +188,7 @@ export default function MainBody() {
                     <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 md:mb-4 leading-tight truncate max-w-[90vw] md:max-w-none">
                       {slide.title}
                     </h1>
-                    <p className="text-xs xs:text-sm sm:text-base md:text-xl md:text-2xl text-white/90 mb-4 md:mb-8 truncate max-w-[90vw] md:max-w-none">
+                    <p className="text-xs xs:text-sm sm:text-base md:text-2xl text-white/90 mb-4 md:mb-8 truncate max-w-[90vw] md:max-w-none">
                       {slide.subtitle}
                     </p>
                   <Link href={slide.link}>
@@ -231,7 +232,7 @@ export default function MainBody() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover detailed guides for top career options. From preparation strategies to success stories, 
-              we've got everything you need to make informed decisions about your future.
+              we&apos;ve got everything you need to make informed decisions about your future.
             </p>
           </div>
 
@@ -248,10 +249,12 @@ export default function MainBody() {
                 >
                   {/* Card Image */}
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={career.image}
                       alt={career.title}
-                      className="w-full h-full  group-hover:scale-110 transition-transform duration-500"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     {/* Category Badge */}
@@ -313,43 +316,18 @@ export default function MainBody() {
               { icon: HiUsers, value: 500, label: 'Students Guided', suffix: '+' },
               { icon: HiAcademicCap, value: 200, label: 'Career Paths', suffix: '+' },
               { icon: HiStar, value: 4.8, label: 'Success Rate', suffix: '' },
-              { icon: HiArrowTrendingUp, value: 95, label: 'success', suffix: '%' }
-            ].map((stat, index) => {
-              const [count, setCount] = React.useState(0);
-              React.useEffect(() => {
-                let start = 0;
-                let end = stat.value;
-                let duration = 100;
-                let stepTime = Math.max(Math.floor(duration / end), 20);
-                let increment = end > start ? 1 : -1;
-                let current = start;
-                let timer;
-                if (typeof end === 'number' && end !== start) {
-                  timer = setInterval(() => {
-                    current += increment;
-                    if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
-                      current = end;
-                      clearInterval(timer);
-                    }
-                    setCount(Number(current.toFixed(1)));
-                  }, stepTime);
-                  return () => clearInterval(timer);
-                } else {
-                  setCount(end);
-                }
-              }, [stat.value]);
-              return (
-                <div key={index} className="text-center group">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl mb-4 shadow-lg group-hover:shadow-xl transform group-hover:scale-110 transition-all duration-300">
-                    <stat.icon className="text-2xl text-white" />
-                  </div>
-                  <div className="text-3xl font-bold text-gray-800 mb-2">
-                    {stat.label === 'Success Rate' ? count.toFixed(1) : Math.floor(count)}{stat.suffix}
-                  </div>
-                  <div className="text-gray-600 font-medium">{stat.label}</div>
+              { icon: HiArrowTrendingUp, value: 95, label: 'Success', suffix: '%' }
+            ].map((stat, index) => (
+              <div key={index} className="text-center group">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl mb-4 shadow-lg group-hover:shadow-xl transform group-hover:scale-110 transition-all duration-300">
+                  <stat.icon className="text-2xl text-white" />
                 </div>
-              );
-            })}
+                <div className="text-3xl font-bold text-gray-800 mb-2">
+                  {stat.label === 'Success Rate' ? stat.value.toFixed(1) : Math.floor(stat.value)}{stat.suffix}
+                </div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
