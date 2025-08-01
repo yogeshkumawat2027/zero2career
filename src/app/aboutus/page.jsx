@@ -156,7 +156,7 @@ export default function AboutUs() {
                   careers, from IAS officers to commercial pilots, doctors to software engineers.
                 </p>
                 <p>
-                  Our success lies in our personalized approach. We don't believe in one-size-fits-all solutions. 
+                  Our success lies in our personalized approach. We don&apos;t believe in one-size-fits-all solutions. 
                   Every student is unique, and so should be their career path. That's why we invest time in 
                   understanding your strengths, interests, and circumstances before crafting a personalized roadmap.
                 </p>
