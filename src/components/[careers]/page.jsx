@@ -1,6 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { careersList } from '../careers-data';
+import { careersList } from '../../app/careers/careers-data';
 import { FaArrowLeft } from 'react-icons/fa';
 
 export default function CareerDetailPage({ params }) {
