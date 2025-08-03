@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FaRegClock, FaArrowLeft } from 'react-icons/fa';
 
-export default function CareerNotFound() {
+export default function page() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50">
       <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-100 flex flex-col items-center">
