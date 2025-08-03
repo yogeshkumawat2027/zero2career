@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { 
   FaUserTie, 
@@ -412,12 +413,14 @@ export default function DoctorPage() {
             </div>
           </div>
         </section>
-
-        {/* Navigation */}
+{/* Navigation */}
         <div className="text-center">
-          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 to-pink-600 text-white font-semibold rounded-lg hover:from-red-700 hover:to-pink-700 transition-colors shadow-lg">
+          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-colors shadow-lg">
             <FaArrowLeft className="mr-2" />
-            Back to Careers
+            <Link href="/careers">
+              Back to Careers
+            </Link>
+          
           </button>
         </div>
       </div>
