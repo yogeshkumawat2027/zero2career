@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HiHome, HiBriefcase, HiInformationCircle, HiPhone, HiStar, HiMagnifyingGlass } from 'react-icons/hi2';
 import { useRouter } from 'next/navigation';
-import { careersList } from '../app/careers/careers-data';
+import { careersList } from '../app/career';
 
 
 function Navbar() {
