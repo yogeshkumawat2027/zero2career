@@ -1,7 +1,4 @@
-import React from 'react'
 
-export default function page() {
-  return (
  import Link from 'next/link';
 import React from 'react';
 import { 
@@ -501,5 +498,4 @@ export default function CyberSecurityManagerPage() {
     </main>
   );
 }
-  )
-}
+  
