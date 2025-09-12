@@ -421,16 +421,6 @@ export const careersList = [
   },
   {
     "id": 43,
-    "title": "Journalist",
-    "description": "Mass Communication & Journalism Career Path",
-    "image": "https://images.ctfassets.net/szez98lehkfm/1Pq88GyqB9mVPHdHKVc0wF/7001be9077e910ec94eb8a2c0faa88bc/MyIC_Article140612?w=730&h=410&fm=jpg&fit=fill",
-    "category": "Media",
-    "difficulty": "Medium",
-    "duration": "3 years",
-    "link": "/careers/journalist"
-  },
-  {
-    "id": 44,
     "title": "Film Director",
     "description": "How to Become a Film Director",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrrJdo8nXiX41KM0o51LmgJ9IlW-Da6I3w0Gf0Ia4C7n9MHvjyo7XrH4IAMVY8I7wNGs&usqp=CAU",
