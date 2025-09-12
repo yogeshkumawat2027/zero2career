@@ -57,46 +57,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white">
       {/* Newsletter/Contact Section */}
       <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="text-center">
-            <h3 className="text-3xl font-bold mb-4">
-              Stay Updated with Career Insights
-            </h3>
-            <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-              Get weekly career tips, job alerts, and exclusive resources delivered to you. Connect with us instantly!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
-              {/* WhatsApp */}
-              <a
-                href="https://wa.me/919876543210"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-green-500 font-semibold text-white hover:bg-green-600 transition-all duration-300 shadow-lg text-sm sm:text-base whitespace-nowrap"
-              >
-                <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 32 32" fill="currentColor"><path d="M16.003 3.18c-7.145 0-12.952 5.799-12.952 12.924 0 2.282.602 4.519 1.74 6.478l-1.82 6.654 6.847-1.797a12.869 12.869 0 0 0 6.185 1.568h.001c7.146 0 12.952-5.8 12.952-12.925 0-3.457-1.344-6.708-3.785-9.15a12.892 12.892 0 0 0-9.168-3.752zm0 23.694c-1.933 0-3.83-.51-5.53-1.47l-.395-.23-4.073 1.07 1.096-3.969-.255-.407a10.968 10.968 0 0 1-1.715-5.905c0-6.077 4.947-11.025 11.027-11.025 2.946 0 5.718 1.15 7.806 3.236a10.888 10.888 0 0 1 3.222 7.795c0 6.078-4.947 11.024-11.027 11.024zm6.033-8.284c-.329-.164-1.947-.96-2.248-1.071-.3-.112-.52-.164-.74.164-.216.322-.847 1.07-1.04 1.292-.191.216-.396.242-.73.082-.331-.158-1.401-.515-2.672-1.64-.987-.884-1.653-1.973-1.849-2.305-.193-.33-.021-.509.146-.67.15-.146.333-.382.498-.579.167-.198.22-.338.332-.562.111-.225.056-.42-.028-.583-.083-.164-.74-1.783-1.012-2.443-.267-.656-.54-.569-.735-.574l-.625-.01a1.1 1.1 0 0 0-.797.372c-.272.296-1.03.982-1.03 2.393 0 1.409 1.055 2.768 1.203 2.962.148.193 2.076 3.18 5.141 4.327.719.246 1.278.393 1.715.504a4.128 4.128 0 0 0 1.793.113c.547-.082 1.947-.796 2.221-1.566.277-.775.277-1.438.194-1.573-.079-.134-.299-.215-.627-.378z"/></svg>
-                <span>WhatsApp</span>
-              </a>
-              {/* Call */}
-              <a
-                href="tel:+919876543210"
-                className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-blue-500 font-semibold text-white hover:bg-blue-600 transition-all duration-300 shadow-lg text-sm sm:text-base whitespace-nowrap"
-              >
-                <HiPhone className="text-lg flex-shrink-0" />
-                <span>Call Us</span>
-              </a>
-              {/* Instagram */}
-              <a
-                href="https://instagram.com/yourprofile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-pink-500 font-semibold text-white hover:bg-pink-600 transition-all duration-300 shadow-lg text-sm sm:text-base whitespace-nowrap"
-              >
-                <FaInstagram className="text-lg flex-shrink-0" />
-                <span>Instagram</span>
-              </a>
-            </div>
-          </div>
-        </div>
+      
       </div>
 
       {/* Main Footer Content */}
@@ -261,7 +222,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2 text-blue-100 text-xs sm:text-sm">
               <HiAcademicCap className="text-base sm:text-xl text-green-400 flex-shrink-0" />
-              <span>100+ Careers</span>
+              <span>200+ Careers</span>
             </div>
            
           </div>
