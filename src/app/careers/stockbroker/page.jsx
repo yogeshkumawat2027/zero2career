@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function page() {
+function page() {
   return (
     <div>
-      stockbroker
+      
     </div>
-  )
+  );
 }
+
+export default page

@@ -66,15 +66,15 @@ function Navbar() {
         ? 'bg-white/95 backdrop-blur-md shadow-lg' 
         : 'bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900'
       }
-    `} suppressHydrationWarning={true}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" suppressHydrationWarning={true}>
-        <div className="flex justify-between items-center h-16" suppressHydrationWarning={true}>
+    `} suppressHydrationWarning>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" suppressHydrationWarning>
+        <div className="flex justify-between items-center h-16" suppressHydrationWarning>
           {/* Logo Section */}
           <div className="flex items-center gap-3 group">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2" suppressHydrationWarning>
               <span className="relative w-10 h-10 block">
                 <Image
-                  src={require('./z2clogo.jpg')}
+                  src={require('../../public/z2clogo.png')}
                   alt="Zero2Career Logo"
                   width={40}
                   height={40}
@@ -106,6 +106,7 @@ function Navbar() {
                   : 'text-white/90 hover:text-white hover:bg-white/10'
                 }
               `}
+              suppressHydrationWarning
             >
               <span className="relative z-10">{item.label}</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-200 rounded-lg"></div>
@@ -150,14 +151,15 @@ function Navbar() {
           </div>
         </div>
         {/* Premium Button */}
-        <Link
+        {/* <Link
           href="/premium"
           className="ml-4 px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 relative overflow-hidden group flex items-center gap-2"
+          suppressHydrationWarning
         >
           <HiStar className="text-lg relative z-10" />
           <span className="relative z-10">Premium</span>
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-0"></div>
-        </Link>
+        </Link> */}
       </div>
 
           {/* Mobile Menu Button */}
@@ -212,6 +214,7 @@ function Navbar() {
                     ${isMenuOpen ? 'animate-slideIn' : ''}
                   `}
                   style={{ animationDelay: `${index * 100}ms` }}
+                  suppressHydrationWarning
                 >
                   <IconComponent className="text-lg" />
                   <span className="font-medium">{item.label}</span>
@@ -220,7 +223,7 @@ function Navbar() {
             })}
 
             {/* Mobile Premium Button */}
-            <Link
+            {/* <Link
               href="/premium"
               onClick={() => setIsMenuOpen(false)}
               className={`
@@ -230,10 +233,12 @@ function Navbar() {
                 ${isMenuOpen ? 'animate-slideIn' : ''}
               `}
               style={{ animationDelay: '400ms' }}
+              suppressHydrationWarning
             >
               <HiStar className="text-lg" />
               <span>Premium Career Help</span>
-            </Link>
+            </Link> */}
+
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function page() {
+function page() {
   return (
     <div>
-      marine-engineer
+      
     </div>
   )
 }
+
+export default page

@@ -101,7 +101,7 @@ export default function MainBody() {
                     <p className="text-xs xs:text-sm sm:text-base md:text-2xl text-white/90 mb-4 md:mb-8 truncate max-w-[90vw] md:max-w-none">
                       {slide.subtitle}
                     </p>
-                  <Link href={slide.link}>
+                  <Link href={slide.link} suppressHydrationWarning>
                     <button className="group bg-blue-600 text-white px-3 py-1.5 xs:px-4 xs:py-2 sm:px-5 sm:py-2.5 md:px-8 md:py-4 rounded-full font-semibold text-xs xs:text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-1 xs:gap-2 md:gap-3 min-w-[120px]">
                       <span className="truncate">Explore Career Path</span>
                       <HiArrowRight className="text-base xs:text-lg md:text-xl group-hover:translate-x-1 transition-transform duration-300" />
@@ -208,7 +208,7 @@ export default function MainBody() {
 
           {/* Load More Button */}
           <div className="mt-12 flex justify-center items-center">
-            <Link href="/careers">
+            <Link href="/careers" suppressHydrationWarning>
               <button className="px-10 py-4 bg-blue-600 text-white font-bold text-xl rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 cursor-pointer">
                 Load More Careers
                 <HiArrowRight className="text-2xl group-hover:translate-x-1 transition-transform duration-300" />
@@ -251,11 +251,11 @@ export default function MainBody() {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Get personalized career guidance, expert mentorship, and exclusive resources to accelerate your success.
           </p>
-        <Link href="/premium">
+        {/* <Link href="/premium" suppressHydrationWarning>
           <button className="bg-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
             Get Premium Career Help
           </button>
-        </Link>
+        </Link> */}
         </div>
       </section>
     </main>

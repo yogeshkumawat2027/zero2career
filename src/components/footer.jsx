@@ -20,7 +20,7 @@ import {
 } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
-import z2clogo from './z2clogo.jpg';
+import z2clogo from '../../public/z2clogo.png';
 
 
 export default function Footer() {
@@ -29,19 +29,19 @@ export default function Footer() {
   const quickLinks = [
     { name: 'Home', href: '/' },
     { name: 'All Careers', href: '/careers' },
-    { name: 'Career Assessment', href: '/assessment' },
-    { name: 'Success Stories', href: '/success-stories' },
-    { name: 'Blog & Resources', href: '/blog' },
+    { name: 'Career Assessment', href: '/careers' },
+    // { name: 'Success Stories', href: '/success-stories' },
+    // { name: 'Blog & Resources', href: '/blog' },
     { name: 'About Us', href: '/aboutus' }
   ];
 
   const services = [
-    { name: 'Career Counseling', href: '/services/counseling' },
-    { name: 'Resume Building', href: '/services/resume' },
-    { name: 'Interview Preparation', href: '/services/interview' },
-    { name: 'Skill Development', href: '/services/skills' },
+    { name: 'Career Counseling', href: '/services' },
+    { name: 'Resume Building', href: '/services' },
+    { name: 'Interview Preparation', href: '/services' },
+    { name: 'Skill Development', href: '/services' },
     // { name: 'Job Placement', href: '/services/placement' },
-    { name: 'Mentorship Program', href: '/services/mentorship' }
+    { name: 'Mentorship Program', href: '/services' }
   ];
 
   const socialLinks = [
@@ -69,7 +69,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="relative w-12 h-12">
-                <Link href="/" className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2" suppressHydrationWarning>
                   <span className="relative w-10 h-10 block">
                     <Image
                       src={z2clogo}
@@ -94,18 +94,18 @@ export default function Footer() {
               <div className="flex items-center gap-3 text-blue-100">
                 <HiEnvelope className="text-xl text-blue-400" />
                 <a href="mailto:support@zero2career.com" className="hover:text-white transition-colors">
-                  support@zero2career.com
+                  zero2careerofficial@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-3 text-blue-100">
+              {/* <div className="flex items-center gap-3 text-blue-100">
                 <HiPhone className="text-xl text-blue-400" />
                 <a href="tel:+919876543210" className="hover:text-white transition-colors">
                   +91 98765 43210
                 </a>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3 text-blue-100">
                 <HiMapPin className="text-xl text-blue-400" />
-                <span>New Delhi, India</span>
+                <span>Kota, India</span>
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function Footer() {
             </ul>
 
             {/* Premium CTA */}
-            <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-xl p-4 backdrop-blur-sm">
+            {/* <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-xl p-4 backdrop-blur-sm">
               <div className="flex items-center gap-2 mb-2">
                 <HiStar className="text-yellow-400" />
                 <h4 className="font-semibold">Premium Career Help</h4>
@@ -160,12 +160,12 @@ export default function Footer() {
               <p className="text-sm text-blue-100 mb-3">
                 Get personalized guidance from industry experts
               </p>
-              <Link href="/premium">
+              <Link href="/premium" suppressHydrationWarning>
                 <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 py-2 rounded-lg font-semibold text-sm hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300">
                   Upgrade Now
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

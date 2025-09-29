@@ -28,7 +28,45 @@ import {
  FaLeaf
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Advocate/Lawyer Career Guide 2025 | Complete Law Training, Salary & Requirements | Zero2Career",
+  description: "Comprehensive advocate career guide covering LLB education, Bar Council enrollment, AIBE examination, salary expectations, specializations, and legal career paths in India.",
+  keywords: "advocate career, lawyer India, LLB degree, Bar Council enrollment, AIBE examination, legal career, law jobs, advocate salary, litigation lawyer, corporate lawyer",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/advocate"
+  },
+  openGraph: {
+    title: "Become an Advocate/Lawyer - Complete Career Guide 2025",
+    description: "Discover everything about advocate careers: LLB education, Bar Council enrollment, legal specializations, salary expectations, and career opportunities in Indian law.",
+    url: "https://zero2career.in/careers/advocate",
+    type: "article",
+    images: [
+      {
+        url: "https://www.differencebetween.net/wp-content/uploads/2023/02/Difference-Between-Advocate-and-Barrister.png",
+        width: 1200,
+        height: 630,
+        alt: "Advocate/Lawyer Career Guide - Zero2Career"
+      }
+    ],
+    siteName: "Zero2Career"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Advocate/Lawyer Career Guide 2025 | Law Training, Salary & Requirements",
+    description: "Complete guide to becoming an advocate in India. Learn about LLB education, Bar Council enrollment, AIBE exam and career opportunities in law.",
+    images: ["https://www.differencebetween.net/wp-content/uploads/2023/02/Difference-Between-Advocate-and-Barrister.png"]
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+};
+
 export default function AdvocatePage() {
+
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },
     { icon: FaGraduationCap, title: "Education", detail: "LLB degree from a BCI-recognized university" },
@@ -401,7 +439,7 @@ export default function AdvocatePage() {
 
         {/* Navigation */}
         <div className="text-center">
-          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-colors shadow-lg">
+          <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-colors shadow-lg">
             <FaArrowLeft className="mr-2" />
             <Link href='/careers'> Back to Careers</Link>
           </button>

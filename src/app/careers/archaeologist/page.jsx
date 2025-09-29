@@ -509,7 +509,7 @@ export default function ArchaeologistPage() {
 
        {/* Navigation */}
         <div className="text-center">
-          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold rounded-lg hover:from-amber-700 hover:to-orange-700 transition-colors shadow-lg">
+          <button className="inline-flex items-center px-6 py-3bg-blue-600 to-orange-600 text-white font-semibold rounded-lg hover:from-amber-700 hover:to-orange-700 transition-colors shadow-lg">
             <FaArrowLeft className="mr-2" />
             <Link href="/careers">
               Back to Careers

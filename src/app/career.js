@@ -459,16 +459,16 @@ export const careersList = [
     "duration": "6 months-1 year",
     "link": "/careers/web-developer"
   },
-  {
-    "id": 48,
-    "title": "Interior Designer",
-    "description": "Career Guide to Interior Design",
-    "image": "https://386626.fs1.hubspotusercontent-na1.net/hubfs/386626/interior%20design-Nov-17-2020-05-53-52-66-PM.jpg",
-    "category": "Creative",
-    "difficulty": "Medium",
-    "duration": "2-3 years",
-    "link": "/careers/interior-designer"
-  },
+  // {
+  //   "id": 48,
+  //   "title": "Interior Designer",
+  //   "description": "Career Guide to Interior Design",
+  //   "image": "https://386626.fs1.hubspotusercontent-na1.net/hubfs/386626/interior%20design-Nov-17-2020-05-53-52-66-PM.jpg",
+  //   "category": "Creative",
+  //   "difficulty": "Medium",
+  //   "duration": "2-3 years",
+  //   "link": "/careers/interior-designer"
+  // },
   {
     "id": 49,
     "title": "Photographer",
@@ -499,16 +499,16 @@ export const careersList = [
   //   "duration": "2 years (MSW)",
   //   "link": "/careers/social-worker"
   // },
-  // {
-  //   "id": 52,
-  //   "title": "Archaeologist",
-  //   "description": "Career Path in Archaeology",
-  //   "image": "https://images.unsplash.com/photo-1578135899452-f32f3e82d338?w=400&h=250&fit=crop",
-  //   "category": "Research",
-  //   "difficulty": "Medium",
-  //   "duration": "2 years (MA)",
-  //   "link": "/careers/archaeologist"
-  // },
+  {
+    "id": 52,
+    "title": "Archaeologist",
+    "description": "Career Path in Archaeology",
+    "image": "https://d3nl1jd9up78ug.cloudfront.net/wages/how-to-become-an-anthropologist-or-archaeologist-372-detail.jpg",
+    "category": "Research",
+    "difficulty": "Medium",
+    "duration": "2 years (MA)",
+    "link": "/careers/archaeologist"
+  },
   // {
   //   "id": 53,
   //   "title": "Historian",
@@ -589,16 +589,16 @@ export const careersList = [
     "duration": "2 years (M.Sc)",
     "link": "/careers/forensic-scientist"
   },
-  // {
-  //   "id": 61,
-  //   "title": "Actuarial Scientist",
-  //   "description": "Become an Actuarial Scientist",
-  //   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
-  //   "category": "Finance",
-  //   "difficulty": "Hard",
-  //   "duration": "3-5 years",
-  //   "link": "/careers/actuarial-scientist"
-  // },
+  {
+    "id": 61,
+    "title": "Actuarial Scientist",
+    "description": "Become an Actuarial Scientist",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
+    "category": "Finance",
+    "difficulty": "Hard",
+    "duration": "3-5 years",
+    "link": "/careers/actuarial-scientist"
+  },
   // {
   //   "id": 62,
   //   "title": "Investment Manager",
@@ -709,26 +709,26 @@ export const careersList = [
   //   "duration": "2 years (MBA)",
   //   "link": "/careers/supply-chain-manager"
   // },
-  {
-    "id": 73,
-    "title": "Research Scientist",
-    "description": "Become a Research Scientist in India",
-    "image": "https://www.shutterstock.com/image-photo/team-medical-research-scientists-collectively-260nw-691541065.jpg",
-    "category": "Research",
-    "difficulty": "Hard",
-    "duration": "2-3 years (Ph.D.)",
-    "link": "/careers/research-scientist"
-  },
-  {
-    "id": 74,
-    "title": "Marine Biologist",
-    "description": "Career Path in Marine Biology",
-    "image": "https://media.istockphoto.com/id/638510870/photo/marine-biologist-underwater.jpg?s=612x612&w=0&k=20&c=dQv3ol2QcCZnQOzyDpH2bSzyt-L4htFevpd1HnyEYUU=",
-    "category": "Science",
-    "difficulty": "Medium",
-    "duration": "2 years (M.Sc)",
-    "link": "/careers/marine-biologist"
-  },
+  // {
+  //   "id": 73,
+  //   "title": "Research Scientist",
+  //   "description": "Become a Research Scientist in India",
+  //   "image": "https://www.shutterstock.com/image-photo/team-medical-research-scientists-collectively-260nw-691541065.jpg",
+  //   "category": "Research",
+  //   "difficulty": "Hard",
+  //   "duration": "2-3 years (Ph.D.)",
+  //   "link": "/careers/research-scientist"
+  // },
+  // {
+  //   "id": 74,
+  //   "title": "Marine Biologist",
+  //   "description": "Career Path in Marine Biology",
+  //   "image": "https://media.istockphoto.com/id/638510870/photo/marine-biologist-underwater.jpg?s=612x612&w=0&k=20&c=dQv3ol2QcCZnQOzyDpH2bSzyt-L4htFevpd1HnyEYUU=",
+  //   "category": "Science",
+  //   "difficulty": "Medium",
+  //   "duration": "2 years (M.Sc)",
+  //   "link": "/careers/marine-biologist"
+  // },
   {
     "id": 75,
     "title": "Geologist",
@@ -769,16 +769,16 @@ export const careersList = [
   //   "duration": "4 years",
   //   "link": "/careers/forester"
   // },
-  {
-    "id": 79,
-    "title": "Marine Engineer",
-    "description": "Career in Marine Engineering",
-    "image": "https://www.chitkara.edu.in/blogs/wp-content/uploads/2022/09/Marine-banner.jpg",
-    "category": "Engineering",
-    "difficulty": "Hard",
-    "duration": "4 years",
-    "link": "/careers/marine-engineer"
-  },
+  // {
+  //   "id": 79,
+  //   "title": "Marine Engineer",
+  //   "description": "Career in Marine Engineering",
+  //   "image": "https://www.chitkara.edu.in/blogs/wp-content/uploads/2022/09/Marine-banner.jpg",
+  //   "category": "Engineering",
+  //   "difficulty": "Hard",
+  //   "duration": "4 years",
+  //   "link": "/careers/marine-engineer"
+  // },
   {
     "id": 80,
     "title": "Aeronautical Engineer",
@@ -789,26 +789,26 @@ export const careersList = [
     "duration": "4 years",
     "link": "/careers/aeronautical-engineer"
   },
-  {
-    "id": 81,
-    "title": "Mechatronics Engineer",
-    "description": "Career in Mechatronics Engineering",
-    "image": "https://www.edibon.com/img/cms/Blog/Mechatronics-engineering.jpg",
-    "category": "Engineering",
-    "difficulty": "Medium",
-    "duration": "4 years",
-    "link": "/careers/mechatronics-engineer"
-  },
-  {
-    "id": 82,
-    "title": "Robotics Engineer",
-    "description": "Become a Robotics Engineer",
-    "image": "https://s44783.pcdn.co/wp-content/uploads/2022/11/c11.png.webp",
-    "category": "Engineering",
-    "difficulty": "Hard",
-    "duration": "4 years",
-    "link": "/careers/robotics-engineer"
-  },
+  // {
+  //   "id": 81,
+  //   "title": "Mechatronics Engineer",
+  //   "description": "Career in Mechatronics Engineering",
+  //   "image": "https://www.edibon.com/img/cms/Blog/Mechatronics-engineering.jpg",
+  //   "category": "Engineering",
+  //   "difficulty": "Medium",
+  //   "duration": "4 years",
+  //   "link": "/careers/mechatronics-engineer"
+  // },
+  // {
+  //   "id": 82,
+  //   "title": "Robotics Engineer",
+  //   "description": "Become a Robotics Engineer",
+  //   "image": "https://s44783.pcdn.co/wp-content/uploads/2022/11/c11.png.webp",
+  //   "category": "Engineering",
+  //   "difficulty": "Hard",
+  //   "duration": "4 years",
+  //   "link": "/careers/robotics-engineer"
+  // },
   // {
   //   "id": 83,
   //   "title": "Geneticist",
@@ -829,15 +829,15 @@ export const careersList = [
   //   "duration": "2 years (M.Sc)",
   //   "link": "/careers/meteorologist"
   // },
-  {
-    "id": 85,
-    "title": "Pharmacist",
-    "description": "How to Become a Pharmacist",
-    "image": "https://cdn.buttercms.com/f0uQjlApT2mwk0c2tYCC",
-    "difficulty": "Medium",
-    "duration": "4 years",
-    "link": "/careers/pharmacist"
-  },
+  // {
+  //   "id": 85,
+  //   "title": "Pharmacist",
+  //   "description": "How to Become a Pharmacist",
+  //   "image": "https://cdn.buttercms.com/f0uQjlApT2mwk0c2tYCC",
+  //   "difficulty": "Medium",
+  //   "duration": "4 years",
+  //   "link": "/careers/pharmacist"
+  // },
   {
     "id": 86,
     "title": "Nurse",
@@ -852,7 +852,7 @@ export const careersList = [
     "id": 87,
     "title": "Paramedic",
     "description": "How to Become a Paramedic",
-    "image": "https://www.unitekemt.com/wp-content/uploads/2023/04/shutterstock_1905731779.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1LxvLcxwiriQTed4-F9UeJEoIy_TmXJEsPg&s",
     "category": "Healthcare",
     "difficulty": "Easy",
     "duration": "1-2 years",
@@ -892,7 +892,7 @@ export const careersList = [
     "id": 91,
     "title": "VFX Artist",
     "description": "Career in Visual Effects (VFX)",
-    "image": "https://cinemafactoryacademy.com/static/media/vfx.8218d3c030b0afb96145.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IG6phxlVR5FHexeM16tbqMskEhddqfI9doGWHmoMR_wN6mR-kEkLrDYdRlMH7pyUJ7c&usqp=CAU",
     "category": "Creative",
     "difficulty": "Medium",
     "duration": "1-2 years",
@@ -908,16 +908,16 @@ export const careersList = [
     "duration": "1-2 years",
     "link": "/careers/fashion-photographer"
   },
-  {
-    "id": 93,
-    "title": "Music Producer",
-    "description": "Path to a Career in Music Production",
-    "image": "https://singersroom.com/wp-content/uploads/2024/07/Top-Music-Producers-of-All-Time.jpg",
-    "category": "Creative",
-    "difficulty": "Medium",
-    "duration": "Varies",
-    "link": "/careers/music-producer"
-  },
+  // {
+  //   "id": 93,
+  //   "title": "Music Producer",
+  //   "description": "Path to a Career in Music Production",
+  //   "image": "https://singersroom.com/wp-content/uploads/2024/07/Top-Music-Producers-of-All-Time.jpg",
+  //   "category": "Creative",
+  //   "difficulty": "Medium",
+  //   "duration": "Varies",
+  //   "link": "/careers/music-producer"
+  // },
   // {
   //   "id": 94,
   //   "title": "Sound Engineer",
@@ -948,16 +948,16 @@ export const careersList = [
   //   "duration": "Varies",
   //   "link": "/careers/athlete"
   // },
-  // {
-  //   "id": 97,
-  //   "title": "Social Media Manager",
-  //   "description": "Become a Social Media Manager",
-  //   "image": "https://images.unsplash.com/photo-1452860606245-c49f87494f4a?w=400&h=250&fit=crop",
-  //   "category": "Management",
-  //   "difficulty": "Easy",
-  //   "duration": "6 months-1 year",
-  //   "link": "/careers/social-media-manager"
-  // },
+  {
+    "id": 97,
+    "title": "Social Media Manager",
+    "description": "Become a Social Media Manager",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF41OJrtiRJ6tHmmj3dnXOFXy50PRcJIeGIQ&s",
+    "category": "Management",
+    "difficulty": "Easy",
+    "duration": "6 months-1 year",
+    "link": "/careers/social-media-manager"
+  },
   // {
   //   "id": 98,
   //   "title": "Public Relations Specialist",
@@ -1038,16 +1038,16 @@ export const careersList = [
     "duration": "6-12 months",
     "link": "/careers/ibps-clerk"
   },
-  {
-    "id": 106,
-    "title": "SBI PO",
-    "description": "State Bank of India Probationary Officer",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-6870Sy1ZtHU0rCj419bR95g8zld5RRC7Q&s",
-    "category": "Government",
-    "difficulty": "Hard",
-    "duration": "1-2 years",
-    "link": "/careers/sbi-po"
-  },
+  // {
+  //   "id": 106,
+  //   "title": "SBI PO",
+  //   "description": "State Bank of India Probationary Officer",
+  //   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-6870Sy1ZtHU0rCj419bR95g8zld5RRC7Q&s",
+  //   "category": "Government",
+  //   "difficulty": "Hard",
+  //   "duration": "1-2 years",
+  //   "link": "/careers/sbi-po"
+  // },
   {
     "id": 107,
     "title": "UPSC NDA",
@@ -1108,16 +1108,16 @@ export const careersList = [
     "duration": "4 years",
     "link": "/careers/drdo-scientist"
   },
-  {
-    "id": 113,
-    "title": "ISRO Scientist",
-    "description": "Indian Space Research Organisation Scientist",
-    "image": "https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/12/mars_mission_scientists1.jpg",
-    "category": "Government",
-    "difficulty": "Hard",
-    "duration": "4 years",
-    "link": "/careers/isro-scientist"
-  },
+  // {
+  //   "id": 113,
+  //   "title": "ISRO Scientist",
+  //   "description": "Indian Space Research Organisation Scientist",
+  //   "image": "https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/12/mars_mission_scientists1.jpg",
+  //   "category": "Government",
+  //   "difficulty": "Hard",
+  //   "duration": "4 years",
+  //   "link": "/careers/isro-scientist"
+  // },
   // {
   //   "id": 114,
   //   "title": "BARC Scientist",
@@ -1158,16 +1158,16 @@ export const careersList = [
   //   "duration": "6 months",
   //   "link": "/careers/postal-assistant"
   // },
-  {
-    "id": 118,
-    "title": "LIC AAO",
-    "description": "Life Insurance Corporation Assistant Administrative Officer",
-    "image": "https://d1xcofdbxwssh7.cloudfront.net/live/supload/books/50819/processed/LICemage.webp",
-    "category": "Government",
-    "difficulty": "Medium",
-    "duration": "1 year",
-    "link": "/careers/lic-aao"
-  },
+  // {
+  //   "id": 118,
+  //   "title": "LIC AAO",
+  //   "description": "Life Insurance Corporation Assistant Administrative Officer",
+  //   "image": "https://d1xcofdbxwssh7.cloudfront.net/live/supload/books/50819/processed/LICemage.webp",
+  //   "category": "Government",
+  //   "difficulty": "Medium",
+  //   "duration": "1 year",
+  //   "link": "/careers/lic-aao"
+  // },
   // {
   //   "id": 119,
   //   "title": "RBI Grade B Officer",
@@ -1178,26 +1178,26 @@ export const careersList = [
   //   "duration": "1-2 years",
   //   "link": "/careers/rbi-grade-b"
   // },
-  {
-    "id": 120,
-    "title": "NABARD Officer",
-    "description": "National Bank for Agriculture and Rural Development",
-    "image": "https://www.nabard.org/auth/writereaddata/ContentImgs/0611230209shri_goverdhan_s_rawat_dmd_nabard.jpg",
-    "category": "Government",
-    "difficulty": "Medium",
-    "duration": "1 year",
-    "link": "/careers/nabard-officer"
-  },
-  {
-    "id": 121,
-    "title": "SEBI Officer",
-    "description": "Securities and Exchange Board of India Officer",
-    "image": "https://m.economictimes.com/thumb/msid-68787678,width-1200,height-900,resizemode-4,imgsize-273781/sebi-pti.jpg",
-    "category": "Government",
-    "difficulty": "Hard",
-    "duration": "1-2 years",
-    "link": "/careers/sebi-officer"
-  },
+  // {
+  //   "id": 120,
+  //   "title": "NABARD Officer",
+  //   "description": "National Bank for Agriculture and Rural Development",
+  //   "image": "https://www.nabard.org/auth/writereaddata/ContentImgs/0611230209shri_goverdhan_s_rawat_dmd_nabard.jpg",
+  //   "category": "Government",
+  //   "difficulty": "Medium",
+  //   "duration": "1 year",
+  //   "link": "/careers/nabard-officer"
+  // },
+  // {
+  //   "id": 121,
+  //   "title": "SEBI Officer",
+  //   "description": "Securities and Exchange Board of India Officer",
+  //   "image": "https://m.economictimes.com/thumb/msid-68787678,width-1200,height-900,resizemode-4,imgsize-273781/sebi-pti.jpg",
+  //   "category": "Government",
+  //   "difficulty": "Hard",
+  //   "duration": "1-2 years",
+  //   "link": "/careers/sebi-officer"
+  // },
   {
     "id": 122,
     "title": "CBI Officer",

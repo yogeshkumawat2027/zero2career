@@ -517,10 +517,10 @@ export default function CharteredAccountantPage() {
 
         {/* Navigation */}
         <div className="text-center">
-          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-colors shadow-lg">
+            <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-red-700 transition-colors shadow-lg">
             <FaArrowLeft className="mr-2" />
             <Link href="/careers">
-             Back to Careers
+              Back to Careers
             </Link>
           </button>
         </div>

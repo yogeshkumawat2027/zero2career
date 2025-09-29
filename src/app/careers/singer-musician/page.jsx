@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function page() {
+function page() {
   return (
     <div>
-      singer-musician
+      
     </div>
   )
 }
+
+export default page

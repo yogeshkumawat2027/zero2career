@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function page() {
+function page() {
   return (
     <div>
-      vfx-artist
+      
     </div>
   )
 }
+
+export default page

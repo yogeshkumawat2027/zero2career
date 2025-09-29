@@ -23,7 +23,45 @@ import {
   FaUserTie
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Pilot Career Guide 2025 | Complete Training, Salary & Requirements | Zero2Career",
+  description: "Comprehensive pilot career guide covering training, licensing, salary expectations, eligibility criteria, and career paths. Start your aviation career journey with expert guidance.",
+  keywords: "pilot career, aviation training, commercial pilot license, pilot salary India, flight training, CPL, ATPL, pilot jobs, aviation career",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/pilot"
+  },
+  openGraph: {
+    title: "Become a Pilot - Complete Career Guide 2025",
+    description: "Discover everything about pilot careers: training requirements, licensing process, salary expectations, and career opportunities in aviation industry.",
+    url: "https://zero2career.in/careers/pilot",
+    type: "article",
+    images: [
+      {
+        url: "https://aerostarjet.in/wp-content/uploads/2025/05/Commercial-Pilot-License-CPL.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pilot Career Guide - Zero2Career"
+      }
+    ],
+    siteName: "Zero2Career"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pilot Career Guide 2025 | Training, Salary & Requirements",
+    description: "Complete guide to becoming a pilot in India. Learn about training, licensing, salary expectations and career opportunities in aviation.",
+    images: ["https://aerostarjet.in/wp-content/uploads/2025/05/Commercial-Pilot-License-CPL.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+};
+
 export default function PilotPage() {
+
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },
     { icon: FaGraduationCap, title: "Education", detail: "12th with Physics and Mathematics (min 50%)" },

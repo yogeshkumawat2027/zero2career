@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { HiUsers, HiAcademicCap, HiStar, HiArrowTrendingUp, HiHeart, HiLightBulb, HiShieldCheck, HiRocketLaunch } from 'react-icons/hi2';
+import { FaLinkedin, FaInstagram, FaCode, FaLaptopCode } from 'react-icons/fa';
 
 export default function AboutUs() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -146,14 +147,13 @@ export default function AboutUs() {
               </h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Founded in 2018, our platform began with a simple yet powerful vision: to bridge the gap between 
+                  Our platform began with a simple yet powerful vision: to bridge the gap between 
                   student aspirations and career realities. We noticed that many talented individuals were making 
                   career choices without proper guidance, leading to dissatisfaction and unfulfilled potential.
                 </p>
                 <p>
                   What started as a small counseling center in Kota, Rajasthan, has now grown into a comprehensive 
-                  online platform serving students across India. We've helped over 500 students achieve their dream 
-                  careers, from IAS officers to commercial pilots, doctors to software engineers.
+                  online platform serving students across India. We've helped  students achieve their dream.
                 </p>
                 <p>
                   Our success lies in our personalized approach. We don&apos;t believe in one-size-fits-all solutions. 
@@ -242,63 +242,115 @@ export default function AboutUs() {
       </section> */}
 
       {/* Success Stories Section */}
-      <section className="py-20 bg-blue-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   
+
+      {/* Meet Our Founder Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Success <span className="text-orange-400">Stories</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Meet Our <span className="text-blue-600">Founder</span>
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Hear from our students who have achieved their dream careers with our guidance and support.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Driven by passion for empowering careers and backed by technical expertise
             </p>
           </div>
           
-          {/* Testimonial Carousel */}
-          <div className="relative max-w-4xl mx-auto">
-            <div className="overflow-hidden">
-              <div 
-                className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}
-              >
-                {testimonials.map((testimonial) => (
-                  <div key={testimonial.id} className="w-full flex-shrink-0">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mx-4">
-                      <div className="flex items-center mb-6">
-                        <img 
-                          src={testimonial.image} 
-                          alt={testimonial.name}
-                          className="w-16 h-16 rounded-full mr-4"
-                        />
-                        <div>
-                          <h4 className="text-xl font-bold text-white">{testimonial.name}</h4>
-                          <p className="text-blue-200">{testimonial.role}</p>
-                        </div>
-                        <div className="ml-auto flex text-yellow-400">
-                          {[...Array(testimonial.rating)].map((_, i) => (
-                            <HiStar key={i} className="text-xl" />
-                          ))}
-                        </div>
-                      </div>
-                      <p className="text-lg text-blue-100 leading-relaxed">"{testimonial.content}"</p>
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              {/* Profile Image Section */}
+              <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-12 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="relative inline-block mb-8">
+                    <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-8 border-white/20 shadow-2xl">
+                      <img 
+                        src="/YogeshImg.png" 
+                        alt="Yogesh - Founder Profile"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-4 shadow-lg">
+                      <FaLaptopCode className="text-blue-600 text-2xl" />
                     </div>
                   </div>
-                ))}
+                  
+                  {/* Social Links */}
+                  <div className="flex justify-center space-x-6">
+                    <a 
+                      href="https://www.linkedin.com/in/yogesh-kumawat-8052b12a0/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white/20 backdrop-blur-sm border border-white/30 p-4 rounded-full hover:bg-white/30 transform hover:scale-110 transition-all duration-300 group"
+                    >
+                      <FaLinkedin className="text-white text-xl group-hover:text-blue-200" />
+                    </a>
+                    <a 
+                      href="https://www.instagram.com/__yogesh___prajapat__/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white/20 backdrop-blur-sm border border-white/30 p-4 rounded-full hover:bg-white/30 transform hover:scale-110 transition-all duration-300 group"
+                    >
+                      <FaInstagram className="text-white text-xl group-hover:text-pink-200" />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-            
-            {/* Testimonial Indicators */}
-            <div className="flex justify-center mt-8 space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentTestimonial 
-                      ? 'bg-orange-400 scale-125' 
-                      : 'bg-white/30 hover:bg-white/50'
-                  }`}
-                />
-              ))}
+              
+              {/* Content Section */}
+              <div className="p-12 lg:p-16">
+                <div className="space-y-8">
+                  {/* Name and Title */}
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+                      Yogesh Kumawat
+                    </h3>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                        <FaCode className="text-lg" />
+                        <span className="font-semibold">Software Engineer</span>
+                      </div>
+                      <div className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">
+                        Founder & CEO
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Bio */}
+                  <div className="space-y-6">
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      With over <span className="font-semibold text-blue-600">3+ years</span> of experience in software engineering 
+                      and a deep passion for career development, Yogesh founded Zero2Career to bridge the gap between 
+                      student aspirations and industry requirements.
+                    </p>
+                    
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      His technical background combined with extensive mentoring experience enables him to provide 
+                      practical, industry-relevant career guidance to thousands of students across India.
+                    </p>
+                  </div>
+                  
+                  {/* Achievements */}
+                  {/* <div className="grid grid-cols-2 gap-6 pt-6">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                      <div className="text-gray-600 font-medium">Students Mentored</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-blue-600 mb-2">95%</div>
+                      <div className="text-gray-600 font-medium">Success Rate</div>
+                    </div>
+                  </div> */}
+                  
+                  {/* Vision Quote */}
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
+                    <p className="text-gray-700 italic text-lg leading-relaxed">
+                      "Every student has the potential to achieve greatness. Our role is to provide the right guidance, 
+                      tools, and support to help them discover and pursue their ideal career path."
+                    </p>
+                    <div className="text-blue-600 font-semibold mt-3">- Yogesh Kumawat, Founder</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
