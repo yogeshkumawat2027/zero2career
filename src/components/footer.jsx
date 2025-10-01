@@ -73,7 +73,7 @@ export default function Footer() {
                   <span className="relative w-10 h-10 block">
                     <Image
                       src={z2clogo}
-                      alt="Zero2Career Logo"
+                      alt="Zero2Career Logo - Career Guidance"
                       width={40}
                       height={40}
                       className="rounded-xl shadow-lg object-cover"
