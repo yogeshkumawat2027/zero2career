@@ -21,6 +21,38 @@ import {
   FaUserTie
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "UX/UI Designer Career Guide 2025 | Complete Design Training, Portfolio & Salary | Zero2Career",
+  description: "Comprehensive UX/UI designer career guide covering design principles, tools like Figma & Adobe XD, portfolio building, salary expectations, and complete roadmap for design careers in India.",
+  keywords: "UX UI designer career, user experience design, user interface design, Figma design, Adobe XD, design jobs India, UI UX salary, design portfolio, web design career",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/ux-ui-designer"
+  },
+  openGraph: {
+    title: "Become a UX/UI Designer - Complete Design Career Guide 2025",
+    description: "Discover everything about UX/UI design career: design principles, tools, portfolio building, salary expectations, and design career opportunities in India.",
+    url: "https://zero2career.in/careers/ux-ui-designer",
+    type: "article",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1545665225-b23b99e4d45e?w=1200&h=630&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "UX/UI Designer Career Guide - Zero2Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Become a UX/UI Designer - Complete Design Career Guide 2025",
+    description: "Comprehensive guide to UX/UI design career: design tools, portfolio building, salary expectations & design opportunities in India.",
+    images: ["https://images.unsplash.com/photo-1545665225-b23b99e4d45e?w=1200&h=630&fit=crop"],
+  }
+};
+
 export default function UxUiDesignerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Background", detail: "No specific nationality requirements, strong portfolio matters most" },

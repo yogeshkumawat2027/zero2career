@@ -24,6 +24,38 @@ import {
   FaCrown
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "IAS Officer Career Guide 2025 | Complete UPSC Preparation, Salary & Requirements | Zero2Career",
+  description: "Comprehensive IAS officer career guide covering UPSC CSE exam pattern, eligibility criteria, preparation strategy, training at LBSNAA, salary structure and career progression in civil services.",
+  keywords: "IAS officer career, UPSC CSE preparation, civil services exam, IAS eligibility, UPSC exam pattern, IAS training, DM collector salary, administrative service, government jobs India",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/ias"
+  },
+  openGraph: {
+    title: "Become an IAS Officer - Complete UPSC Career Guide 2025",
+    description: "Discover everything about IAS career: UPSC exam preparation, eligibility criteria, training process, salary expectations, and career opportunities in Indian Administrative Service.",
+    url: "https://zero2career.in/careers/ias",
+    type: "article",
+    images: [
+      {
+        url: "https://static.india.com/wp-content/uploads/2024/09/FotoJet-2024-09-15T081557.532.jpg?impolicy=Medium_Widthonly&w=400",
+        width: 1200,
+        height: 630,
+        alt: "IAS Officer Career Guide - Zero2Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Become an IAS Officer - Complete UPSC Career Guide 2025",
+    description: "Comprehensive guide to IAS career: UPSC preparation, eligibility, training, salary & administrative service opportunities in India.",
+    images: ["https://static.india.com/wp-content/uploads/2024/09/FotoJet-2024-09-15T081557.532.jpg?impolicy=Medium_Widthonly&w=400"],
+  }
+};
+
 export default function IASPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },

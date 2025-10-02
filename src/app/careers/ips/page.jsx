@@ -19,6 +19,38 @@ import {
   FaChartLine
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "IPS Officer Career Guide 2025 | Complete UPSC Preparation, Police Training & Requirements | Zero2Career",
+  description: "Comprehensive IPS officer career guide covering UPSC CSE exam preparation, police training at SVPNPA, eligibility criteria, salary structure and career progression in police service.",
+  keywords: "IPS officer career, UPSC police service, Indian Police Service, IPS eligibility, police training, IPS salary, SP DCP career, law enforcement jobs, police officer India",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career", 
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/ips"
+  },
+  openGraph: {
+    title: "Become an IPS Officer - Complete Police Service Career Guide 2025",
+    description: "Discover everything about IPS career: UPSC exam preparation, police training, eligibility criteria, salary expectations, and career opportunities in Indian Police Service.",
+    url: "https://zero2career.in/careers/ips",
+    type: "article",
+    images: [
+      {
+        url: "https://indianmasterminds.com/wp-content/uploads/2024/08/ips-officer-scaled.webp",
+        width: 1200,
+        height: 630,
+        alt: "IPS Officer Career Guide - Zero2Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Become an IPS Officer - Complete Police Service Career Guide 2025",
+    description: "Comprehensive guide to IPS career: UPSC preparation, police training, eligibility, salary & law enforcement opportunities in India.",
+    images: ["https://indianmasterminds.com/wp-content/uploads/2024/08/ips-officer-scaled.webp"],
+  }
+};
+
 export default function IPSPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },

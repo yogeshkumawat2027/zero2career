@@ -4,6 +4,9 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { HiArrowRight, HiStar, HiUsers, HiAcademicCap, HiArrowTrendingUp } from 'react-icons/hi2';
 import { careersList } from './careers/careers-data';
+import StructuredData from '@/components/structured-data';
+
+// This will be handled by layout.js metadata for homepage
 
 export default function MainBody() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -258,6 +261,10 @@ export default function MainBody() {
         </Link> */}
         </div>
       </section>
+
+      {/* Structured Data for SEO */}
+      <StructuredData type="Organization" />
+      <StructuredData type="WebSite" />
     </main>
   );
 }

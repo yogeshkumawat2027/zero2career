@@ -24,6 +24,38 @@ import {
   FaAmbulance
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Doctor Career Guide 2025 | Complete MBBS, NEET Preparation & Medical Training | Zero2Career",
+  description: "Comprehensive doctor career guide covering NEET exam preparation, MBBS admission, medical college selection, specialization options, salary expectations and healthcare career opportunities.",
+  keywords: "doctor career, MBBS admission, NEET preparation, medical college, doctor salary India, medical specialization, healthcare jobs, physician career, medical education",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career", 
+  alternates: {
+    canonical: "https://zero2career.in/careers/doctor"
+  },
+  openGraph: {
+    title: "Become a Doctor - Complete Medical Career Guide 2025",
+    description: "Discover everything about medical career: NEET preparation, MBBS admission, medical training, specializations, salary expectations, and healthcare opportunities in India.",
+    url: "https://zero2career.in/careers/doctor",
+    type: "article",
+    images: [
+      {
+        url: "https://max-website20-images.s3.ap-south-1.amazonaws.com/Types_of_Doctors_1c5efbe677.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Doctor Career Guide - Zero2Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Become a Doctor - Complete Medical Career Guide 2025", 
+    description: "Comprehensive guide to medical career: NEET preparation, MBBS admission, specializations, salary & healthcare opportunities in India.",
+    images: ["https://max-website20-images.s3.ap-south-1.amazonaws.com/Types_of_Doctors_1c5efbe677.jpg"],
+  }
+};
+
 export default function DoctorPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },

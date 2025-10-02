@@ -38,6 +38,38 @@ import {
   FaNetworkWired
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Software Developer Career Guide 2025 | Complete Programming, Skills & Salary Requirements | Zero2Career",
+  description: "Comprehensive software developer career guide covering programming languages, development frameworks, job opportunities, salary expectations, and complete roadmap for coding careers in India.",
+  keywords: "software developer career, programming jobs, coding career, software engineer salary India, web development, mobile app development, programming languages, tech jobs",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/software-developer"
+  },
+  openGraph: {
+    title: "Become a Software Developer - Complete Programming Career Guide 2025",
+    description: "Discover everything about software development career: programming skills, development frameworks, job opportunities, salary expectations, and coding career paths in India.",
+    url: "https://zero2career.in/careers/software-developer", 
+    type: "article",
+    images: [
+      {
+        url: "https://www.dice.com/binaries/large/content/gallery/dice/insights/2022/09/shutterstock_2079730714.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Software Developer Career Guide - Zero2Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Become a Software Developer - Complete Programming Career Guide 2025",
+    description: "Comprehensive guide to software development career: programming skills, frameworks, job opportunities, salary & coding career paths in India.",
+    images: ["https://www.dice.com/binaries/large/content/gallery/dice/insights/2022/09/shutterstock_2079730714.jpg"],
+  }
+};
+
 export default function SoftwareDeveloperPage() {
   const eligibilityData = [
     { icon: FaBrain, title: "Logical Thinking", detail: "Strong problem-solving and analytical skills" },

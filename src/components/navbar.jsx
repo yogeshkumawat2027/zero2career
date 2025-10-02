@@ -151,15 +151,15 @@ function Navbar() {
           </div>
         </div>
         {/* Premium Button */}
-        {/* <Link
-          href="/premium"
+        <Link
+          href="/services"
           className="ml-4 px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 relative overflow-hidden group flex items-center gap-2"
           suppressHydrationWarning
         >
           <HiStar className="text-lg relative z-10" />
           <span className="relative z-10">Premium</span>
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-0"></div>
-        </Link> */}
+        </Link>
       </div>
 
           {/* Mobile Menu Button */}
@@ -223,8 +223,8 @@ function Navbar() {
             })}
 
             {/* Mobile Premium Button */}
-            {/* <Link
-              href="/premium"
+            <Link
+              href="/services"
               onClick={() => setIsMenuOpen(false)}
               className={`
                 flex items-center gap-3 px-4 py-3 mx-2 mt-4 mb-2 bg-gradient-to-r from-orange-500 to-red-500 
@@ -237,7 +237,7 @@ function Navbar() {
             >
               <HiStar className="text-lg" />
               <span>Premium Career Help</span>
-            </Link> */}
+            </Link>
 
           </div>
         </div>
