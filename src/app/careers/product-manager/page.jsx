@@ -53,6 +53,38 @@ import {
   FaGlobe
 } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Product Manager Career Guide 2025 | Complete PM Training, Skills & Salary | Zero2Career",
+  description: "Comprehensive product manager career guide covering PM skills, product strategy, analytics tools, career progression, salary expectations, and complete roadmap for product management roles in tech.",
+  keywords: "product manager career, product management jobs, PM salary India, product strategy, user experience, data analytics, tech jobs, product development, agile methodology",
+  authors: [{ name: "Zero2Career" }],
+  creator: "Zero2Career",
+  publisher: "Zero2Career",
+  alternates: {
+    canonical: "https://zero2career.in/careers/product-manager"
+  },
+  openGraph: {
+    title: "Become a Product Manager - Complete PM Career Guide 2025",
+    description: "Discover everything about product management career: PM skills, tools, strategy development, salary expectations, and product management opportunities in tech companies.",
+    url: "https://zero2career.in/careers/product-manager",
+    type: "article",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "Product Manager Career Guide - Zero2Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Become a Product Manager - Complete PM Career Guide 2025",
+    description: "Comprehensive guide to product management career: PM skills, strategy, analytics tools, salary & product opportunities in tech.",
+    images: ["https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop"],
+  }
+};
+
 export default function ProductManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree in any field (MBA preferred)" },
@@ -138,11 +170,14 @@ export default function ProductManagerPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-100 mt-[100px] sm:mt-0">
+    <main className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-100 mt-[100px]       sm:mt-0 overflow-x-hidden">
+      {/* Mobile spacing fix */}
+      <div className="block lg:hidden h-4"></div>
+      
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-900 to-purple-900 text-white py-20">
+      <div className="relative bg-gradient-to-r from-blue-900 to-purple-900 text-white py-20 w-full">
         <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <FaRocket className="mx-auto text-6xl mb-6 text-blue-300" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -156,11 +191,11 @@ export default function ProductManagerPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         
         {/* What is Product Management Section */}
-        <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <section className="mb-16 w-full">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100 w-full max-w-full">
             <div className="flex items-center mb-6">
               <FaInfoCircle className="text-3xl text-blue-600 mr-4" />
               <h2 className="text-3xl font-bold text-gray-800">What is Product Management?</h2>
@@ -238,46 +273,63 @@ export default function ProductManagerPage() {
         </section>
 
         {/* Skills Required */}
-        <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <section className="mb-16 w-full">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100 w-full max-w-full">
             <div className="flex items-center mb-8">
-              <FaTools className="text-3xl text-green-600 mr-4" />
-              <h2 className="text-3xl font-bold text-gray-800">Essential Skills</h2>
+              <FaTools className="text-2xl sm:text-3xl text-green-600 mr-3 sm:mr-4" />
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Essential Skills</h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {skillsRequired.map((skillSet, index) => (
-                <div key={index} className={`bg-gradient-to-br from-${skillSet.color}-50 to-${skillSet.color}-100 rounded-xl p-6 border border-${skillSet.color}-200`}>
-                  <div className="flex items-center mb-4">
-                    <skillSet.icon className={`text-3xl text-${skillSet.color}-600 mr-3`} />
-                    <h3 className="text-xl font-bold text-gray-800">{skillSet.category}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {skillsRequired.map((skillSet, index) => {
+                const colorClasses = {
+                  blue: 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200',
+                  green: 'bg-gradient-to-br from-green-50 to-green-100 border-green-200',
+                  purple: 'bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200'
+                };
+                const iconColorClasses = {
+                  blue: 'text-blue-600',
+                  green: 'text-green-600', 
+                  purple: 'text-purple-600'
+                };
+                const checkColorClasses = {
+                  blue: 'text-blue-500',
+                  green: 'text-green-500',
+                  purple: 'text-purple-500'
+                };
+                return (
+                  <div key={index} className={`${colorClasses[skillSet.color]} rounded-xl p-4 sm:p-6 border w-full`}>
+                    <div className="flex items-center mb-4">
+                      <skillSet.icon className={`text-2xl sm:text-3xl ${iconColorClasses[skillSet.color]} mr-2 sm:mr-3 flex-shrink-0`} />
+                      <h3 className="text-lg sm:text-xl font-bold text-gray-800">{skillSet.category}</h3>
+                    </div>
+                    <div className="space-y-2">
+                      {skillSet.skills.map((skill, skillIndex) => (
+                        <div key={skillIndex} className="flex items-start">
+                          <FaCheckCircle className={`${checkColorClasses[skillSet.color]} mr-2 text-sm flex-shrink-0 mt-0.5`} />
+                          <span className="text-gray-700 text-sm leading-relaxed">{skill}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    {skillSet.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex items-center">
-                        <FaCheckCircle className={`text-${skillSet.color}-500 mr-2 text-sm`} />
-                        <span className="text-gray-700 text-sm">{skill}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
 
         {/* Key Responsibilities */}
-        <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <section className="mb-16 w-full">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100 w-full max-w-full">
             <div className="flex items-center mb-8">
-              <FaBriefcase className="text-3xl text-orange-600 mr-4" />
-              <h2 className="text-3xl font-bold text-gray-800">Core Responsibilities</h2>
+              <FaBriefcase className="text-2xl sm:text-3xl text-orange-600 mr-3 sm:mr-4" />
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Core Responsibilities</h2>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
               {keyResponsibilities.map((responsibility, index) => (
-                <div key={index} className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-4 border border-orange-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center">
-                    <FaCheckCircle className="text-orange-600 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">{responsibility}</span>
+                <div key={index} className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-3 sm:p-4 border border-orange-100 hover:shadow-md transition-shadow w-full">
+                  <div className="flex items-start">
+                    <FaCheckCircle className="text-orange-600 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-800 font-medium text-sm sm:text-base leading-relaxed">{responsibility}</span>
                   </div>
                 </div>
               ))}
@@ -307,32 +359,53 @@ export default function ProductManagerPage() {
         </section>
 
         {/* Career Progression */}
-        <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <section className="mb-16 w-full">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100 w-full max-w-full">
             <div className="flex items-center mb-8">
-              <FaChartLine className="text-3xl text-indigo-600 mr-4" />
-              <h2 className="text-3xl font-bold text-gray-800">Career Progression Path</h2>
+              <FaChartLine className="text-2xl sm:text-3xl text-indigo-600 mr-3 sm:mr-4" />
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Career Progression Path</h2>
             </div>
             <div className="space-y-4">
               {careerHierarchy.map((career, index) => (
-                <div key={index} className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-6 border border-indigo-100 hover:shadow-lg transition-shadow">
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-800">{career.position}</h3>
-                      <p className="text-gray-600 mt-1">Strategic product leadership and cross-functional collaboration</p>
-                    </div>
-                    <div className="flex items-center space-x-8 text-right">
+                <div key={index} className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-4 sm:p-6 border border-indigo-100 hover:shadow-lg transition-shadow w-full">
+                  {/* Mobile Layout */}
+                  <div className="block sm:hidden">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">{career.position}</h3>
+                    <p className="text-gray-600 text-sm mb-3">Strategic product leadership and cross-functional collaboration</p>
+                    <div className="grid grid-cols-2 gap-3 text-sm">
                       <div>
-                        <div className="text-sm text-gray-500">Experience</div>
+                        <div className="text-gray-500">Experience</div>
                         <div className="font-semibold text-gray-800">{career.years}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-500">Salary Range</div>
+                        <div className="text-gray-500">Level</div>
+                        <div className="font-medium text-blue-600">{career.level}</div>
+                      </div>
+                      <div className="col-span-2">
+                        <div className="text-gray-500">Salary Range</div>
                         <div className="font-bold text-indigo-700">{career.salary}</div>
                       </div>
-                      <div>
+                    </div>
+                  </div>
+                  
+                  {/* Desktop Layout */}
+                  <div className="hidden sm:flex items-center justify-between">
+                    <div className="flex-1 mr-6">
+                      <h3 className="text-xl font-bold text-gray-800">{career.position}</h3>
+                      <p className="text-gray-600 mt-1">Strategic product leadership and cross-functional collaboration</p>
+                    </div>
+                    <div className="flex items-center space-x-6 lg:space-x-8 text-right">
+                      <div className="min-w-0">
+                        <div className="text-sm text-gray-500">Experience</div>
+                        <div className="font-semibold text-gray-800 truncate">{career.years}</div>
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-sm text-gray-500">Salary Range</div>
+                        <div className="font-bold text-indigo-700 truncate">{career.salary}</div>
+                      </div>
+                      <div className="min-w-0">
                         <div className="text-sm text-gray-500">Level</div>
-                        <div className="font-medium text-blue-600">{career.level}</div>
+                        <div className="font-medium text-blue-600 truncate">{career.level}</div>
                       </div>
                     </div>
                   </div>
@@ -343,21 +416,37 @@ export default function ProductManagerPage() {
         </section>
 
         {/* Learning Path */}
-        <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <section className="mb-16 w-full">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100 w-full max-w-full">
             <div className="flex items-center mb-8">
-              <FaGraduationCap className="text-3xl text-purple-600 mr-4" />
-              <h2 className="text-3xl font-bold text-gray-800">Product Management Learning Path</h2>
+              <FaGraduationCap className="text-2xl sm:text-3xl text-purple-600 mr-3 sm:mr-4" />
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Learning Path</h2>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {learningPath.map((phase, index) => (
-                <div key={index} className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
-                  <div className="grid md:grid-cols-4 gap-4 items-center">
+                <div key={index} className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4 sm:p-6 border border-purple-100 w-full">
+                  {/* Mobile Layout */}
+                  <div className="block md:hidden space-y-3">
+                    <h3 className="text-lg font-bold text-gray-800">{phase.phase}</h3>
+                    <div className="flex items-center">
+                      <FaClock className="text-purple-600 mr-2 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm">{phase.duration}</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-700 text-sm">{phase.topics}</span>
+                    </div>
+                    <div>
+                      <span className="text-xs text-blue-600 font-medium">{phase.focus}</span>
+                    </div>
+                  </div>
+                  
+                  {/* Desktop Layout */}
+                  <div className="hidden md:grid md:grid-cols-4 gap-4 items-center">
                     <div>
                       <h3 className="text-lg font-bold text-gray-800">{phase.phase}</h3>
                     </div>
                     <div className="flex items-center">
-                      <FaClock className="text-purple-600 mr-2" />
+                      <FaClock className="text-purple-600 mr-2 flex-shrink-0" />
                       <span className="text-gray-700 text-sm">{phase.duration}</span>
                     </div>
                     <div>
@@ -374,17 +463,17 @@ export default function ProductManagerPage() {
         </section>
 
         {/* Top Companies */}
-        <section className="mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <section className="mb-16 w-full">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100 w-full max-w-full">
             <div className="flex items-center mb-8">
-              <FaFlag className="text-3xl text-green-600 mr-4" />
-              <h2 className="text-3xl font-bold text-gray-800">Top Hiring Companies</h2>
+              <FaFlag className="text-2xl sm:text-3xl text-green-600 mr-3 sm:mr-4" />
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Top Companies</h2>
             </div>
-            <div className="grid md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3">
               {topCompanies.map((company, index) => (
-                <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-3 border border-green-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center justify-center">
-                    <span className="text-gray-800 text-sm font-medium text-center">{company}</span>
+                <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-2 sm:p-3 border border-green-100 hover:shadow-md transition-shadow w-full">
+                  <div className="flex items-center justify-center h-full min-h-[3rem]">
+                    <span className="text-gray-800 text-xs sm:text-sm font-medium text-center break-words leading-tight">{company}</span>
                   </div>
                 </div>
               ))}

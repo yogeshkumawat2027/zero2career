@@ -192,11 +192,14 @@ export default function AirTrafficControllerPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-[100px] sm:mt-0">
+    <main className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-[100px] sm:mt-0 overflow-x-hidden">
+      {/* Mobile spacing fix */}
+      <div className="block lg:hidden h-4"></div>
+      
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+      <div className="relative bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20 w-full">
         <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <FaSatellite className="mx-auto text-6xl mb-6 text-blue-300" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -210,7 +213,7 @@ export default function AirTrafficControllerPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         
         {/* What is Air Traffic Controller Section */}
         <section className="mb-16">

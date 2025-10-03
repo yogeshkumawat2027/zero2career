@@ -210,11 +210,13 @@ export default function MarketingManagerPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-pink-50 to-purple-100 mt-[100px] sm:mt-0">
+    <main className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-pink-50 to-purple-100 mt-[100px] sm:mt-0 overflow-x-hidden">
+      {/* Mobile spacing fix */}
+      <div className="block lg:hidden h-4"></div>
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-pink-900 to-purple-900 text-white py-20">
+      <div className="relative bg-gradient-to-r from-pink-900 to-purple-900 text-white py-20 w-full">
         <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <FaBullhorn className="mx-auto text-6xl mb-6 text-pink-300" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
