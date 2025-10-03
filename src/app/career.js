@@ -1208,16 +1208,16 @@ export const careersList = [
     "duration": "2 years",
     "link": "/careers/cbi-officer"
   },
-  {
-    "id": 123,
-    "title": "RAW Agent",
-    "description": "Research and Analysis Wing Intelligence Officer",
-    "image": "https://i.ytimg.com/vi/KA9NIUlZaXY/maxresdefault.jpg",
-    "category": "Defense",
-    "difficulty": "Hard",
-    "duration": "2-3 years",
-    "link": "/careers/raw-agent"
-  },
+  // {
+  //   "id": 123,
+  //   "title": "RAW Agent",
+  //   "description": "Research and Analysis Wing Intelligence Officer",
+  //   "image": "https://i.ytimg.com/vi/KA9NIUlZaXY/maxresdefault.jpg",
+  //   "category": "Defense",
+  //   "difficulty": "Hard",
+  //   "duration": "2-3 years",
+  //   "link": "/careers/raw-agent"
+  // },
   {
     "id": 124,
     "title": "Intelligence Bureau Officer",
