@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next-sitemap",
-    "postbuild": "next-sitemap",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "sitemap": "next-sitemap"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.4.4",

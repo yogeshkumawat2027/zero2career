@@ -6,6 +6,8 @@ module.exports = {
   changefreq: 'daily',
   priority: 0.7,
   sitemapSize: 7000,
+  // Remove unused namespaces
+  additionalSitemaps: [],
   exclude: [
     '/404',
     '/500',
@@ -156,16 +158,6 @@ module.exports = {
       changefreq: changefreq,
       priority: priority,
       lastmod: new Date().toISOString(),
-      // Add additional metadata for specific pages
-      ...(path.startsWith('/careers/') && {
-        images: [
-          {
-            loc: 'https://zero2career.in/og-image.jpg',
-            title: `Zero2Career - ${path.replace('/careers/', '').replace('-', ' ')} Career Guide`,
-            caption: `Complete career guide for ${path.replace('/careers/', '').replace('-', ' ')}`,
-          }
-        ]
-      }),
     };
   },
 };
