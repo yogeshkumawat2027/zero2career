@@ -347,7 +347,7 @@ export default function AboutUs() {
                       "Every student has the potential to achieve greatness. Our role is to provide the right guidance, 
                       tools, and support to help them discover and pursue their ideal career path."
                     </p>
-                    <div className="text-blue-600 font-semibold mt-3">- Yogesh Kumawat, Founder</div>
+                    <div className="text-blue-600 font-semibold mt-3">- Mr. Yogesh Kumawat, Founder</div>
                   </div>
                 </div>
               </div>
