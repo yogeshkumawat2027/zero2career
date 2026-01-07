@@ -1,8 +1,7 @@
 import React from 'react';
-import careerData from '../career';
 
 export default function InteriorDesignerPage() {
-  const career = careerData.find(c => c.id === 'interior-designer') || {
+  const career = {
     id: 'interior-designer',
     title: 'Interior Designer',
     category: 'Design & Arts',
