@@ -1,0 +1,29 @@
+{
+  "name": "Zero2Career - Career Guidance Platform",
+  "short_name": "Zero2Career",
+  "description": "India's most trusted career guidance platform for students after 10th & 12th",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait",
+  "categories": ["education", "career", "guidance"],
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png", 
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
