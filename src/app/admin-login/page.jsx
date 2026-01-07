@@ -4,8 +4,6 @@ import { useRouter } from 'next/navigation';
 import { useAdminAuth } from '@/contexts/AdminAuthContext';
 import { HiLockClosed, HiUser, HiEye, HiEyeOff } from 'react-icons/hi';
 
-export const dynamic = 'force-dynamic';
-
 export default function AdminLoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
