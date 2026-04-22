@@ -321,6 +321,79 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
+
+          <div className="mt-12 bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              {/* Profile Image Section */}
+              <div className="relative bg-gradient-to-br from-indigo-600 via-blue-700 to-cyan-800 p-12 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="relative inline-block mb-8">
+                    <div className="w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden border-8 border-white/20 shadow-2xl">
+                      <img 
+                        src="/vishal_sir.png" 
+                        alt="Vishal Lodhwal - Career Advisor"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/vishal-lodhwal-393189160/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Vishal Lodhwal LinkedIn profile"
+                      className="absolute -bottom-3 -right-3 rounded-full bg-gradient-to-br from-[#0A66C2] via-blue-600 to-indigo-700 p-4 shadow-2xl ring-4 ring-white/30 backdrop-blur-sm transition-transform duration-300 hover:scale-110"
+                    >
+                      <FaLinkedin className="text-white text-2xl drop-shadow-md" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Content Section */}
+              <div className="p-12 lg:p-16">
+                <div className="space-y-8">
+                  {/* Name and Title */}
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+                      Vishal Lodhwal
+                    </h3>
+                    <div className="flex flex-wrap items-center gap-3 mb-6">
+                      <div className="flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                        <HiAcademicCap className="text-lg" />
+                        <span className="font-semibold">Career Advisor</span>
+                      </div>
+                      <div className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">
+                        Assistant Professor, CSE (RTU Kota)
+                      </div>
+                      <div className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium">
+                        2 Yrs. of Teaching Exp.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Bio */}
+                  <div className="space-y-6">
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      Vishal Lodhwal supports students with practical career guidance, combining academic experience
+                      with a clear understanding of computer science pathways and industry expectations.
+                    </p>
+                    
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      His advice helps students build the right foundation, choose focused career directions, and
+                      prepare confidently for both higher studies and professional opportunities.
+                    </p>
+                  </div>
+                  
+                  {/* Vision Quote */}
+                  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
+                    <p className="text-gray-700 italic text-lg leading-relaxed">
+                      "A strong career starts with clarity, consistent learning, and the courage to keep improving."
+                    </p>
+                    <div className="text-blue-600 font-semibold mt-3">- Vishal Lodhwal, Career Advisor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
