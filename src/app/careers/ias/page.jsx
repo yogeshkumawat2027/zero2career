@@ -226,12 +226,6 @@ export default function IASPage() {
           </div>
         </section>
 
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189112748745866"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         {/* <!-- First Add --> */}
         <ins className="adsbygoogle"
           style={{ display: 'block' }}
@@ -242,7 +236,6 @@ export default function IASPage() {
         <Script id="ias-adsense-init" strategy="afterInteractive">
           {`(window.adsbygoogle = window.adsbygoogle || []).push({});`}
         </Script>
-        <p>....................</p>
 
         {/* Eligibility Criteria */}
         <section className="mb-16">
