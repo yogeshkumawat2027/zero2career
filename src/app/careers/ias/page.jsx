@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Script from 'next/script';
 import React from 'react';
 import {
   FaUniversity,
@@ -225,18 +226,22 @@ export default function IASPage() {
           </div>
         </section>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189112748745866"
-          crossorigin="anonymous"></script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189112748745866"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         {/* <!-- First Add --> */}
-        <ins class="adsbygoogle"
+        <ins className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-3189112748745866"
           data-ad-slot="3753621711"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({ });
-        </script>
+        <Script id="ias-adsense-init" strategy="afterInteractive">
+          {`(window.adsbygoogle = window.adsbygoogle || []).push({});`}
+        </Script>
         <p>....................</p>
 
         {/* Eligibility Criteria */}
