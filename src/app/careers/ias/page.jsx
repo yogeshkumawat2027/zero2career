@@ -225,6 +225,19 @@ export default function IASPage() {
           </div>
         </section>
 
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189112748745866"
+     crossorigin="anonymous"></script>
+{/* <!-- First Add --> */}
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3189112748745866"
+     data-ad-slot="3753621711"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
         {/* Eligibility Criteria */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
