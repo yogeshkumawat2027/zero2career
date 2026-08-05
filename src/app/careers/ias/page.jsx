@@ -227,12 +227,16 @@ export default function IASPage() {
         </section>
 
         {/* <!-- First Add --> */}
-        <ins className="adsbygoogle"
-          style={{ display: 'block' }}
+        <div className="my-10 flex justify-center">
+          <ins
+          className="adsbygoogle"
+          style={{ display: 'block', minWidth: '300px', minHeight: '250px' }}
           data-ad-client="ca-pub-3189112748745866"
           data-ad-slot="3753621711"
           data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
+          data-full-width-responsive="true"
+          data-adtest={process.env.NODE_ENV !== 'production' ? 'on' : undefined}></ins>
+        </div>
         <Script id="ias-adsense-init" strategy="afterInteractive">
           {`(window.adsbygoogle = window.adsbygoogle || []).push({});`}
         </Script>
