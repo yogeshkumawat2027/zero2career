@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import React from 'react';
-import { 
-  FaUniversity, 
-  FaGraduationCap, 
-  FaCalendarAlt, 
-  FaClipboardCheck, 
-  FaBookOpen, 
-  FaTrophy, 
-  FaMapMarkerAlt, 
-  FaMoneyBillWave, 
-  FaUsers, 
-  FaGavel, 
+import {
+  FaUniversity,
+  FaGraduationCap,
+  FaCalendarAlt,
+  FaClipboardCheck,
+  FaBookOpen,
+  FaTrophy,
+  FaMapMarkerAlt,
+  FaMoneyBillWave,
+  FaUsers,
+  FaGavel,
   FaExternalLinkAlt,
   FaArrowLeft,
   FaClock,
@@ -65,25 +65,25 @@ export default function IASPage() {
   ];
 
   const examStructure = [
-    { 
-      phase: "Preliminary Examination", 
-      duration: "1 Day", 
+    {
+      phase: "Preliminary Examination",
+      duration: "1 Day",
       papers: "2 Papers (General Studies I & CSAT)",
       marks: "400 Marks",
       nature: "Objective Type (MCQ)",
       qualifying: "CSAT - Qualifying only"
     },
-    { 
-      phase: "Main Examination", 
-      duration: "5 Days", 
+    {
+      phase: "Main Examination",
+      duration: "5 Days",
       papers: "9 Papers (7 counted for merit)",
       marks: "1750 Marks",
       nature: "Descriptive Type",
       qualifying: "Language papers qualifying"
     },
-    { 
-      phase: "Personality Test", 
-      duration: "30-45 minutes", 
+    {
+      phase: "Personality Test",
+      duration: "30-45 minutes",
       papers: "Interview Board",
       marks: "275 Marks",
       nature: "Face-to-face interaction",
@@ -103,7 +103,7 @@ export default function IASPage() {
 
   const keySubjects = [
     "Indian Polity & Governance",
-    "Modern Indian History", 
+    "Modern Indian History",
     "World History & Geography",
     "Indian Economy",
     "Science & Technology",
@@ -134,7 +134,7 @@ export default function IASPage() {
 
   const optionalSubjects = [
     "Agriculture",
-    "Animal Husbandry", 
+    "Animal Husbandry",
     "Anthropology",
     "Botany",
     "Chemistry",
@@ -168,7 +168,7 @@ export default function IASPage() {
           <div className="text-center">
             <FaUniversity className="mx-auto text-6xl mb-6 text-indigo-300" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Complete Guide to Becoming an 
+              Complete Guide to Becoming an
               <span className="text-indigo-300"> IAS Officer</span>
             </h1>
             <p className="text-xl md:text-2xl text-indigo-100 max-w-3xl mx-auto leading-relaxed">
@@ -179,7 +179,7 @@ export default function IASPage() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
+
         {/* What is IAS Section */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
@@ -226,17 +226,18 @@ export default function IASPage() {
         </section>
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189112748745866"
-     crossorigin="anonymous"></script>
-{/* <!-- First Add --> */}
-<ins class="adsbygoogle"
-  style={{ display: 'block' }}
-     data-ad-client="ca-pub-3189112748745866"
-     data-ad-slot="3753621711"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+          crossorigin="anonymous"></script>
+        {/* <!-- First Add --> */}
+        <ins class="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-3189112748745866"
+          data-ad-slot="3753621711"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({ });
+        </script>
+        <p>....................</p>
 
         {/* Eligibility Criteria */}
         <section className="mb-16">
@@ -254,7 +255,7 @@ export default function IASPage() {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Age Relaxation Details</h3>
               <div className="grid md:grid-cols-3 gap-4 text-sm">
@@ -432,11 +433,10 @@ export default function IASPage() {
                       <span className="text-gray-700 font-medium">{position.salary}</span>
                     </div>
                     <div>
-                      <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                        position.level === 'Entry Level' ? 'bg-green-200 text-green-800' :
-                        position.level === 'Apex Position' ? 'bg-purple-200 text-purple-800' :
-                        'bg-blue-200 text-blue-800'
-                      }`}>
+                      <span className={`px-3 py-1 rounded-full text-sm font-medium ${position.level === 'Entry Level' ? 'bg-green-200 text-green-800' :
+                          position.level === 'Apex Position' ? 'bg-purple-200 text-purple-800' :
+                            'bg-blue-200 text-blue-800'
+                        }`}>
                         {position.level}
                       </span>
                     </div>
@@ -554,7 +554,7 @@ export default function IASPage() {
 
         {/* Navigation */}
         <div className="text-center">
-            <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-red-700 transition-colors shadow-lg">
+          <button className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-red-700 transition-colors shadow-lg">
             <FaArrowLeft className="mr-2" />
             <Link href="/careers">
               Back to Careers
