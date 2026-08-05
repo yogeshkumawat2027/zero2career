@@ -229,7 +229,7 @@ export default function IASPage() {
      crossorigin="anonymous"></script>
 {/* <!-- First Add --> */}
 <ins class="adsbygoogle"
-     style="display:block"
+  style={{ display: 'block' }}
      data-ad-client="ca-pub-3189112748745866"
      data-ad-slot="3753621711"
      data-ad-format="auto"
