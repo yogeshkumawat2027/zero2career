@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import React from 'react';
+import AdBanner from '@/components/AdBanner';
 import {
   FaUniversity,
   FaGraduationCap,
@@ -226,20 +226,12 @@ export default function IASPage() {
           </div>
         </section>
 
-        {/* <!-- First Add --> */}
-        <div className="my-10 flex justify-center">
-          <ins
-          className="adsbygoogle"
-          style={{ display: 'block', minWidth: '300px', minHeight: '250px' }}
-          data-ad-client="ca-pub-3189112748745866"
-          data-ad-slot="3753621711"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-          data-adtest={process.env.NODE_ENV !== 'production' ? 'on' : undefined}></ins>
-        </div>
-        <Script id="ias-adsense-init" strategy="afterInteractive">
-          {`(window.adsbygoogle = window.adsbygoogle || []).push({});`}
-        </Script>
+        <AdBanner
+          dataAdSlot="3753621711"
+          minHeight={250}
+          fallbackTitle="Sponsored"
+          fallbackDescription="Ad space is reserved here, but the ad may not be available in this browser or region right now."
+        />
 
         {/* Eligibility Criteria */}
         <section className="mb-16">
