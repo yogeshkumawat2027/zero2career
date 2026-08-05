@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Navbar from "../components/navbar";
 import Footer from "@/components/footer";
+import AdSense from "../components/AdSense";
 import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
@@ -105,13 +106,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#1e40af" />
 
         {/* Google AdSense verification and ads script */}
-        <Script
-          id="google-adsense"
-          async
-          strategy="beforeInteractive"
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189112748745866"
-        />
+        <AdSense pId="ca-pub-3189112748745866" />
       </head>
 
       <body

@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { HiArrowRight, HiStar, HiUsers, HiAcademicCap, HiArrowTrendingUp } from 'react-icons/hi2';
 import { careersList } from './careers/careers-data';
 import StructuredData from '@/components/structured-data';
+import AdUnit from '@/components/AdUnit';
 
 // This will be handled by layout.js metadata for homepage
 
@@ -132,6 +133,8 @@ export default function MainBody() {
           ))}
         </div>
       </section>
+
+      <AdUnit />
 
       {/* Job Updates Section */}
       <section className="py-8 md:py-12 bg-gradient-to-br from-blue-50 via-white to-purple-50">
