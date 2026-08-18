@@ -30,9 +30,16 @@ export default function Footer() {
     { name: 'Home', href: '/' },
     { name: 'All Careers', href: '/careers' },
     { name: 'Career Assessment', href: '/careers' },
-    // { name: 'Success Stories', href: '/success-stories' },
-    // { name: 'Blog & Resources', href: '/blog' },
-    { name: 'About Us', href: '/aboutus' }
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact Us', href: '/contact' }
+  ];
+
+  const legalLinks = [
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Terms and Conditions', href: '/terms-and-conditions' },
+    { name: 'Disclaimer', href: '/disclaimer' }
   ];
 
   const services = [
@@ -129,6 +136,26 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-8">
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <HiBriefcase className="text-blue-400" />
+                Legal
+              </h3>
+              <ul className="space-y-3">
+                {legalLinks.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.href}
+                      className="text-blue-100 hover:text-white hover:translate-x-1 transform transition-all duration-200 flex items-center gap-2 group"
+                    >
+                      <HiArrowRight className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Services */}
@@ -180,17 +207,13 @@ export default function Footer() {
               <p className="text-blue-100 text-sm">
                 © {currentYear} Zero2Career. All rights reserved.
               </p>
-              {/* <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-6 mt-2 text-xs sm:text-sm">
-                <a href="/privacy" className="text-blue-200 hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-                <a href="/terms" className="text-blue-200 hover:text-white transition-colors">
-                  Terms of Service
-                </a>
-                <a href="/cookies" className="text-blue-200 hover:text-white transition-colors">
-                  Cookie Policy
-                </a>
-              </div> */}
+              <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-6 mt-2 text-xs sm:text-sm">
+                {legalLinks.map((link, index) => (
+                  <Link key={index} href={link.href} className="text-blue-200 hover:text-white transition-colors">
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
             </div>
 
             {/* Social Links */}

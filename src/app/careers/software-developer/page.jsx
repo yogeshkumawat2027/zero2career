@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { CareerRoadmapList, CareerSectionCard } from '@/components/CareerPageTemplate';
 import { 
   FaLaptopCode, 
   FaGraduationCap, 
@@ -71,6 +72,15 @@ export const metadata = {
 };
 
 export default function SoftwareDeveloperPage() {
+  const careerRoadmap = [
+    { title: 'Build a programming foundation', description: 'Start with logic, data structures, basic programming, and problem-solving through languages like Python, JavaScript, or C++.' },
+    { title: 'Choose a specialization', description: 'Explore web, mobile, AI, cybersecurity, backend, or cloud engineering based on your interests and career goals.' },
+    { title: 'Learn practical tools', description: 'Work with frameworks, version control, databases, APIs, testing practices, and deployment workflows used in real product teams.' },
+    { title: 'Build projects', description: 'Create portfolio projects that solve real problems and show your ability to design, ship, and maintain software solutions.' },
+    { title: 'Internships and entry-level roles', description: 'Gain practical experience through internships, freelance work, or junior developer positions to improve your technical and communication skills.' },
+    { title: 'Advance into senior roles', description: 'Move into mid-level and senior work through product ownership, architecture, leadership, or specialization in high-demand domains.' }
+  ];
+
   const eligibilityData = [
     { icon: FaBrain, title: "Logical Thinking", detail: "Strong problem-solving and analytical skills" },
     { icon: FaGraduationCap, title: "Education", detail: "B.Tech/B.E in Computer Science or related field" },
@@ -183,6 +193,25 @@ export default function SoftwareDeveloperPage() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+
+        <CareerSectionCard icon={FaInfoCircle} eyebrow="Career overview" title="What this career involves">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl bg-slate-50 p-5 text-slate-700">
+              <p className="leading-relaxed">
+                Software development is the process of designing, building, testing, and maintaining digital products and systems. Developers create websites, apps, internal tools, and backend services that people use every day.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-50 p-5 text-slate-700">
+              <p className="leading-relaxed">
+                This career is suitable for people who enjoy solving problems, learning technologies quickly, and collaborating with product, design, and engineering teams to ship quality software.
+              </p>
+            </div>
+          </div>
+        </CareerSectionCard>
+
+        <CareerSectionCard icon={FaArrowLeft} eyebrow="Roadmap" title="Career roadmap">
+          <CareerRoadmapList steps={careerRoadmap} />
+        </CareerSectionCard>
         
         {/* What is Software Development Section */}
         <section className="mb-16">

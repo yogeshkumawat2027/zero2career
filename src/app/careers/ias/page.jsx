@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { CareerRoadmapList, CareerSectionCard } from '@/components/CareerPageTemplate';
 import AdBanner from '@/components/AdBanner';
 import {
   FaUniversity,
@@ -58,6 +59,15 @@ export const metadata = {
 };
 
 export default function IASPage() {
+  const careerRoadmap = [
+    { title: 'Class 10 and 12 foundation', description: 'Build strong fundamentals in History, Geography, Civics, English, and current affairs while exploring social science and public service interests.' },
+    { title: 'Graduation and optional subject planning', description: 'Complete a bachelor\'s degree and choose a suitable optional subject that matches your academic strengths and long-term interests.' },
+    { title: 'UPSC preparation', description: 'Prepare for Prelims, Mains, and interview in a structured cycle with disciplined revision, answer writing, and current affairs tracking.' },
+    { title: 'Training and probation', description: 'After selection, undergo training and field exposure as part of the induction process for government service roles.' },
+    { title: 'Field posting and governance', description: 'Serve in districts, departments, and headquarters while handling administration, law, policy implementation, and public service delivery.' },
+    { title: 'Growth and leadership', description: 'Progress through senior administrative roles and gain leadership experience in revenue, law-and-order, policy, and state or central governance.' }
+  ];
+
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's degree from recognized university" },
@@ -180,6 +190,25 @@ export default function IASPage() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <CareerSectionCard icon={FaInfoCircle} eyebrow="Career overview" title="What this career involves">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl bg-slate-50 p-5 text-slate-700">
+              <p className="leading-relaxed">
+                IAS officers work at the center of India\'s administrative system. They help implement public policy, supervise district administration, coordinate departments, and ensure essential services reach citizens efficiently.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-50 p-5 text-slate-700">
+              <p className="leading-relaxed">
+                The role demands analytical ability, public service orientation, stress management, and strong communication. It is a demanding but high-impact career path that blends governance, leadership, and public accountability.
+              </p>
+            </div>
+          </div>
+        </CareerSectionCard>
+
+        <CareerSectionCard icon={FaArrowLeft} eyebrow="Roadmap" title="Career roadmap">
+          <CareerRoadmapList steps={careerRoadmap} />
+        </CareerSectionCard>
 
         {/* What is IAS Section */}
         <section className="mb-16">
