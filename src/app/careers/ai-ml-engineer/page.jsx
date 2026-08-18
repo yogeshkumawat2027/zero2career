@@ -1,6 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
 import {
+
+
+
   FaRobot,
   FaGraduationCap,
   FaCalendarAlt,
@@ -32,6 +36,18 @@ import {
   FaLanguage,
   FaNetworkWired
 } from 'react-icons/fa';
+
+const careerSlug = 'ai-ml-engineer';
+const careerTitle = 'Your Complete Guide to Becoming an AI/ML Engineer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function AIMLEngineerPage() {
   const eligibilityData = [
@@ -77,13 +93,13 @@ export default function AIMLEngineerPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Junior AI/ML Engineer", years: "0-2 years", salary: "₹6 - ₹12 Lakhs/annum", level: "Entry Level" },
-    { rank: "AI/ML Engineer", years: "2-5 years", salary: "₹12 - ₹25 Lakhs/annum", level: "Mid Level" },
-    { rank: "Senior AI/ML Engineer", years: "5-8 years", salary: "₹25 - ₹45 Lakhs/annum", level: "Senior Level" },
-    { rank: "Principal AI/ML Engineer", years: "8-12 years", salary: "₹45 - ₹80 Lakhs/annum", level: "Principal Level" },
-    { rank: "AI/ML Architect", years: "10+ years", salary: "₹60 Lakhs - ₹1.5 Crores/annum", level: "Architecture" },
-    { rank: "Head of AI/ML", years: "12+ years", salary: "₹80 Lakhs - ₹2+ Crores/annum", level: "Leadership" },
-    { rank: "Chief AI Officer", years: "15+ years", salary: "₹1+ Crores/annum", level: "C-Suite" }
+    { rank: "Junior AI/ML Engineer", years: "0-2 years", salary: "â‚¹6 - â‚¹12 Lakhs/annum", level: "Entry Level" },
+    { rank: "AI/ML Engineer", years: "2-5 years", salary: "â‚¹12 - â‚¹25 Lakhs/annum", level: "Mid Level" },
+    { rank: "Senior AI/ML Engineer", years: "5-8 years", salary: "â‚¹25 - â‚¹45 Lakhs/annum", level: "Senior Level" },
+    { rank: "Principal AI/ML Engineer", years: "8-12 years", salary: "â‚¹45 - â‚¹80 Lakhs/annum", level: "Principal Level" },
+    { rank: "AI/ML Architect", years: "10+ years", salary: "â‚¹60 Lakhs - â‚¹1.5 Crores/annum", level: "Architecture" },
+    { rank: "Head of AI/ML", years: "12+ years", salary: "â‚¹80 Lakhs - â‚¹2+ Crores/annum", level: "Leadership" },
+    { rank: "Chief AI Officer", years: "15+ years", salary: "â‚¹1+ Crores/annum", level: "C-Suite" }
   ];
 
   const keySubjects = [
@@ -214,7 +230,7 @@ export default function AIMLEngineerPage() {
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Common Entry Paths</h3>
               <div className="grid md:grid-cols-3 gap-4 text-sm">
                 <div className="text-black">
-                  <span className="font-medium">Traditional Route:</span> Engineering → AI/ML specialization
+                  <span className="font-medium">Traditional Route:</span> Engineering â†’ AI/ML specialization
                 </div>
                 <div className="text-black">
                   <span className="font-medium">Bootcamp Route:</span> Intensive AI/ML training programs
@@ -455,3 +471,5 @@ export default function AIMLEngineerPage() {
     </main>
   );
 }
+
+

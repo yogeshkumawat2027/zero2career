@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaSatellite, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -28,6 +31,18 @@ import {
   FaShieldAlt,
   FaBroadcastTower
 } from 'react-icons/fa';
+
+const careerSlug = 'air-traffic-controller';
+const careerTitle = 'Air Traffic Controller Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function AirTrafficControllerPage() {
   const eligibilityData = [
@@ -69,12 +84,12 @@ export default function AirTrafficControllerPage() {
   ];
 
   const jobProfiles = [
-    { post: "Junior Executive (ATC)", organization: "AAI", salary: "₹40,000-1,40,000", duties: "Air traffic control operations at airports" },
-    { post: "Air Traffic Control Officer", organization: "Indian Air Force", salary: "₹56,100-1,77,500", duties: "Military air traffic management" },
-    { post: "Approach Control Officer", organization: "AAI/Airports", salary: "₹45,000-1,50,000", duties: "Aircraft approach and departure control" },
-    { post: "Radar Control Officer", organization: "AAI", salary: "₹50,000-1,60,000", duties: "Radar-based air traffic monitoring" },
-    { post: "Area Control Officer", organization: "AAI", salary: "₹55,000-1,80,000", duties: "En-route air traffic control" },
-    { post: "Tower Control Officer", organization: "Airports", salary: "₹40,000-1,30,000", duties: "Airport tower operations and aircraft guidance" }
+    { post: "Junior Executive (ATC)", organization: "AAI", salary: "â‚¹40,000-1,40,000", duties: "Air traffic control operations at airports" },
+    { post: "Air Traffic Control Officer", organization: "Indian Air Force", salary: "â‚¹56,100-1,77,500", duties: "Military air traffic management" },
+    { post: "Approach Control Officer", organization: "AAI/Airports", salary: "â‚¹45,000-1,50,000", duties: "Aircraft approach and departure control" },
+    { post: "Radar Control Officer", organization: "AAI", salary: "â‚¹50,000-1,60,000", duties: "Radar-based air traffic monitoring" },
+    { post: "Area Control Officer", organization: "AAI", salary: "â‚¹55,000-1,80,000", duties: "En-route air traffic control" },
+    { post: "Tower Control Officer", organization: "Airports", salary: "â‚¹40,000-1,30,000", duties: "Airport tower operations and aircraft guidance" }
   ];
 
   const syllabus = [
@@ -112,12 +127,12 @@ export default function AirTrafficControllerPage() {
   ];
 
   const careerGrowth = [
-    { level: "Junior Executive (ATC)", experience: "0-3 years", salary: "₹40,000-70,000" },
-    { level: "Assistant Manager (ATC)", experience: "3-6 years", salary: "₹60,000-90,000" },
-    { level: "Deputy Manager (ATC)", experience: "6-10 years", salary: "₹80,000-1,20,000" },
-    { level: "Assistant General Manager", experience: "10-15 years", salary: "₹1,00,000-1,50,000" },
-    { level: "Deputy General Manager", experience: "15-20 years", salary: "₹1,20,000-1,80,000" },
-    { level: "General Manager", experience: "20+ years", salary: "₹1,50,000-2,50,000" }
+    { level: "Junior Executive (ATC)", experience: "0-3 years", salary: "â‚¹40,000-70,000" },
+    { level: "Assistant Manager (ATC)", experience: "3-6 years", salary: "â‚¹60,000-90,000" },
+    { level: "Deputy Manager (ATC)", experience: "6-10 years", salary: "â‚¹80,000-1,20,000" },
+    { level: "Assistant General Manager", experience: "10-15 years", salary: "â‚¹1,00,000-1,50,000" },
+    { level: "Deputy General Manager", experience: "15-20 years", salary: "â‚¹1,20,000-1,80,000" },
+    { level: "General Manager", experience: "20+ years", salary: "â‚¹1,50,000-2,50,000" }
   ];
 
   const medicalRequirements = [
@@ -571,3 +586,5 @@ export default function AirTrafficControllerPage() {
     </main>
   );
 }
+
+

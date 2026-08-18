@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUtensils, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -26,6 +29,18 @@ import {
   FaHotel
 } from 'react-icons/fa';
 
+const careerSlug = 'chef';
+const careerTitle = 'Complete Guide to Becoming a Professional Chef';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ChefPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Age", detail: "18+ years for professional culinary programs" },
@@ -39,39 +54,39 @@ export default function ChefPage() {
       course: "Certificate in Food Production", 
       duration: "6 months", 
       requirement: "10th pass",
-      cost: "₹50,000-1 lakh",
+      cost: "â‚¹50,000-1 lakh",
       description: "Basic culinary skills and kitchen fundamentals"
     },
     { 
       course: "Diploma in Culinary Arts", 
       duration: "1-2 years", 
       requirement: "12th pass",
-      cost: "₹2-5 lakhs",
+      cost: "â‚¹2-5 lakhs",
       description: "Comprehensive culinary training program"
     },
     { 
       course: "Bachelor in Hotel Management & Catering", 
       duration: "3-4 years", 
       requirement: "12th pass (50%)",
-      cost: "₹3-8 lakhs",
+      cost: "â‚¹3-8 lakhs",
       description: "Complete hospitality and culinary education"
     },
     { 
       course: "Advanced Culinary Arts Program", 
       duration: "6 months-1 year", 
       requirement: "Basic culinary experience",
-      cost: "₹5-12 lakhs",
+      cost: "â‚¹5-12 lakhs",
       description: "Specialized training in international cuisines"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Trainee Chef/Commis", years: "0-1 year", salary: "₹15,000-25,000/month" },
-    { rank: "Demi Chef de Partie", years: "1-2 years", salary: "₹25,000-40,000/month" },
-    { rank: "Chef de Partie", years: "2-4 years", salary: "₹40,000-60,000/month" },
-    { rank: "Sous Chef", years: "4-8 years", salary: "₹60,000-1.2 lakhs/month" },
-    { rank: "Head Chef/Executive Chef", years: "8-15 years", salary: "₹1.2-3 lakhs/month" },
-    { rank: "Culinary Director/Celebrity Chef", years: "15+ years", salary: "₹3-10+ lakhs/month" }
+    { rank: "Trainee Chef/Commis", years: "0-1 year", salary: "â‚¹15,000-25,000/month" },
+    { rank: "Demi Chef de Partie", years: "1-2 years", salary: "â‚¹25,000-40,000/month" },
+    { rank: "Chef de Partie", years: "2-4 years", salary: "â‚¹40,000-60,000/month" },
+    { rank: "Sous Chef", years: "4-8 years", salary: "â‚¹60,000-1.2 lakhs/month" },
+    { rank: "Head Chef/Executive Chef", years: "8-15 years", salary: "â‚¹1.2-3 lakhs/month" },
+    { rank: "Culinary Director/Celebrity Chef", years: "15+ years", salary: "â‚¹3-10+ lakhs/month" }
   ];
 
   const skillsRequired = [
@@ -106,12 +121,12 @@ export default function ChefPage() {
   ];
 
   const workEnvironments = [
-    { type: "5-Star Hotels", description: "Luxury hospitality with high standards", salary: "₹40,000-2 lakhs/month" },
-    { type: "Fine Dining Restaurants", description: "Gourmet cuisine and presentation", salary: "₹35,000-1.5 lakhs/month" },
-    { type: "Cruise Ships", description: "International exposure with travel", salary: "₹60,000-1.8 lakhs/month" },
-    { type: "Catering Companies", description: "Large-scale event catering", salary: "₹25,000-80,000/month" },
-    { type: "Restaurant Chains", description: "Standardized menu execution", salary: "₹30,000-1 lakh/month" },
-    { type: "Food TV/Media", description: "Celebrity chef and content creation", salary: "₹1-10+ lakhs/month" }
+    { type: "5-Star Hotels", description: "Luxury hospitality with high standards", salary: "â‚¹40,000-2 lakhs/month" },
+    { type: "Fine Dining Restaurants", description: "Gourmet cuisine and presentation", salary: "â‚¹35,000-1.5 lakhs/month" },
+    { type: "Cruise Ships", description: "International exposure with travel", salary: "â‚¹60,000-1.8 lakhs/month" },
+    { type: "Catering Companies", description: "Large-scale event catering", salary: "â‚¹25,000-80,000/month" },
+    { type: "Restaurant Chains", description: "Standardized menu execution", salary: "â‚¹30,000-1 lakh/month" },
+    { type: "Food TV/Media", description: "Celebrity chef and content creation", salary: "â‚¹1-10+ lakhs/month" }
   ];
 
   return (
@@ -492,3 +507,5 @@ export default function ChefPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaPlane, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -28,6 +31,18 @@ import {
   FaHandsHelping,
   FaFirstAid
 } from 'react-icons/fa';
+
+const careerSlug = 'air-hostess';
+const careerTitle = 'Complete Guide to Becoming an Air Hostess';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function AirHostessPage() {
   const eligibilityData = [
@@ -69,14 +84,14 @@ export default function AirHostessPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Trainee Cabin Crew", years: "0-6 months", salary: "₹25,000 - ₹35,000" },
-    { rank: "Junior Flight Attendant", years: "6 months - 2 years", salary: "₹35,000 - ₹50,000" },
-    { rank: "Senior Flight Attendant", years: "2-5 years", salary: "₹50,000 - ₹75,000" },
-    { rank: "Lead Flight Attendant", years: "5-8 years", salary: "₹75,000 - ₹1,00,000" },
-    { rank: "Chief Flight Attendant", years: "8-12 years", salary: "₹1,00,000 - ₹1,50,000" },
-    { rank: "Cabin Service Manager", years: "12+ years", salary: "₹1,50,000 - ₹2,00,000" },
-    { rank: "In-flight Service Director", years: "15+ years", salary: "₹2,00,000 - ₹3,00,000" },
-    { rank: "Ground Training Manager", years: "10+ years", salary: "₹1,80,000 - ₹2,50,000" }
+    { rank: "Trainee Cabin Crew", years: "0-6 months", salary: "â‚¹25,000 - â‚¹35,000" },
+    { rank: "Junior Flight Attendant", years: "6 months - 2 years", salary: "â‚¹35,000 - â‚¹50,000" },
+    { rank: "Senior Flight Attendant", years: "2-5 years", salary: "â‚¹50,000 - â‚¹75,000" },
+    { rank: "Lead Flight Attendant", years: "5-8 years", salary: "â‚¹75,000 - â‚¹1,00,000" },
+    { rank: "Chief Flight Attendant", years: "8-12 years", salary: "â‚¹1,00,000 - â‚¹1,50,000" },
+    { rank: "Cabin Service Manager", years: "12+ years", salary: "â‚¹1,50,000 - â‚¹2,00,000" },
+    { rank: "In-flight Service Director", years: "15+ years", salary: "â‚¹2,00,000 - â‚¹3,00,000" },
+    { rank: "Ground Training Manager", years: "10+ years", salary: "â‚¹1,80,000 - â‚¹2,50,000" }
   ];
 
   const physicalStandards = [
@@ -502,3 +517,5 @@ export default function AirHostessPage() {
     </main>
   );
 }
+
+

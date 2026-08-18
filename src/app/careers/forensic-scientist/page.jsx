@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaMicroscope, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -108,6 +111,18 @@ import {
   FaHammer
 } from 'react-icons/fa';
 
+const careerSlug = 'forensic-scientist';
+const careerTitle = 'Forensic Scientist Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ForensicScientistPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.Sc./M.Sc. in Forensic Science or related fields" },
@@ -122,7 +137,7 @@ export default function ForensicScientistPage() {
       duration: "3-4 years",
       program: "B.Sc. Forensic Science, Chemistry, Biology, Physics, Computer Science",
       focus: "Basic forensic techniques, laboratory skills, scientific methodology, evidence handling",
-      cost: "₹50,000-3 LPA (government to private colleges)",
+      cost: "â‚¹50,000-3 LPA (government to private colleges)",
       outcomes: "Junior forensic analyst, lab technician, crime scene investigator"
     },
     { 
@@ -130,7 +145,7 @@ export default function ForensicScientistPage() {
       duration: "2 years",
       program: "M.Sc. Forensic Science, Criminology, Digital Forensics, Toxicology",
       focus: "Advanced forensic techniques, specialized investigations, research methodology",
-      cost: "₹1-5 LPA for specialized programs",
+      cost: "â‚¹1-5 LPA for specialized programs",
       outcomes: "Forensic scientist, senior analyst, specialized investigator, lab supervisor"
     },
     { 
@@ -138,7 +153,7 @@ export default function ForensicScientistPage() {
       duration: "6 months - 2 years",
       program: "DNA analysis, ballistics, digital forensics, toxicology certifications",
       focus: "Technical expertise, equipment operation, quality control, legal procedures",
-      cost: "₹25,000-2 LPA per certification",
+      cost: "â‚¹25,000-2 LPA per certification",
       outcomes: "Subject matter expert, specialized analyst, expert witness, consultant"
     },
     { 
@@ -146,7 +161,7 @@ export default function ForensicScientistPage() {
       duration: "3-5 years",
       program: "Ph.D. in Forensic Science, related research programs",
       focus: "Advanced research, new technique development, academic expertise",
-      cost: "₹50,000-3 LPA with potential funding",
+      cost: "â‚¹50,000-3 LPA with potential funding",
       outcomes: "Research scientist, professor, forensic laboratory director, consultant"
     }
   ];
@@ -201,62 +216,62 @@ export default function ForensicScientistPage() {
       sector: "Government Forensic Laboratories",
       organizations: "Central Forensic Science Laboratory, State Forensic Labs, CBI, NIA",
       roles: "Forensic Scientist, Assistant Director, Scientific Officer, Lab Director",
-      salary: "₹3-15 LPA",
+      salary: "â‚¹3-15 LPA",
       benefits: "Job security, government benefits, pension, research opportunities"
     },
     { 
       sector: "Law Enforcement Agencies",
       organizations: "Police Departments, Crime Investigation Departments, Special Investigation Teams",
       roles: "Crime Scene Investigator, Forensic Consultant, Technical Expert",
-      salary: "₹4-12 LPA",
+      salary: "â‚¹4-12 LPA",
       benefits: "Field exposure, diverse cases, career progression, investigative experience"
     },
     { 
       sector: "Private Forensic Consulting",
       organizations: "Independent consultancies, legal firms, insurance companies",
       roles: "Forensic Consultant, Expert Witness, Private Investigator, Technical Advisor",
-      salary: "₹6-25 LPA",
+      salary: "â‚¹6-25 LPA",
       benefits: "Higher compensation, flexible work, diverse clients, specialization opportunities"
     },
     { 
       sector: "Academic & Research Institutions",
       organizations: "Universities, research centers, forensic training institutes",
       roles: "Professor, Research Scientist, Training Coordinator, Academic Administrator",
-      salary: "₹4-20 LPA",
+      salary: "â‚¹4-20 LPA",
       benefits: "Research opportunities, academic freedom, student interaction, knowledge advancement"
     },
     { 
       sector: "Corporate Security & Compliance",
       organizations: "Multinational corporations, financial institutions, IT companies",
       roles: "Security Analyst, Compliance Officer, Internal Investigator, Risk Assessor",
-      salary: "₹5-18 LPA",
+      salary: "â‚¹5-18 LPA",
       benefits: "Corporate environment, regular hours, technology access, professional development"
     },
     { 
       sector: "Healthcare & Clinical Forensics",
       organizations: "Hospitals, medical institutions, pathology labs, clinical research",
       roles: "Clinical Forensic Specialist, Medical Legal Consultant, Pathology Assistant",
-      salary: "₹4-16 LPA",
+      salary: "â‚¹4-16 LPA",
       benefits: "Medical environment, patient interaction, clinical exposure, healthcare benefits"
     }
   ];
 
   const careerProgression = [
-    { level: "Junior Forensic Analyst/Technician", experience: "0-3 years", salary: "₹2.5-6 LPA", focus: "Basic evidence processing, sample analysis, documentation, learning techniques" },
-    { level: "Forensic Scientist/Analyst", experience: "3-7 years", salary: "₹5-12 LPA", focus: "Independent case work, specialized analysis, quality control, mentoring juniors" },
-    { level: "Senior Forensic Scientist", experience: "7-12 years", salary: "₹10-20 LPA", focus: "Complex case leadership, expert testimony, method development, team supervision" },
-    { level: "Principal Scientist/Section Head", experience: "12-18 years", salary: "₹18-35 LPA", focus: "Department management, research projects, policy development, training programs" },
-    { level: "Laboratory Director/Consultant", experience: "18-25 years", salary: "₹30-60 LPA", focus: "Strategic planning, laboratory operations, quality assurance, external relations" },
-    { level: "Chief Forensic Expert/Professor", experience: "25+ years", salary: "₹50 LPA-1 Cr", focus: "Industry leadership, academic positions, consulting, research innovation" }
+    { level: "Junior Forensic Analyst/Technician", experience: "0-3 years", salary: "â‚¹2.5-6 LPA", focus: "Basic evidence processing, sample analysis, documentation, learning techniques" },
+    { level: "Forensic Scientist/Analyst", experience: "3-7 years", salary: "â‚¹5-12 LPA", focus: "Independent case work, specialized analysis, quality control, mentoring juniors" },
+    { level: "Senior Forensic Scientist", experience: "7-12 years", salary: "â‚¹10-20 LPA", focus: "Complex case leadership, expert testimony, method development, team supervision" },
+    { level: "Principal Scientist/Section Head", experience: "12-18 years", salary: "â‚¹18-35 LPA", focus: "Department management, research projects, policy development, training programs" },
+    { level: "Laboratory Director/Consultant", experience: "18-25 years", salary: "â‚¹30-60 LPA", focus: "Strategic planning, laboratory operations, quality assurance, external relations" },
+    { level: "Chief Forensic Expert/Professor", experience: "25+ years", salary: "â‚¹50 LPA-1 Cr", focus: "Industry leadership, academic positions, consulting, research innovation" }
   ];
 
   const topColleges = [
-    { name: "National Forensic Sciences University (NFSU)", courses: "B.Sc./M.Sc. Forensic Science", ranking: "Premier Forensic Institute", fees: "₹1-3 LPA", placements: "Excellent in government labs" },
-    { name: "Amity Institute of Forensic Sciences", courses: "B.Sc./M.Sc. Forensic Science, Cyber Security", ranking: "Top Private Institute", fees: "₹2-4 LPA", placements: "Good industry connections" },
-    { name: "Lok Nayak Jayaprakash Narayan NICFS", courses: "M.Sc. Forensic Science, Criminology", ranking: "Government Institute", fees: "₹50,000-1 LPA", placements: "Strong government placements" },
-    { name: "Bundelkhand University", courses: "M.Sc. Forensic Science", ranking: "Established Program", fees: "₹30,000", placements: "Decent placement record" },
-    { name: "Sardar Patel University of Police", courses: "Various forensic programs", ranking: "Police University", fees: "₹75,000", placements: "Law enforcement focus" },
-    { name: "University of Delhi", courses: "M.Sc. Forensic Science, Anthropology", ranking: "Premier University", fees: "₹25,000", placements: "Research and academic focus" }
+    { name: "National Forensic Sciences University (NFSU)", courses: "B.Sc./M.Sc. Forensic Science", ranking: "Premier Forensic Institute", fees: "â‚¹1-3 LPA", placements: "Excellent in government labs" },
+    { name: "Amity Institute of Forensic Sciences", courses: "B.Sc./M.Sc. Forensic Science, Cyber Security", ranking: "Top Private Institute", fees: "â‚¹2-4 LPA", placements: "Good industry connections" },
+    { name: "Lok Nayak Jayaprakash Narayan NICFS", courses: "M.Sc. Forensic Science, Criminology", ranking: "Government Institute", fees: "â‚¹50,000-1 LPA", placements: "Strong government placements" },
+    { name: "Bundelkhand University", courses: "M.Sc. Forensic Science", ranking: "Established Program", fees: "â‚¹30,000", placements: "Decent placement record" },
+    { name: "Sardar Patel University of Police", courses: "Various forensic programs", ranking: "Police University", fees: "â‚¹75,000", placements: "Law enforcement focus" },
+    { name: "University of Delhi", courses: "M.Sc. Forensic Science, Anthropology", ranking: "Premier University", fees: "â‚¹25,000", placements: "Research and academic focus" }
   ];
 
   const technicalSkills = [
@@ -279,13 +294,13 @@ export default function ForensicScientistPage() {
   ];
 
   const salaryRanges = [
-    { sector: "Government Forensic Labs", fresher: "₹3-6 LPA", experienced: "₹8-15 LPA", senior: "₹12-25 LPA" },
-    { sector: "Police & Investigation", fresher: "₹3.5-7 LPA", experienced: "₹8-16 LPA", senior: "₹15-30 LPA" },
-    { sector: "Private Consulting", fresher: "₹4-8 LPA", experienced: "₹10-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Academic Institutions", fresher: "₹3-6 LPA", experienced: "₹7-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Corporate Security", fresher: "₹4-9 LPA", experienced: "₹9-20 LPA", senior: "₹18-40 LPA" },
-    { sector: "Healthcare Forensics", fresher: "₹3.5-7 LPA", experienced: "₹8-18 LPA", senior: "₹16-32 LPA" },
-    { sector: "International Organizations", fresher: "₹8-15 LPA", experienced: "₹15-35 LPA", senior: "₹30-75 LPA" }
+    { sector: "Government Forensic Labs", fresher: "â‚¹3-6 LPA", experienced: "â‚¹8-15 LPA", senior: "â‚¹12-25 LPA" },
+    { sector: "Police & Investigation", fresher: "â‚¹3.5-7 LPA", experienced: "â‚¹8-16 LPA", senior: "â‚¹15-30 LPA" },
+    { sector: "Private Consulting", fresher: "â‚¹4-8 LPA", experienced: "â‚¹10-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Academic Institutions", fresher: "â‚¹3-6 LPA", experienced: "â‚¹7-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Corporate Security", fresher: "â‚¹4-9 LPA", experienced: "â‚¹9-20 LPA", senior: "â‚¹18-40 LPA" },
+    { sector: "Healthcare Forensics", fresher: "â‚¹3.5-7 LPA", experienced: "â‚¹8-18 LPA", senior: "â‚¹16-32 LPA" },
+    { sector: "International Organizations", fresher: "â‚¹8-15 LPA", experienced: "â‚¹15-35 LPA", senior: "â‚¹30-75 LPA" }
   ];
 
   const emergingTrends = [
@@ -360,7 +375,7 @@ export default function ForensicScientistPage() {
       cert: "DNA Analysis Certification",
       provider: "Various accredited labs",
       duration: "6 months - 1 year",
-      cost: "₹50,000-2 LPA",
+      cost: "â‚¹50,000-2 LPA",
       description: "Specialized training in DNA analysis techniques and quality standards"
     }
   ];
@@ -368,37 +383,37 @@ export default function ForensicScientistPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Private Forensic Consulting",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Independent forensic consulting for legal firms, insurance companies, and corporations",
       potential: "High demand for specialized expertise and neutral expert opinions"
     },
     { 
       business: "Digital Forensics Lab",
-      investment: "₹25 lakhs-2 crores",
+      investment: "â‚¹25 lakhs-2 crores",
       description: "Specialized laboratory for digital evidence recovery and cybercrime investigation",
       potential: "Rapidly growing market with increasing cybercrime rates"
     },
     { 
       business: "Forensic Training Institute",
-      investment: "₹15-75 lakhs",
+      investment: "â‚¹15-75 lakhs",
       description: "Professional training programs for law enforcement and forensic professionals",
       potential: "Growing need for continuous professional education and skills updating"
     },
     { 
       business: "Forensic Technology Solutions",
-      investment: "₹20 lakhs-1 crore",
+      investment: "â‚¹20 lakhs-1 crore",
       description: "Development of forensic software, equipment, or analytical tools",
       potential: "Innovation opportunities in AI, automation, and advanced analysis techniques"
     },
     { 
       business: "Legal Support Services",
-      investment: "₹8-40 lakhs",
+      investment: "â‚¹8-40 lakhs",
       description: "Expert witness services, case analysis, and litigation support for legal proceedings",
       potential: "Consistent demand from legal system and growing complexity of cases"
     },
     { 
       business: "Corporate Investigation Services",
-      investment: "₹12-60 lakhs",
+      investment: "â‚¹12-60 lakhs",
       description: "Internal investigations, fraud detection, and corporate security consulting",
       potential: "Expanding corporate security needs and compliance requirements"
     }
@@ -846,3 +861,5 @@ export default function ForensicScientistPage() {
     </main>
   );
 }
+
+

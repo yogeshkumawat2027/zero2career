@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaPlane, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -29,6 +32,18 @@ import {
   FaPencilRuler,
   FaUniversity
 } from 'react-icons/fa';
+
+const careerSlug = 'aeronautical-engineer';
+const careerTitle = 'Aeronautical Engineer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function AeronauticalEngineerPage() {
   const eligibilityData = [
@@ -70,12 +85,12 @@ export default function AeronauticalEngineerPage() {
   ];
 
   const jobProfiles = [
-    { post: "Aeronautical Design Engineer", company: "HAL, Boeing, Airbus", salary: "₹6-15 LPA", duties: "Aircraft design, analysis and development" },
-    { post: "Flight Test Engineer", company: "ISRO, NAL, Private Aviation", salary: "₹8-18 LPA", duties: "Testing aircraft performance and safety" },
-    { post: "Aircraft Maintenance Engineer", company: "Airlines, MRO Companies", salary: "₹5-12 LPA", duties: "Aircraft maintenance and troubleshooting" },
-    { post: "Aerospace Systems Engineer", company: "DRDO, Boeing, Lockheed Martin", salary: "₹10-25 LPA", duties: "System integration and spacecraft design" },
-    { post: "Propulsion Engineer", company: "ISRO, Rolls Royce, GE Aviation", salary: "₹8-20 LPA", duties: "Engine design and propulsion systems" },
-    { post: "Research Scientist", company: "NAL, CSIR, Universities", salary: "₹6-15 LPA", duties: "Research in aerodynamics and materials" }
+    { post: "Aeronautical Design Engineer", company: "HAL, Boeing, Airbus", salary: "â‚¹6-15 LPA", duties: "Aircraft design, analysis and development" },
+    { post: "Flight Test Engineer", company: "ISRO, NAL, Private Aviation", salary: "â‚¹8-18 LPA", duties: "Testing aircraft performance and safety" },
+    { post: "Aircraft Maintenance Engineer", company: "Airlines, MRO Companies", salary: "â‚¹5-12 LPA", duties: "Aircraft maintenance and troubleshooting" },
+    { post: "Aerospace Systems Engineer", company: "DRDO, Boeing, Lockheed Martin", salary: "â‚¹10-25 LPA", duties: "System integration and spacecraft design" },
+    { post: "Propulsion Engineer", company: "ISRO, Rolls Royce, GE Aviation", salary: "â‚¹8-20 LPA", duties: "Engine design and propulsion systems" },
+    { post: "Research Scientist", company: "NAL, CSIR, Universities", salary: "â‚¹6-15 LPA", duties: "Research in aerodynamics and materials" }
   ];
 
   const syllabus = [
@@ -109,12 +124,12 @@ export default function AeronauticalEngineerPage() {
   ];
 
   const careerGrowth = [
-    { level: "Junior Engineer", experience: "0-2 years", salary: "₹3.5-6 LPA" },
-    { level: "Engineer", experience: "2-5 years", salary: "₹6-10 LPA" },
-    { level: "Senior Engineer", experience: "5-8 years", salary: "₹10-15 LPA" },
-    { level: "Lead Engineer/Manager", experience: "8-12 years", salary: "₹15-25 LPA" },
-    { level: "Principal Engineer", experience: "12-18 years", salary: "₹25-40 LPA" },
-    { level: "Chief Engineer/Director", experience: "18+ years", salary: "₹40-80 LPA" }
+    { level: "Junior Engineer", experience: "0-2 years", salary: "â‚¹3.5-6 LPA" },
+    { level: "Engineer", experience: "2-5 years", salary: "â‚¹6-10 LPA" },
+    { level: "Senior Engineer", experience: "5-8 years", salary: "â‚¹10-15 LPA" },
+    { level: "Lead Engineer/Manager", experience: "8-12 years", salary: "â‚¹15-25 LPA" },
+    { level: "Principal Engineer", experience: "12-18 years", salary: "â‚¹25-40 LPA" },
+    { level: "Chief Engineer/Director", experience: "18+ years", salary: "â‚¹40-80 LPA" }
   ];
 
   const topColleges = [
@@ -554,3 +569,5 @@ export default function AeronauticalEngineerPage() {
     </main>
   );
 }
+
+

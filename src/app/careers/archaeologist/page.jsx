@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaSearchPlus, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -29,6 +32,18 @@ import {
   FaCrown,
   FaLeaf
 } from 'react-icons/fa';
+
+const careerSlug = 'archaeologist';
+const careerTitle = 'Complete Guide to Becoming an Archaeologist';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function ArchaeologistPage() {
   const eligibilityData = [
@@ -70,12 +85,12 @@ export default function ArchaeologistPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Archaeological Assistant", years: "0-3 years", salary: "₹2.5-4 lakhs/annum", level: "Entry Level" },
-    { rank: "Junior Archaeological Officer", years: "3-8 years", salary: "₹4-7 lakhs/annum", level: "Junior Level" },
-    { rank: "Archaeological Officer", years: "8-15 years", salary: "₹7-12 lakhs/annum", level: "Mid Level" },
-    { rank: "Senior Archaeological Officer", years: "15-20 years", salary: "₹12-18 lakhs/annum", level: "Senior Level" },
-    { rank: "Deputy Superintending Archaeologist", years: "20-25 years", salary: "₹18-25 lakhs/annum", level: "Management" },
-    { rank: "Superintending Archaeologist", years: "25+ years", salary: "₹25-35 lakhs/annum", level: "Senior Management" }
+    { rank: "Archaeological Assistant", years: "0-3 years", salary: "â‚¹2.5-4 lakhs/annum", level: "Entry Level" },
+    { rank: "Junior Archaeological Officer", years: "3-8 years", salary: "â‚¹4-7 lakhs/annum", level: "Junior Level" },
+    { rank: "Archaeological Officer", years: "8-15 years", salary: "â‚¹7-12 lakhs/annum", level: "Mid Level" },
+    { rank: "Senior Archaeological Officer", years: "15-20 years", salary: "â‚¹12-18 lakhs/annum", level: "Senior Level" },
+    { rank: "Deputy Superintending Archaeologist", years: "20-25 years", salary: "â‚¹18-25 lakhs/annum", level: "Management" },
+    { rank: "Superintending Archaeologist", years: "25+ years", salary: "â‚¹25-35 lakhs/annum", level: "Senior Management" }
   ];
 
   const skillsRequired = [
@@ -207,10 +222,10 @@ export default function ArchaeologistPage() {
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Educational Pathways</h3>
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div className="text-black">
-                  <span className="font-medium">Academic Route:</span> BA → MA → Ph.D in Archaeology/History
+                  <span className="font-medium">Academic Route:</span> BA â†’ MA â†’ Ph.D in Archaeology/History
                 </div>
                 <div className="text-black">
-                  <span className="font-medium">Professional Route:</span> Degree → ASI exam → Field experience
+                  <span className="font-medium">Professional Route:</span> Degree â†’ ASI exam â†’ Field experience
                 </div>
               </div>
             </div>
@@ -520,3 +535,5 @@ export default function ArchaeologistPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCamera, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -80,6 +83,18 @@ import {
   FaPlay
 } from 'react-icons/fa';
 
+const careerSlug = 'fashion-photographer';
+const careerTitle = 'Fashion Photographer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function FashionPhotographerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Diploma/Degree in Photography or Fine Arts" },
@@ -94,7 +109,7 @@ export default function FashionPhotographerPage() {
       duration: "6 months - 2 years",
       program: "Photography, Fashion Photography, Visual Arts",
       focus: "Camera basics, lighting, composition, editing software, fashion industry basics",
-      cost: "₹25,000-2 LPA (institutes and workshops)",
+      cost: "â‚¹25,000-2 LPA (institutes and workshops)",
       outcomes: "Assistant photographer, freelance photographer, studio assistant positions"
     },
     { 
@@ -102,7 +117,7 @@ export default function FashionPhotographerPage() {
       duration: "3-4 years",
       program: "BFA in Photography, Mass Communication, Visual Arts",
       focus: "Advanced photography techniques, digital imaging, business skills, portfolio development",
-      cost: "₹1-8 LPA for degree programs",
+      cost: "â‚¹1-8 LPA for degree programs",
       outcomes: "Fashion photographer, commercial photographer, higher starting opportunities"
     },
     { 
@@ -110,7 +125,7 @@ export default function FashionPhotographerPage() {
       duration: "Ongoing",
       program: "Fashion photography masterclasses, lighting workshops, editing courses",
       focus: "Industry trends, advanced techniques, networking, portfolio enhancement",
-      cost: "₹5,000-2 LPA per workshop",
+      cost: "â‚¹5,000-2 LPA per workshop",
       outcomes: "Skill enhancement, industry connections, portfolio improvement"
     },
     { 
@@ -118,7 +133,7 @@ export default function FashionPhotographerPage() {
       duration: "Flexible",
       program: "Adobe certifications, online photography courses, fashion industry courses",
       focus: "Software mastery, business development, marketing, social media",
-      cost: "₹500-50,000 per course",
+      cost: "â‚¹500-50,000 per course",
       outcomes: "Technical proficiency, business skills, digital marketing knowledge"
     }
   ];
@@ -173,62 +188,62 @@ export default function FashionPhotographerPage() {
       sector: "Fashion Magazines & Publications",
       companies: "Vogue India, Harper's Bazaar, Elle, Cosmopolitan, Grazia, Femina",
       roles: "Staff Photographer, Freelance Photographer, Photo Editor, Creative Director",
-      salary: "₹3-15 LPA",
+      salary: "â‚¹3-15 LPA",
       growth: "Competitive field with high creative rewards"
     },
     { 
       sector: "Fashion Brands & Design Houses",
       companies: "Sabyasachi, Manish Malhotra, Ritu Kumar, Anita Dongre, Raw Mango, Good Earth",
       roles: "Brand Photographer, Campaign Photographer, Lookbook Photographer, Social Media Photographer",
-      salary: "₹4-20 LPA",
+      salary: "â‚¹4-20 LPA",
       growth: "Growing with fashion brand expansion"
     },
     { 
       sector: "E-commerce & Retail",
       companies: "Myntra, Nykaa, Ajio, Amazon Fashion, Flipkart Fashion, Tata Cliq",
       roles: "Product Photographer, E-commerce Photographer, Creative Lead, Content Manager",
-      salary: "₹5-18 LPA",
+      salary: "â‚¹5-18 LPA",
       growth: "High demand with online fashion retail growth"
     },
     { 
       sector: "Advertising & Marketing Agencies",
       companies: "Ogilvy, Leo Burnett, McCann, Wunderman Thompson, Havas, Publicis",
       roles: "Campaign Photographer, Creative Photographer, Art Director, Visual Content Creator",
-      salary: "₹6-25 LPA",
+      salary: "â‚¹6-25 LPA",
       growth: "Strong growth with digital advertising"
     },
     { 
       sector: "Celebrity & Entertainment",
       companies: "Bollywood, Fashion Week organizers, Celebrity Management companies, PR agencies",
       roles: "Celebrity Photographer, Red Carpet Photographer, Event Photographer, Paparazzi Photographer",
-      salary: "₹8-30 LPA",
+      salary: "â‚¹8-30 LPA",
       growth: "Premium segment with high earning potential"
     },
     { 
       sector: "Freelance & Independent Practice",
       companies: "Independent clients, fashion startups, influencers, personal projects",
       roles: "Freelance Fashion Photographer, Wedding Photographer, Portrait Photographer, Content Creator",
-      salary: "₹2-50 LPA (highly variable)",
+      salary: "â‚¹2-50 LPA (highly variable)",
       growth: "Flexible career with unlimited earning potential"
     }
   ];
 
   const jobProfiles = [
-    { post: "Assistant Photographer", experience: "0-2 years", salary: "₹2-5 LPA", duties: "Equipment handling, lighting setup, photo editing assistance, client coordination" },
-    { post: "Fashion Photographer", experience: "2-5 years", salary: "₹4-12 LPA", duties: "Independent shoots, client management, creative direction, portfolio development" },
-    { post: "Senior Fashion Photographer", experience: "5-8 years", salary: "₹8-20 LPA", duties: "High-end campaigns, team leadership, creative concepts, brand partnerships" },
-    { post: "Creative Director", experience: "8-12 years", salary: "₹15-35 LPA", duties: "Campaign strategy, team management, brand vision, creative oversight" },
-    { post: "Celebrity/Editorial Photographer", experience: "10-15 years", salary: "₹20-50 LPA", duties: "High-profile shoots, magazine covers, celebrity portraits, international work" },
-    { post: "Fashion Photography Entrepreneur", experience: "15+ years", salary: "₹30 LPA-2 Crores", duties: "Studio ownership, brand building, mentoring, industry leadership" }
+    { post: "Assistant Photographer", experience: "0-2 years", salary: "â‚¹2-5 LPA", duties: "Equipment handling, lighting setup, photo editing assistance, client coordination" },
+    { post: "Fashion Photographer", experience: "2-5 years", salary: "â‚¹4-12 LPA", duties: "Independent shoots, client management, creative direction, portfolio development" },
+    { post: "Senior Fashion Photographer", experience: "5-8 years", salary: "â‚¹8-20 LPA", duties: "High-end campaigns, team leadership, creative concepts, brand partnerships" },
+    { post: "Creative Director", experience: "8-12 years", salary: "â‚¹15-35 LPA", duties: "Campaign strategy, team management, brand vision, creative oversight" },
+    { post: "Celebrity/Editorial Photographer", experience: "10-15 years", salary: "â‚¹20-50 LPA", duties: "High-profile shoots, magazine covers, celebrity portraits, international work" },
+    { post: "Fashion Photography Entrepreneur", experience: "15+ years", salary: "â‚¹30 LPA-2 Crores", duties: "Studio ownership, brand building, mentoring, industry leadership" }
   ];
 
   const topInstitutes = [
-    { name: "National Institute of Fashion Technology (NIFT)", courses: "Fashion Communication, Photography", ranking: "Top Fashion Institute", fees: "₹2-4 LPA", placements: "₹4-15 LPA average" },
-    { name: "Pearl Academy", courses: "Fashion Photography, Visual Communication", ranking: "Premier Design Institute", fees: "₹8-12 LPA", placements: "₹3-12 LPA average" },
-    { name: "Symbiosis Institute of Design", courses: "Photography, Communication Design", ranking: "Top Private Institute", fees: "₹6-10 LPA", placements: "₹4-14 LPA average" },
-    { name: "Light & Life Academy", courses: "Professional Photography, Fashion Photography", ranking: "Specialized Photography Institute", fees: "₹1-3 LPA", placements: "₹2-8 LPA average" },
-    { name: "Delhi College of Photography", courses: "Fashion Photography, Commercial Photography", ranking: "Photography Specialization", fees: "₹50,000-2 LPA", placements: "₹2-10 LPA average" },
-    { name: "Orane International", courses: "Fashion Photography, Styling", ranking: "Fashion & Beauty Institute", fees: "₹1-4 LPA", placements: "₹2-8 LPA average" }
+    { name: "National Institute of Fashion Technology (NIFT)", courses: "Fashion Communication, Photography", ranking: "Top Fashion Institute", fees: "â‚¹2-4 LPA", placements: "â‚¹4-15 LPA average" },
+    { name: "Pearl Academy", courses: "Fashion Photography, Visual Communication", ranking: "Premier Design Institute", fees: "â‚¹8-12 LPA", placements: "â‚¹3-12 LPA average" },
+    { name: "Symbiosis Institute of Design", courses: "Photography, Communication Design", ranking: "Top Private Institute", fees: "â‚¹6-10 LPA", placements: "â‚¹4-14 LPA average" },
+    { name: "Light & Life Academy", courses: "Professional Photography, Fashion Photography", ranking: "Specialized Photography Institute", fees: "â‚¹1-3 LPA", placements: "â‚¹2-8 LPA average" },
+    { name: "Delhi College of Photography", courses: "Fashion Photography, Commercial Photography", ranking: "Photography Specialization", fees: "â‚¹50,000-2 LPA", placements: "â‚¹2-10 LPA average" },
+    { name: "Orane International", courses: "Fashion Photography, Styling", ranking: "Fashion & Beauty Institute", fees: "â‚¹1-4 LPA", placements: "â‚¹2-8 LPA average" }
   ];
 
   const technicalSkills = [
@@ -251,12 +266,12 @@ export default function FashionPhotographerPage() {
   ];
 
   const careerProgression = [
-    { level: "Assistant Photographer", experience: "0-2 years", salary: "₹2-5 LPA", focus: "Learning technical skills, assisting senior photographers, building basics" },
-    { level: "Junior Photographer", experience: "2-4 years", salary: "₹4-8 LPA", focus: "Independent shoots, portfolio building, client development" },
-    { level: "Fashion Photographer", experience: "4-8 years", salary: "₹6-15 LPA", focus: "Specialized fashion work, brand partnerships, creative development" },
-    { level: "Senior Photographer", experience: "8-12 years", salary: "₹12-25 LPA", focus: "High-end campaigns, team leadership, business development" },
-    { level: "Creative Director", experience: "12-18 years", salary: "₹20-40 LPA", focus: "Strategic creative direction, brand partnerships, industry influence" },
-    { level: "Photography Entrepreneur", experience: "15+ years", salary: "₹25-2 Cr", focus: "Studio ownership, brand empire, mentoring, industry leadership" }
+    { level: "Assistant Photographer", experience: "0-2 years", salary: "â‚¹2-5 LPA", focus: "Learning technical skills, assisting senior photographers, building basics" },
+    { level: "Junior Photographer", experience: "2-4 years", salary: "â‚¹4-8 LPA", focus: "Independent shoots, portfolio building, client development" },
+    { level: "Fashion Photographer", experience: "4-8 years", salary: "â‚¹6-15 LPA", focus: "Specialized fashion work, brand partnerships, creative development" },
+    { level: "Senior Photographer", experience: "8-12 years", salary: "â‚¹12-25 LPA", focus: "High-end campaigns, team leadership, business development" },
+    { level: "Creative Director", experience: "12-18 years", salary: "â‚¹20-40 LPA", focus: "Strategic creative direction, brand partnerships, industry influence" },
+    { level: "Photography Entrepreneur", experience: "15+ years", salary: "â‚¹25-2 Cr", focus: "Studio ownership, brand empire, mentoring, industry leadership" }
   ];
 
   const emergingTrends = [
@@ -317,34 +332,34 @@ export default function FashionPhotographerPage() {
       cert: "Fashion Photography Masterclass Certificates",
       provider: "Various institutes and professionals",
       duration: "1-6 months",
-      cost: "₹10,000-2 LPA",
+      cost: "â‚¹10,000-2 LPA",
       description: "Specialized fashion photography training from industry experts"
     },
     { 
       cert: "Digital Marketing for Photographers",
       provider: "Google, Facebook, various institutes",
       duration: "2-4 months",
-      cost: "₹5,000-50,000",
+      cost: "â‚¹5,000-50,000",
       description: "Marketing and business development skills for photography business"
     },
     { 
       cert: "Drone Pilot License",
       provider: "Directorate General of Civil Aviation (DGCA)",
       duration: "1-3 months",
-      cost: "₹15,000-30,000",
+      cost: "â‚¹15,000-30,000",
       description: "Licensed drone operation for aerial photography"
     }
   ];
 
   const salaryRanges = [
-    { sector: "Fashion Magazines", fresher: "₹3-6 LPA", experienced: "₹6-15 LPA", senior: "₹12-30 LPA" },
-    { sector: "Fashion Brands", fresher: "₹4-8 LPA", experienced: "₹8-20 LPA", senior: "₹15-40 LPA" },
-    { sector: "E-commerce", fresher: "₹5-9 LPA", experienced: "₹9-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Advertising Agencies", fresher: "₹6-10 LPA", experienced: "₹10-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Celebrity/Entertainment", fresher: "₹8-12 LPA", experienced: "₹12-30 LPA", senior: "₹25-1 Crore" },
-    { sector: "Wedding Photography", fresher: "₹3-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-80 LPA" },
-    { sector: "Freelance/Independent", fresher: "₹2-10 LPA", experienced: "₹10-50 LPA", senior: "₹30-2 Crores" },
-    { sector: "Stock Photography", fresher: "₹1-5 LPA", experienced: "₹5-15 LPA", senior: "₹12-40 LPA" }
+    { sector: "Fashion Magazines", fresher: "â‚¹3-6 LPA", experienced: "â‚¹6-15 LPA", senior: "â‚¹12-30 LPA" },
+    { sector: "Fashion Brands", fresher: "â‚¹4-8 LPA", experienced: "â‚¹8-20 LPA", senior: "â‚¹15-40 LPA" },
+    { sector: "E-commerce", fresher: "â‚¹5-9 LPA", experienced: "â‚¹9-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Advertising Agencies", fresher: "â‚¹6-10 LPA", experienced: "â‚¹10-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Celebrity/Entertainment", fresher: "â‚¹8-12 LPA", experienced: "â‚¹12-30 LPA", senior: "â‚¹25-1 Crore" },
+    { sector: "Wedding Photography", fresher: "â‚¹3-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-80 LPA" },
+    { sector: "Freelance/Independent", fresher: "â‚¹2-10 LPA", experienced: "â‚¹10-50 LPA", senior: "â‚¹30-2 Crores" },
+    { sector: "Stock Photography", fresher: "â‚¹1-5 LPA", experienced: "â‚¹5-15 LPA", senior: "â‚¹12-40 LPA" }
   ];
 
   const preparationTips = [
@@ -363,37 +378,37 @@ export default function FashionPhotographerPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Fashion Photography Studio",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Professional studio with equipment for fashion, portrait, and commercial shoots",
       potential: "Steady income with established client base and premium service offerings"
     },
     { 
       business: "Online Photography Course Platform",
-      investment: "₹5-25 lakhs",
+      investment: "â‚¹5-25 lakhs",
       description: "Educational platform teaching fashion photography and related skills",
       potential: "Scalable business with growing demand for online learning"
     },
     { 
       business: "Fashion Photography Agency",
-      investment: "₹15-75 lakhs",
+      investment: "â‚¹15-75 lakhs",
       description: "Talent management and photography services for fashion industry",
       potential: "High growth potential with established industry connections"
     },
     { 
       business: "Equipment Rental Service",
-      investment: "₹20 lakhs-1 crore",
+      investment: "â‚¹20 lakhs-1 crore",
       description: "Professional photography equipment rental for photographers and studios",
       potential: "Good returns with lower competition and recurring rentals"
     },
     { 
       business: "Photo Editing & Retouching Service",
-      investment: "₹3-15 lakhs",
+      investment: "â‚¹3-15 lakhs",
       description: "Professional photo editing services for photographers and brands",
       potential: "Growing market with increasing demand for high-quality editing"
     },
     { 
       business: "Fashion Content Creation Agency",
-      investment: "₹8-40 lakhs",
+      investment: "â‚¹8-40 lakhs",
       description: "Complete content creation including photography, videography, and social media",
       potential: "High demand with digital marketing growth and brand needs"
     }
@@ -828,3 +843,5 @@ export default function FashionPhotographerPage() {
     </main>
   );
 }
+
+

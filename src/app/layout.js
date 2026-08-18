@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/navbar";
 import Footer from "@/components/footer";
 import AdSense from "../components/AdSense";
+import StructuredData from "@/components/structured-data";
 import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
@@ -133,6 +134,8 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-5CHCMH3RKE');
           `}
         </Script>
+
+        <StructuredData type="WebSite" />
 
         <Navbar />
 

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaVideo, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -31,6 +34,18 @@ import {
   FaStar
 } from 'react-icons/fa';
 
+const careerSlug = 'film-director';
+const careerTitle = 'Complete Guide to Becoming a Film Director';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function FilmDirectorPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's in Film Studies/Mass Communication preferred" },
@@ -44,40 +59,40 @@ export default function FilmDirectorPage() {
       type: "Independent Filmmaker", 
       duration: "2-5 years", 
       requirement: "Personal projects & short films",
-      cost: "₹5-15 lakhs",
+      cost: "â‚¹5-15 lakhs",
       description: "Create independent films with limited budgets"
     },
     { 
       type: "Assistant Director", 
       duration: "1-3 years", 
       requirement: "Film school or industry experience",
-      cost: "₹2-8 lakhs",
+      cost: "â‚¹2-8 lakhs",
       description: "Work under established directors to learn the craft"
     },
     { 
       type: "Commercial Director", 
       duration: "3-7 years", 
       requirement: "Portfolio of commercials/music videos",
-      cost: "₹10-25 lakhs",
+      cost: "â‚¹10-25 lakhs",
       description: "Direct advertisements and promotional content"
     },
     { 
       type: "Feature Film Director", 
       duration: "5-10 years", 
       requirement: "Proven track record and industry connections",
-      cost: "₹25-100 lakhs",
+      cost: "â‚¹25-100 lakhs",
       description: "Direct full-length theatrical releases"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Film School Graduate/Intern", years: "0-1 year", salary: "₹15,000-30,000/month" },
-    { rank: "Assistant Director", years: "1-3 years", salary: "₹30,000-80,000/month" },
-    { rank: "Second Unit Director", years: "3-5 years", salary: "₹80,000-2 lakhs/month" },
-    { rank: "Independent/Short Film Director", years: "2-6 years", salary: "₹1-5 lakhs/project" },
-    { rank: "Commercial/Music Video Director", years: "4-8 years", salary: "₹2-10 lakhs/project" },
-    { rank: "Feature Film Director", years: "8-15 years", salary: "₹10-50 lakhs/film" },
-    { rank: "Established Director", years: "15+ years", salary: "₹1-10 crores/film" }
+    { rank: "Film School Graduate/Intern", years: "0-1 year", salary: "â‚¹15,000-30,000/month" },
+    { rank: "Assistant Director", years: "1-3 years", salary: "â‚¹30,000-80,000/month" },
+    { rank: "Second Unit Director", years: "3-5 years", salary: "â‚¹80,000-2 lakhs/month" },
+    { rank: "Independent/Short Film Director", years: "2-6 years", salary: "â‚¹1-5 lakhs/project" },
+    { rank: "Commercial/Music Video Director", years: "4-8 years", salary: "â‚¹2-10 lakhs/project" },
+    { rank: "Feature Film Director", years: "8-15 years", salary: "â‚¹10-50 lakhs/film" },
+    { rank: "Established Director", years: "15+ years", salary: "â‚¹1-10 crores/film" }
   ];
 
   const skillRequirements = [
@@ -492,3 +507,5 @@ export default function FilmDirectorPage() {
     </main>
   );
 }
+
+

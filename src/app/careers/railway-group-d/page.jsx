@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaTrain, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -24,6 +27,18 @@ import {
   FaUserTie,
   FaCog
 } from 'react-icons/fa';
+
+const careerSlug = 'railway-group-d';
+const careerTitle = 'Railway Group D Complete Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function RailwayGroupDPage() {
   const eligibilityData = [
@@ -58,12 +73,12 @@ export default function RailwayGroupDPage() {
   ];
 
   const jobProfiles = [
-    { post: "Track Maintainer", department: "Engineering", salary: "₹18,000-22,000", duties: "Track maintenance and repair work" },
-    { post: "Helper/Assistant", department: "Mechanical", salary: "₹18,000-22,000", duties: "Assisting in locomotive maintenance" },
-    { post: "Porter", department: "Commercial", salary: "₹18,000-22,000", duties: "Passenger assistance and luggage handling" },
-    { post: "Gateman", department: "Operating", salary: "₹18,000-22,000", duties: "Level crossing gate operations" },
-    { post: "Pointsman", department: "Operating", salary: "₹18,000-22,000", duties: "Signal and point operations" },
-    { post: "Hospital Attendant", department: "Medical", salary: "₹18,000-22,000", duties: "Hospital and medical assistance" }
+    { post: "Track Maintainer", department: "Engineering", salary: "â‚¹18,000-22,000", duties: "Track maintenance and repair work" },
+    { post: "Helper/Assistant", department: "Mechanical", salary: "â‚¹18,000-22,000", duties: "Assisting in locomotive maintenance" },
+    { post: "Porter", department: "Commercial", salary: "â‚¹18,000-22,000", duties: "Passenger assistance and luggage handling" },
+    { post: "Gateman", department: "Operating", salary: "â‚¹18,000-22,000", duties: "Level crossing gate operations" },
+    { post: "Pointsman", department: "Operating", salary: "â‚¹18,000-22,000", duties: "Signal and point operations" },
+    { post: "Hospital Attendant", department: "Medical", salary: "â‚¹18,000-22,000", duties: "Hospital and medical assistance" }
   ];
 
   const syllabus = [
@@ -97,12 +112,12 @@ export default function RailwayGroupDPage() {
   ];
 
   const careerGrowth = [
-    { level: "Group D Employee", experience: "0-5 years", salary: "₹18,000-22,000" },
-    { level: "Senior Group D", experience: "5-10 years", salary: "₹20,000-25,000" },
-    { level: "Group C (Promotion)", experience: "10-15 years", salary: "₹25,500-30,000" },
-    { level: "Assistant Loco Pilot (ALP)", experience: "Through exam", salary: "₹35,000-40,000" },
-    { level: "Loco Pilot", experience: "After ALP training", salary: "₹40,000-50,000" },
-    { level: "Senior Section Engineer", experience: "20+ years", salary: "₹50,000-70,000" }
+    { level: "Group D Employee", experience: "0-5 years", salary: "â‚¹18,000-22,000" },
+    { level: "Senior Group D", experience: "5-10 years", salary: "â‚¹20,000-25,000" },
+    { level: "Group C (Promotion)", experience: "10-15 years", salary: "â‚¹25,500-30,000" },
+    { level: "Assistant Loco Pilot (ALP)", experience: "Through exam", salary: "â‚¹35,000-40,000" },
+    { level: "Loco Pilot", experience: "After ALP training", salary: "â‚¹40,000-50,000" },
+    { level: "Senior Section Engineer", experience: "20+ years", salary: "â‚¹50,000-70,000" }
   ];
 
   const physicalStandards = [
@@ -459,3 +474,5 @@ export default function RailwayGroupDPage() {
     </main>
   );
 }
+
+

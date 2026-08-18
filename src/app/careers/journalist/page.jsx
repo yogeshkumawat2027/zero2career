@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaNewspaper, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -33,6 +36,18 @@ import {
   FaBroadcastTower,
   FaPhotoVideo
 } from 'react-icons/fa';
+
+const careerSlug = 'journalist';
+const careerTitle = 'Complete Guide to Becoming a Journalist in India';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function JournalistPage() {
   const eligibilityData = [
@@ -74,14 +89,14 @@ export default function JournalistPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Trainee Reporter", years: "0-1 years", salary: "₹12,000 - ₹25,000" },
-    { rank: "Junior Reporter", years: "1-3 years", salary: "₹25,000 - ₹40,000" },
-    { rank: "Senior Reporter", years: "3-6 years", salary: "₹40,000 - ₹65,000" },
-    { rank: "Special Correspondent", years: "6-10 years", salary: "₹65,000 - ₹1,00,000" },
-    { rank: "Assistant Editor", years: "8-12 years", salary: "₹80,000 - ₹1,50,000" },
-    { rank: "Deputy Editor", years: "10-15 years", salary: "₹1,50,000 - ₹2,50,000" },
-    { rank: "Chief Reporter", years: "12-18 years", salary: "₹2,00,000 - ₹3,00,000" },
-    { rank: "Editor-in-Chief", years: "15+ years", salary: "₹3,00,000 - ₹10,00,000" }
+    { rank: "Trainee Reporter", years: "0-1 years", salary: "â‚¹12,000 - â‚¹25,000" },
+    { rank: "Junior Reporter", years: "1-3 years", salary: "â‚¹25,000 - â‚¹40,000" },
+    { rank: "Senior Reporter", years: "3-6 years", salary: "â‚¹40,000 - â‚¹65,000" },
+    { rank: "Special Correspondent", years: "6-10 years", salary: "â‚¹65,000 - â‚¹1,00,000" },
+    { rank: "Assistant Editor", years: "8-12 years", salary: "â‚¹80,000 - â‚¹1,50,000" },
+    { rank: "Deputy Editor", years: "10-15 years", salary: "â‚¹1,50,000 - â‚¹2,50,000" },
+    { rank: "Chief Reporter", years: "12-18 years", salary: "â‚¹2,00,000 - â‚¹3,00,000" },
+    { rank: "Editor-in-Chief", years: "15+ years", salary: "â‚¹3,00,000 - â‚¹10,00,000" }
   ];
 
   const skillsRequired = [
@@ -584,19 +599,19 @@ export default function JournalistPage() {
                   <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-100">
                     <div className="flex justify-between items-center">
                       <span className="font-medium text-gray-800">Fresher (0-1 year)</span>
-                      <span className="text-green-700 font-bold">₹15,000 - ₹30,000</span>
+                      <span className="text-green-700 font-bold">â‚¹15,000 - â‚¹30,000</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-100">
                     <div className="flex justify-between items-center">
                       <span className="font-medium text-gray-800">Mid-level (5-8 years)</span>
-                      <span className="text-blue-700 font-bold">₹50,000 - ₹1,00,000</span>
+                      <span className="text-blue-700 font-bold">â‚¹50,000 - â‚¹1,00,000</span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg p-4 border border-purple-100">
                     <div className="flex justify-between items-center">
                       <span className="font-medium text-gray-800">Senior (10+ years)</span>
-                      <span className="text-purple-700 font-bold">₹1,50,000 - ₹5,00,000</span>
+                      <span className="text-purple-700 font-bold">â‚¹1,50,000 - â‚¹5,00,000</span>
                     </div>
                   </div>
                 </div>
@@ -716,3 +731,5 @@ export default function JournalistPage() {
     </main>
   );
 }
+
+

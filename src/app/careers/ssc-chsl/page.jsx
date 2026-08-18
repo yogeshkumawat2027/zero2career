@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUniversity, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -23,6 +26,18 @@ import {
   FaCalculator,
   FaUserTie
 } from 'react-icons/fa';
+
+const careerSlug = 'ssc-chsl';
+const careerTitle = 'SSC CHSL Officer Complete Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function SSCCHSLPage() {
   const eligibilityData = [
@@ -57,12 +72,12 @@ export default function SSCCHSLPage() {
   ];
 
   const jobProfiles = [
-    { post: "Lower Division Clerk (LDC)", department: "Various Ministries", salary: "₹19,900-63,200", grade: "Group C" },
-    { post: "Junior Secretariat Assistant (JSA)", department: "Various Ministries", salary: "₹19,900-63,200", grade: "Group C" },
-    { post: "Postal Assistant", department: "Department of Posts", salary: "₹25,500-81,100", grade: "Group C" },
-    { post: "Sorting Assistant", department: "Department of Posts", salary: "₹25,500-81,100", grade: "Group C" },
-    { post: "Data Entry Operator (DEO)", department: "Various Ministries", salary: "₹25,500-81,100", grade: "Group C" },
-    { post: "Court Clerk", department: "High Courts", salary: "₹19,900-63,200", grade: "Group C" }
+    { post: "Lower Division Clerk (LDC)", department: "Various Ministries", salary: "â‚¹19,900-63,200", grade: "Group C" },
+    { post: "Junior Secretariat Assistant (JSA)", department: "Various Ministries", salary: "â‚¹19,900-63,200", grade: "Group C" },
+    { post: "Postal Assistant", department: "Department of Posts", salary: "â‚¹25,500-81,100", grade: "Group C" },
+    { post: "Sorting Assistant", department: "Department of Posts", salary: "â‚¹25,500-81,100", grade: "Group C" },
+    { post: "Data Entry Operator (DEO)", department: "Various Ministries", salary: "â‚¹25,500-81,100", grade: "Group C" },
+    { post: "Court Clerk", department: "High Courts", salary: "â‚¹19,900-63,200", grade: "Group C" }
   ];
 
   const syllabus = [
@@ -96,12 +111,12 @@ export default function SSCCHSLPage() {
   ];
 
   const careerGrowth = [
-    { level: "LDC/JSA", experience: "0-5 years", salary: "₹19,900-63,200" },
-    { level: "Upper Division Clerk", experience: "5-10 years", salary: "₹25,500-81,100" },
-    { level: "Assistant", experience: "10-15 years", salary: "₹35,400-1,12,400" },
-    { level: "Section Officer", experience: "15-20 years", salary: "₹44,900-1,42,400" },
-    { level: "Under Secretary", experience: "20-25 years", salary: "₹56,100-1,77,500" },
-    { level: "Deputy Secretary", experience: "25+ years", salary: "₹67,700-2,08,700" }
+    { level: "LDC/JSA", experience: "0-5 years", salary: "â‚¹19,900-63,200" },
+    { level: "Upper Division Clerk", experience: "5-10 years", salary: "â‚¹25,500-81,100" },
+    { level: "Assistant", experience: "10-15 years", salary: "â‚¹35,400-1,12,400" },
+    { level: "Section Officer", experience: "15-20 years", salary: "â‚¹44,900-1,42,400" },
+    { level: "Under Secretary", experience: "20-25 years", salary: "â‚¹56,100-1,77,500" },
+    { level: "Deputy Secretary", experience: "25+ years", salary: "â‚¹67,700-2,08,700" }
   ];
 
   const skillTests = [
@@ -404,3 +419,5 @@ export default function SSCCHSLPage() {
     </main>
   );
 }
+
+

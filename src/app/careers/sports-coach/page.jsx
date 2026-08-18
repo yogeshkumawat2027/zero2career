@@ -1,5 +1,8 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import React from 'react';
-import { 
+import {
+
+
   FaRunning, 
   FaTrophy, 
   FaHeartbeat, 
@@ -34,6 +37,18 @@ import {
   FaComments
 } from 'react-icons/fa';
 
+const careerSlug = 'sports-coach';
+const careerTitle = 'Sports Coach';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function SportsCoachCareerPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 via-teal-900 to-blue-800">
@@ -51,7 +66,7 @@ export default function SportsCoachCareerPage() {
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <span className="bg-green-600 px-4 py-2 rounded-full">Athlete Development</span>
             <span className="bg-teal-600 px-4 py-2 rounded-full">Performance Training</span>
-            <span className="bg-blue-600 px-4 py-2 rounded-full">₹3.0-50+ LPA</span>
+            <span className="bg-blue-600 px-4 py-2 rounded-full">â‚¹3.0-50+ LPA</span>
           </div>
         </div>
       </section>
@@ -100,9 +115,9 @@ export default function SportsCoachCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Team Sports Coach</h3>
               <p className="text-gray-300 mb-4">Lead football, cricket, basketball, volleyball, and hockey teams through tactical training and game strategy.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Team strategy and tactics</li>
-                <li>• Player coordination and roles</li>
-                <li>• Game analysis and planning</li>
+                <li>â€¢ Team strategy and tactics</li>
+                <li>â€¢ Player coordination and roles</li>
+                <li>â€¢ Game analysis and planning</li>
               </ul>
             </div>
 
@@ -111,9 +126,9 @@ export default function SportsCoachCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Individual Sports Coach</h3>
               <p className="text-gray-300 mb-4">Train athletes in tennis, badminton, athletics, swimming, and other individual competitive sports.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Technique refinement</li>
-                <li>• Personal performance goals</li>
-                <li>• Mental conditioning</li>
+                <li>â€¢ Technique refinement</li>
+                <li>â€¢ Personal performance goals</li>
+                <li>â€¢ Mental conditioning</li>
               </ul>
             </div>
 
@@ -122,9 +137,9 @@ export default function SportsCoachCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Fitness & Strength Coach</h3>
               <p className="text-gray-300 mb-4">Develop physical conditioning programs, strength training, and injury prevention protocols for athletes.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Strength and conditioning</li>
-                <li>• Injury prevention programs</li>
-                <li>• Fitness assessment and planning</li>
+                <li>â€¢ Strength and conditioning</li>
+                <li>â€¢ Injury prevention programs</li>
+                <li>â€¢ Fitness assessment and planning</li>
               </ul>
             </div>
 
@@ -133,9 +148,9 @@ export default function SportsCoachCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Youth Development Coach</h3>
               <p className="text-gray-300 mb-4">Focus on developing young talent through age-appropriate training and character building programs.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Age-specific training methods</li>
-                <li>• Skill development progression</li>
-                <li>• Character and discipline building</li>
+                <li>â€¢ Age-specific training methods</li>
+                <li>â€¢ Skill development progression</li>
+                <li>â€¢ Character and discipline building</li>
               </ul>
             </div>
 
@@ -144,9 +159,9 @@ export default function SportsCoachCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Elite Performance Coach</h3>
               <p className="text-gray-300 mb-4">Work with professional athletes and national teams to achieve peak competitive performance.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• High-performance training</li>
-                <li>• Competition preparation</li>
-                <li>• Advanced analytics and technology</li>
+                <li>â€¢ High-performance training</li>
+                <li>â€¢ Competition preparation</li>
+                <li>â€¢ Advanced analytics and technology</li>
               </ul>
             </div>
 
@@ -155,9 +170,9 @@ export default function SportsCoachCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Rehabilitation & Adaptive Coach</h3>
               <p className="text-gray-300 mb-4">Specialize in sports rehabilitation, adaptive sports, and coaching athletes with disabilities.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Injury recovery programs</li>
-                <li>• Adaptive sports techniques</li>
-                <li>• Therapeutic exercise protocols</li>
+                <li>â€¢ Injury recovery programs</li>
+                <li>â€¢ Adaptive sports techniques</li>
+                <li>â€¢ Therapeutic exercise protocols</li>
               </ul>
             </div>
           </div>
@@ -176,7 +191,7 @@ export default function SportsCoachCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Assistant Coach / Trainee Coach</h3>
                 <p className="text-gray-300 mt-2">Learn coaching fundamentals, assist senior coaches, and work with beginner or youth teams.</p>
-                <p className="text-green-400 font-semibold mt-1">₹3.0 - 6.0 LPA</p>
+                <p className="text-green-400 font-semibold mt-1">â‚¹3.0 - 6.0 LPA</p>
               </div>
             </div>
 
@@ -185,7 +200,7 @@ export default function SportsCoachCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Sports Coach</h3>
                 <p className="text-gray-300 mt-2">Lead teams independently, develop training programs, and manage athlete performance and development.</p>
-                <p className="text-teal-400 font-semibold mt-1">₹6.0 - 12.0 LPA</p>
+                <p className="text-teal-400 font-semibold mt-1">â‚¹6.0 - 12.0 LPA</p>
               </div>
             </div>
 
@@ -194,7 +209,7 @@ export default function SportsCoachCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Senior Coach / Specialist Coach</h3>
                 <p className="text-gray-300 mt-2">Handle elite teams, specialize in advanced techniques, and mentor junior coaching staff.</p>
-                <p className="text-blue-400 font-semibold mt-1">₹12.0 - 25.0 LPA</p>
+                <p className="text-blue-400 font-semibold mt-1">â‚¹12.0 - 25.0 LPA</p>
               </div>
             </div>
 
@@ -203,7 +218,7 @@ export default function SportsCoachCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Head Coach / Performance Director</h3>
                 <p className="text-gray-300 mt-2">Lead entire coaching departments, oversee multiple teams, and drive organizational sports strategy.</p>
-                <p className="text-purple-400 font-semibold mt-1">₹25.0 - 40.0 LPA</p>
+                <p className="text-purple-400 font-semibold mt-1">â‚¹25.0 - 40.0 LPA</p>
               </div>
             </div>
 
@@ -212,7 +227,7 @@ export default function SportsCoachCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">National Coach / Sports Director</h3>
                 <p className="text-gray-300 mt-2">Coach national teams, establish training standards, and influence sports development at country level.</p>
-                <p className="text-yellow-400 font-semibold mt-1">₹40.0 - 50.0+ LPA</p>
+                <p className="text-yellow-400 font-semibold mt-1">â‚¹40.0 - 50.0+ LPA</p>
               </div>
             </div>
           </div>
@@ -294,11 +309,11 @@ export default function SportsCoachCareerPage() {
               <FaDumbbell className="text-3xl text-green-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Physical Training</h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Strength and conditioning programs</li>
-                <li>• Endurance and stamina building</li>
-                <li>• Flexibility and mobility training</li>
-                <li>• Sport-specific skill development</li>
-                <li>• Injury prevention protocols</li>
+                <li>â€¢ Strength and conditioning programs</li>
+                <li>â€¢ Endurance and stamina building</li>
+                <li>â€¢ Flexibility and mobility training</li>
+                <li>â€¢ Sport-specific skill development</li>
+                <li>â€¢ Injury prevention protocols</li>
               </ul>
             </div>
 
@@ -306,11 +321,11 @@ export default function SportsCoachCareerPage() {
               <FaBrain className="text-3xl text-teal-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Mental & Tactical</h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Sports psychology and mental training</li>
-                <li>• Game strategy and tactical analysis</li>
-                <li>• Decision-making under pressure</li>
-                <li>• Concentration and focus techniques</li>
-                <li>• Team cohesion and communication</li>
+                <li>â€¢ Sports psychology and mental training</li>
+                <li>â€¢ Game strategy and tactical analysis</li>
+                <li>â€¢ Decision-making under pressure</li>
+                <li>â€¢ Concentration and focus techniques</li>
+                <li>â€¢ Team cohesion and communication</li>
               </ul>
             </div>
 
@@ -318,11 +333,11 @@ export default function SportsCoachCareerPage() {
               <FaNetworkWired className="text-3xl text-blue-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Technology & Analytics</h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Video analysis software</li>
-                <li>• Performance tracking devices</li>
-                <li>• Biomechanics analysis tools</li>
-                <li>• Fitness monitoring apps</li>
-                <li>• Data-driven performance insights</li>
+                <li>â€¢ Video analysis software</li>
+                <li>â€¢ Performance tracking devices</li>
+                <li>â€¢ Biomechanics analysis tools</li>
+                <li>â€¢ Fitness monitoring apps</li>
+                <li>â€¢ Data-driven performance insights</li>
               </ul>
             </div>
           </div>
@@ -384,23 +399,23 @@ export default function SportsCoachCareerPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Assistant Coach</span>
-                  <span className="text-green-400 font-semibold">₹3.0 - 6.0 LPA</span>
+                  <span className="text-green-400 font-semibold">â‚¹3.0 - 6.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Sports Coach</span>
-                  <span className="text-teal-400 font-semibold">₹6.0 - 12.0 LPA</span>
+                  <span className="text-teal-400 font-semibold">â‚¹6.0 - 12.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Senior Coach</span>
-                  <span className="text-blue-400 font-semibold">₹12.0 - 25.0 LPA</span>
+                  <span className="text-blue-400 font-semibold">â‚¹12.0 - 25.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Head Coach</span>
-                  <span className="text-purple-400 font-semibold">₹25.0 - 40.0 LPA</span>
+                  <span className="text-purple-400 font-semibold">â‚¹25.0 - 40.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-gray-300">National Coach</span>
-                  <span className="text-yellow-400 font-semibold">₹40.0 - 50.0+ LPA</span>
+                  <span className="text-yellow-400 font-semibold">â‚¹40.0 - 50.0+ LPA</span>
                 </div>
               </div>
             </div>
@@ -546,3 +561,5 @@ export default function SportsCoachCareerPage() {
     </div>
   );
 }
+
+

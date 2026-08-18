@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaMountain, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -105,6 +108,18 @@ import {
   FaLayerGroup
 } from 'react-icons/fa';
 
+const careerSlug = 'geologist';
+const careerTitle = 'Geologist Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function GeologistPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.Sc./M.Sc. in Geology or Earth Sciences" },
@@ -119,7 +134,7 @@ export default function GeologistPage() {
       duration: "3-4 years",
       program: "B.Sc. Geology, Earth Sciences, Geophysics, Mining Engineering",
       focus: "Mineralogy, petrology, structural geology, field mapping, laboratory techniques",
-      cost: "₹30,000-4 LPA (government to private colleges)",
+      cost: "â‚¹30,000-4 LPA (government to private colleges)",
       outcomes: "Junior geologist, field assistant, lab technician, mining trainee positions"
     },
     { 
@@ -127,7 +142,7 @@ export default function GeologistPage() {
       duration: "2 years",
       program: "M.Sc. Geology, Applied Geology, Environmental Geology, Petroleum Geology",
       focus: "Specialized geology, research methodology, advanced fieldwork, thesis project",
-      cost: "₹50,000-6 LPA for specialized programs",
+      cost: "â‚¹50,000-6 LPA for specialized programs",
       outcomes: "Geologist, research associate, exploration geologist, environmental consultant"
     },
     { 
@@ -135,7 +150,7 @@ export default function GeologistPage() {
       duration: "6 months - 2 years",
       program: "PG Diploma in Petroleum Geology, Mining, Environmental Impact Assessment",
       focus: "Industry-specific skills, software training, regulatory knowledge",
-      cost: "₹50,000-3 LPA for specialized certifications",
+      cost: "â‚¹50,000-3 LPA for specialized certifications",
       outcomes: "Specialized roles in oil & gas, mining, environmental consulting, government"
     },
     { 
@@ -143,7 +158,7 @@ export default function GeologistPage() {
       duration: "3-5 years",
       program: "Ph.D. in Geology, Earth Sciences, specialized research areas",
       focus: "Original research, academic expertise, advanced analytical techniques",
-      cost: "₹25,000-2 LPA with potential fellowship funding",
+      cost: "â‚¹25,000-2 LPA with potential fellowship funding",
       outcomes: "Research scientist, professor, senior consultant, laboratory director"
     }
   ];
@@ -198,62 +213,62 @@ export default function GeologistPage() {
       sector: "Oil & Gas Industry",
       companies: "ONGC, Oil India, Reliance, Cairn Energy, Shell, ExxonMobil, BP",
       roles: "Petroleum Geologist, Exploration Manager, Reservoir Engineer, Drilling Geologist",
-      salary: "₹6-40 LPA",
+      salary: "â‚¹6-40 LPA",
       benefits: "High compensation, global opportunities, advanced technology, field allowances"
     },
     { 
       sector: "Mining Companies",
       companies: "Coal India, Vedanta, Hindalco, Tata Steel, Adani Mining, Rio Tinto, BHP",
       roles: "Mining Geologist, Exploration Geologist, Mine Planning Engineer, Resource Geologist",
-      salary: "₹4-25 LPA",
+      salary: "â‚¹4-25 LPA",
       benefits: "Stable industry, diverse locations, technical challenges, career progression"
     },
     { 
       sector: "Environmental Consulting",
       companies: "ERM, AECOM, Ramboll, CEPT University, Environmental consultancies",
       roles: "Environmental Geologist, Impact Assessment Specialist, Remediation Consultant, Project Manager",
-      salary: "₹3-20 LPA",
+      salary: "â‚¹3-20 LPA",
       benefits: "Social impact, diverse projects, growing field, regulatory expertise"
     },
     { 
       sector: "Government Organizations",
       companies: "Geological Survey of India, CGWB, State Mining Departments, MOEF&CC",
       roles: "Geologist, Hydrogeologist, Mining Officer, Environmental Officer, Survey Officer",
-      salary: "₹4-18 LPA",
+      salary: "â‚¹4-18 LPA",
       benefits: "Job security, pension, research opportunities, public service, work-life balance"
     },
     { 
       sector: "Research Institutions",
       companies: "CSIR institutes, Universities, ISRO, DST, International research organizations",
       roles: "Research Scientist, Postdoctoral Fellow, Professor, Laboratory Manager",
-      salary: "₹3-25 LPA",
+      salary: "â‚¹3-25 LPA",
       benefits: "Research freedom, academic environment, international collaboration, knowledge creation"
     },
     { 
       sector: "Infrastructure & Construction",
       companies: "L&T, Gammon India, HCC, AFCONS, Infrastructure consulting firms",
       roles: "Engineering Geologist, Site Investigation Expert, Geotechnical Consultant, Project Geologist",
-      salary: "₹4-22 LPA",
+      salary: "â‚¹4-22 LPA",
       benefits: "Infrastructure development, technical challenges, project diversity, growth opportunities"
     }
   ];
 
   const careerProgression = [
-    { level: "Junior Geologist/Field Assistant", experience: "0-3 years", salary: "₹2.5-6 LPA", focus: "Field mapping, sample collection, basic analysis, report preparation" },
-    { level: "Geologist/Project Geologist", experience: "3-7 years", salary: "₹5-15 LPA", focus: "Independent project work, client interaction, technical analysis, team coordination" },
-    { level: "Senior Geologist/Specialist", experience: "7-12 years", salary: "₹12-25 LPA", focus: "Expert analysis, project leadership, business development, mentoring juniors" },
-    { level: "Principal Geologist/Manager", experience: "12-18 years", salary: "₹20-45 LPA", focus: "Department management, strategic planning, client relationships, technical oversight" },
-    { level: "Chief Geologist/Director", experience: "18-25 years", salary: "₹35-80 LPA", focus: "Organizational leadership, business strategy, industry expertise, stakeholder management" },
-    { level: "Consultant/Professor/VP", experience: "25+ years", salary: "₹50 LPA-2 Cr", focus: "Independent consulting, academic leadership, industry influence, expert advisory roles" }
+    { level: "Junior Geologist/Field Assistant", experience: "0-3 years", salary: "â‚¹2.5-6 LPA", focus: "Field mapping, sample collection, basic analysis, report preparation" },
+    { level: "Geologist/Project Geologist", experience: "3-7 years", salary: "â‚¹5-15 LPA", focus: "Independent project work, client interaction, technical analysis, team coordination" },
+    { level: "Senior Geologist/Specialist", experience: "7-12 years", salary: "â‚¹12-25 LPA", focus: "Expert analysis, project leadership, business development, mentoring juniors" },
+    { level: "Principal Geologist/Manager", experience: "12-18 years", salary: "â‚¹20-45 LPA", focus: "Department management, strategic planning, client relationships, technical oversight" },
+    { level: "Chief Geologist/Director", experience: "18-25 years", salary: "â‚¹35-80 LPA", focus: "Organizational leadership, business strategy, industry expertise, stakeholder management" },
+    { level: "Consultant/Professor/VP", experience: "25+ years", salary: "â‚¹50 LPA-2 Cr", focus: "Independent consulting, academic leadership, industry influence, expert advisory roles" }
   ];
 
   const topColleges = [
-    { name: "Indian School of Mines (ISM Dhanbad)", courses: "B.Tech/M.Tech Mining, Petroleum Engineering, Applied Geology", ranking: "Premier Mining Institute", fees: "₹2-3 LPA", placements: "Excellent in mining & petroleum" },
-    { name: "Banaras Hindu University (BHU)", courses: "B.Sc./M.Sc. Geology, Applied Geology", ranking: "Top Geology Department", fees: "₹15,000", placements: "Good government & private placements" },
-    { name: "Jadavpur University", courses: "B.Sc./M.Sc. Geological Sciences", ranking: "Premier State University", fees: "₹8,000", placements: "Strong industry connections" },
-    { name: "University of Delhi", courses: "B.Sc./M.Sc. Geology", ranking: "Central University", fees: "₹12,000", placements: "Good academic & research opportunities" },
-    { name: "Presidency University, Kolkata", courses: "B.Sc./M.Sc. Geology", ranking: "Historic Institution", fees: "₹10,000", placements: "Academic excellence focus" },
-    { name: "Osmania University", courses: "B.Sc./M.Sc. Geology, Applied Geology", ranking: "Strong Geology Department", fees: "₹6,000", placements: "Regional industry connections" }
+    { name: "Indian School of Mines (ISM Dhanbad)", courses: "B.Tech/M.Tech Mining, Petroleum Engineering, Applied Geology", ranking: "Premier Mining Institute", fees: "â‚¹2-3 LPA", placements: "Excellent in mining & petroleum" },
+    { name: "Banaras Hindu University (BHU)", courses: "B.Sc./M.Sc. Geology, Applied Geology", ranking: "Top Geology Department", fees: "â‚¹15,000", placements: "Good government & private placements" },
+    { name: "Jadavpur University", courses: "B.Sc./M.Sc. Geological Sciences", ranking: "Premier State University", fees: "â‚¹8,000", placements: "Strong industry connections" },
+    { name: "University of Delhi", courses: "B.Sc./M.Sc. Geology", ranking: "Central University", fees: "â‚¹12,000", placements: "Good academic & research opportunities" },
+    { name: "Presidency University, Kolkata", courses: "B.Sc./M.Sc. Geology", ranking: "Historic Institution", fees: "â‚¹10,000", placements: "Academic excellence focus" },
+    { name: "Osmania University", courses: "B.Sc./M.Sc. Geology, Applied Geology", ranking: "Strong Geology Department", fees: "â‚¹6,000", placements: "Regional industry connections" }
   ];
 
   const technicalSkills = [
@@ -276,14 +291,14 @@ export default function GeologistPage() {
   ];
 
   const salaryRanges = [
-    { sector: "Oil & Gas Industry", fresher: "₆-12 LPA", experienced: "₹15-35 LPA", senior: "₹30-60 LPA" },
-    { sector: "Mining Companies", fresher: "₹4-9 LPA", experienced: "₹10-25 LPA", senior: "₹20-45 LPA" },
-    { sector: "Environmental Consulting", fresher: "₹3-7 LPA", experienced: "₹8-20 LPA", senior: "₹18-40 LPA" },
-    { sector: "Government Jobs", fresher: "₹4-8 LPA", experienced: "₹8-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Research Institutions", fresher: "₹3-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Infrastructure/Construction", fresher: "₹4-10 LPA", experienced: "₹10-22 LPA", senior: "₹20-40 LPA" },
-    { sector: "International Opportunities", fresher: "₹8-20 LPA", experienced: "₹20-50 LPA", senior: "₹40-1.5 Cr" },
-    { sector: "Independent Consulting", fresher: "₹3-8 LPA", experienced: "₹12-35 LPA", senior: "₹25-80 LPA" }
+    { sector: "Oil & Gas Industry", fresher: "â‚†-12 LPA", experienced: "â‚¹15-35 LPA", senior: "â‚¹30-60 LPA" },
+    { sector: "Mining Companies", fresher: "â‚¹4-9 LPA", experienced: "â‚¹10-25 LPA", senior: "â‚¹20-45 LPA" },
+    { sector: "Environmental Consulting", fresher: "â‚¹3-7 LPA", experienced: "â‚¹8-20 LPA", senior: "â‚¹18-40 LPA" },
+    { sector: "Government Jobs", fresher: "â‚¹4-8 LPA", experienced: "â‚¹8-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Research Institutions", fresher: "â‚¹3-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Infrastructure/Construction", fresher: "â‚¹4-10 LPA", experienced: "â‚¹10-22 LPA", senior: "â‚¹20-40 LPA" },
+    { sector: "International Opportunities", fresher: "â‚¹8-20 LPA", experienced: "â‚¹20-50 LPA", senior: "â‚¹40-1.5 Cr" },
+    { sector: "Independent Consulting", fresher: "â‚¹3-8 LPA", experienced: "â‚¹12-35 LPA", senior: "â‚¹25-80 LPA" }
   ];
 
   const emergingTrends = [
@@ -330,7 +345,7 @@ export default function GeologistPage() {
       cert: "Professional Geologist (PG) License",
       provider: "State Geological Boards/Professional Bodies",
       duration: "4+ years experience + examination",
-      cost: "₹10,000-50,000",
+      cost: "â‚¹10,000-50,000",
       description: "Professional licensing for practicing geology and signing geological reports"
     },
     { 
@@ -344,14 +359,14 @@ export default function GeologistPage() {
       cert: "Environmental Impact Assessment Certification",
       provider: "Quality Council of India/NABET",
       duration: "1-2 years experience + training",
-      cost: "₹25,000-1 LPA",
+      cost: "â‚¹25,000-1 LPA",
       description: "Certification for conducting environmental impact assessments"
     },
     { 
       cert: "GIS Professional Certification",
       provider: "ESRI, IGNOU, various institutes",
       duration: "6 months - 1 year",
-      cost: "₹15,000-75,000",
+      cost: "â‚¹15,000-75,000",
       description: "Specialized certification in Geographic Information Systems"
     },
     { 
@@ -366,37 +381,37 @@ export default function GeologistPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Geological Consulting Services",
-      investment: "₹5-30 lakhs",
+      investment: "â‚¹5-30 lakhs",
       description: "Independent consulting for mining, construction, and environmental projects",
       potential: "Growing infrastructure and mining sector with increasing regulatory requirements"
     },
     { 
       business: "Environmental Impact Assessment Firm",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Provide EIA services for industrial and infrastructure projects",
       potential: "Mandatory requirement for projects with strong government push for environmental compliance"
     },
     { 
       business: "Geotechnical Investigation Company",
-      investment: "₹15 lakhs-1 crore",
+      investment: "â‚¹15 lakhs-1 crore",
       description: "Site investigation services for construction and infrastructure projects",
       potential: "Booming construction industry and infrastructure development across India"
     },
     { 
       business: "Water Well Drilling & Hydrogeology",
-      investment: "₹20 lakhs-2 crores",
+      investment: "â‚¹20 lakhs-2 crores",
       description: "Groundwater exploration and water well drilling services",
       potential: "Critical need for water resources with growing water scarcity issues"
     },
     { 
       business: "Geological Software & Technology",
-      investment: "₹8-75 lakhs",
+      investment: "â‚¹8-75 lakhs",
       description: "Develop specialized software and technology solutions for geological applications",
       potential: "Growing digitalization in geological sciences and remote work trends"
     },
     { 
       business: "Mineral Exploration Services",
-      investment: "₹25 lakhs-3 crores",
+      investment: "â‚¹25 lakhs-3 crores",
       description: "Provide exploration services for mining companies and government organizations",
       potential: "India's push for self-reliance in critical minerals and resource exploration"
     }
@@ -844,3 +859,5 @@ export default function GeologistPage() {
     </main>
   );
 }
+
+

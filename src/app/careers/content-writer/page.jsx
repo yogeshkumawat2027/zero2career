@@ -1,7 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 
   import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaPen, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -30,6 +33,18 @@ import {
   FaCamera
 } from 'react-icons/fa';
 
+const careerSlug = 'content-writer';
+const careerTitle = 'Complete Guide to Becoming a Content Writer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ContentWriterPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's degree in any field (English/Journalism preferred)" },
@@ -43,39 +58,39 @@ export default function ContentWriterPage() {
       specialization: "Blog Content Writer", 
       duration: "3-6 months", 
       requirement: "Portfolio with 10-15 blog posts",
-      cost: "₹10,000-50,000",
+      cost: "â‚¹10,000-50,000",
       description: "Creating engaging blog posts for websites and businesses"
     },
     { 
       specialization: "SEO Content Writer", 
       duration: "6-12 months", 
       requirement: "SEO certification + content portfolio",
-      cost: "₹20,000-80,000",
+      cost: "â‚¹20,000-80,000",
       description: "Writing optimized content for search engines"
     },
     { 
       specialization: "Technical Writer", 
       duration: "12-18 months", 
       requirement: "Technical knowledge + writing samples",
-      cost: "₹30,000-1,20,000",
+      cost: "â‚¹30,000-1,20,000",
       description: "Creating documentation, manuals, and technical guides"
     },
     { 
       specialization: "Copywriter", 
       duration: "6-12 months", 
       requirement: "Marketing knowledge + creative portfolio",
-      cost: "₹25,000-1,00,000",
+      cost: "â‚¹25,000-1,00,000",
       description: "Writing persuasive content for marketing and advertising"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Content Writer", years: "0-1 year", salary: "₹15,000-30,000/month" },
-    { rank: "Content Writer", years: "1-3 years", salary: "₹30,000-50,000/month" },
-    { rank: "Senior Content Writer", years: "3-5 years", salary: "₹50,000-80,000/month" },
-    { rank: "Content Lead/Manager", years: "5-8 years", salary: "₹80,000-1,50,000/month" },
-    { rank: "Content Strategist", years: "8-12 years", salary: "₹1,50,000-3,00,000/month" },
-    { rank: "Head of Content/Director", years: "12+ years", salary: "₹3,00,000-6,00,000/month" }
+    { rank: "Junior Content Writer", years: "0-1 year", salary: "â‚¹15,000-30,000/month" },
+    { rank: "Content Writer", years: "1-3 years", salary: "â‚¹30,000-50,000/month" },
+    { rank: "Senior Content Writer", years: "3-5 years", salary: "â‚¹50,000-80,000/month" },
+    { rank: "Content Lead/Manager", years: "5-8 years", salary: "â‚¹80,000-1,50,000/month" },
+    { rank: "Content Strategist", years: "8-12 years", salary: "â‚¹1,50,000-3,00,000/month" },
+    { rank: "Head of Content/Director", years: "12+ years", salary: "â‚¹3,00,000-6,00,000/month" }
   ];
 
   const skillRequirements = [
@@ -499,3 +514,5 @@ export default function ContentWriterPage() {
   );
 }
   
+
+

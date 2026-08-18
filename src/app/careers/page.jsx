@@ -1,6 +1,5 @@
-
-'use client'
 import React from 'react';
+import Image from 'next/image';
 // Utility functions for badge colors
 const getDifficultyColor = (difficulty) => {
   switch (difficulty) {
@@ -27,19 +26,17 @@ import Link from 'next/link';
 import { careersList } from '../career';
 import { HiArrowRight } from 'react-icons/hi2';
 
+export const metadata = {
+  title: 'All Careers in India | Zero2Career',
+  description: 'Browse Zero2Career career guides with eligibility, roadmap, and skill requirements across technology, government, healthcare, finance, and creative fields.',
+  alternates: {
+    canonical: 'https://zero2career.in/careers',
+  },
+};
+
 export default function CareersPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 pt-24 pb-16 ">
-      <style jsx>{`
-        @media (min-width: 880px) {
-          .custom880\:mt-32 {
-            margin-top: 8rem !important;
-          }
-        }
-      `}</style>
-       <div className="block lg:hidden h-[100px]">
-          
-          </div>
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 pb-16 pt-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -60,11 +57,12 @@ export default function CareersPage() {
             >
               {/* Card Image */}
               <div className="relative h-40 overflow-hidden">
-                <img
+                <Image
                   src={career.image}
                   alt={career.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
+                  width={400}
+                  height={250}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* Category Badge */}
                 <div className={`absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold shadow ${getCategoryColor(career.category)}`}>

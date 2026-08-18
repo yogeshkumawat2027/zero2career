@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCalculator, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -22,6 +25,18 @@ import {
   FaUniversity,
   FaCertificate
 } from 'react-icons/fa';
+
+const careerSlug = 'ca';
+const careerTitle = 'Complete Guide to Becoming a Chartered Accountant';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function CharteredAccountantPage() {
   const eligibilityData = [
@@ -56,12 +71,12 @@ export default function CharteredAccountantPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Article Assistant", years: "During Articleship", salary: "₹15,000-₹25,000/month" },
-    { rank: "Junior CA", years: "0-3 years", salary: "₹6-12 LPA" },
-    { rank: "Senior Associate", years: "3-6 years", salary: "₹12-20 LPA" },
-    { rank: "Assistant Manager/Manager", years: "5-8 years", salary: "₹18-35 LPA" },
-    { rank: "Senior Manager/AVP", years: "8-12 years", salary: "₹30-60 LPA" },
-    { rank: "Partner/CFO/Director", years: "12+ years", salary: "₹50 LPA - 2 Cr+" }
+    { rank: "Article Assistant", years: "During Articleship", salary: "â‚¹15,000-â‚¹25,000/month" },
+    { rank: "Junior CA", years: "0-3 years", salary: "â‚¹6-12 LPA" },
+    { rank: "Senior Associate", years: "3-6 years", salary: "â‚¹12-20 LPA" },
+    { rank: "Assistant Manager/Manager", years: "5-8 years", salary: "â‚¹18-35 LPA" },
+    { rank: "Senior Manager/AVP", years: "8-12 years", salary: "â‚¹30-60 LPA" },
+    { rank: "Partner/CFO/Director", years: "12+ years", salary: "â‚¹50 LPA - 2 Cr+" }
   ];
 
   const keySubjects = [
@@ -84,12 +99,12 @@ export default function CharteredAccountantPage() {
   ];
 
   const specializationAreas = [
-    { area: "Public Practice (Audit)", tech: "Audit, Assurance, Compliance", demand: "High", salary: "₹8-50 LPA" },
-    { area: "Corporate Finance", tech: "M&A, Valuations, IPO", demand: "Very High", salary: "₹15-80 LPA" },
-    { area: "Taxation Services", tech: "Direct Tax, GST, International Tax", demand: "Very High", salary: "₹10-60 LPA" },
-    { area: "Management Consulting", tech: "Strategy, Operations, Risk", demand: "High", salary: "₹20-1 Cr+" },
-    { area: "Investment Banking", tech: "Corporate Finance, Capital Markets", demand: "High", salary: "₹25-2 Cr+" },
-    { area: "Government Services", tech: "IAS, State Services, PSUs", demand: "Moderate", salary: "₹8-25 LPA" }
+    { area: "Public Practice (Audit)", tech: "Audit, Assurance, Compliance", demand: "High", salary: "â‚¹8-50 LPA" },
+    { area: "Corporate Finance", tech: "M&A, Valuations, IPO", demand: "Very High", salary: "â‚¹15-80 LPA" },
+    { area: "Taxation Services", tech: "Direct Tax, GST, International Tax", demand: "Very High", salary: "â‚¹10-60 LPA" },
+    { area: "Management Consulting", tech: "Strategy, Operations, Risk", demand: "High", salary: "â‚¹20-1 Cr+" },
+    { area: "Investment Banking", tech: "Corporate Finance, Capital Markets", demand: "High", salary: "â‚¹25-2 Cr+" },
+    { area: "Government Services", tech: "IAS, State Services, PSUs", demand: "Moderate", salary: "â‚¹8-25 LPA" }
   ];
 
   const careerPaths = [
@@ -97,21 +112,21 @@ export default function CharteredAccountantPage() {
       path: "Public Practice", 
       duration: "Self-employed", 
       description: "Start own practice or join CA firm",
-      earning: "₹50,000-₹10 Cr+",
+      earning: "â‚¹50,000-â‚¹10 Cr+",
       nature: "Independent practice with clients"
     },
     { 
       path: "Corporate Sector", 
       duration: "Employment", 
       description: "Work in companies as finance professional",
-      earning: "₹6-80 LPA",
+      earning: "â‚¹6-80 LPA",
       nature: "Structured career growth in organizations"
     },
     { 
       path: "Government Services", 
       duration: "Service", 
       description: "Join civil services or government departments",
-      earning: "₹8-25 LPA",
+      earning: "â‚¹8-25 LPA",
       nature: "Stable government job with benefits"
     }
   ];
@@ -528,3 +543,5 @@ export default function CharteredAccountantPage() {
     </main>
   );
 }
+
+

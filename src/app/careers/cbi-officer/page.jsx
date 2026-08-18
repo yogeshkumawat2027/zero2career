@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaGavel, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -30,6 +33,18 @@ import {
   FaUserShield,
   FaBuilding
 } from 'react-icons/fa';
+
+const careerSlug = 'cbi-officer';
+const careerTitle = 'CBI Officer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function CBIOfficerPage() {
   const eligibilityData = [
@@ -71,12 +86,12 @@ export default function CBIOfficerPage() {
   ];
 
   const jobProfiles = [
-    { post: "Sub Inspector (SI)", level: "Group C", salary: "₹35,400-1,12,400", duties: "Field investigations, evidence collection, case documentation" },
-    { post: "Inspector", level: "Group B", salary: "₹44,900-1,42,400", duties: "Supervise investigations, coordinate with agencies, case management" },
-    { post: "Assistant Superintendent of Police (ASP)", level: "Group A", salary: "₹56,100-1,77,500", duties: "Senior investigations, policy implementation, team leadership" },
-    { post: "Deputy Superintendent of Police (DSP)", level: "Group A", salary: "₹67,700-2,08,700", duties: "Regional operations, administrative duties, major case oversight" },
-    { post: "Superintendent of Police (SP)", level: "Group A", salary: "₹78,800-2,09,200", duties: "State-level operations, strategic planning, inter-agency coordination" },
-    { post: "Deputy Inspector General (DIG)", level: "Group A", salary: "₹1,31,100-2,16,600", duties: "Zone-level command, policy formulation, senior management" }
+    { post: "Sub Inspector (SI)", level: "Group C", salary: "â‚¹35,400-1,12,400", duties: "Field investigations, evidence collection, case documentation" },
+    { post: "Inspector", level: "Group B", salary: "â‚¹44,900-1,42,400", duties: "Supervise investigations, coordinate with agencies, case management" },
+    { post: "Assistant Superintendent of Police (ASP)", level: "Group A", salary: "â‚¹56,100-1,77,500", duties: "Senior investigations, policy implementation, team leadership" },
+    { post: "Deputy Superintendent of Police (DSP)", level: "Group A", salary: "â‚¹67,700-2,08,700", duties: "Regional operations, administrative duties, major case oversight" },
+    { post: "Superintendent of Police (SP)", level: "Group A", salary: "â‚¹78,800-2,09,200", duties: "State-level operations, strategic planning, inter-agency coordination" },
+    { post: "Deputy Inspector General (DIG)", level: "Group A", salary: "â‚¹1,31,100-2,16,600", duties: "Zone-level command, policy formulation, senior management" }
   ];
 
   const syllabus = [
@@ -110,12 +125,12 @@ export default function CBIOfficerPage() {
   ];
 
   const careerGrowth = [
-    { level: "Sub Inspector (SI)", experience: "0-5 years", salary: "₹35,400-60,000" },
-    { level: "Inspector", experience: "5-10 years", salary: "₹44,900-70,000" },
-    { level: "Assistant SP (ASP)", experience: "10-15 years", salary: "₹56,100-90,000" },
-    { level: "Deputy SP (DSP)", experience: "15-20 years", salary: "₹67,700-1,20,000" },
-    { level: "Superintendent of Police (SP)", experience: "20-25 years", salary: "₹78,800-1,50,000" },
-    { level: "Deputy Inspector General (DIG)", experience: "25+ years", salary: "₹1,31,100-2,00,000" }
+    { level: "Sub Inspector (SI)", experience: "0-5 years", salary: "â‚¹35,400-60,000" },
+    { level: "Inspector", experience: "5-10 years", salary: "â‚¹44,900-70,000" },
+    { level: "Assistant SP (ASP)", experience: "10-15 years", salary: "â‚¹56,100-90,000" },
+    { level: "Deputy SP (DSP)", experience: "15-20 years", salary: "â‚¹67,700-1,20,000" },
+    { level: "Superintendent of Police (SP)", experience: "20-25 years", salary: "â‚¹78,800-1,50,000" },
+    { level: "Deputy Inspector General (DIG)", experience: "25+ years", salary: "â‚¹1,31,100-2,00,000" }
   ];
 
   const physicalStandards = [
@@ -612,3 +627,5 @@ export default function CBIOfficerPage() {
     </main>
   );
 }
+
+

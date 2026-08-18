@@ -1,7 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 
   import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaChartBar, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -32,6 +35,18 @@ import {
   FaMicrochip
 } from 'react-icons/fa';
 
+const careerSlug = 'data-analyst';
+const careerTitle = 'Complete Guide to Becoming a Data Analyst';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function DataAnalystPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's in Math, Statistics, CS, or related field" },
@@ -45,39 +60,39 @@ export default function DataAnalystPage() {
       specialization: "Business Analyst", 
       duration: "6-12 months", 
       requirement: "Business domain knowledge + SQL",
-      cost: "₹50,000-1,50,000",
+      cost: "â‚¹50,000-1,50,000",
       description: "Analyzing business data to drive strategic decisions"
     },
     { 
       specialization: "Financial Data Analyst", 
       duration: "8-15 months", 
       requirement: "Finance knowledge + advanced Excel",
-      cost: "₹70,000-2,00,000",
+      cost: "â‚¹70,000-2,00,000",
       description: "Analyzing financial markets and investment data"
     },
     { 
       specialization: "Marketing Data Analyst", 
       duration: "6-12 months", 
       requirement: "Marketing metrics + Google Analytics",
-      cost: "₹40,000-1,20,000",
+      cost: "â‚¹40,000-1,20,000",
       description: "Analyzing customer behavior and campaign performance"
     },
     { 
       specialization: "Data Scientist", 
       duration: "12-24 months", 
       requirement: "Machine Learning + Python/R",
-      cost: "₹1,00,000-3,00,000",
+      cost: "â‚¹1,00,000-3,00,000",
       description: "Advanced analytics and predictive modeling"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Data Analyst", years: "0-2 years", salary: "₹25,000-45,000/month" },
-    { rank: "Data Analyst", years: "2-4 years", salary: "₹45,000-75,000/month" },
-    { rank: "Senior Data Analyst", years: "4-7 years", salary: "₹75,000-1,25,000/month" },
-    { rank: "Lead Data Analyst", years: "7-10 years", salary: "₹1,25,000-2,00,000/month" },
-    { rank: "Data Analytics Manager", years: "10-15 years", salary: "₹2,00,000-3,50,000/month" },
-    { rank: "Head of Analytics/Director", years: "15+ years", salary: "₹3,50,000-6,00,000/month" }
+    { rank: "Junior Data Analyst", years: "0-2 years", salary: "â‚¹25,000-45,000/month" },
+    { rank: "Data Analyst", years: "2-4 years", salary: "â‚¹45,000-75,000/month" },
+    { rank: "Senior Data Analyst", years: "4-7 years", salary: "â‚¹75,000-1,25,000/month" },
+    { rank: "Lead Data Analyst", years: "7-10 years", salary: "â‚¹1,25,000-2,00,000/month" },
+    { rank: "Data Analytics Manager", years: "10-15 years", salary: "â‚¹2,00,000-3,50,000/month" },
+    { rank: "Head of Analytics/Director", years: "15+ years", salary: "â‚¹3,50,000-6,00,000/month" }
   ];
 
   const technicalSkills = [
@@ -500,4 +515,6 @@ export default function DataAnalystPage() {
     </main>
   );
 }
+
+
 

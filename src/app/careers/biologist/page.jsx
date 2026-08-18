@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaMicroscope, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -27,6 +30,18 @@ import {
   FaBug
 } from 'react-icons/fa';
 
+const careerSlug = 'biologist';
+const careerTitle = 'Complete Guide to Becoming a Professional Biologist';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function BiologistPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Biology/Life Sciences (minimum 55%)" },
@@ -40,53 +55,53 @@ export default function BiologistPage() {
       specialization: "Marine Biologist", 
       duration: "4-6 years", 
       requirement: "BSc + MSc in Marine Biology",
-      salary: "₹3-8 lakhs/year",
+      salary: "â‚¹3-8 lakhs/year",
       description: "Study ocean life and marine ecosystems"
     },
     { 
       specialization: "Wildlife Biologist", 
       duration: "4-6 years", 
       requirement: "BSc + MSc in Zoology/Wildlife Biology",
-      salary: "₹4-10 lakhs/year",
+      salary: "â‚¹4-10 lakhs/year",
       description: "Research and conserve wildlife populations"
     },
     { 
       specialization: "Molecular Biologist", 
       duration: "6-8 years", 
       requirement: "BSc + MSc/PhD in Molecular Biology",
-      salary: "₹6-15 lakhs/year",
+      salary: "â‚¹6-15 lakhs/year",
       description: "Study biological processes at molecular level"
     },
     { 
       specialization: "Environmental Biologist", 
       duration: "4-6 years", 
       requirement: "BSc + MSc in Environmental Science",
-      salary: "₹5-12 lakhs/year",
+      salary: "â‚¹5-12 lakhs/year",
       description: "Study environmental impact on living organisms"
     },
     { 
       specialization: "Biotechnologist", 
       duration: "4-6 years", 
       requirement: "BSc + MSc in Biotechnology",
-      salary: "₹7-20 lakhs/year",
+      salary: "â‚¹7-20 lakhs/year",
       description: "Apply biological processes to technology"
     },
     { 
       specialization: "Microbiologist", 
       duration: "4-6 years", 
       requirement: "BSc + MSc in Microbiology",
-      salary: "₹4-12 lakhs/year",
+      salary: "â‚¹4-12 lakhs/year",
       description: "Study microscopic organisms and their effects"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Research Assistant", years: "0-2 years", salary: "₹2-4 lakhs/year" },
-    { rank: "Junior Biologist", years: "2-5 years", salary: "₹4-8 lakhs/year" },
-    { rank: "Biologist", years: "5-8 years", salary: "₹8-15 lakhs/year" },
-    { rank: "Senior Biologist", years: "8-12 years", salary: "₹15-25 lakhs/year" },
-    { rank: "Principal Scientist", years: "12-18 years", salary: "₹25-40 lakhs/year" },
-    { rank: "Research Director/Chief Scientist", years: "18+ years", salary: "₹40-60 lakhs/year" }
+    { rank: "Research Assistant", years: "0-2 years", salary: "â‚¹2-4 lakhs/year" },
+    { rank: "Junior Biologist", years: "2-5 years", salary: "â‚¹4-8 lakhs/year" },
+    { rank: "Biologist", years: "5-8 years", salary: "â‚¹8-15 lakhs/year" },
+    { rank: "Senior Biologist", years: "8-12 years", salary: "â‚¹15-25 lakhs/year" },
+    { rank: "Principal Scientist", years: "12-18 years", salary: "â‚¹25-40 lakhs/year" },
+    { rank: "Research Director/Chief Scientist", years: "18+ years", salary: "â‚¹40-60 lakhs/year" }
   ];
 
   const skillRequirements = [
@@ -502,3 +517,5 @@ export default function BiologistPage() {
     </main>
   );
 }
+
+

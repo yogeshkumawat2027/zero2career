@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaHotel, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -119,6 +122,18 @@ import {
   FaMap
 } from 'react-icons/fa';
 
+const careerSlug = 'hotel-manager';
+const careerTitle = 'Hotel Manager Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function HotelManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Hotel Management/Hospitality or related field" },
@@ -133,7 +148,7 @@ export default function HotelManagerPage() {
       duration: "3-4 years",
       program: "BBA/B.Sc. Hotel Management, Hospitality Management, Tourism Studies",
       focus: "Hotel operations, food & beverage, front office, housekeeping, event management",
-      cost: "₹50,000-8 LPA (varies by institution type)",
+      cost: "â‚¹50,000-8 LPA (varies by institution type)",
       outcomes: "Management trainee, assistant manager, department supervisor positions"
     },
     { 
@@ -141,7 +156,7 @@ export default function HotelManagerPage() {
       duration: "2 years",
       program: "MBA in Hotel Management, M.Sc. Hospitality, International Hotel Management",
       focus: "Strategic management, revenue management, hospitality technology, global operations",
-      cost: "₹2-25 LPA for premium hospitality schools",
+      cost: "â‚¹2-25 LPA for premium hospitality schools",
       outcomes: "Manager, operations manager, regional roles, consulting positions"
     },
     { 
@@ -149,7 +164,7 @@ export default function HotelManagerPage() {
       duration: "3-18 months",
       program: "Certified Hotel Administrator, Revenue Management, Guest Service Gold Standards",
       focus: "Specialized skills in operations, revenue optimization, service excellence",
-      cost: "₹25,000-5 LPA for international certifications",
+      cost: "â‚¹25,000-5 LPA for international certifications",
       outcomes: "Specialized roles, department heads, consultant positions, brand management"
     },
     { 
@@ -157,7 +172,7 @@ export default function HotelManagerPage() {
       duration: "1-6 months",
       program: "Executive programs from Cornell, Glion, Les Roches, IHM institutes",
       focus: "Leadership development, digital transformation, sustainable hospitality",
-      cost: "₹3-15 LPA for premium executive programs",
+      cost: "â‚¹3-15 LPA for premium executive programs",
       outcomes: "Senior management, general manager, regional director, entrepreneur"
     }
   ];
@@ -212,62 +227,62 @@ export default function HotelManagerPage() {
       sector: "Luxury Hotel Chains",
       companies: "Taj Hotels, Oberoi, Leela, Marriott, Hilton, Hyatt, Four Seasons, ITC",
       roles: "General Manager, Operations Manager, Department Head, Regional Manager",
-      salary: "₹8-60 LPA",
+      salary: "â‚¹8-60 LPA",
       benefits: "Premium brand exposure, international opportunities, luxury service training, career progression"
     },
     { 
       sector: "Budget & Business Hotels",
       companies: "OYO, Treebo, FabHotels, Lemon Tree, Ginger, Red Fox, Zone by the Park",
       roles: "Hotel Manager, Operations Manager, Area Manager, Business Development Manager",
-      salary: "₹4-25 LPA",
+      salary: "â‚¹4-25 LPA",
       benefits: "Fast-paced environment, entrepreneurial culture, rapid growth, technology adoption"
     },
     { 
       sector: "Resort & Hospitality",
       companies: "Club Mahindra, Sterling Resorts, CGH Earth, SwaSwara, Karma Group",
       roles: "Resort Manager, Guest Relations Manager, Activities Manager, Spa Manager",
-      salary: "₹5-35 LPA",
+      salary: "â‚¹5-35 LPA",
       benefits: "Scenic locations, leisure hospitality, holistic experience, lifestyle benefits"
     },
     { 
       sector: "Airlines & Transportation",
       companies: "Air India, IndiGo, Vistara, SpiceJet, Airport authorities, Railway catering",
       roles: "Cabin Service Manager, Ground Service Manager, Catering Manager, Customer Service Head",
-      salary: "₹4-30 LPA",
+      salary: "â‚¹4-30 LPA",
       benefits: "Travel benefits, structured career, service excellence focus, aviation industry exposure"
     },
     { 
       sector: "Event Management Companies",
       companies: "Wizcraft, E-Factor, 70 EMG, Percept, DNA Entertainment, regional event companies",
       roles: "Event Manager, Account Manager, Production Manager, Client Relations Manager",
-      salary: "₹3-40 LPA",
+      salary: "â‚¹3-40 LPA",
       benefits: "Creative industry, diverse events, networking opportunities, project-based work"
     },
     { 
       sector: "Cruise & International Hospitality",
       companies: "Carnival, Royal Caribbean, Celebrity Cruises, International hotel chains abroad",
       roles: "Cruise Staff, International Hotel Manager, Guest Relations, Entertainment Coordinator",
-      salary: "₹6-80 LPA (with international packages)",
+      salary: "â‚¹6-80 LPA (with international packages)",
       benefits: "Global exposure, cultural diversity, travel opportunities, tax-free earnings"
     }
   ];
 
   const careerProgression = [
-    { level: "Management Trainee/Assistant Manager", experience: "0-2 years", salary: "₹2.5-8 LPA", focus: "Learning operations, guest service, department rotation, basic management skills" },
-    { level: "Department Manager/Supervisor", experience: "2-5 years", salary: "₹5-15 LPA", focus: "Department management, team leadership, operational efficiency, guest satisfaction" },
-    { level: "Assistant General Manager/Operations Manager", experience: "5-10 years", salary: "₹12-30 LPA", focus: "Multi-department coordination, P&L responsibility, strategic planning, staff development" },
-    { level: "General Manager/Regional Manager", experience: "10-15 years", salary: "₹25-60 LPA", focus: "Property management, revenue optimization, brand standards, market development" },
-    { level: "Area Manager/Director of Operations", experience: "15-20 years", salary: "₹45-1.2 Cr", focus: "Multi-property oversight, regional strategy, business development, franchise management" },
-    { level: "Vice President/Managing Director", experience: "20+ years", salary: "₹80 LPA-3 Cr", focus: "Corporate strategy, brand development, market expansion, investor relations" }
+    { level: "Management Trainee/Assistant Manager", experience: "0-2 years", salary: "â‚¹2.5-8 LPA", focus: "Learning operations, guest service, department rotation, basic management skills" },
+    { level: "Department Manager/Supervisor", experience: "2-5 years", salary: "â‚¹5-15 LPA", focus: "Department management, team leadership, operational efficiency, guest satisfaction" },
+    { level: "Assistant General Manager/Operations Manager", experience: "5-10 years", salary: "â‚¹12-30 LPA", focus: "Multi-department coordination, P&L responsibility, strategic planning, staff development" },
+    { level: "General Manager/Regional Manager", experience: "10-15 years", salary: "â‚¹25-60 LPA", focus: "Property management, revenue optimization, brand standards, market development" },
+    { level: "Area Manager/Director of Operations", experience: "15-20 years", salary: "â‚¹45-1.2 Cr", focus: "Multi-property oversight, regional strategy, business development, franchise management" },
+    { level: "Vice President/Managing Director", experience: "20+ years", salary: "â‚¹80 LPA-3 Cr", focus: "Corporate strategy, brand development, market expansion, investor relations" }
   ];
 
   const topColleges = [
-    { name: "Institute of Hotel Management (IHM) - Delhi", courses: "BHMCT, M.Sc. Hospitality", ranking: "Premier Government Institute", fees: "₹60,000", placements: "Excellent with top hotel chains" },
-    { name: "IHM Mumbai (AICTE Approved)", courses: "BHMCT, MBA in Hospitality", ranking: "Top Government Institute", fees: "₹65,000", placements: "Strong industry connections" },
-    { name: "Welcomgroup Graduate School of Hotel Administration", courses: "BHMCT, Executive Programs", ranking: "Industry-Linked Institute", fees: "₹4.5 LPA", placements: "Premium hotel placements" },
-    { name: "Christ University - Hospitality", courses: "BBA, MBA Hospitality Management", ranking: "Premier Private University", fees: "₹3.5-8 LPA", placements: "Good industry exposure" },
-    { name: "Amity School of Hospitality", courses: "BBA, MBA Hotel Management", ranking: "Established Private Institute", fees: "₹4-12 LPA", placements: "Corporate hospitality focus" },
-    { name: "Les Roches Global Hospitality Education", courses: "International Hotel Management Programs", ranking: "Global Hospitality School", fees: "₹15-25 LPA", placements: "International opportunities" }
+    { name: "Institute of Hotel Management (IHM) - Delhi", courses: "BHMCT, M.Sc. Hospitality", ranking: "Premier Government Institute", fees: "â‚¹60,000", placements: "Excellent with top hotel chains" },
+    { name: "IHM Mumbai (AICTE Approved)", courses: "BHMCT, MBA in Hospitality", ranking: "Top Government Institute", fees: "â‚¹65,000", placements: "Strong industry connections" },
+    { name: "Welcomgroup Graduate School of Hotel Administration", courses: "BHMCT, Executive Programs", ranking: "Industry-Linked Institute", fees: "â‚¹4.5 LPA", placements: "Premium hotel placements" },
+    { name: "Christ University - Hospitality", courses: "BBA, MBA Hospitality Management", ranking: "Premier Private University", fees: "â‚¹3.5-8 LPA", placements: "Good industry exposure" },
+    { name: "Amity School of Hospitality", courses: "BBA, MBA Hotel Management", ranking: "Established Private Institute", fees: "â‚¹4-12 LPA", placements: "Corporate hospitality focus" },
+    { name: "Les Roches Global Hospitality Education", courses: "International Hotel Management Programs", ranking: "Global Hospitality School", fees: "â‚¹15-25 LPA", placements: "International opportunities" }
   ];
 
   const technicalSkills = [
@@ -290,14 +305,14 @@ export default function HotelManagerPage() {
   ];
 
   const salaryRanges = [
-    { sector: "Luxury Hotels", fresher: "₹6-12 LPA", experienced: "₹15-40 LPA", senior: "₹35-80 LPA" },
-    { sector: "Business Hotels", fresher: "₹3-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Budget Hotels", fresher: "₹2.5-6 LPA", experienced: "₹6-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Resort & Leisure", fresher: "₹4-10 LPA", experienced: "₹10-30 LPA", senior: "₹25-60 LPA" },
-    { sector: "Event Management", fresher: "₹3-7 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Cruise & International", fresher: "₹4-12 LPA", experienced: "₹12-45 LPA", senior: "₹35-1.2 Cr" },
-    { sector: "Airlines & Transportation", fresher: "₹3-9 LPA", experienced: "₹9-30 LPA", senior: "₹25-65 LPA" },
-    { sector: "Independent Consulting", fresher: "₹2-8 LPA", experienced: "₹10-40 LPA", senior: "₹30-2 Cr" }
+    { sector: "Luxury Hotels", fresher: "â‚¹6-12 LPA", experienced: "â‚¹15-40 LPA", senior: "â‚¹35-80 LPA" },
+    { sector: "Business Hotels", fresher: "â‚¹3-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Budget Hotels", fresher: "â‚¹2.5-6 LPA", experienced: "â‚¹6-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Resort & Leisure", fresher: "â‚¹4-10 LPA", experienced: "â‚¹10-30 LPA", senior: "â‚¹25-60 LPA" },
+    { sector: "Event Management", fresher: "â‚¹3-7 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Cruise & International", fresher: "â‚¹4-12 LPA", experienced: "â‚¹12-45 LPA", senior: "â‚¹35-1.2 Cr" },
+    { sector: "Airlines & Transportation", fresher: "â‚¹3-9 LPA", experienced: "â‚¹9-30 LPA", senior: "â‚¹25-65 LPA" },
+    { sector: "Independent Consulting", fresher: "â‚¹2-8 LPA", experienced: "â‚¹10-40 LPA", senior: "â‚¹30-2 Cr" }
   ];
 
   const emergingTrends = [
@@ -365,7 +380,7 @@ export default function HotelManagerPage() {
       cert: "Guest Service Gold Standards",
       provider: "Ritz-Carlton, Four Seasons, luxury hotel brands",
       duration: "3-6 months",
-      cost: "₹50,000-2 LPA",
+      cost: "â‚¹50,000-2 LPA",
       description: "Service excellence training and certification from luxury hospitality brands"
     },
     { 
@@ -380,37 +395,37 @@ export default function HotelManagerPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Boutique Hotel/Resort",
-      investment: "₹2-50 crores",
+      investment: "â‚¹2-50 crores",
       description: "Develop and operate unique, themed, or luxury boutique accommodation properties",
       potential: "High potential with growing demand for unique and personalized travel experiences"
     },
     { 
       business: "Event Management Company",
-      investment: "₹5-75 lakhs",
+      investment: "â‚¹5-75 lakhs",
       description: "Full-service event planning and management for weddings, corporate events, and social functions",
       potential: "Excellent growth with India's celebration culture and corporate event requirements"
     },
     { 
       business: "Homestay & Hospitality Network",
-      investment: "₹10 lakhs-5 crores",
+      investment: "â‚¹10 lakhs-5 crores",
       description: "Create and manage network of homestays, bed & breakfasts, or vacation rentals",
       potential: "Growing domestic tourism and authentic travel experience demand"
     },
     { 
       business: "Corporate Hospitality Services",
-      investment: "₹15-50 lakhs",
+      investment: "â‚¹15-50 lakhs",
       description: "Provide hospitality services for corporate offices, guest houses, and business centers",
       potential: "Steady demand with corporate growth and business travel recovery"
     },
     { 
       business: "Food & Beverage Concept",
-      investment: "₹10 lakhs-3 crores",
+      investment: "â‚¹10 lakhs-3 crores",
       description: "Develop unique restaurant concepts, cloud kitchens, or food delivery services",
       potential: "Strong growth with food culture evolution and delivery economy expansion"
     },
     { 
       business: "Hospitality Technology Solutions",
-      investment: "₹8-60 lakhs",
+      investment: "â‚¹8-60 lakhs",
       description: "Develop software solutions for hotels, restaurants, and hospitality businesses",
       potential: "High growth potential with digital transformation in hospitality industry"
     }
@@ -858,3 +873,5 @@ export default function HotelManagerPage() {
     </main>
   );
 }
+
+

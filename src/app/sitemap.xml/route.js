@@ -1,3 +1,5 @@
+import { careersList } from '../career';
+
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || process.env.API_URL || 'https://zero2career.in';
 
 export const dynamic = 'force-static';
@@ -7,32 +9,11 @@ export async function GET() {
   const baseUrl = 'https://zero2career.in';
   const currentDate = new Date().toISOString();
 
-  // Define all career paths
-  const careerPaths = [
-    'pilot', 'advocate', 'actuarial-scientist', 'web-developer', 'ux-ui-designer',
-    'software-developer', 'animator', 'doctor', 'ips', 'ias', 'indian-navy-pilot',
-    'aeronautical-engineer', 'ai-ml-engineer', 'air-hostess', 'air-traffic-controller',
-    'architect', 'archaeologist', 'bsf-officer', 'bank-po', 'cbi-officer',
-    'biologist', 'chef', 'chemist', 'ca', 'army', 'cloud-engineer',
-    'content-writer', 'civil-engineer', 'crpf-officer', 'cyber-security-manager',
-    'cyber-security', 'data-analyst', 'delhi-police-constable', 'data-science',
-    'devops-engineer', 'digital-marketer', 'drdo-scientist', 'electrical-engineer',
-    'engineer', 'ethical-hacker', 'environmental-scientist', 'event-manager',
-    'fashion-designer', 'fashion-photographer', 'film-director', 'financial-analyst',
-    'foreign-service-officer', 'forensic-scientist', 'full-stack-developer',
-    'game-developer', 'geologist', 'graphic-designer', 'hotel-manager',
-    'hr-manager', 'iaf-pilot', 'ib-officer', 'ibps-clerk', 'ifs',
-    'income-tax-inspector', 'isro-scientist', 'investment-banker', 'journalist',
-    'lic-aao', 'librarian', 'marine-biologist', 'marine-engineer',
-    'marketing-manager', 'mechanical-engineer', 'mechatronics-engineer',
-    'music-producer', 'mobile-app-developer', 'nabard-officer', 'nurse',
-    'pharmacist', 'paramedic', 'photographer', 'police-officer',
-    'physiotherapist', 'product-manager', 'psychologist', 'railway-group-d',
-    'railway-loco-pilot', 'research-scientist', 'raw-agent', 'robotics-engineer',
-    'sebi-officer', 'sbi-po', 'singer-musician', 'sports-coach', 'ssc-cgl',
-    'social-media-manager', 'stockbroker', 'ssc-chsl', 'teacher-professor',
-    'upsc-nda', 'tv-print-journalist', 'vfx-artist', 'vet-doctor'
-  ];
+  const careerPaths = careersList
+    .map((career) => career.link)
+    .filter((link) => typeof link === 'string' && link.startsWith('/careers/'))
+    .filter((link) => link !== '/careers/demo')
+    .map((link) => link.replace('/careers/', ''));
 
   // Initialize empty arrays for updates
   let govtUpdates = [];
@@ -115,10 +96,28 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${baseUrl}/aboutus</loc>
+    <loc>${baseUrl}/about</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/privacy-policy</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/terms-and-conditions</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/disclaimer</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>${baseUrl}/contact</loc>
@@ -185,10 +184,28 @@ ${profUpdateUrls}
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${baseUrl}/aboutus</loc>
+    <loc>${baseUrl}/about</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/privacy-policy</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/terms-and-conditions</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/disclaimer</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>${baseUrl}/contact</loc>

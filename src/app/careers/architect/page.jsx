@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaBuilding, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -30,6 +33,18 @@ import {
   FaCertificate
 } from 'react-icons/fa';
 
+const careerSlug = 'architect';
+const careerTitle = 'Complete Guide to Becoming an Architect';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ArchitectPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "B.Arch degree from AICTE approved college" },
@@ -43,39 +58,39 @@ export default function ArchitectPage() {
       degree: "Bachelor of Architecture (B.Arch)", 
       duration: "5 years", 
       requirement: "12th with Mathematics (min 50%)",
-      cost: "₹2-15 lakhs/year",
+      cost: "â‚¹2-15 lakhs/year",
       description: "Primary professional degree in architecture"
     },
     { 
       degree: "Master of Architecture (M.Arch)", 
       duration: "2 years", 
       requirement: "B.Arch degree",
-      cost: "₹1-8 lakhs/year",
+      cost: "â‚¹1-8 lakhs/year",
       description: "Specialization in specific architectural fields"
     },
     { 
       degree: "Master of Planning (M.Plan)", 
       duration: "2 years", 
       requirement: "B.Arch or related degree",
-      cost: "₹1-6 lakhs/year",
+      cost: "â‚¹1-6 lakhs/year",
       description: "Urban and regional planning specialization"
     },
     { 
       degree: "PhD in Architecture", 
       duration: "3-5 years", 
       requirement: "M.Arch degree",
-      cost: "₹50k-2 lakhs/year",
+      cost: "â‚¹50k-2 lakhs/year",
       description: "Research and academic career advancement"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Architect", years: "0-2 years", salary: "₹3-6 lakhs/year" },
-    { rank: "Architect", years: "2-5 years", salary: "₹6-12 lakhs/year" },
-    { rank: "Senior Architect", years: "5-10 years", salary: "₹12-20 lakhs/year" },
-    { rank: "Principal Architect", years: "10-15 years", salary: "₹20-35 lakhs/year" },
-    { rank: "Partner/Director", years: "15-20 years", salary: "₹35-60 lakhs/year" },
-    { rank: "Firm Owner/Consultant", years: "20+ years", salary: "₹60 lakhs-2 crores/year" }
+    { rank: "Junior Architect", years: "0-2 years", salary: "â‚¹3-6 lakhs/year" },
+    { rank: "Architect", years: "2-5 years", salary: "â‚¹6-12 lakhs/year" },
+    { rank: "Senior Architect", years: "5-10 years", salary: "â‚¹12-20 lakhs/year" },
+    { rank: "Principal Architect", years: "10-15 years", salary: "â‚¹20-35 lakhs/year" },
+    { rank: "Partner/Director", years: "15-20 years", salary: "â‚¹35-60 lakhs/year" },
+    { rank: "Firm Owner/Consultant", years: "20+ years", salary: "â‚¹60 lakhs-2 crores/year" }
   ];
 
   const specializationAreas = [
@@ -90,12 +105,12 @@ export default function ArchitectPage() {
   ];
 
   const topColleges = [
-    { college: "School of Planning and Architecture (SPA)", location: "New Delhi", type: "Government", fees: "₹2-3 lakhs/year" },
-    { college: "Sir J.J. College of Architecture", location: "Mumbai", type: "Government", fees: "₹1-2 lakhs/year" },
-    { college: "Chandigarh College of Architecture", location: "Chandigarh", type: "Government", fees: "₹2-3 lakhs/year" },
-    { college: "CEPT University", location: "Ahmedabad", type: "Private", fees: "₹6-8 lakhs/year" },
-    { college: "Manipal School of Architecture", location: "Manipal", type: "Private", fees: "₹8-10 lakhs/year" },
-    { college: "Sushant School of Art & Architecture", location: "Gurgaon", type: "Private", fees: "₹10-12 lakhs/year" }
+    { college: "School of Planning and Architecture (SPA)", location: "New Delhi", type: "Government", fees: "â‚¹2-3 lakhs/year" },
+    { college: "Sir J.J. College of Architecture", location: "Mumbai", type: "Government", fees: "â‚¹1-2 lakhs/year" },
+    { college: "Chandigarh College of Architecture", location: "Chandigarh", type: "Government", fees: "â‚¹2-3 lakhs/year" },
+    { college: "CEPT University", location: "Ahmedabad", type: "Private", fees: "â‚¹6-8 lakhs/year" },
+    { college: "Manipal School of Architecture", location: "Manipal", type: "Private", fees: "â‚¹8-10 lakhs/year" },
+    { college: "Sushant School of Art & Architecture", location: "Gurgaon", type: "Private", fees: "â‚¹10-12 lakhs/year" }
   ];
 
   const keySubjects = [
@@ -495,3 +510,5 @@ export default function ArchitectPage() {
     </main>
   );
 }
+
+

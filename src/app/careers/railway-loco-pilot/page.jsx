@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaTrain, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -27,6 +30,18 @@ import {
   FaEye,
   FaStethoscope
 } from 'react-icons/fa';
+
+const careerSlug = 'railway-loco-pilot';
+const careerTitle = 'Railway Loco Pilot (ALP) Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function RailwayLocoPilotPage() {
   const eligibilityData = [
@@ -68,12 +83,12 @@ export default function RailwayLocoPilotPage() {
   ];
 
   const jobProfiles = [
-    { post: "Assistant Loco Pilot (ALP)", department: "Mechanical", salary: "₹35,000-40,000", duties: "Assisting loco pilot in train operations" },
-    { post: "Loco Pilot", department: "Mechanical", salary: "₹40,000-50,000", duties: "Operating locomotives and ensuring safe train movement" },
-    { post: "Senior Loco Pilot", department: "Mechanical", salary: "₹45,000-55,000", duties: "Senior locomotive operations and training juniors" },
-    { post: "Technician (Various)", department: "Mechanical/Electrical", salary: "₹35,000-45,000", duties: "Technical maintenance and repair work" },
-    { post: "Station Master", department: "Operating", salary: "₹40,000-50,000", duties: "Station operations and train management" },
-    { post: "Traffic Assistant", department: "Commercial", salary: "₹35,000-45,000", duties: "Traffic management and commercial operations" }
+    { post: "Assistant Loco Pilot (ALP)", department: "Mechanical", salary: "â‚¹35,000-40,000", duties: "Assisting loco pilot in train operations" },
+    { post: "Loco Pilot", department: "Mechanical", salary: "â‚¹40,000-50,000", duties: "Operating locomotives and ensuring safe train movement" },
+    { post: "Senior Loco Pilot", department: "Mechanical", salary: "â‚¹45,000-55,000", duties: "Senior locomotive operations and training juniors" },
+    { post: "Technician (Various)", department: "Mechanical/Electrical", salary: "â‚¹35,000-45,000", duties: "Technical maintenance and repair work" },
+    { post: "Station Master", department: "Operating", salary: "â‚¹40,000-50,000", duties: "Station operations and train management" },
+    { post: "Traffic Assistant", department: "Commercial", salary: "â‚¹35,000-45,000", duties: "Traffic management and commercial operations" }
   ];
 
   const syllabus = [
@@ -107,12 +122,12 @@ export default function RailwayLocoPilotPage() {
   ];
 
   const careerGrowth = [
-    { level: "Assistant Loco Pilot (ALP)", experience: "0-3 years", salary: "₹35,000-40,000" },
-    { level: "Loco Pilot", experience: "3-8 years", salary: "₹40,000-50,000" },
-    { level: "Senior Loco Pilot", experience: "8-15 years", salary: "₹45,000-55,000" },
-    { level: "Loco Inspector", experience: "15-20 years", salary: "₹50,000-65,000" },
-    { level: "Assistant Station Master", experience: "Through exam", salary: "₹45,000-55,000" },
-    { level: "Station Master", experience: "20+ years", salary: "₹55,000-75,000" }
+    { level: "Assistant Loco Pilot (ALP)", experience: "0-3 years", salary: "â‚¹35,000-40,000" },
+    { level: "Loco Pilot", experience: "3-8 years", salary: "â‚¹40,000-50,000" },
+    { level: "Senior Loco Pilot", experience: "8-15 years", salary: "â‚¹45,000-55,000" },
+    { level: "Loco Inspector", experience: "15-20 years", salary: "â‚¹50,000-65,000" },
+    { level: "Assistant Station Master", experience: "Through exam", salary: "â‚¹45,000-55,000" },
+    { level: "Station Master", experience: "20+ years", salary: "â‚¹55,000-75,000" }
   ];
 
   const medicalRequirements = [
@@ -495,3 +510,5 @@ export default function RailwayLocoPilotPage() {
     </main>
   );
 }
+
+

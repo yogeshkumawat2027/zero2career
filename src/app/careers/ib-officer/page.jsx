@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUserSecret, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -171,6 +174,18 @@ import {
   FaMapPin
 } from 'react-icons/fa';
 
+const careerSlug = 'ib-officer';
+const careerTitle = 'IB Officer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function IBOfficerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree from recognized university (any stream)" },
@@ -268,12 +283,12 @@ export default function IBOfficerPage() {
   ];
 
   const careerProgression = [
-    { level: "Assistant Central Intelligence Officer (ACIO)", experience: "0-5 years", salary: "₹4.20-8.73 LPA", role: "Field operations, intelligence gathering, basic investigations, regional assignments" },
-    { level: "Central Intelligence Officer (CIO)", experience: "5-12 years", salary: "₹5.85-12.54 LPA", role: "Supervisory roles, team leadership, complex operations, state-level assignments" },
-    { level: "Senior Central Intelligence Officer", experience: "12-18 years", salary: "₹8.26-18.73 LPA", role: "Regional supervision, policy implementation, strategic planning, multi-state operations" },
-    { level: "Deputy Director Intelligence Bureau", experience: "18-25 years", salary: "₹12.60-25.46 LPA", role: "Departmental leadership, national operations, policy formulation, international liaison" },
-    { level: "Joint Director Intelligence Bureau", experience: "25-30 years", salary: "₹18.40-35.67 LPA", role: "Senior leadership, strategic operations, government advisory, inter-agency coordination" },
-    { level: "Additional Director/Director IB", experience: "30+ years", salary: "₹25.50-50+ LPA", role: "Top leadership, national security advisory, cabinet briefings, organizational strategy" }
+    { level: "Assistant Central Intelligence Officer (ACIO)", experience: "0-5 years", salary: "â‚¹4.20-8.73 LPA", role: "Field operations, intelligence gathering, basic investigations, regional assignments" },
+    { level: "Central Intelligence Officer (CIO)", experience: "5-12 years", salary: "â‚¹5.85-12.54 LPA", role: "Supervisory roles, team leadership, complex operations, state-level assignments" },
+    { level: "Senior Central Intelligence Officer", experience: "12-18 years", salary: "â‚¹8.26-18.73 LPA", role: "Regional supervision, policy implementation, strategic planning, multi-state operations" },
+    { level: "Deputy Director Intelligence Bureau", experience: "18-25 years", salary: "â‚¹12.60-25.46 LPA", role: "Departmental leadership, national operations, policy formulation, international liaison" },
+    { level: "Joint Director Intelligence Bureau", experience: "25-30 years", salary: "â‚¹18.40-35.67 LPA", role: "Senior leadership, strategic operations, government advisory, inter-agency coordination" },
+    { level: "Additional Director/Director IB", experience: "30+ years", salary: "â‚¹25.50-50+ LPA", role: "Top leadership, national security advisory, cabinet briefings, organizational strategy" }
   ];
 
   const trainingPrograms = [
@@ -314,11 +329,11 @@ export default function IBOfficerPage() {
   ];
 
   const salaryBenefits = [
-    { component: "Basic Pay", amount: "₹35,400-1,12,400 (7th Pay Commission)", description: "Monthly basic salary with annual increments and promotion-based revisions" },
-    { component: "Grade Pay", amount: "₹4,200-8,900", description: "Position-based grade pay depending on rank and posting level" },
+    { component: "Basic Pay", amount: "â‚¹35,400-1,12,400 (7th Pay Commission)", description: "Monthly basic salary with annual increments and promotion-based revisions" },
+    { component: "Grade Pay", amount: "â‚¹4,200-8,900", description: "Position-based grade pay depending on rank and posting level" },
     { component: "Dearness Allowance", amount: "Current rate applied", description: "Inflation adjustment allowance revised twice yearly by government" },
     { component: "House Rent Allowance", amount: "8-24% of basic pay", description: "City classification-based housing allowance or government accommodation" },
-    { component: "Special Allowances", amount: "₹5,000-50,000", description: "Field allowance, risk allowance, border allowance, special duty allowance" },
+    { component: "Special Allowances", amount: "â‚¹5,000-50,000", description: "Field allowance, risk allowance, border allowance, special duty allowance" },
     { component: "Medical Benefits", amount: "Full coverage", description: "Comprehensive medical coverage for self and family through CGHS/empaneled hospitals" }
   ];
 
@@ -739,3 +754,5 @@ export default function IBOfficerPage() {
     </main>
   );
 }
+
+

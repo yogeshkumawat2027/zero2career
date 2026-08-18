@@ -1,6 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
 import {
+
+
+
   FaHeartbeat,
   FaGraduationCap,
   FaCalendarAlt,
@@ -31,6 +35,18 @@ import {
   FaPrescriptionBottle,
   FaUserNurse
 } from 'react-icons/fa';
+
+const careerSlug = 'nurse';
+const careerTitle = 'Your Complete Guide to Becoming a Nurse';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function NursePage() {
   const eligibilityData = [
@@ -76,13 +92,13 @@ export default function NursePage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Staff Nurse", years: "0-3 years", salary: "₹3 - ₹6 Lakhs/annum", level: "Entry Level" },
-    { rank: "Senior Staff Nurse", years: "3-7 years", salary: "₹4 - ₹8 Lakhs/annum", level: "Intermediate" },
-    { rank: "Ward Sister/Charge Nurse", years: "5-10 years", salary: "₹6 - ₹12 Lakhs/annum", level: "Supervisory" },
-    { rank: "Assistant Nursing Superintendent", years: "8-15 years", salary: "₹8 - ₹15 Lakhs/annum", level: "Management" },
-    { rank: "Deputy Nursing Superintendent", years: "12-20 years", salary: "₹12 - ₹20 Lakhs/annum", level: "Senior Management" },
-    { rank: "Chief Nursing Officer", years: "15+ years", salary: "₹15 - ₹30 Lakhs/annum", level: "Executive Level" },
-    { rank: "Nursing Professor", years: "10+ years", salary: "₹10 - ₹25 Lakhs/annum", level: "Academic" }
+    { rank: "Staff Nurse", years: "0-3 years", salary: "â‚¹3 - â‚¹6 Lakhs/annum", level: "Entry Level" },
+    { rank: "Senior Staff Nurse", years: "3-7 years", salary: "â‚¹4 - â‚¹8 Lakhs/annum", level: "Intermediate" },
+    { rank: "Ward Sister/Charge Nurse", years: "5-10 years", salary: "â‚¹6 - â‚¹12 Lakhs/annum", level: "Supervisory" },
+    { rank: "Assistant Nursing Superintendent", years: "8-15 years", salary: "â‚¹8 - â‚¹15 Lakhs/annum", level: "Management" },
+    { rank: "Deputy Nursing Superintendent", years: "12-20 years", salary: "â‚¹12 - â‚¹20 Lakhs/annum", level: "Senior Management" },
+    { rank: "Chief Nursing Officer", years: "15+ years", salary: "â‚¹15 - â‚¹30 Lakhs/annum", level: "Executive Level" },
+    { rank: "Nursing Professor", years: "10+ years", salary: "â‚¹10 - â‚¹25 Lakhs/annum", level: "Academic" }
   ];
 
   const keySubjects = [
@@ -442,3 +458,5 @@ export default function NursePage() {
     </main>
   );
 }
+
+

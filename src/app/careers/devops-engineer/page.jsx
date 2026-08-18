@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaLaptopCode, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -35,6 +38,18 @@ import {
   FaNetworkWired
 } from 'react-icons/fa';
 
+const careerSlug = 'devops-engineer';
+const careerTitle = 'Complete Guide to Becoming a DevOps Engineer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function DevOpsEngineerPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's in Computer Science/IT (preferred)" },
@@ -48,53 +63,53 @@ export default function DevOpsEngineerPage() {
       specialization: "Cloud Infrastructure (AWS/Azure/GCP)", 
       duration: "4-8 months", 
       requirement: "Cloud certification (AWS/Azure/GCP)",
-      cost: "₹50,000-1,20,000",
+      cost: "â‚¹50,000-1,20,000",
       description: "Design and manage cloud-based infrastructure and services"
     },
     { 
       specialization: "Container Orchestration (Docker/Kubernetes)", 
       duration: "3-6 months", 
       requirement: "CKA/CKS certification",
-      cost: "₹40,000-90,000",
+      cost: "â‚¹40,000-90,000",
       description: "Manage containerized applications and orchestration platforms"
     },
     { 
       specialization: "CI/CD Pipeline Engineering", 
       duration: "2-4 months", 
       requirement: "Jenkins/GitLab CI certification",
-      cost: "₹25,000-60,000",
+      cost: "â‚¹25,000-60,000",
       description: "Build and maintain continuous integration/deployment pipelines"
     },
     { 
       specialization: "Infrastructure as Code (IaC)", 
       duration: "3-5 months", 
       requirement: "Terraform/Ansible certification",
-      cost: "₹35,000-80,000",
+      cost: "â‚¹35,000-80,000",
       description: "Automate infrastructure provisioning and configuration management"
     },
     { 
       specialization: "Monitoring & Observability", 
       duration: "2-4 months", 
       requirement: "Prometheus/Grafana expertise",
-      cost: "₹30,000-70,000",
+      cost: "â‚¹30,000-70,000",
       description: "Implement comprehensive monitoring and logging solutions"
     },
     { 
       specialization: "Security & Compliance (DevSecOps)", 
       duration: "4-6 months", 
       requirement: "Security certifications (CISSP/CEH)",
-      cost: "₹60,000-1,50,000",
+      cost: "â‚¹60,000-1,50,000",
       description: "Integrate security practices into DevOps workflows"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "DevOps Intern/Trainee", years: "0-6 months", salary: "₹15,000-25,000/month" },
-    { rank: "Junior DevOps Engineer", years: "6 months-2 years", salary: "₹25,000-50,000/month" },
-    { rank: "DevOps Engineer", years: "2-4 years", salary: "₹50,000-1,00,000/month" },
-    { rank: "Senior DevOps Engineer", years: "4-6 years", salary: "₹1,00,000-1,80,000/month" },
-    { rank: "DevOps Team Lead/Manager", years: "6-10 years", salary: "₹1,80,000-3,00,000/month" },
-    { rank: "DevOps Architect/Director", years: "10+ years", salary: "₹3,00,000-8,00,000/month" }
+    { rank: "DevOps Intern/Trainee", years: "0-6 months", salary: "â‚¹15,000-25,000/month" },
+    { rank: "Junior DevOps Engineer", years: "6 months-2 years", salary: "â‚¹25,000-50,000/month" },
+    { rank: "DevOps Engineer", years: "2-4 years", salary: "â‚¹50,000-1,00,000/month" },
+    { rank: "Senior DevOps Engineer", years: "4-6 years", salary: "â‚¹1,00,000-1,80,000/month" },
+    { rank: "DevOps Team Lead/Manager", years: "6-10 years", salary: "â‚¹1,80,000-3,00,000/month" },
+    { rank: "DevOps Architect/Director", years: "10+ years", salary: "â‚¹3,00,000-8,00,000/month" }
   ];
 
   const skillsRequired = [
@@ -485,3 +500,5 @@ export default function DevOpsEngineerPage() {
     </main>
   );
 }
+
+

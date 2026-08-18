@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaBook, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -131,6 +134,18 @@ import {
   FaMouseAlt
 } from 'react-icons/fa';
 
+const careerSlug = 'librarian';
+const careerTitle = 'Complete Guide to Librarian Career';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function LibrarianPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree + Master's in Library Science (MLIS)" },
@@ -161,13 +176,13 @@ export default function LibrarianPage() {
   ];
 
   const careerHierarchy = [
-    { position: "Junior Librarian/Library Assistant", years: "0-3 years", salary: "₹2.5-5 LPA", level: "Entry Level" },
-    { position: "Assistant Librarian", years: "3-7 years", salary: "₹5-10 LPA", level: "Associate Level" },
-    { position: "Librarian", years: "7-12 years", salary: "₹10-18 LPA", level: "Senior Level" },
-    { position: "Senior Librarian", years: "12-18 years", salary: "₹18-30 LPA", level: "Senior Professional" },
-    { position: "Deputy Librarian", years: "18-25 years", salary: "₹30-45 LPA", level: "Management Level" },
-    { position: "University Librarian/Chief Librarian", years: "25-30 years", salary: "₹45-70 LPA", level: "Executive Level" },
-    { position: "Director of Library Services", years: "30+ years", salary: "₹70 LPA - 1 Cr", level: "Director Level" }
+    { position: "Junior Librarian/Library Assistant", years: "0-3 years", salary: "â‚¹2.5-5 LPA", level: "Entry Level" },
+    { position: "Assistant Librarian", years: "3-7 years", salary: "â‚¹5-10 LPA", level: "Associate Level" },
+    { position: "Librarian", years: "7-12 years", salary: "â‚¹10-18 LPA", level: "Senior Level" },
+    { position: "Senior Librarian", years: "12-18 years", salary: "â‚¹18-30 LPA", level: "Senior Professional" },
+    { position: "Deputy Librarian", years: "18-25 years", salary: "â‚¹30-45 LPA", level: "Management Level" },
+    { position: "University Librarian/Chief Librarian", years: "25-30 years", salary: "â‚¹45-70 LPA", level: "Executive Level" },
+    { position: "Director of Library Services", years: "30+ years", salary: "â‚¹70 LPA - 1 Cr", level: "Director Level" }
   ];
 
   const keyResponsibilities = [
@@ -621,3 +636,5 @@ export default function LibrarianPage() {
     </main>
   );
 }
+
+

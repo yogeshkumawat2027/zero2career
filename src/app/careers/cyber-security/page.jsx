@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -33,6 +36,18 @@ import {
   FaCertificate
 } from 'react-icons/fa';
 
+const careerSlug = 'cyber-security';
+const careerTitle = 'Cyber Security Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function CyberSecurityPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Background", detail: "Any graduate or technical background preferred" },
@@ -46,39 +61,39 @@ export default function CyberSecurityPage() {
       role: "Ethical Hacker/Penetration Tester", 
       type: "Offensive Security",
       duration: "6-12 months training",
-      salary: "₹4-15 LPA",
+      salary: "â‚¹4-15 LPA",
       description: "Finding vulnerabilities in systems through authorized hacking"
     },
     { 
       role: "SOC Analyst", 
       type: "Defensive Security",
       duration: "3-6 months training",
-      salary: "₹3-8 LPA",
+      salary: "â‚¹3-8 LPA",
       description: "Monitor and analyze security events in Security Operations Centers"
     },
     { 
       role: "Incident Response Specialist", 
       type: "Crisis Management",
       duration: "6-12 months experience",
-      salary: "₹6-18 LPA",
+      salary: "â‚¹6-18 LPA",
       description: "Respond to and manage cybersecurity incidents and breaches"
     },
     { 
       role: "Cybersecurity Consultant", 
       type: "Advisory Services",
       duration: "2-5 years experience",
-      salary: "₹8-25 LPA",
+      salary: "â‚¹8-25 LPA",
       description: "Provide strategic security advice to organizations"
     }
   ];
 
   const jobProfiles = [
-    { post: "Junior Security Analyst", company: "IT Companies/Banks", salary: "₹3-6 LPA", duties: "Monitor security tools, basic incident analysis" },
-    { post: "Penetration Tester", company: "Cybersecurity Firms", salary: "₹5-12 LPA", duties: "Conduct security assessments and vulnerability testing" },
-    { post: "Security Engineer", company: "Tech Companies", salary: "₹6-15 LPA", duties: "Design and implement security solutions" },
-    { post: "CISO/Security Manager", company: "Large Enterprises", salary: "₹15-50 LPA", duties: "Lead security strategy and team management" },
-    { post: "Forensics Analyst", company: "Law Enforcement/Private", salary: "₹4-12 LPA", duties: "Digital evidence analysis and investigation" },
-    { post: "Compliance Officer", company: "Financial Services", salary: "₹6-18 LPA", duties: "Ensure regulatory compliance and risk management" }
+    { post: "Junior Security Analyst", company: "IT Companies/Banks", salary: "â‚¹3-6 LPA", duties: "Monitor security tools, basic incident analysis" },
+    { post: "Penetration Tester", company: "Cybersecurity Firms", salary: "â‚¹5-12 LPA", duties: "Conduct security assessments and vulnerability testing" },
+    { post: "Security Engineer", company: "Tech Companies", salary: "â‚¹6-15 LPA", duties: "Design and implement security solutions" },
+    { post: "CISO/Security Manager", company: "Large Enterprises", salary: "â‚¹15-50 LPA", duties: "Lead security strategy and team management" },
+    { post: "Forensics Analyst", company: "Law Enforcement/Private", salary: "â‚¹4-12 LPA", duties: "Digital evidence analysis and investigation" },
+    { post: "Compliance Officer", company: "Financial Services", salary: "â‚¹6-18 LPA", duties: "Ensure regulatory compliance and risk management" }
   ];
 
   const technicalSkills = [
@@ -105,12 +120,12 @@ export default function CyberSecurityPage() {
   ];
 
   const certifications = [
-    { cert: "CEH (Certified Ethical Hacker)", provider: "EC-Council", level: "Intermediate", cost: "₹60,000", validity: "3 years" },
-    { cert: "CISSP", provider: "ISC2", level: "Advanced", cost: "₹55,000", validity: "3 years" },
-    { cert: "CISM", provider: "ISACA", level: "Management", cost: "₹50,000", validity: "3 years" },
-    { cert: "CompTIA Security+", provider: "CompTIA", level: "Entry", cost: "₹25,000", validity: "3 years" },
-    { cert: "OSCP", provider: "Offensive Security", level: "Advanced", cost: "₹90,000", validity: "Lifetime" },
-    { cert: "CISA", provider: "ISACA", level: "Audit", cost: "₹45,000", validity: "3 years" }
+    { cert: "CEH (Certified Ethical Hacker)", provider: "EC-Council", level: "Intermediate", cost: "â‚¹60,000", validity: "3 years" },
+    { cert: "CISSP", provider: "ISC2", level: "Advanced", cost: "â‚¹55,000", validity: "3 years" },
+    { cert: "CISM", provider: "ISACA", level: "Management", cost: "â‚¹50,000", validity: "3 years" },
+    { cert: "CompTIA Security+", provider: "CompTIA", level: "Entry", cost: "â‚¹25,000", validity: "3 years" },
+    { cert: "OSCP", provider: "Offensive Security", level: "Advanced", cost: "â‚¹90,000", validity: "Lifetime" },
+    { cert: "CISA", provider: "ISACA", level: "Audit", cost: "â‚¹45,000", validity: "3 years" }
   ];
 
   const preparationTips = [
@@ -125,12 +140,12 @@ export default function CyberSecurityPage() {
   ];
 
   const careerGrowth = [
-    { level: "Junior Security Analyst", experience: "0-2 years", salary: "₹3-6 LPA" },
-    { level: "Security Analyst", experience: "2-4 years", salary: "₹6-10 LPA" },
-    { level: "Senior Security Analyst", experience: "4-6 years", salary: "₹10-15 LPA" },
-    { level: "Security Consultant/Specialist", experience: "6-8 years", salary: "₹15-25 LPA" },
-    { level: "Security Manager", experience: "8-12 years", salary: "₹25-40 LPA" },
-    { level: "CISO/Security Director", experience: "12+ years", salary: "₹40-80 LPA" }
+    { level: "Junior Security Analyst", experience: "0-2 years", salary: "â‚¹3-6 LPA" },
+    { level: "Security Analyst", experience: "2-4 years", salary: "â‚¹6-10 LPA" },
+    { level: "Senior Security Analyst", experience: "4-6 years", salary: "â‚¹10-15 LPA" },
+    { level: "Security Consultant/Specialist", experience: "6-8 years", salary: "â‚¹15-25 LPA" },
+    { level: "Security Manager", experience: "8-12 years", salary: "â‚¹25-40 LPA" },
+    { level: "CISO/Security Director", experience: "12+ years", salary: "â‚¹40-80 LPA" }
   ];
 
   const industryDomains = [
@@ -579,3 +594,5 @@ export default function CyberSecurityPage() {
     </main>
   );
 }
+
+

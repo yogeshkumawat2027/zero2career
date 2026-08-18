@@ -12,6 +12,7 @@ Crawl-delay: 2
 
 Disallow: /api/
 Disallow: /admin/
+Disallow: /master-admin/
 Disallow: /private/
 
 Sitemap: https://zero2career.in/sitemap.xml

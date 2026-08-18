@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -28,6 +31,18 @@ import {
   FaFlag
 } from 'react-icons/fa';
 
+const careerSlug = 'police-officer';
+const careerTitle = 'Complete Guide to Becoming a Police Officer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function PoliceOfficerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },
@@ -41,53 +56,53 @@ export default function PoliceOfficerPage() {
       rank: "Police Constable", 
       education: "12th Pass", 
       ageLimit: "18-25 years",
-      salary: "₹21,700 - ₹69,100",
+      salary: "â‚¹21,700 - â‚¹69,100",
       description: "Entry-level position for law enforcement"
     },
     { 
       rank: "Head Constable", 
       education: "12th Pass + Experience", 
       ageLimit: "Promotion based",
-      salary: "₹25,500 - ₹81,100",
+      salary: "â‚¹25,500 - â‚¹81,100",
       description: "Senior constable with leadership responsibilities"
     },
     { 
       rank: "Assistant Sub-Inspector (ASI)", 
       education: "12th Pass + Experience", 
       ageLimit: "Promotion based",
-      salary: "₹29,200 - ₹92,300",
+      salary: "â‚¹29,200 - â‚¹92,300",
       description: "Junior supervisory role in police stations"
     },
     { 
       rank: "Sub-Inspector (SI)", 
       education: "Bachelor's Degree", 
       ageLimit: "21-28 years",
-      salary: "₹35,400 - ₹1,12,400",
+      salary: "â‚¹35,400 - â‚¹1,12,400",
       description: "Investigative and supervisory responsibilities"
     },
     { 
       rank: "Inspector", 
       education: "Bachelor's Degree", 
       ageLimit: "21-30 years",
-      salary: "₹44,900 - ₹1,42,400",
+      salary: "â‚¹44,900 - â‚¹1,42,400",
       description: "In-charge of police station operations"
     },
     { 
       rank: "Deputy Superintendent of Police (DSP)", 
       education: "Bachelor's Degree", 
       ageLimit: "21-32 years",
-      salary: "₹56,100 - ₹1,77,500",
+      salary: "â‚¹56,100 - â‚¹1,77,500",
       description: "Administrative and operational supervision"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Police Constable", years: "0-5 years", salary: "₹21,700 - ₹69,100/month" },
-    { rank: "Head Constable", years: "5-10 years", salary: "₹25,500 - ₹81,100/month" },
-    { rank: "Sub-Inspector", years: "8-15 years", salary: "₹35,400 - ₹1,12,400/month" },
-    { rank: "Inspector", years: "15-20 years", salary: "₹44,900 - ₹1,42,400/month" },
-    { rank: "Deputy SP", years: "20-25 years", salary: "₹56,100 - ₹1,77,500/month" },
-    { rank: "Superintendent of Police", years: "25+ years", salary: "₹78,800 - ₹2,09,200/month" }
+    { rank: "Police Constable", years: "0-5 years", salary: "â‚¹21,700 - â‚¹69,100/month" },
+    { rank: "Head Constable", years: "5-10 years", salary: "â‚¹25,500 - â‚¹81,100/month" },
+    { rank: "Sub-Inspector", years: "8-15 years", salary: "â‚¹35,400 - â‚¹1,12,400/month" },
+    { rank: "Inspector", years: "15-20 years", salary: "â‚¹44,900 - â‚¹1,42,400/month" },
+    { rank: "Deputy SP", years: "20-25 years", salary: "â‚¹56,100 - â‚¹1,77,500/month" },
+    { rank: "Superintendent of Police", years: "25+ years", salary: "â‚¹78,800 - â‚¹2,09,200/month" }
   ];
 
   const physicalRequirements = [
@@ -457,3 +472,5 @@ export default function PoliceOfficerPage() {
     </main>
   );
 }
+
+

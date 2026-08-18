@@ -1,7 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 
  import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -28,6 +31,18 @@ import {
   FaCertificate
 } from 'react-icons/fa';
 
+const careerSlug = 'cyber-security-manager';
+const careerTitle = 'Complete Guide to Becoming a Cyber Security Manager';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function CyberSecurityManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Computer Science/IT or related field" },
@@ -41,39 +56,39 @@ export default function CyberSecurityManagerPage() {
       certification: "Certified Information Systems Security Professional (CISSP)", 
       duration: "3-6 months prep", 
       requirement: "5 years experience",
-      cost: "₹45,000-60,000",
+      cost: "â‚¹45,000-60,000",
       description: "Gold standard for security management professionals"
     },
     { 
       certification: "Certified Information Security Manager (CISM)", 
       duration: "3-4 months prep", 
       requirement: "5 years experience",
-      cost: "₹40,000-55,000",
+      cost: "â‚¹40,000-55,000",
       description: "Focus on information security management"
     },
     { 
       certification: "Certified Ethical Hacker (CEH)", 
       duration: "2-3 months prep", 
       requirement: "2 years experience",
-      cost: "₹35,000-45,000",
+      cost: "â‚¹35,000-45,000",
       description: "Ethical hacking and penetration testing skills"
     },
     { 
       certification: "CompTIA Security+", 
       duration: "1-2 months prep", 
       requirement: "Entry level",
-      cost: "₹25,000-35,000",
+      cost: "â‚¹25,000-35,000",
       description: "Foundation-level security certification"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Security Analyst", years: "0-2 years", salary: "₹4-8 lakhs/year" },
-    { rank: "Senior Security Analyst", years: "2-4 years", salary: "₹8-15 lakhs/year" },
-    { rank: "Security Specialist", years: "4-6 years", salary: "₹15-25 lakhs/year" },
-    { rank: "Cyber Security Manager", years: "6-10 years", salary: "₹25-45 lakhs/year" },
-    { rank: "Senior Security Manager", years: "10-15 years", salary: "₹45-70 lakhs/year" },
-    { rank: "CISO/Security Director", years: "15+ years", salary: "₹70 lakhs-2 crores/year" }
+    { rank: "Security Analyst", years: "0-2 years", salary: "â‚¹4-8 lakhs/year" },
+    { rank: "Senior Security Analyst", years: "2-4 years", salary: "â‚¹8-15 lakhs/year" },
+    { rank: "Security Specialist", years: "4-6 years", salary: "â‚¹15-25 lakhs/year" },
+    { rank: "Cyber Security Manager", years: "6-10 years", salary: "â‚¹25-45 lakhs/year" },
+    { rank: "Senior Security Manager", years: "10-15 years", salary: "â‚¹45-70 lakhs/year" },
+    { rank: "CISO/Security Director", years: "15+ years", salary: "â‚¹70 lakhs-2 crores/year" }
   ];
 
   const skillRequirements = [
@@ -108,12 +123,12 @@ export default function CyberSecurityManagerPage() {
   ];
 
   const topCompanies = [
-    { company: "TCS", type: "Indian MNC", package: "₹15-40 lakhs" },
-    { company: "Infosys", type: "Indian MNC", package: "₹12-35 lakhs" },
-    { company: "Wipro", type: "Indian MNC", package: "₹10-30 lakhs" },
-    { company: "Microsoft", type: "Foreign MNC", package: "₹25-80 lakhs" },
-    { company: "Amazon", type: "Foreign MNC", package: "₹30-1.2 crores" },
-    { company: "Google", type: "Foreign MNC", package: "₹40-1.5 crores" }
+    { company: "TCS", type: "Indian MNC", package: "â‚¹15-40 lakhs" },
+    { company: "Infosys", type: "Indian MNC", package: "â‚¹12-35 lakhs" },
+    { company: "Wipro", type: "Indian MNC", package: "â‚¹10-30 lakhs" },
+    { company: "Microsoft", type: "Foreign MNC", package: "â‚¹25-80 lakhs" },
+    { company: "Amazon", type: "Foreign MNC", package: "â‚¹30-1.2 crores" },
+    { company: "Google", type: "Foreign MNC", package: "â‚¹40-1.5 crores" }
   ];
 
   return (
@@ -441,7 +456,7 @@ export default function CyberSecurityManagerPage() {
                   <a href="https://www.isc2.org/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200 hover:shadow-md transition-shadow group">
                     <FaExternalLinkAlt className="text-red-600 mr-3 group-hover:text-red-800" />
                     <div>
-                      <div className="font-medium text-gray-800">(ISC)² International</div>
+                      <div className="font-medium text-gray-800">(ISC)Â² International</div>
                       <div className="text-sm text-gray-600">CISSP and other security certifications</div>
                     </div>
                   </a>
@@ -499,3 +514,5 @@ export default function CyberSecurityManagerPage() {
   );
 }
   
+
+

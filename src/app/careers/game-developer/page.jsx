@@ -1,3 +1,4 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
 import { 
@@ -94,7 +95,21 @@ import {
   FaVrCardboard,
   FaPlayCircle
 } from 'react-icons/fa';
-import { 
+
+const careerSlug = 'game-developer';
+const careerTitle = 'Game Developer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+import {
+
+
   SiUnity, 
   SiUnrealengine, 
   SiCsharp, 
@@ -123,7 +138,7 @@ export default function GameDeveloperPage() {
       duration: "3-4 years",
       program: "B.Tech Computer Science, Game Design, Animation, BCA, B.Sc. IT",
       focus: "Programming fundamentals, game mechanics, computer graphics, mathematics",
-      cost: "₹50,000-8 LPA (government to private colleges)",
+      cost: "â‚¹50,000-8 LPA (government to private colleges)",
       outcomes: "Junior game developer, QA tester, game designer intern positions"
     },
     { 
@@ -131,7 +146,7 @@ export default function GameDeveloperPage() {
       duration: "6 months - 2 years",
       program: "Game development bootcamps, Unity/Unreal certifications, online courses",
       focus: "Game engines, 3D modeling, game design principles, portfolio building",
-      cost: "₹25,000-5 LPA for specialized programs",
+      cost: "â‚¹25,000-5 LPA for specialized programs",
       outcomes: "Game programmer, indie developer, game designer, technical artist"
     },
     { 
@@ -139,7 +154,7 @@ export default function GameDeveloperPage() {
       duration: "2 years",
       program: "M.Tech Game Technology, Computer Graphics, Interactive Media, MCA",
       focus: "Advanced game development, AI in games, VR/AR, research projects",
-      cost: "₹1-8 LPA for advanced programs",
+      cost: "â‚¹1-8 LPA for advanced programs",
       outcomes: "Senior developer, lead programmer, game architect, research positions"
     },
     { 
@@ -147,7 +162,7 @@ export default function GameDeveloperPage() {
       duration: "Ongoing",
       program: "Unity Certified Developer, Unreal Engine certifications, platform SDKs",
       focus: "Latest game engines, emerging platforms, advanced techniques, specializations",
-      cost: "₹10,000-3 LPA for multiple certifications",
+      cost: "â‚¹10,000-3 LPA for multiple certifications",
       outcomes: "Expert developer, technical lead, independent studio founder, consultant"
     }
   ];
@@ -208,42 +223,42 @@ export default function GameDeveloperPage() {
       sector: "AAA Game Studios",
       companies: "Ubisoft, EA, Activision Blizzard, Rockstar, Sony Interactive, Nintendo",
       roles: "Game Programmer, Senior Developer, Lead Developer, Principal Engineer",
-      salary: "₹8-60 LPA",
+      salary: "â‚¹8-60 LPA",
       benefits: "High budgets, cutting-edge technology, global reach, team collaboration"
     },
     { 
       sector: "Indian Game Development",
       companies: "Games2win, Nazara Technologies, Moonfrog Labs, SuperGaming, nCore Games",
       roles: "Game Developer, Mobile Developer, Game Designer, Technical Lead",
-      salary: "₹4-25 LPA",
+      salary: "â‚¹4-25 LPA",
       benefits: "Growing industry, diverse projects, local market focus, startup culture"
     },
     { 
       sector: "Mobile Gaming Companies",
       companies: "King, Supercell, Rovio, Zynga, Playrix, Peak Games, Indian mobile studios",
       roles: "Mobile Game Developer, Unity Developer, Game Designer, LiveOps Developer",
-      salary: "₹5-35 LPA",
+      salary: "â‚¹5-35 LPA",
       benefits: "Massive user base, high revenue potential, data-driven development"
     },
     { 
       sector: "Indie Game Development",
       companies: "Independent studios, solo developers, small teams, publishing platforms",
       roles: "Indie Developer, Solo Developer, Small Team Lead, Multi-role Developer",
-      salary: "₹2-50 LPA (highly variable)",
+      salary: "â‚¹2-50 LPA (highly variable)",
       benefits: "Creative freedom, revenue sharing, innovative projects, flexible work"
     },
     { 
       sector: "Educational & Serious Games",
       companies: "Educational institutions, corporate training, healthcare gaming, simulation",
       roles: "Educational Game Developer, Simulation Developer, Training Content Creator",
-      salary: "₹4-20 LPA",
+      salary: "â‚¹4-20 LPA",
       benefits: "Social impact, stable projects, B2B markets, specialized expertise"
     },
     { 
       sector: "VR/AR Gaming Startups",
       companies: "Meta Reality Labs, Magic Leap, emerging VR/AR studios, tech companies",
       roles: "VR Developer, AR Developer, XR Engineer, Immersive Designer",
-      salary: "₹6-40 LPA",
+      salary: "â‚¹6-40 LPA",
       benefits: "Cutting-edge technology, innovation focus, future market potential"
     }
   ];
@@ -255,7 +270,7 @@ export default function GameDeveloperPage() {
       platforms: "PC, Mobile, Console, VR/AR, Web",
       languages: "C#, JavaScript (legacy), Visual Scripting",
       marketShare: "50%+ of mobile games",
-      salaryRange: "₹4-35 LPA"
+      salaryRange: "â‚¹4-35 LPA"
     },
     { 
       engine: "Unreal Engine",
@@ -263,7 +278,7 @@ export default function GameDeveloperPage() {
       platforms: "PC, Console, Mobile, VR, Architectural Visualization",
       languages: "C++, Blueprint Visual Scripting",
       marketShare: "Major AAA and indie titles",
-      salaryRange: "₹6-45 LPA"
+      salaryRange: "â‚¹6-45 LPA"
     },
     { 
       engine: "Godot Engine",
@@ -271,7 +286,7 @@ export default function GameDeveloperPage() {
       platforms: "PC, Mobile, Console, Web",
       languages: "GDScript, C#, C++, Visual Scripting",
       marketShare: "Growing indie community",
-      salaryRange: "₹3-25 LPA"
+      salaryRange: "â‚¹3-25 LPA"
     },
     { 
       engine: "Custom Engines",
@@ -279,7 +294,7 @@ export default function GameDeveloperPage() {
       platforms: "All platforms, optimized for specific needs",
       languages: "C++, C, Assembly, Custom scripting",
       marketShare: "AAA studios and tech companies",
-      salaryRange: "₹8-60 LPA"
+      salaryRange: "â‚¹8-60 LPA"
     },
     { 
       engine: "Web Game Frameworks",
@@ -287,26 +302,26 @@ export default function GameDeveloperPage() {
       platforms: "Web browsers, Mobile web, Desktop web apps",
       languages: "JavaScript, TypeScript, WebGL, HTML5",
       marketShare: "Browser games and educational content",
-      salaryRange: "₹4-30 LPA"
+      salaryRange: "â‚¹4-30 LPA"
     }
   ];
 
   const careerProgression = [
-    { level: "Junior Game Developer", experience: "0-2 years", salary: "₹3-8 LPA", focus: "Learning game engines, basic programming, following senior guidance, bug fixing" },
-    { level: "Game Developer", experience: "2-5 years", salary: "₹6-18 LPA", focus: "Feature implementation, system development, code optimization, team collaboration" },
-    { level: "Senior Game Developer", experience: "5-8 years", salary: "₹15-35 LPA", focus: "Architecture decisions, mentoring juniors, complex system design, performance optimization" },
-    { level: "Lead Developer/Technical Lead", experience: "8-12 years", salary: "₹25-60 LPA", focus: "Team leadership, technical strategy, project planning, cross-team coordination" },
-    { level: "Principal Engineer/Game Director", experience: "12-18 years", salary: "₹40-1.2 Cr", focus: "Technical vision, architecture oversight, innovation leadership, strategic planning" },
-    { level: "CTO/Studio Head/Founder", experience: "15+ years", salary: "₹60 LPA-5 Cr", focus: "Business strategy, technology leadership, studio management, industry influence" }
+    { level: "Junior Game Developer", experience: "0-2 years", salary: "â‚¹3-8 LPA", focus: "Learning game engines, basic programming, following senior guidance, bug fixing" },
+    { level: "Game Developer", experience: "2-5 years", salary: "â‚¹6-18 LPA", focus: "Feature implementation, system development, code optimization, team collaboration" },
+    { level: "Senior Game Developer", experience: "5-8 years", salary: "â‚¹15-35 LPA", focus: "Architecture decisions, mentoring juniors, complex system design, performance optimization" },
+    { level: "Lead Developer/Technical Lead", experience: "8-12 years", salary: "â‚¹25-60 LPA", focus: "Team leadership, technical strategy, project planning, cross-team coordination" },
+    { level: "Principal Engineer/Game Director", experience: "12-18 years", salary: "â‚¹40-1.2 Cr", focus: "Technical vision, architecture oversight, innovation leadership, strategic planning" },
+    { level: "CTO/Studio Head/Founder", experience: "15+ years", salary: "â‚¹60 LPA-5 Cr", focus: "Business strategy, technology leadership, studio management, industry influence" }
   ];
 
   const topInstitutions = [
-    { name: "National Institute of Design (NID)", courses: "Game Design, Animation, Interactive Media", ranking: "Premier Design Institute", fees: "₹3-5 LPA", placements: "Excellent in creative industries" },
-    { name: "Indian Institutes of Technology (IITs)", courses: "Computer Science, Game Technology specializations", ranking: "Top Technical Institutes", fees: "₹2-3 LPA", placements: "₹15-80 LPA in tech" },
-    { name: "MAAC (Maya Academy of Advanced Cinematics)", courses: "Game Art & Design, Animation, VFX", ranking: "Leading Animation Institute", fees: "₹2-4 LPA", placements: "Good industry connections" },
-    { name: "Arena Animation", courses: "Game Design, 3D Animation, VFX", ranking: "Popular Animation Chain", fees: "₹1.5-3 LPA", placements: "Decent placement record" },
-    { name: "Frameboxx Animation", courses: "Game Development, Animation, Digital Arts", ranking: "Specialized Animation Institute", fees: "₹2-3.5 LPA", placements: "Industry-focused training" },
-    { name: "Online Platforms (Udemy, Coursera)", courses: "Game Development, Unity, Unreal Engine", ranking: "Flexible Learning", fees: "₹5,000-1 LPA", placements: "Self-driven career growth" }
+    { name: "National Institute of Design (NID)", courses: "Game Design, Animation, Interactive Media", ranking: "Premier Design Institute", fees: "â‚¹3-5 LPA", placements: "Excellent in creative industries" },
+    { name: "Indian Institutes of Technology (IITs)", courses: "Computer Science, Game Technology specializations", ranking: "Top Technical Institutes", fees: "â‚¹2-3 LPA", placements: "â‚¹15-80 LPA in tech" },
+    { name: "MAAC (Maya Academy of Advanced Cinematics)", courses: "Game Art & Design, Animation, VFX", ranking: "Leading Animation Institute", fees: "â‚¹2-4 LPA", placements: "Good industry connections" },
+    { name: "Arena Animation", courses: "Game Design, 3D Animation, VFX", ranking: "Popular Animation Chain", fees: "â‚¹1.5-3 LPA", placements: "Decent placement record" },
+    { name: "Frameboxx Animation", courses: "Game Development, Animation, Digital Arts", ranking: "Specialized Animation Institute", fees: "â‚¹2-3.5 LPA", placements: "Industry-focused training" },
+    { name: "Online Platforms (Udemy, Coursera)", courses: "Game Development, Unity, Unreal Engine", ranking: "Flexible Learning", fees: "â‚¹5,000-1 LPA", placements: "Self-driven career growth" }
   ];
 
   const technicalSkills = [
@@ -329,14 +344,14 @@ export default function GameDeveloperPage() {
   ];
 
   const salaryRanges = [
-    { sector: "AAA Game Studios", fresher: "₹8-15 LPA", experienced: "₹20-45 LPA", senior: "₹35-80 LPA" },
-    { sector: "Indian Game Companies", fresher: "₹4-10 LPA", experienced: "₹12-30 LPA", senior: "₹25-60 LPA" },
-    { sector: "Mobile Gaming", fresher: "₹5-12 LPA", experienced: "₹15-35 LPA", senior: "₹30-70 LPA" },
-    { sector: "Indie Development", fresher: "₹2-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "VR/AR Gaming", fresher: "₹6-15 LPA", experienced: "₹18-40 LPA", senior: "₹35-80 LPA" },
-    { sector: "Educational Games", fresher: "₹4-9 LPA", experienced: "₹10-25 LPA", senior: "₹20-45 LPA" },
-    { sector: "International Remote", fresher: "₹12-25 LPA", experienced: "₹25-60 LPA", senior: "₹50-2 Cr" },
-    { sector: "Freelance/Contract", fresher: "₹3-12 LPA", experienced: "₹15-40 LPA", senior: "₹30-1 Cr" }
+    { sector: "AAA Game Studios", fresher: "â‚¹8-15 LPA", experienced: "â‚¹20-45 LPA", senior: "â‚¹35-80 LPA" },
+    { sector: "Indian Game Companies", fresher: "â‚¹4-10 LPA", experienced: "â‚¹12-30 LPA", senior: "â‚¹25-60 LPA" },
+    { sector: "Mobile Gaming", fresher: "â‚¹5-12 LPA", experienced: "â‚¹15-35 LPA", senior: "â‚¹30-70 LPA" },
+    { sector: "Indie Development", fresher: "â‚¹2-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "VR/AR Gaming", fresher: "â‚¹6-15 LPA", experienced: "â‚¹18-40 LPA", senior: "â‚¹35-80 LPA" },
+    { sector: "Educational Games", fresher: "â‚¹4-9 LPA", experienced: "â‚¹10-25 LPA", senior: "â‚¹20-45 LPA" },
+    { sector: "International Remote", fresher: "â‚¹12-25 LPA", experienced: "â‚¹25-60 LPA", senior: "â‚¹50-2 Cr" },
+    { sector: "Freelance/Contract", fresher: "â‚¹3-12 LPA", experienced: "â‚¹15-40 LPA", senior: "â‚¹30-1 Cr" }
   ];
 
   const emergingTrends = [
@@ -419,37 +434,37 @@ export default function GameDeveloperPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Indie Game Studio",
-      investment: "₹5 lakhs-2 crores",
+      investment: "â‚¹5 lakhs-2 crores",
       description: "Independent game development studio creating original games for multiple platforms",
       potential: "High creative control with potential for viral success and global distribution"
     },
     { 
       business: "Mobile Game Development",
-      investment: "₹2-50 lakhs",
+      investment: "â‚¹2-50 lakhs",
       description: "Focus on casual and hyper-casual mobile games for mass market",
       potential: "Billion-user mobile market with low entry barriers and high scalability"
     },
     { 
       business: "Game Art & Animation Services",
-      investment: "₹3-25 lakhs",
+      investment: "â‚¹3-25 lakhs",
       description: "Provide 3D modeling, animation, and art services to game studios",
       potential: "Steady B2B demand with specialized skills and global client base"
     },
     { 
       business: "VR/AR Gaming Experiences",
-      investment: "₹10 lakhs-1 crore",
+      investment: "â‚¹10 lakhs-1 crore",
       description: "Create immersive VR/AR games and interactive experiences",
       potential: "Emerging market with high-value applications and premium pricing"
     },
     { 
       business: "Educational Game Platform",
-      investment: "₹8 lakhs-3 crores",
+      investment: "â‚¹8 lakhs-3 crores",
       description: "Gamified learning platforms and educational content creation",
       potential: "Growing EdTech market with social impact and B2B opportunities"
     },
     { 
       business: "Game Development Tools",
-      investment: "₹5 lakhs-2 crores",
+      investment: "â‚¹5 lakhs-2 crores",
       description: "Create tools, plugins, and assets for other game developers",
       potential: "B2B market serving the growing game development community"
     }
@@ -932,3 +947,5 @@ export default function GameDeveloperPage() {
     </main>
   );
 }
+
+

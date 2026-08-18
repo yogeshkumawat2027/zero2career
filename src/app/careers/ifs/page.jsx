@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUserTie, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -21,6 +24,18 @@ import {
   FaGlobe,
   FaSeedling
 } from 'react-icons/fa';
+
+const careerSlug = 'ifs';
+const careerTitle = 'Complete Guide to Becoming an IFS Officer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function IFSPage() {
   const eligibilityData = [
@@ -55,12 +70,12 @@ export default function IFSPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Assistant Conservator of Forests (ACF)", years: "Entry Level", salary: "₹56,100 - ₹1,77,500" },
-    { rank: "Divisional Forest Officer (DFO)", years: "4-8 years", salary: "₹78,800 - ₹2,09,200" },
-    { rank: "Conservator of Forests (CF)", years: "13-16 years", salary: "₹1,44,200 - ₹2,18,200" },
-    { rank: "Chief Conservator of Forests (CCF)", years: "18-25 years", salary: "₹1,82,200 - ₹2,24,100" },
-    { rank: "Additional Principal Chief Conservator", years: "25+ years", salary: "₹2,05,400 - ₹2,24,400" },
-    { rank: "Principal Chief Conservator of Forests", years: "30+ years", salary: "₹2,25,000 (Fixed)" }
+    { rank: "Assistant Conservator of Forests (ACF)", years: "Entry Level", salary: "â‚¹56,100 - â‚¹1,77,500" },
+    { rank: "Divisional Forest Officer (DFO)", years: "4-8 years", salary: "â‚¹78,800 - â‚¹2,09,200" },
+    { rank: "Conservator of Forests (CF)", years: "13-16 years", salary: "â‚¹1,44,200 - â‚¹2,18,200" },
+    { rank: "Chief Conservator of Forests (CCF)", years: "18-25 years", salary: "â‚¹1,82,200 - â‚¹2,24,100" },
+    { rank: "Additional Principal Chief Conservator", years: "25+ years", salary: "â‚¹2,05,400 - â‚¹2,24,400" },
+    { rank: "Principal Chief Conservator of Forests", years: "30+ years", salary: "â‚¹2,25,000 (Fixed)" }
   ];
 
   const keySubjects = [
@@ -425,3 +440,5 @@ export default function IFSPage() {
     </main>
   );
 }
+
+

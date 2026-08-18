@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaChartBar, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -38,6 +41,18 @@ import {
   FaSearch,
   FaFlask
 } from 'react-icons/fa';
+
+const careerSlug = 'data-science';
+const careerTitle = 'Complete Guide to Becoming a Data Scientist';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function DataSciencePage() {
   const eligibilityData = [
@@ -79,14 +94,14 @@ export default function DataSciencePage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Data Analyst", years: "0-2 years", salary: "₹25,000 - ₹45,000" },
-    { rank: "Junior Data Scientist", years: "1-3 years", salary: "₹45,000 - ₹70,000" },
-    { rank: "Data Scientist", years: "3-5 years", salary: "₹70,000 - ₹1,20,000" },
-    { rank: "Senior Data Scientist", years: "5-8 years", salary: "₹1,20,000 - ₹2,00,000" },
-    { rank: "Lead Data Scientist", years: "8-12 years", salary: "₹2,00,000 - ₹3,50,000" },
-    { rank: "Principal Data Scientist", years: "10-15 years", salary: "₹3,50,000 - ₹5,00,000" },
-    { rank: "Data Science Manager", years: "12+ years", salary: "₹4,00,000 - ₹6,00,000" },
-    { rank: "Chief Data Officer", years: "15+ years", salary: "₹6,00,000 - ₹10,00,000" }
+    { rank: "Data Analyst", years: "0-2 years", salary: "â‚¹25,000 - â‚¹45,000" },
+    { rank: "Junior Data Scientist", years: "1-3 years", salary: "â‚¹45,000 - â‚¹70,000" },
+    { rank: "Data Scientist", years: "3-5 years", salary: "â‚¹70,000 - â‚¹1,20,000" },
+    { rank: "Senior Data Scientist", years: "5-8 years", salary: "â‚¹1,20,000 - â‚¹2,00,000" },
+    { rank: "Lead Data Scientist", years: "8-12 years", salary: "â‚¹2,00,000 - â‚¹3,50,000" },
+    { rank: "Principal Data Scientist", years: "10-15 years", salary: "â‚¹3,50,000 - â‚¹5,00,000" },
+    { rank: "Data Science Manager", years: "12+ years", salary: "â‚¹4,00,000 - â‚¹6,00,000" },
+    { rank: "Chief Data Officer", years: "15+ years", salary: "â‚¹6,00,000 - â‚¹10,00,000" }
   ];
 
   const skillsRequired = [
@@ -553,3 +568,5 @@ export default function DataSciencePage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCog, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -84,6 +87,18 @@ import {
   FaHardHat
 } from 'react-icons/fa';
 
+const careerSlug = 'mechanical-engineer';
+const careerTitle = 'Complete Guide to Mechanical Engineering Career';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function MechanicalEngineerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.Tech/B.E. in Mechanical Engineering from AICTE approved college" },
@@ -114,14 +129,14 @@ export default function MechanicalEngineerPage() {
   ];
 
   const careerHierarchy = [
-    { position: "Junior Engineer/Graduate Engineer Trainee", years: "0-2 years", salary: "₹3-6 LPA", level: "Entry Level" },
-    { position: "Assistant Engineer", years: "2-4 years", salary: "₹6-10 LPA", level: "Associate" },
-    { position: "Engineer/Senior Engineer", years: "4-8 years", salary: "₹10-18 LPA", level: "Mid Level" },
-    { position: "Assistant Manager", years: "8-12 years", salary: "₹18-30 LPA", level: "Management" },
-    { position: "Deputy Manager/Manager", years: "12-18 years", salary: "₹30-50 LPA", level: "Senior Management" },
-    { position: "Assistant General Manager", years: "18-25 years", salary: "₹50-80 LPA", level: "Executive" },
-    { position: "Deputy General Manager", years: "25-30 years", salary: "₹80 LPA - 1.2 Cr", level: "Senior Executive" },
-    { position: "General Manager/Chief Engineer", years: "30+ years", salary: "₹1.2-2+ Cr", level: "Top Executive" }
+    { position: "Junior Engineer/Graduate Engineer Trainee", years: "0-2 years", salary: "â‚¹3-6 LPA", level: "Entry Level" },
+    { position: "Assistant Engineer", years: "2-4 years", salary: "â‚¹6-10 LPA", level: "Associate" },
+    { position: "Engineer/Senior Engineer", years: "4-8 years", salary: "â‚¹10-18 LPA", level: "Mid Level" },
+    { position: "Assistant Manager", years: "8-12 years", salary: "â‚¹18-30 LPA", level: "Management" },
+    { position: "Deputy Manager/Manager", years: "12-18 years", salary: "â‚¹30-50 LPA", level: "Senior Management" },
+    { position: "Assistant General Manager", years: "18-25 years", salary: "â‚¹50-80 LPA", level: "Executive" },
+    { position: "Deputy General Manager", years: "25-30 years", salary: "â‚¹80 LPA - 1.2 Cr", level: "Senior Executive" },
+    { position: "General Manager/Chief Engineer", years: "30+ years", salary: "â‚¹1.2-2+ Cr", level: "Top Executive" }
   ];
 
   const keyResponsibilities = [
@@ -540,3 +555,5 @@ export default function MechanicalEngineerPage() {
     </main>
   );
 }
+
+

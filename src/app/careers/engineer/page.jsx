@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCode, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -22,6 +25,18 @@ import {
   FaRocket
 } from 'react-icons/fa';
 
+const careerSlug = 'engineer';
+const careerTitle = 'Complete Guide to Becoming a Software Engineer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function SoftwareEngineerPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's in Computer Science/IT or related field" },
@@ -35,32 +50,32 @@ export default function SoftwareEngineerPage() {
       phase: "Junior Developer", 
       duration: "0-2 years", 
       skills: "Basic programming, debugging, version control",
-      salary: "₹3-8 LPA",
+      salary: "â‚¹3-8 LPA",
       nature: "Learning fundamentals, guided development"
     },
     { 
       phase: "Mid-Level Developer", 
       duration: "2-5 years", 
       skills: "Framework expertise, system design, testing",
-      salary: "₹8-18 LPA",
+      salary: "â‚¹8-18 LPA",
       nature: "Independent development, mentoring juniors"
     },
     { 
       phase: "Senior Developer/Lead", 
       duration: "5-8 years", 
       skills: "Architecture, team leadership, code reviews",
-      salary: "₹18-35 LPA",
+      salary: "â‚¹18-35 LPA",
       nature: "Technical leadership, project ownership"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Software Developer", years: "0-2 years", salary: "₹3-8 LPA" },
-    { rank: "Software Developer", years: "2-4 years", salary: "₹8-15 LPA" },
-    { rank: "Senior Software Developer", years: "4-7 years", salary: "₹15-25 LPA" },
-    { rank: "Technical Lead", years: "6-10 years", salary: "₹25-40 LPA" },
-    { rank: "Engineering Manager", years: "8-12 years", salary: "₹35-60 LPA" },
-    { rank: "Principal Engineer/Director", years: "10+ years", salary: "₹50-1 Cr+" }
+    { rank: "Junior Software Developer", years: "0-2 years", salary: "â‚¹3-8 LPA" },
+    { rank: "Software Developer", years: "2-4 years", salary: "â‚¹8-15 LPA" },
+    { rank: "Senior Software Developer", years: "4-7 years", salary: "â‚¹15-25 LPA" },
+    { rank: "Technical Lead", years: "6-10 years", salary: "â‚¹25-40 LPA" },
+    { rank: "Engineering Manager", years: "8-12 years", salary: "â‚¹35-60 LPA" },
+    { rank: "Principal Engineer/Director", years: "10+ years", salary: "â‚¹50-1 Cr+" }
   ];
 
   const keySkills = [
@@ -83,12 +98,12 @@ export default function SoftwareEngineerPage() {
   ];
 
   const specializationAreas = [
-    { area: "Frontend Development", tech: "React, Vue, Angular", demand: "High", salary: "₹6-30 LPA" },
-    { area: "Backend Development", tech: "Node.js, Java, Python", demand: "Very High", salary: "₹8-35 LPA" },
-    { area: "Full Stack Development", tech: "MEAN/MERN Stack", demand: "Very High", salary: "₹10-40 LPA" },
-    { area: "Mobile Development", tech: "React Native, Flutter", demand: "High", salary: "₹8-32 LPA" },
-    { area: "DevOps Engineering", tech: "Docker, Kubernetes, AWS", demand: "Very High", salary: "₹12-45 LPA" },
-    { area: "Data Engineering", tech: "Spark, Kafka, Airflow", demand: "Very High", salary: "₹15-50 LPA" }
+    { area: "Frontend Development", tech: "React, Vue, Angular", demand: "High", salary: "â‚¹6-30 LPA" },
+    { area: "Backend Development", tech: "Node.js, Java, Python", demand: "Very High", salary: "â‚¹8-35 LPA" },
+    { area: "Full Stack Development", tech: "MEAN/MERN Stack", demand: "Very High", salary: "â‚¹10-40 LPA" },
+    { area: "Mobile Development", tech: "React Native, Flutter", demand: "High", salary: "â‚¹8-32 LPA" },
+    { area: "DevOps Engineering", tech: "Docker, Kubernetes, AWS", demand: "Very High", salary: "â‚¹12-45 LPA" },
+    { area: "Data Engineering", tech: "Spark, Kafka, Airflow", demand: "Very High", salary: "â‚¹15-50 LPA" }
   ];
 
   return (
@@ -466,3 +481,5 @@ export default function SoftwareEngineerPage() {
     </main>
   );
 }
+
+

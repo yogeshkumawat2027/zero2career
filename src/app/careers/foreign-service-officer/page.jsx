@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaGlobe, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -98,6 +101,18 @@ import {
   FaPaintBrush
 } from 'react-icons/fa';
 
+const careerSlug = 'foreign-service-officer';
+const careerTitle = 'Foreign Service Officer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ForeignServiceOfficerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree (any stream) for UPSC CSE" },
@@ -112,7 +127,7 @@ export default function ForeignServiceOfficerPage() {
       duration: "3-4 years",
       program: "Any stream - Arts, Science, Commerce, Engineering, Medical",
       focus: "General knowledge, current affairs, analytical thinking, communication skills",
-      cost: "₹50,000-5 LPA (government to private colleges)",
+      cost: "â‚¹50,000-5 LPA (government to private colleges)",
       outcomes: "Eligibility for UPSC Civil Services Examination (CSE)"
     },
     { 
@@ -120,7 +135,7 @@ export default function ForeignServiceOfficerPage() {
       duration: "1-3 years",
       program: "Self-study or coaching institutes for Civil Services Examination",
       focus: "General Studies, Optional subject, Essay writing, Interview preparation",
-      cost: "₹25,000-3 LPA for coaching and materials",
+      cost: "â‚¹25,000-3 LPA for coaching and materials",
       outcomes: "Selection as IFS officer through Civil Services Examination"
     },
     { 
@@ -153,7 +168,7 @@ export default function ForeignServiceOfficerPage() {
       area: "Economic & Commercial Diplomacy",
       description: "Promote trade, investment, and economic cooperation between nations",
       applications: "Trade negotiations, business facilitation, investment promotion, economic analysis",
-      jobRoles: "Commercial Counsellor, Trade Commissioner, Economic Attaché",
+      jobRoles: "Commercial Counsellor, Trade Commissioner, Economic AttachÃ©",
       growth: "Growing importance with global economic integration"
     },
     { 
@@ -167,7 +182,7 @@ export default function ForeignServiceOfficerPage() {
       area: "Cultural & Public Diplomacy",
       description: "Promote cultural exchange and public understanding between nations",
       applications: "Cultural programs, educational exchanges, media relations, soft power projection",
-      jobRoles: "Cultural Attaché, Information Officer, Public Diplomacy Specialist",
+      jobRoles: "Cultural AttachÃ©, Information Officer, Public Diplomacy Specialist",
       growth: "Increasing focus on soft power and cultural influence"
     },
     { 
@@ -181,7 +196,7 @@ export default function ForeignServiceOfficerPage() {
       area: "Security & Strategic Affairs",
       description: "Handle security-related diplomatic issues and strategic partnerships",
       applications: "Defense cooperation, counter-terrorism, intelligence sharing, strategic partnerships",
-      jobRoles: "Defense Attaché, Security Advisor, Strategic Affairs Specialist",
+      jobRoles: "Defense AttachÃ©, Security Advisor, Strategic Affairs Specialist",
       growth: "High priority in current global security environment"
     }
   ];
@@ -191,62 +206,62 @@ export default function ForeignServiceOfficerPage() {
       region: "South Asia (SAARC Countries)",
       countries: "Pakistan, Bangladesh, Sri Lanka, Nepal, Bhutan, Afghanistan, Maldives",
       roles: "Political Officer, Commercial Counsellor, Deputy High Commissioner",
-      allowances: "₹50,000-2 LPA additional",
+      allowances: "â‚¹50,000-2 LPA additional",
       challenges: "Regional politics, cultural similarities, bilateral issues"
     },
     { 
       region: "Southeast Asia & East Asia",
       countries: "China, Japan, Singapore, Malaysia, Thailand, Indonesia, South Korea, Vietnam",
       roles: "Ambassador, Minister (Commercial), Consul General",
-      allowances: "₹1-4 LPA additional",
+      allowances: "â‚¹1-4 LPA additional",
       challenges: "Economic powerhouses, technological advancement, strategic importance"
     },
     { 
       region: "Middle East & West Asia",
       countries: "UAE, Saudi Arabia, Iran, Israel, Turkey, Egypt, Qatar, Kuwait",
-      roles: "Political Counsellor, Commercial Attaché, Consular Officer",
-      allowances: "₹1.5-5 LPA additional",
+      roles: "Political Counsellor, Commercial AttachÃ©, Consular Officer",
+      allowances: "â‚¹1.5-5 LPA additional",
       challenges: "Energy diplomacy, diaspora management, regional conflicts"
     },
     { 
       region: "Europe & European Union",
       countries: "UK, Germany, France, Russia, Netherlands, Belgium, Switzerland, Nordic countries",
-      roles: "Deputy Ambassador, Economic Counsellour, Cultural Attaché",
-      allowances: "₹2-6 LPA additional",
+      roles: "Deputy Ambassador, Economic Counsellour, Cultural AttachÃ©",
+      allowances: "â‚¹2-6 LPA additional",
       challenges: "Advanced economies, EU relations, technology cooperation"
     },
     { 
       region: "Americas",
       countries: "USA, Canada, Brazil, Argentina, Mexico, Caribbean nations",
       roles: "Minister (Political), Trade Commissioner, Information Officer",
-      allowances: "₹2-7 LPA additional",
+      allowances: "â‚¹2-7 LPA additional",
       challenges: "Strategic partnerships, diaspora engagement, economic cooperation"
     },
     { 
       region: "Africa",
       countries: "South Africa, Nigeria, Kenya, Ethiopia, Egypt, Morocco, Ghana",
       roles: "High Commissioner, Development Cooperation Officer, Political Officer",
-      allowances: "₹1-3 LPA additional",
+      allowances: "â‚¹1-3 LPA additional",
       challenges: "Development partnerships, resource diplomacy, South-South cooperation"
     }
   ];
 
   const careerProgression = [
-    { level: "Third Secretary/Assistant Secretary", experience: "0-4 years", salary: "₹56,100 (Level 10)", focus: "Learning diplomatic procedures, language training, junior responsibilities" },
-    { level: "Second Secretary/Under Secretary", experience: "4-9 years", salary: "₹67,700 (Level 11)", focus: "Specialized desk work, bilateral relations, consular duties" },
-    { level: "First Secretary/Deputy Secretary", experience: "9-16 years", salary: "₹78,800 (Level 12)", focus: "Senior desk officer, policy formulation, team leadership" },
-    { level: "Counsellor/Director", experience: "16-25 years", salary: "₹1,18,500 (Level 13)", focus: "Department head, high-level negotiations, strategic planning" },
-    { level: "Minister/Joint Secretary", experience: "25-30 years", salary: "₹1,44,200 (Level 14)", focus: "Senior diplomatic positions, policy making, international negotiations" },
-    { level: "Ambassador/Additional Secretary", experience: "30+ years", salary: "₹2,05,400+ (Level 15+)", focus: "Head of mission, strategic leadership, international representation" }
+    { level: "Third Secretary/Assistant Secretary", experience: "0-4 years", salary: "â‚¹56,100 (Level 10)", focus: "Learning diplomatic procedures, language training, junior responsibilities" },
+    { level: "Second Secretary/Under Secretary", experience: "4-9 years", salary: "â‚¹67,700 (Level 11)", focus: "Specialized desk work, bilateral relations, consular duties" },
+    { level: "First Secretary/Deputy Secretary", experience: "9-16 years", salary: "â‚¹78,800 (Level 12)", focus: "Senior desk officer, policy formulation, team leadership" },
+    { level: "Counsellor/Director", experience: "16-25 years", salary: "â‚¹1,18,500 (Level 13)", focus: "Department head, high-level negotiations, strategic planning" },
+    { level: "Minister/Joint Secretary", experience: "25-30 years", salary: "â‚¹1,44,200 (Level 14)", focus: "Senior diplomatic positions, policy making, international negotiations" },
+    { level: "Ambassador/Additional Secretary", experience: "30+ years", salary: "â‚¹2,05,400+ (Level 15+)", focus: "Head of mission, strategic leadership, international representation" }
   ];
 
   const topInstitutes = [
-    { name: "Jamia Millia Islamia", courses: "BA (Hons) Political Science, International Studies", ranking: "Top for IFS preparation", fees: "₹15,000", placements: "High UPSC success rate" },
-    { name: "Jawaharlal Nehru University (JNU)", courses: "MA International Relations, Political Science", ranking: "Premier for International Studies", fees: "₹20,000", placements: "Excellent civil services record" },
-    { name: "Delhi University (Hindu College, SRCC)", courses: "BA Political Science, Economics, History", ranking: "Top undergraduate programs", fees: "₹25,000", placements: "Strong UPSC coaching ecosystem" },
-    { name: "Aligarh Muslim University", courses: "BA Political Science, International Relations", ranking: "Traditional civil services hub", fees: "₹18,000", placements: "Good success in competitive exams" },
-    { name: "Banaras Hindu University", courses: "BA, MA Political Science, Public Administration", ranking: "Established university with good faculty", fees: "₹12,000", placements: "Decent civil services success" },
-    { name: "Coaching Institutes", courses: "UPSC CSE preparation courses", ranking: "Specialized exam preparation", fees: "₹50,000-3 LPA", placements: "Focused on exam success rates" }
+    { name: "Jamia Millia Islamia", courses: "BA (Hons) Political Science, International Studies", ranking: "Top for IFS preparation", fees: "â‚¹15,000", placements: "High UPSC success rate" },
+    { name: "Jawaharlal Nehru University (JNU)", courses: "MA International Relations, Political Science", ranking: "Premier for International Studies", fees: "â‚¹20,000", placements: "Excellent civil services record" },
+    { name: "Delhi University (Hindu College, SRCC)", courses: "BA Political Science, Economics, History", ranking: "Top undergraduate programs", fees: "â‚¹25,000", placements: "Strong UPSC coaching ecosystem" },
+    { name: "Aligarh Muslim University", courses: "BA Political Science, International Relations", ranking: "Traditional civil services hub", fees: "â‚¹18,000", placements: "Good success in competitive exams" },
+    { name: "Banaras Hindu University", courses: "BA, MA Political Science, Public Administration", ranking: "Established university with good faculty", fees: "â‚¹12,000", placements: "Decent civil services success" },
+    { name: "Coaching Institutes", courses: "UPSC CSE preparation courses", ranking: "Specialized exam preparation", fees: "â‚¹50,000-3 LPA", placements: "Focused on exam success rates" }
   ];
 
   const technicalSkills = [
@@ -271,7 +286,7 @@ export default function ForeignServiceOfficerPage() {
   const salaryBenefits = [
     { 
       component: "Basic Pay",
-      amount: "₹56,100-2,05,400+ per month",
+      amount: "â‚¹56,100-2,05,400+ per month",
       description: "As per 7th Pay Commission scales for IFS officers"
     },
     { 
@@ -281,22 +296,22 @@ export default function ForeignServiceOfficerPage() {
     },
     { 
       component: "Accommodation",
-      amount: "Free/HRA ₹15,000-50,000",
+      amount: "Free/HRA â‚¹15,000-50,000",
       description: "Government accommodation or House Rent Allowance"
     },
     { 
       component: "Transport",
-      amount: "Official vehicle + TA ₹5,000-25,000",
+      amount: "Official vehicle + TA â‚¹5,000-25,000",
       description: "Official transport and travel allowance for duties"
     },
     { 
       component: "Medical Benefits",
-      amount: "₹2-10 LPA equivalent",
+      amount: "â‚¹2-10 LPA equivalent",
       description: "Comprehensive medical coverage for self and family"
     },
     { 
       component: "Children Education",
-      amount: "₹50,000-5 LPA per child",
+      amount: "â‚¹50,000-5 LPA per child",
       description: "Education allowance and international school fees abroad"
     }
   ];
@@ -768,3 +783,5 @@ export default function ForeignServiceOfficerPage() {
     </main>
   );
 }
+
+

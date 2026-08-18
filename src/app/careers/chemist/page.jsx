@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaFlask, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -41,6 +44,18 @@ import {
   FaHeartbeat
 } from 'react-icons/fa';
 
+const careerSlug = 'chemist';
+const careerTitle = 'Chemist Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ChemistPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.Sc/M.Sc in Chemistry or related field" },
@@ -54,29 +69,29 @@ export default function ChemistPage() {
       path: "Research & Development",
       description: "Innovation in chemical processes and materials",
       opportunities: "Pharmaceutical R&D, Material Science, Green Chemistry",
-      growth: "Research Associate → Senior Scientist → Research Director",
-      salary: "₹3-25 LPA"
+      growth: "Research Associate â†’ Senior Scientist â†’ Research Director",
+      salary: "â‚¹3-25 LPA"
     },
     { 
       path: "Quality Control & Assurance",
       description: "Ensuring product quality and safety standards",
       opportunities: "Pharmaceutical QC, Food Testing, Industrial QA",
-      growth: "QC Analyst → QA Manager → Quality Director",
-      salary: "₹2.5-18 LPA"
+      growth: "QC Analyst â†’ QA Manager â†’ Quality Director",
+      salary: "â‚¹2.5-18 LPA"
     },
     { 
       path: "Process Chemistry",
       description: "Optimizing manufacturing processes",
       opportunities: "Chemical Plants, Petrochemicals, Manufacturing",
-      growth: "Process Chemist → Senior Engineer → Plant Manager",
-      salary: "₹4-30 LPA"
+      growth: "Process Chemist â†’ Senior Engineer â†’ Plant Manager",
+      salary: "â‚¹4-30 LPA"
     },
     { 
       path: "Analytical Chemistry",
       description: "Chemical analysis and instrumentation",
       opportunities: "Testing Labs, Environmental Monitoring, Forensics",
-      growth: "Analyst → Senior Analyst → Lab Manager",
-      salary: "₹3-20 LPA"
+      growth: "Analyst â†’ Senior Analyst â†’ Lab Manager",
+      salary: "â‚¹3-20 LPA"
     }
   ];
 
@@ -112,7 +127,7 @@ export default function ChemistPage() {
     { 
       sector: "Cosmetics & Personal Care",
       description: "Product formulation, safety testing, innovation",
-      companies: "L'Oréal, Hindustan Unilever, Marico, Dabur",
+      companies: "L'OrÃ©al, Hindustan Unilever, Marico, Dabur",
       roles: "Formulation Chemist, Product Developer, Safety Assessor",
       growth: "Rapidly growing beauty and wellness market"
     },
@@ -126,12 +141,12 @@ export default function ChemistPage() {
   ];
 
   const jobProfiles = [
-    { post: "Junior Chemist", experience: "0-2 years", salary: "₹2.5-5 LPA", duties: "Basic analysis, sample preparation, data collection" },
-    { post: "Chemist", experience: "2-5 years", salary: "₹4-8 LPA", duties: "Chemical analysis, method development, quality control" },
-    { post: "Senior Chemist", experience: "5-8 years", salary: "₹6-12 LPA", duties: "Project leadership, method validation, team guidance" },
-    { post: "Principal Chemist", experience: "8-12 years", salary: "₹10-18 LPA", duties: "Research direction, strategic planning, innovation" },
-    { post: "Research Manager", experience: "10-15 years", salary: "₹15-25 LPA", duties: "Team management, budget planning, strategic research" },
-    { post: "R&D Director", experience: "15+ years", salary: "₹25-50 LPA", duties: "Organizational strategy, innovation leadership, business development" }
+    { post: "Junior Chemist", experience: "0-2 years", salary: "â‚¹2.5-5 LPA", duties: "Basic analysis, sample preparation, data collection" },
+    { post: "Chemist", experience: "2-5 years", salary: "â‚¹4-8 LPA", duties: "Chemical analysis, method development, quality control" },
+    { post: "Senior Chemist", experience: "5-8 years", salary: "â‚¹6-12 LPA", duties: "Project leadership, method validation, team guidance" },
+    { post: "Principal Chemist", experience: "8-12 years", salary: "â‚¹10-18 LPA", duties: "Research direction, strategic planning, innovation" },
+    { post: "Research Manager", experience: "10-15 years", salary: "â‚¹15-25 LPA", duties: "Team management, budget planning, strategic research" },
+    { post: "R&D Director", experience: "15+ years", salary: "â‚¹25-50 LPA", duties: "Organizational strategy, innovation leadership, business development" }
   ];
 
   const essentialSkills = [
@@ -158,28 +173,28 @@ export default function ChemistPage() {
       cert: "Chartered Chemist (CChem)",
       provider: "Royal Society of Chemistry",
       duration: "Professional Recognition",
-      cost: "£400-500",
+      cost: "Â£400-500",
       description: "International recognition for professional chemists"
     },
     { 
       cert: "Six Sigma Green Belt",
       provider: "ASQ/IASSC",
       duration: "3-6 months",
-      cost: "₹25,000-40,000",
+      cost: "â‚¹25,000-40,000",
       description: "Quality management and process improvement"
     },
     { 
       cert: "HAZMAT Certification",
       provider: "Various Institutes",
       duration: "1-2 weeks",
-      cost: "₹15,000-25,000",
+      cost: "â‚¹15,000-25,000",
       description: "Hazardous materials handling and safety"
     },
     { 
       cert: "ISO 17025 Lead Auditor",
       provider: "International Bodies",
       duration: "1-2 weeks",
-      cost: "₹50,000-75,000",
+      cost: "â‚¹50,000-75,000",
       description: "Laboratory quality management systems"
     },
     { 
@@ -197,28 +212,28 @@ export default function ChemistPage() {
       duration: "3 years",
       subjects: "B.Sc Chemistry/Chemical Engineering/Applied Chemistry",
       focus: "Fundamental chemistry concepts, laboratory techniques, basic research methods",
-      cost: "₹30,000-2,00,000 per year"
+      cost: "â‚¹30,000-2,00,000 per year"
     },
     { 
       level: "Master's Degree",
       duration: "2 years",
       subjects: "M.Sc Chemistry (Specialization in Organic/Inorganic/Physical/Analytical)",
       focus: "Advanced concepts, research methodology, specialized techniques, thesis work",
-      cost: "₹50,000-3,00,000 per year"
+      cost: "â‚¹50,000-3,00,000 per year"
     },
     { 
       level: "Ph.D. (Optional)",
       duration: "3-5 years",
       subjects: "Doctoral Research in Specialized Chemistry Field",
       focus: "Independent research, publication, innovation, expert-level knowledge",
-      cost: "₹25,000-1,00,000 per year (often with fellowship)"
+      cost: "â‚¹25,000-1,00,000 per year (often with fellowship)"
     },
     { 
       level: "Professional Certifications",
       duration: "Ongoing",
       subjects: "Industry-specific certifications and continuous learning",
       focus: "Skill enhancement, career advancement, specialized knowledge",
-      cost: "₹15,000-75,000 per certification"
+      cost: "â‚¹15,000-75,000 per certification"
     }
   ];
 
@@ -232,12 +247,12 @@ export default function ChemistPage() {
   ];
 
   const salaryRanges = [
-    { sector: "Pharmaceuticals", fresher: "₹3-6 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Petrochemicals", fresher: "₹4-7 LPA", experienced: "₹10-30 LPA", senior: "₹25-60 LPA" },
-    { sector: "Research Institutes", fresher: "₹3-5 LPA", experienced: "₹6-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Government Labs", fresher: "₹3.5-6 LPA", experienced: "₹7-20 LPA", senior: "₹18-40 LPA" },
-    { sector: "Food Industry", fresher: "₹2.5-5 LPA", experienced: "₹6-15 LPA", senior: "₹12-30 LPA" },
-    { sector: "Environmental", fresher: "₹2.5-4 LPA", experienced: "₹5-12 LPA", senior: "₹10-25 LPA" }
+    { sector: "Pharmaceuticals", fresher: "â‚¹3-6 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Petrochemicals", fresher: "â‚¹4-7 LPA", experienced: "â‚¹10-30 LPA", senior: "â‚¹25-60 LPA" },
+    { sector: "Research Institutes", fresher: "â‚¹3-5 LPA", experienced: "â‚¹6-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Government Labs", fresher: "â‚¹3.5-6 LPA", experienced: "â‚¹7-20 LPA", senior: "â‚¹18-40 LPA" },
+    { sector: "Food Industry", fresher: "â‚¹2.5-5 LPA", experienced: "â‚¹6-15 LPA", senior: "â‚¹12-30 LPA" },
+    { sector: "Environmental", fresher: "â‚¹2.5-4 LPA", experienced: "â‚¹5-12 LPA", senior: "â‚¹10-25 LPA" }
   ];
 
   const governmentOpportunities = [
@@ -287,37 +302,37 @@ export default function ChemistPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Testing Laboratory",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Chemical analysis services for industries",
       potential: "High demand across industries"
     },
     { 
       business: "Chemical Consulting",
-      investment: "₹2-10 lakhs",
+      investment: "â‚¹2-10 lakhs",
       description: "Technical consulting for process optimization",
       potential: "Good for experienced professionals"
     },
     { 
       business: "Specialty Chemicals Manufacturing",
-      investment: "₹50 lakhs - 5 crores",
+      investment: "â‚¹50 lakhs - 5 crores",
       description: "Small-scale specialty chemical production",
       potential: "High margins, niche markets"
     },
     { 
       business: "Environmental Solutions",
-      investment: "₹20 lakhs - 2 crores",
+      investment: "â‚¹20 lakhs - 2 crores",
       description: "Water treatment, waste management solutions",
       potential: "Growing environmental awareness"
     }
   ];
 
   const topColleges = [
-    { name: "IIT (All Campuses)", courses: "Chemical Engineering, Chemistry", ranking: "Top Tier", fees: "₹8-12 LPA" },
-    { name: "IISc Bangalore", courses: "Chemical Sciences", ranking: "Premier Research", fees: "₹15,000-50,000 PA" },
-    { name: "BITS Pilani", courses: "Chemical Engineering, Chemistry", ranking: "Top Private", fees: "₹19-25 LPA" },
-    { name: "NIT (All Campuses)", courses: "Chemical Engineering", ranking: "Tier 1", fees: "₹6-8 LPA" },
-    { name: "ICT Mumbai", courses: "Chemical Technology", ranking: "Specialized", fees: "₹1-2 LPA" },
-    { name: "Central Universities", courses: "Chemistry, Applied Chemistry", ranking: "Good Options", fees: "₹50,000-2 LPA" }
+    { name: "IIT (All Campuses)", courses: "Chemical Engineering, Chemistry", ranking: "Top Tier", fees: "â‚¹8-12 LPA" },
+    { name: "IISc Bangalore", courses: "Chemical Sciences", ranking: "Premier Research", fees: "â‚¹15,000-50,000 PA" },
+    { name: "BITS Pilani", courses: "Chemical Engineering, Chemistry", ranking: "Top Private", fees: "â‚¹19-25 LPA" },
+    { name: "NIT (All Campuses)", courses: "Chemical Engineering", ranking: "Tier 1", fees: "â‚¹6-8 LPA" },
+    { name: "ICT Mumbai", courses: "Chemical Technology", ranking: "Specialized", fees: "â‚¹1-2 LPA" },
+    { name: "Central Universities", courses: "Chemistry, Applied Chemistry", ranking: "Good Options", fees: "â‚¹50,000-2 LPA" }
   ];
 
   return (
@@ -770,3 +785,5 @@ export default function ChemistPage() {
     </main>
   );
 }
+
+

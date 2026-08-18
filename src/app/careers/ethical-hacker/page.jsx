@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -81,6 +84,18 @@ import {
   FaExclamationTriangle
 } from 'react-icons/fa';
 
+const careerSlug = 'ethical-hacker';
+const careerTitle = 'Ethical Hacker Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function EthicalHackerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.E/B.Tech CS/IT or equivalent experience" },
@@ -95,7 +110,7 @@ export default function EthicalHackerPage() {
       duration: "4 years",
       program: "B.E/B.Tech Computer Science, IT, or Cybersecurity",
       focus: "Programming, networking, operating systems, security fundamentals",
-      cost: "₹50,000-8 LPA (government to private colleges)",
+      cost: "â‚¹50,000-8 LPA (government to private colleges)",
       outcomes: "Entry-level cybersecurity analyst, junior penetration tester positions"
     },
     { 
@@ -103,7 +118,7 @@ export default function EthicalHackerPage() {
       duration: "2 years",
       program: "M.E/M.Tech Cybersecurity, Information Security",
       focus: "Advanced security concepts, cryptography, digital forensics",
-      cost: "₹1-6 LPA for M.Tech programs",
+      cost: "â‚¹1-6 LPA for M.Tech programs",
       outcomes: "Senior security roles, specialized positions, higher starting salaries"
     },
     { 
@@ -111,7 +126,7 @@ export default function EthicalHackerPage() {
       duration: "Ongoing",
       program: "Industry certifications like CEH, CISSP, OSCP, CISM",
       focus: "Practical penetration testing, security management, hands-on skills",
-      cost: "₹25,000-3 LPA per certification",
+      cost: "â‚¹25,000-3 LPA per certification",
       outcomes: "Career advancement, salary increment, specialization credibility"
     },
     { 
@@ -119,7 +134,7 @@ export default function EthicalHackerPage() {
       duration: "3-12 months",
       program: "Intensive cybersecurity bootcamps, practical training programs",
       focus: "Hands-on penetration testing, real-world scenarios, tool mastery",
-      cost: "₹50,000-5 LPA for intensive programs",
+      cost: "â‚¹50,000-5 LPA for intensive programs",
       outcomes: "Rapid skill development, industry connections, job placement assistance"
     }
   ];
@@ -174,62 +189,62 @@ export default function EthicalHackerPage() {
       sector: "IT Services & Consulting",
       companies: "TCS, Infosys, Wipro, Accenture, Deloitte, PwC, EY, KPMG",
       roles: "Security Consultant, Penetration Tester, Security Analyst, Cyber Risk Consultant",
-      salary: "₹6-25 LPA",
+      salary: "â‚¹6-25 LPA",
       growth: "High demand for cybersecurity consulting services"
     },
     { 
       sector: "Cybersecurity Product Companies",
       companies: "FireEye, CrowdStrike, Palo Alto Networks, Fortinet, Check Point, Symantec",
       roles: "Security Researcher, Product Security Engineer, Threat Hunter, Malware Analyst",
-      salary: "₹8-40 LPA",
+      salary: "â‚¹8-40 LPA",
       growth: "Strong growth with increasing security product demand"
     },
     { 
       sector: "Banking & Financial Services",
       companies: "HDFC Bank, ICICI, SBI, JPMorgan, Goldman Sachs, American Express",
       roles: "Cybersecurity Analyst, Information Security Officer, Fraud Analyst",
-      salary: "₹7-30 LPA",
+      salary: "â‚¹7-30 LPA",
       growth: "Critical need with digital banking transformation"
     },
     { 
       sector: "Government & Defense",
       companies: "CERT-In, NIC, DRDO, ISRO, Intelligence Agencies, Cyber Crime Units",
       roles: "Cyber Security Analyst, Digital Forensics Expert, Cyber Crime Investigator",
-      salary: "₹5-20 LPA",
+      salary: "â‚¹5-20 LPA",
       growth: "Increasing focus on national cybersecurity"
     },
     { 
       sector: "Technology Companies",
       companies: "Google, Microsoft, Amazon, Meta, Apple, Netflix, Uber",
       roles: "Security Engineer, Bug Bounty Hunter, Product Security Lead, DevSecOps Engineer",
-      salary: "₹12-60 LPA",
+      salary: "â‚¹12-60 LPA",
       growth: "High demand for securing digital platforms"
     },
     { 
       sector: "Healthcare & Pharma",
       companies: "Apollo Hospitals, Fortis, Dr. Reddy's, Cipla, Biocon",
       roles: "Healthcare Security Analyst, Compliance Officer, Privacy Officer",
-      salary: "₹6-22 LPA",
+      salary: "â‚¹6-22 LPA",
       growth: "Growing with healthcare digitalization"
     }
   ];
 
   const jobProfiles = [
-    { post: "Junior Security Analyst", experience: "0-2 years", salary: "₹4-8 LPA", duties: "Vulnerability scanning, security monitoring, incident response assistance" },
-    { post: "Penetration Tester", experience: "2-4 years", salary: "₹6-15 LPA", duties: "Web app testing, network penetration testing, report writing" },
-    { post: "Senior Security Consultant", experience: "4-7 years", salary: "₹12-25 LPA", duties: "Advanced penetration testing, client engagement, team leadership" },
-    { post: "Security Manager/Lead", experience: "7-10 years", salary: "₹20-35 LPA", duties: "Program management, business development, strategic planning" },
-    { post: "Principal Security Architect", experience: "10-15 years", salary: "₹30-60 LPA", duties: "Security architecture design, innovation leadership, enterprise security" },
-    { post: "Chief Security Officer (CSO)", experience: "15+ years", salary: "₹50 LPA-2 Crores", duties: "Executive leadership, organizational security strategy, board interaction" }
+    { post: "Junior Security Analyst", experience: "0-2 years", salary: "â‚¹4-8 LPA", duties: "Vulnerability scanning, security monitoring, incident response assistance" },
+    { post: "Penetration Tester", experience: "2-4 years", salary: "â‚¹6-15 LPA", duties: "Web app testing, network penetration testing, report writing" },
+    { post: "Senior Security Consultant", experience: "4-7 years", salary: "â‚¹12-25 LPA", duties: "Advanced penetration testing, client engagement, team leadership" },
+    { post: "Security Manager/Lead", experience: "7-10 years", salary: "â‚¹20-35 LPA", duties: "Program management, business development, strategic planning" },
+    { post: "Principal Security Architect", experience: "10-15 years", salary: "â‚¹30-60 LPA", duties: "Security architecture design, innovation leadership, enterprise security" },
+    { post: "Chief Security Officer (CSO)", experience: "15+ years", salary: "â‚¹50 LPA-2 Crores", duties: "Executive leadership, organizational security strategy, board interaction" }
   ];
 
   const topColleges = [
-    { name: "Indian Institute of Technology (IITs)", courses: "B.Tech/M.Tech Computer Science", ranking: "Top Tier", fees: "₹8-12 LPA", placements: "₹15-50 LPA average" },
-    { name: "National Institute of Technology (NITs)", courses: "B.Tech/M.Tech CS/IT", ranking: "Tier 1", fees: "₹5-8 LPA", placements: "₹8-25 LPA average" },
-    { name: "Indian Institute of Information Technology", courses: "B.Tech IT, Cybersecurity", ranking: "Specialized Institutes", fees: "₹6-10 LPA", placements: "₹10-30 LPA average" },
-    { name: "BITS Pilani", courses: "B.E Computer Science", ranking: "Top Private", fees: "₹19-25 LPA", placements: "₹12-40 LPA average" },
-    { name: "VIT/SRM/Manipal University", courses: "B.Tech CS/Cybersecurity", ranking: "Top Private Universities", fees: "₹15-20 LPA", placements: "₹5-18 LPA average" },
-    { name: "Indian Statistical Institute (ISI)", courses: "M.Tech Computer Science", ranking: "Research Institute", fees: "₹2-4 LPA", placements: "₹8-25 LPA average" }
+    { name: "Indian Institute of Technology (IITs)", courses: "B.Tech/M.Tech Computer Science", ranking: "Top Tier", fees: "â‚¹8-12 LPA", placements: "â‚¹15-50 LPA average" },
+    { name: "National Institute of Technology (NITs)", courses: "B.Tech/M.Tech CS/IT", ranking: "Tier 1", fees: "â‚¹5-8 LPA", placements: "â‚¹8-25 LPA average" },
+    { name: "Indian Institute of Information Technology", courses: "B.Tech IT, Cybersecurity", ranking: "Specialized Institutes", fees: "â‚¹6-10 LPA", placements: "â‚¹10-30 LPA average" },
+    { name: "BITS Pilani", courses: "B.E Computer Science", ranking: "Top Private", fees: "â‚¹19-25 LPA", placements: "â‚¹12-40 LPA average" },
+    { name: "VIT/SRM/Manipal University", courses: "B.Tech CS/Cybersecurity", ranking: "Top Private Universities", fees: "â‚¹15-20 LPA", placements: "â‚¹5-18 LPA average" },
+    { name: "Indian Statistical Institute (ISI)", courses: "M.Tech Computer Science", ranking: "Research Institute", fees: "â‚¹2-4 LPA", placements: "â‚¹8-25 LPA average" }
   ];
 
   const technicalSkills = [
@@ -268,7 +283,7 @@ export default function EthicalHackerPage() {
     },
     { 
       cert: "Certified Information Systems Security Professional (CISSP)",
-      provider: "ISC²",
+      provider: "ISCÂ²",
       duration: "6-9 months preparation",
       cost: "$749",
       description: "Advanced security management certification for experienced professionals"
@@ -290,12 +305,12 @@ export default function EthicalHackerPage() {
   ];
 
   const careerProgression = [
-    { level: "Security Analyst", experience: "0-2 years", salary: "₹4-8 LPA", focus: "Learning fundamentals, vulnerability assessment, monitoring" },
-    { level: "Penetration Tester", experience: "2-4 years", salary: "₹6-15 LPA", focus: "Hands-on testing, tool mastery, client interaction" },
-    { level: "Senior Security Consultant", experience: "4-7 years", salary: "₹12-25 LPA", focus: "Advanced testing, team leadership, business development" },
-    { level: "Security Manager/Architect", experience: "7-10 years", salary: "₹20-35 LPA", focus: "Strategic planning, program management, enterprise security" },
-    { level: "Principal Consultant", experience: "10-15 years", salary: "₹30-60 LPA", focus: "Thought leadership, innovation, organizational strategy" },
-    { level: "Chief Security Officer", experience: "15+ years", salary: "₹50 LPA-2 Cr", focus: "Executive leadership, business alignment, industry influence" }
+    { level: "Security Analyst", experience: "0-2 years", salary: "â‚¹4-8 LPA", focus: "Learning fundamentals, vulnerability assessment, monitoring" },
+    { level: "Penetration Tester", experience: "2-4 years", salary: "â‚¹6-15 LPA", focus: "Hands-on testing, tool mastery, client interaction" },
+    { level: "Senior Security Consultant", experience: "4-7 years", salary: "â‚¹12-25 LPA", focus: "Advanced testing, team leadership, business development" },
+    { level: "Security Manager/Architect", experience: "7-10 years", salary: "â‚¹20-35 LPA", focus: "Strategic planning, program management, enterprise security" },
+    { level: "Principal Consultant", experience: "10-15 years", salary: "â‚¹30-60 LPA", focus: "Thought leadership, innovation, organizational strategy" },
+    { level: "Chief Security Officer", experience: "15+ years", salary: "â‚¹50 LPA-2 Cr", focus: "Executive leadership, business alignment, industry influence" }
   ];
 
   const emergingTrends = [
@@ -342,43 +357,43 @@ export default function EthicalHackerPage() {
       organization: "Computer Emergency Response Team India (CERT-In)",
       positions: "Cyber Security Analyst, Incident Response Specialist, Vulnerability Researcher",
       selection: "Technical examination, interview, security clearance",
-      benefits: "₹56,100-1,77,500 pay scale, national security contribution, advanced training"
+      benefits: "â‚¹56,100-1,77,500 pay scale, national security contribution, advanced training"
     },
     { 
       organization: "National Technical Research Organisation (NTRO)",
       positions: "Technical Officer, Scientist, Cyber Intelligence Analyst",
       selection: "GATE, technical interview, comprehensive background check",
-      benefits: "₹56,100-2,25,000 pay scale, intelligence work, cutting-edge technology"
+      benefits: "â‚¹56,100-2,25,000 pay scale, intelligence work, cutting-edge technology"
     },
     { 
       organization: "Cyber Crime Investigation Cells",
       positions: "Cyber Crime Investigator, Digital Forensics Expert, Technical Consultant",
       selection: "Police recruitment, specialized training, technical assessment",
-      benefits: "₹35,400-1,12,400 pay scale, law enforcement career, crime fighting"
+      benefits: "â‚¹35,400-1,12,400 pay scale, law enforcement career, crime fighting"
     },
     { 
       organization: "Defense Research and Development Organisation (DRDO)",
       positions: "Scientist (Cyber Security), Technical Officer, Research Associate",
       selection: "DRDO SET exam, technical interview, security verification",
-      benefits: "₹56,100-2,24,100 pay scale, defense research, innovation opportunities"
+      benefits: "â‚¹56,100-2,24,100 pay scale, defense research, innovation opportunities"
     },
     { 
       organization: "National Informatics Centre (NIC)",
       positions: "Systems Analyst, Technical Director, Cyber Security Specialist",
       selection: "NIC examination, technical assessment, interview process",
-      benefits: "₹56,100-1,77,500 pay scale, e-governance projects, technology implementation"
+      benefits: "â‚¹56,100-1,77,500 pay scale, e-governance projects, technology implementation"
     }
   ];
 
   const salaryRanges = [
-    { sector: "IT Services & Consulting", fresher: "₹6-12 LPA", experienced: "₹12-25 LPA", senior: "₹20-40 LPA" },
-    { sector: "Cybersecurity Products", fresher: "₹8-15 LPA", experienced: "₹15-40 LPA", senior: "₹35-80 LPA" },
-    { sector: "Banking & Finance", fresher: "₹7-14 LPA", experienced: "₹14-30 LPA", senior: "₹25-55 LPA" },
-    { sector: "Technology Companies", fresher: "₹12-20 LPA", experienced: "₹20-60 LPA", senior: "₹50-2 Crores" },
-    { sector: "Government & Defense", fresher: "₹5-10 LPA", experienced: "₹10-20 LPA", senior: "₹18-35 LPA" },
-    { sector: "Healthcare & Pharma", fresher: "₹6-12 LPA", experienced: "₹12-22 LPA", senior: "₹20-40 LPA" },
-    { sector: "Independent Consulting", fresher: "₹8-15 LPA", experienced: "₹15-50 LPA", senior: "₹40-1.5 Crores" },
-    { sector: "Bug Bounty/Freelance", fresher: "₹2-8 LPA", experienced: "₹8-30 LPA", senior: "₹25-1 Crore" }
+    { sector: "IT Services & Consulting", fresher: "â‚¹6-12 LPA", experienced: "â‚¹12-25 LPA", senior: "â‚¹20-40 LPA" },
+    { sector: "Cybersecurity Products", fresher: "â‚¹8-15 LPA", experienced: "â‚¹15-40 LPA", senior: "â‚¹35-80 LPA" },
+    { sector: "Banking & Finance", fresher: "â‚¹7-14 LPA", experienced: "â‚¹14-30 LPA", senior: "â‚¹25-55 LPA" },
+    { sector: "Technology Companies", fresher: "â‚¹12-20 LPA", experienced: "â‚¹20-60 LPA", senior: "â‚¹50-2 Crores" },
+    { sector: "Government & Defense", fresher: "â‚¹5-10 LPA", experienced: "â‚¹10-20 LPA", senior: "â‚¹18-35 LPA" },
+    { sector: "Healthcare & Pharma", fresher: "â‚¹6-12 LPA", experienced: "â‚¹12-22 LPA", senior: "â‚¹20-40 LPA" },
+    { sector: "Independent Consulting", fresher: "â‚¹8-15 LPA", experienced: "â‚¹15-50 LPA", senior: "â‚¹40-1.5 Crores" },
+    { sector: "Bug Bounty/Freelance", fresher: "â‚¹2-8 LPA", experienced: "â‚¹8-30 LPA", senior: "â‚¹25-1 Crore" }
   ];
 
   const preparationTips = [
@@ -397,37 +412,37 @@ export default function EthicalHackerPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Cybersecurity Consulting Firm",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Penetration testing, vulnerability assessments, security audits",
       potential: "High demand with increasing cyber threats and compliance requirements"
     },
     { 
       business: "Bug Bounty Platform",
-      investment: "₹25 lakhs-2 crores",
+      investment: "â‚¹25 lakhs-2 crores",
       description: "Platform connecting security researchers with companies for bug hunting",
       potential: "Growing market with companies adopting crowdsourced security testing"
     },
     { 
       business: "Cybersecurity Training Institute",
-      investment: "₹15-75 lakhs",
+      investment: "â‚¹15-75 lakhs",
       description: "Professional training, certification courses, hands-on bootcamps",
       potential: "High demand for cybersecurity skills training and certification"
     },
     { 
       business: "Security Tool Development",
-      investment: "₹20 lakhs-5 crores",
+      investment: "â‚¹20 lakhs-5 crores",
       description: "Custom security tools, automated testing frameworks, SaaS security solutions",
       potential: "Innovation opportunities in emerging security technologies"
     },
     { 
       business: "Incident Response Services",
-      investment: "₹15-60 lakhs",
+      investment: "â‚¹15-60 lakhs",
       description: "24/7 cyber incident response, digital forensics, breach investigation",
       potential: "Critical service with increasing cyber attacks and data breaches"
     },
     { 
       business: "Compliance & Audit Services",
-      investment: "₹8-40 lakhs",
+      investment: "â‚¹8-40 lakhs",
       description: "ISO 27001, SOC 2, PCI DSS compliance consulting and auditing",
       potential: "Steady demand with regulatory requirements and compliance mandates"
     }
@@ -890,3 +905,5 @@ export default function EthicalHackerPage() {
     </main>
   );
 }
+
+

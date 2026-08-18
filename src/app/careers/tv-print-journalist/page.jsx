@@ -1,5 +1,8 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import React from 'react';
-import { 
+import {
+
+
   FaMicrophone, 
   FaNewspaper, 
   FaVideo, 
@@ -49,6 +52,18 @@ import {
   FaExchangeAlt
 } from 'react-icons/fa';
 
+const careerSlug = 'tv-print-journalist';
+const careerTitle = 'TV & Print Journalist';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function TVPrintJournalistCareerPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-900 via-orange-900 to-yellow-800">
@@ -66,7 +81,7 @@ export default function TVPrintJournalistCareerPage() {
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <span className="bg-red-600 px-4 py-2 rounded-full">News Reporting</span>
             <span className="bg-orange-600 px-4 py-2 rounded-full">Investigative Journalism</span>
-            <span className="bg-yellow-600 px-4 py-2 rounded-full">₹3.0-75+ LPA</span>
+            <span className="bg-yellow-600 px-4 py-2 rounded-full">â‚¹3.0-75+ LPA</span>
           </div>
         </div>
       </section>
@@ -115,9 +130,9 @@ export default function TVPrintJournalistCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">TV News Reporter</h3>
               <p className="text-gray-300 mb-4">Cover breaking news, conduct live reporting, and present stories on television with strong on-camera presence.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Live news reporting and anchoring</li>
-                <li>• Field journalism and event coverage</li>
-                <li>• Interview techniques and presentation</li>
+                <li>â€¢ Live news reporting and anchoring</li>
+                <li>â€¢ Field journalism and event coverage</li>
+                <li>â€¢ Interview techniques and presentation</li>
               </ul>
             </div>
 
@@ -126,9 +141,9 @@ export default function TVPrintJournalistCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Print Journalist</h3>
               <p className="text-gray-300 mb-4">Write in-depth articles, feature stories, and investigative pieces for newspapers, magazines, and publications.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Feature writing and editorial content</li>
-                <li>• Long-form investigative articles</li>
-                <li>• News analysis and opinion pieces</li>
+                <li>â€¢ Feature writing and editorial content</li>
+                <li>â€¢ Long-form investigative articles</li>
+                <li>â€¢ News analysis and opinion pieces</li>
               </ul>
             </div>
 
@@ -137,9 +152,9 @@ export default function TVPrintJournalistCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Digital Journalist</h3>
               <p className="text-gray-300 mb-4">Create content for online platforms, social media, and digital news outlets with multimedia storytelling.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Online content creation and blogging</li>
-                <li>• Social media journalism and viral content</li>
-                <li>• Multimedia storytelling techniques</li>
+                <li>â€¢ Online content creation and blogging</li>
+                <li>â€¢ Social media journalism and viral content</li>
+                <li>â€¢ Multimedia storytelling techniques</li>
               </ul>
             </div>
 
@@ -148,9 +163,9 @@ export default function TVPrintJournalistCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Investigative Journalist</h3>
               <p className="text-gray-300 mb-4">Conduct deep research, expose corruption, and uncover stories that require extensive investigation and fact-checking.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Research and fact-checking methods</li>
-                <li>• Source development and protection</li>
-                <li>• Data journalism and analysis</li>
+                <li>â€¢ Research and fact-checking methods</li>
+                <li>â€¢ Source development and protection</li>
+                <li>â€¢ Data journalism and analysis</li>
               </ul>
             </div>
 
@@ -159,9 +174,9 @@ export default function TVPrintJournalistCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">War & Foreign Correspondent</h3>
               <p className="text-gray-300 mb-4">Report from conflict zones, international locations, and cover global events with cultural sensitivity and expertise.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• International reporting and cultural awareness</li>
-                <li>• Crisis reporting and safety protocols</li>
-                <li>• Multilingual communication skills</li>
+                <li>â€¢ International reporting and cultural awareness</li>
+                <li>â€¢ Crisis reporting and safety protocols</li>
+                <li>â€¢ Multilingual communication skills</li>
               </ul>
             </div>
 
@@ -170,9 +185,9 @@ export default function TVPrintJournalistCareerPage() {
               <h3 className="text-xl font-bold text-white mb-3">Specialized Beat Reporter</h3>
               <p className="text-gray-300 mb-4">Focus on specific sectors like politics, business, sports, entertainment, health, or technology journalism.</p>
               <ul className="text-sm text-gray-400 space-y-1">
-                <li>• Subject matter expertise development</li>
-                <li>• Industry-specific source networks</li>
-                <li>• Technical and specialized knowledge</li>
+                <li>â€¢ Subject matter expertise development</li>
+                <li>â€¢ Industry-specific source networks</li>
+                <li>â€¢ Technical and specialized knowledge</li>
               </ul>
             </div>
           </div>
@@ -191,7 +206,7 @@ export default function TVPrintJournalistCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Trainee Journalist / Intern Reporter</h3>
                 <p className="text-gray-300 mt-2">Start with internships, assist senior journalists, learn newsroom operations, and cover basic local news stories.</p>
-                <p className="text-red-400 font-semibold mt-1">₹3.0 - 6.0 LPA</p>
+                <p className="text-red-400 font-semibold mt-1">â‚¹3.0 - 6.0 LPA</p>
               </div>
             </div>
 
@@ -200,7 +215,7 @@ export default function TVPrintJournalistCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Reporter / Correspondent</h3>
                 <p className="text-gray-300 mt-2">Cover assigned beats independently, conduct interviews, write articles, and build source networks in specialized areas.</p>
-                <p className="text-orange-400 font-semibold mt-1">₹6.0 - 15.0 LPA</p>
+                <p className="text-orange-400 font-semibold mt-1">â‚¹6.0 - 15.0 LPA</p>
               </div>
             </div>
 
@@ -209,7 +224,7 @@ export default function TVPrintJournalistCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Senior Reporter / News Anchor</h3>
                 <p className="text-gray-300 mt-2">Lead major story coverage, mentor junior staff, present news on television, and handle high-profile assignments.</p>
-                <p className="text-yellow-400 font-semibold mt-1">₹15.0 - 30.0 LPA</p>
+                <p className="text-yellow-400 font-semibold mt-1">â‚¹15.0 - 30.0 LPA</p>
               </div>
             </div>
 
@@ -218,7 +233,7 @@ export default function TVPrintJournalistCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Assistant Editor / Bureau Chief</h3>
                 <p className="text-gray-300 mt-2">Oversee editorial decisions, manage reporting teams, set newsroom priorities, and coordinate news production.</p>
-                <p className="text-blue-400 font-semibold mt-1">₹30.0 - 50.0 LPA</p>
+                <p className="text-blue-400 font-semibold mt-1">â‚¹30.0 - 50.0 LPA</p>
               </div>
             </div>
 
@@ -227,7 +242,7 @@ export default function TVPrintJournalistCareerPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white">Editor-in-Chief / News Director</h3>
                 <p className="text-gray-300 mt-2">Lead entire newsroom operations, shape editorial vision, make strategic decisions, and represent publication publicly.</p>
-                <p className="text-green-400 font-semibold mt-1">₹50.0 - 75.0+ LPA</p>
+                <p className="text-green-400 font-semibold mt-1">â‚¹50.0 - 75.0+ LPA</p>
               </div>
             </div>
           </div>
@@ -309,11 +324,11 @@ export default function TVPrintJournalistCareerPage() {
               <FaVideo className="text-3xl text-red-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Broadcasting Equipment</h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Professional cameras and microphones</li>
-                <li>• Video editing software (Premiere Pro, Final Cut)</li>
-                <li>• Live streaming and broadcast tools</li>
-                <li>• Audio recording and editing equipment</li>
-                <li>• Teleprompters and studio technology</li>
+                <li>â€¢ Professional cameras and microphones</li>
+                <li>â€¢ Video editing software (Premiere Pro, Final Cut)</li>
+                <li>â€¢ Live streaming and broadcast tools</li>
+                <li>â€¢ Audio recording and editing equipment</li>
+                <li>â€¢ Teleprompters and studio technology</li>
               </ul>
             </div>
 
@@ -321,11 +336,11 @@ export default function TVPrintJournalistCareerPage() {
               <FaPencilAlt className="text-3xl text-orange-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Writing & Publishing</h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Content management systems</li>
-                <li>• AP Style and journalism standards</li>
-                <li>• Digital publishing platforms</li>
-                <li>• Research and fact-checking tools</li>
-                <li>• Interview transcription software</li>
+                <li>â€¢ Content management systems</li>
+                <li>â€¢ AP Style and journalism standards</li>
+                <li>â€¢ Digital publishing platforms</li>
+                <li>â€¢ Research and fact-checking tools</li>
+                <li>â€¢ Interview transcription software</li>
               </ul>
             </div>
 
@@ -333,11 +348,11 @@ export default function TVPrintJournalistCareerPage() {
               <FaMobileAlt className="text-3xl text-yellow-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Digital & Social Media</h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Social media management platforms</li>
-                <li>• Mobile journalism (mojo) apps</li>
-                <li>• Analytics and audience measurement</li>
-                <li>• Live reporting and streaming tools</li>
-                <li>• SEO and digital optimization</li>
+                <li>â€¢ Social media management platforms</li>
+                <li>â€¢ Mobile journalism (mojo) apps</li>
+                <li>â€¢ Analytics and audience measurement</li>
+                <li>â€¢ Live reporting and streaming tools</li>
+                <li>â€¢ SEO and digital optimization</li>
               </ul>
             </div>
           </div>
@@ -399,23 +414,23 @@ export default function TVPrintJournalistCareerPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Trainee Journalist</span>
-                  <span className="text-red-400 font-semibold">₹3.0 - 6.0 LPA</span>
+                  <span className="text-red-400 font-semibold">â‚¹3.0 - 6.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Reporter/Correspondent</span>
-                  <span className="text-orange-400 font-semibold">₹6.0 - 15.0 LPA</span>
+                  <span className="text-orange-400 font-semibold">â‚¹6.0 - 15.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Senior Reporter/Anchor</span>
-                  <span className="text-yellow-400 font-semibold">₹15.0 - 30.0 LPA</span>
+                  <span className="text-yellow-400 font-semibold">â‚¹15.0 - 30.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                   <span className="text-gray-300">Assistant Editor</span>
-                  <span className="text-blue-400 font-semibold">₹30.0 - 50.0 LPA</span>
+                  <span className="text-blue-400 font-semibold">â‚¹30.0 - 50.0 LPA</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-gray-300">Editor-in-Chief</span>
-                  <span className="text-green-400 font-semibold">₹50.0 - 75.0+ LPA</span>
+                  <span className="text-green-400 font-semibold">â‚¹50.0 - 75.0+ LPA</span>
                 </div>
               </div>
             </div>
@@ -561,3 +576,5 @@ export default function TVPrintJournalistCareerPage() {
     </div>
   );
 }
+
+

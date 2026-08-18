@@ -1,7 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaPlane, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -161,6 +164,18 @@ import {
   FaHardHat
 } from 'react-icons/fa';
 
+const careerSlug = 'iaf-pilot';
+const careerTitle = 'IAF Pilot Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function IAFPilotPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "10+2 with Physics & Mathematics (PCM) for NDA" },
@@ -250,14 +265,14 @@ export default function IAFPilotPage() {
   ];
 
   const rankProgression = [
-    { rank: "Flying Officer", experience: "0-2 years", salary: "₹56,100-1.77 LPA", role: "Junior pilot, under training, basic flying duties" },
-    { rank: "Flight Lieutenant", experience: "2-6 years", salary: "₹61,300-1.93 LPA", role: "Qualified pilot, operational duties, section commander" },
-    { rank: "Squadron Leader", experience: "6-13 years", salary: "₹69,400-2.07 LPA", role: "Flight commander, advanced operations, specialized roles" },
-    { rank: "Wing Commander", experience: "13-20 years", salary: "₹1.21-2.18 LPA", role: "Squadron commander, base operations, staff appointments" },
-    { rank: "Group Captain", experience: "20-26 years", salary: "₹1.30-2.25 LPA", role: "Station commander, policy formulation, senior leadership" },
-    { rank: "Air Commodore", experience: "26+ years", salary: "₹1.44-2.36 LPA", role: "Senior command, strategic planning, air force leadership" },
-    { rank: "Air Vice Marshal", experience: "30+ years", salary: "₹1.82-2.50 LPA", role: "Air command, joint operations, defense strategy" },
-    { rank: "Air Marshal", experience: "32+ years", salary: "₹2.05-2.50 LPA", role: "Air force headquarters, national defense, international relations" }
+    { rank: "Flying Officer", experience: "0-2 years", salary: "â‚¹56,100-1.77 LPA", role: "Junior pilot, under training, basic flying duties" },
+    { rank: "Flight Lieutenant", experience: "2-6 years", salary: "â‚¹61,300-1.93 LPA", role: "Qualified pilot, operational duties, section commander" },
+    { rank: "Squadron Leader", experience: "6-13 years", salary: "â‚¹69,400-2.07 LPA", role: "Flight commander, advanced operations, specialized roles" },
+    { rank: "Wing Commander", experience: "13-20 years", salary: "â‚¹1.21-2.18 LPA", role: "Squadron commander, base operations, staff appointments" },
+    { rank: "Group Captain", experience: "20-26 years", salary: "â‚¹1.30-2.25 LPA", role: "Station commander, policy formulation, senior leadership" },
+    { rank: "Air Commodore", experience: "26+ years", salary: "â‚¹1.44-2.36 LPA", role: "Senior command, strategic planning, air force leadership" },
+    { rank: "Air Vice Marshal", experience: "30+ years", salary: "â‚¹1.82-2.50 LPA", role: "Air command, joint operations, defense strategy" },
+    { rank: "Air Marshal", experience: "32+ years", salary: "â‚¹2.05-2.50 LPA", role: "Air force headquarters, national defense, international relations" }
   ];
 
   const trainingInstitutions = [
@@ -751,3 +766,5 @@ export default function IAFPilotPage() {
     </main>
   );
 }
+
+

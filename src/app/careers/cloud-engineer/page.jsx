@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCloud, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -30,6 +33,18 @@ import {
   FaAws
 } from 'react-icons/fa';
 
+const careerSlug = 'cloud-engineer';
+const careerTitle = 'Complete Guide to Becoming a Cloud Engineer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function CloudEngineerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "BTech/BCA/MCA in Computer Science or related field" },
@@ -43,53 +58,53 @@ export default function CloudEngineerPage() {
       specialization: "Cloud Solutions Architect", 
       duration: "3-5 years experience", 
       requirement: "AWS/Azure/GCP certifications",
-      salary: "₹15-35 lakhs/year",
+      salary: "â‚¹15-35 lakhs/year",
       description: "Design scalable cloud infrastructure and solutions"
     },
     { 
       specialization: "DevOps Engineer", 
       duration: "2-4 years experience", 
       requirement: "CI/CD, containerization skills",
-      salary: "₹8-25 lakhs/year",
+      salary: "â‚¹8-25 lakhs/year",
       description: "Automate deployment and manage infrastructure as code"
     },
     { 
       specialization: "Cloud Security Engineer", 
       duration: "3-6 years experience", 
       requirement: "Security certifications + cloud knowledge",
-      salary: "₹12-30 lakhs/year",
+      salary: "â‚¹12-30 lakhs/year",
       description: "Secure cloud environments and implement compliance"
     },
     { 
       specialization: "Site Reliability Engineer (SRE)", 
       duration: "3-5 years experience", 
       requirement: "Strong programming and system skills",
-      salary: "₹15-40 lakhs/year",
+      salary: "â‚¹15-40 lakhs/year",
       description: "Ensure system reliability and performance at scale"
     },
     { 
       specialization: "Cloud Data Engineer", 
       duration: "2-4 years experience", 
       requirement: "Big data tools + cloud platforms",
-      salary: "₹10-28 lakhs/year",
+      salary: "â‚¹10-28 lakhs/year",
       description: "Build and manage data pipelines in cloud environments"
     },
     { 
       specialization: "Kubernetes Engineer", 
       duration: "2-5 years experience", 
       requirement: "Container orchestration expertise",
-      salary: "₹12-32 lakhs/year",
+      salary: "â‚¹12-32 lakhs/year",
       description: "Manage containerized applications and microservices"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Cloud Engineer", years: "0-2 years", salary: "₹4-8 lakhs/year" },
-    { rank: "Cloud Engineer", years: "2-4 years", salary: "₹8-15 lakhs/year" },
-    { rank: "Senior Cloud Engineer", years: "4-7 years", salary: "₹15-25 lakhs/year" },
-    { rank: "Lead Cloud Engineer", years: "7-10 years", salary: "₹25-40 lakhs/year" },
-    { rank: "Cloud Architect", years: "10-15 years", salary: "₹40-60 lakhs/year" },
-    { rank: "Principal Engineer/CTO", years: "15+ years", salary: "₹60-100+ lakhs/year" }
+    { rank: "Junior Cloud Engineer", years: "0-2 years", salary: "â‚¹4-8 lakhs/year" },
+    { rank: "Cloud Engineer", years: "2-4 years", salary: "â‚¹8-15 lakhs/year" },
+    { rank: "Senior Cloud Engineer", years: "4-7 years", salary: "â‚¹15-25 lakhs/year" },
+    { rank: "Lead Cloud Engineer", years: "7-10 years", salary: "â‚¹25-40 lakhs/year" },
+    { rank: "Cloud Architect", years: "10-15 years", salary: "â‚¹40-60 lakhs/year" },
+    { rank: "Principal Engineer/CTO", years: "15+ years", salary: "â‚¹60-100+ lakhs/year" }
   ];
 
   const skillRequirements = [
@@ -104,12 +119,12 @@ export default function CloudEngineerPage() {
   ];
 
   const cloudPlatforms = [
-    { platform: "Amazon Web Services (AWS)", market: "32% global market share", certs: "AWS Certified Solutions Architect", entry: "₹6-12 lakhs/year" },
-    { platform: "Microsoft Azure", market: "23% global market share", certs: "Azure Fundamentals, Azure Administrator", entry: "₹5-10 lakhs/year" },
-    { platform: "Google Cloud Platform (GCP)", market: "10% global market share", certs: "Google Cloud Associate Engineer", entry: "₹6-11 lakhs/year" },
-    { platform: "IBM Cloud", market: "4% global market share", certs: "IBM Cloud Certified", entry: "₹5-9 lakhs/year" },
-    { platform: "Oracle Cloud", market: "2% global market share", certs: "Oracle Cloud Infrastructure", entry: "₹6-10 lakhs/year" },
-    { platform: "Alibaba Cloud", market: "5% global market share", certs: "Alibaba Cloud Certified", entry: "₹5-8 lakhs/year" }
+    { platform: "Amazon Web Services (AWS)", market: "32% global market share", certs: "AWS Certified Solutions Architect", entry: "â‚¹6-12 lakhs/year" },
+    { platform: "Microsoft Azure", market: "23% global market share", certs: "Azure Fundamentals, Azure Administrator", entry: "â‚¹5-10 lakhs/year" },
+    { platform: "Google Cloud Platform (GCP)", market: "10% global market share", certs: "Google Cloud Associate Engineer", entry: "â‚¹6-11 lakhs/year" },
+    { platform: "IBM Cloud", market: "4% global market share", certs: "IBM Cloud Certified", entry: "â‚¹5-9 lakhs/year" },
+    { platform: "Oracle Cloud", market: "2% global market share", certs: "Oracle Cloud Infrastructure", entry: "â‚¹6-10 lakhs/year" },
+    { platform: "Alibaba Cloud", market: "5% global market share", certs: "Alibaba Cloud Certified", entry: "â‚¹5-8 lakhs/year" }
   ];
 
   const subjectAreas = [
@@ -557,3 +572,5 @@ export default function CloudEngineerPage() {
     </main>
   );
 }
+
+

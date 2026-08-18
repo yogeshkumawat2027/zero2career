@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaChartLine, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -79,6 +82,18 @@ import {
   FaPiggyBank
 } from 'react-icons/fa';
 
+const careerSlug = 'financial-analyst';
+const careerTitle = 'Financial Analyst Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function FinancialAnalystPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Finance/Economics/Commerce/MBA" },
@@ -93,7 +108,7 @@ export default function FinancialAnalystPage() {
       duration: "3-4 years",
       program: "B.Com, BBA Finance, Economics, Mathematics, Engineering",
       focus: "Financial accounting, economics, statistics, mathematics, business fundamentals",
-      cost: "₹50,000-8 LPA (government to private colleges)",
+      cost: "â‚¹50,000-8 LPA (government to private colleges)",
       outcomes: "Junior analyst, financial associate, entry-level banking positions"
     },
     { 
@@ -101,7 +116,7 @@ export default function FinancialAnalystPage() {
       duration: "2 years",
       program: "MBA Finance, M.Com, MS Finance, CFA Program",
       focus: "Advanced finance, investment analysis, corporate finance, financial modeling",
-      cost: "₹2-25 LPA for MBA programs",
+      cost: "â‚¹2-25 LPA for MBA programs",
       outcomes: "Financial analyst, investment banker, portfolio manager, senior roles"
     },
     { 
@@ -109,7 +124,7 @@ export default function FinancialAnalystPage() {
       duration: "1-4 years",
       program: "CFA, FRM, CA, CPA, CAIA certifications",
       focus: "Specialized finance knowledge, ethical standards, practical applications",
-      cost: "₹50,000-5 LPA per certification",
+      cost: "â‚¹50,000-5 LPA per certification",
       outcomes: "Career advancement, salary increment, global recognition, specialization"
     },
     { 
@@ -117,7 +132,7 @@ export default function FinancialAnalystPage() {
       duration: "6 months - 2 years",
       program: "Financial modeling, data analytics, fintech courses",
       focus: "Technical skills, software proficiency, emerging finance technologies",
-      cost: "₹25,000-3 LPA for specialized programs",
+      cost: "â‚¹25,000-3 LPA for specialized programs",
       outcomes: "Technical expertise, competitive advantage, niche specialization"
     }
   ];
@@ -172,62 +187,62 @@ export default function FinancialAnalystPage() {
       sector: "Investment Banking & Capital Markets",
       companies: "Goldman Sachs, Morgan Stanley, JP Morgan, Citi, Barclays, UBS, Kotak Mahindra",
       roles: "Investment Banking Analyst, Research Analyst, Sales & Trading, Equity Research",
-      salary: "₹8-50 LPA",
+      salary: "â‚¹8-50 LPA",
       growth: "High growth with expanding capital markets and IPO activity"
     },
     { 
       sector: "Asset Management & Mutual Funds",
       companies: "HDFC AMC, SBI Mutual Fund, ICICI Prudential, Aditya Birla, DSP, Franklin Templeton",
       roles: "Portfolio Manager, Fund Manager, Research Analyst, Product Manager",
-      salary: "₹6-40 LPA",
+      salary: "â‚¹6-40 LPA",
       growth: "Strong growth with increasing retail investment participation"
     },
     { 
       sector: "Commercial Banking",
       companies: "SBI, HDFC Bank, ICICI Bank, Axis Bank, Kotak Bank, Yes Bank, IndusInd",
       roles: "Credit Analyst, Relationship Manager, Corporate Banking, Treasury Operations",
-      salary: "₹4-25 LPA",
+      salary: "â‚¹4-25 LPA",
       growth: "Steady growth with banking sector digitalization"
     },
     { 
       sector: "Insurance & Risk Management",
       companies: "LIC, HDFC Life, ICICI Prudential Life, SBI Life, Bajaj Allianz, New India Assurance",
       roles: "Actuarial Analyst, Risk Manager, Underwriter, Investment Manager",
-      salary: "₹5-30 LPA",
+      salary: "â‚¹5-30 LPA",
       growth: "Growing with insurance penetration and regulatory changes"
     },
     { 
       sector: "Corporate Finance & Consulting",
       companies: "Deloitte, PwC, EY, KPMG, McKinsey, BCG, Bain, TCS, Infosys",
       roles: "Financial Analyst, Management Consultant, Corporate Development, M&A Analyst",
-      salary: "₹6-35 LPA",
+      salary: "â‚¹6-35 LPA",
       growth: "High demand for financial advisory and consulting services"
     },
     { 
       sector: "Fintech & Technology",
       companies: "Paytm, PhonePe, Razorpay, Zerodha, Groww, CRED, BharatPe, Pine Labs",
       roles: "Financial Analyst, Product Manager, Risk Analyst, Business Development",
-      salary: "₹8-45 LPA",
+      salary: "â‚¹8-45 LPA",
       growth: "Rapidly expanding fintech ecosystem with innovation focus"
     }
   ];
 
   const jobProfiles = [
-    { post: "Junior Financial Analyst", experience: "0-2 years", salary: "₹3-8 LPA", duties: "Financial modeling, data analysis, report preparation, supporting senior analysts" },
-    { post: "Financial Analyst", experience: "2-5 years", salary: "₹6-15 LPA", duties: "Investment analysis, financial planning, budgeting, client presentations" },
-    { post: "Senior Financial Analyst", experience: "5-8 years", salary: "₹12-25 LPA", duties: "Strategic analysis, team leadership, client management, complex modeling" },
-    { post: "Associate Director/VP", experience: "8-12 years", salary: "₹20-50 LPA", duties: "Business development, portfolio management, strategic planning, team management" },
-    { post: "Director/Managing Director", experience: "12-20 years", salary: "₹40-1.5 Cr", duties: "P&L responsibility, client relationships, strategic vision, organizational leadership" },
-    { post: "Chief Financial Officer", experience: "20+ years", salary: "₹1-10 Cr", duties: "Financial strategy, corporate governance, investor relations, executive leadership" }
+    { post: "Junior Financial Analyst", experience: "0-2 years", salary: "â‚¹3-8 LPA", duties: "Financial modeling, data analysis, report preparation, supporting senior analysts" },
+    { post: "Financial Analyst", experience: "2-5 years", salary: "â‚¹6-15 LPA", duties: "Investment analysis, financial planning, budgeting, client presentations" },
+    { post: "Senior Financial Analyst", experience: "5-8 years", salary: "â‚¹12-25 LPA", duties: "Strategic analysis, team leadership, client management, complex modeling" },
+    { post: "Associate Director/VP", experience: "8-12 years", salary: "â‚¹20-50 LPA", duties: "Business development, portfolio management, strategic planning, team management" },
+    { post: "Director/Managing Director", experience: "12-20 years", salary: "â‚¹40-1.5 Cr", duties: "P&L responsibility, client relationships, strategic vision, organizational leadership" },
+    { post: "Chief Financial Officer", experience: "20+ years", salary: "â‚¹1-10 Cr", duties: "Financial strategy, corporate governance, investor relations, executive leadership" }
   ];
 
   const topColleges = [
-    { name: "Indian Institutes of Management (IIMs)", courses: "MBA Finance, PGDM", ranking: "Top Tier", fees: "₹20-25 LPA", placements: "₹25-80 LPA average" },
-    { name: "Indian School of Business (ISB)", courses: "MBA, Executive MBA", ranking: "Premier B-School", fees: "₹35-40 LPA", placements: "₹30-70 LPA average" },
-    { name: "XLRI Jamshedpur", courses: "MBA Finance", ranking: "Top Private B-School", fees: "₹25 LPA", placements: "₹20-50 LPA average" },
-    { name: "Shri Ram College of Commerce (SRCC)", courses: "B.Com (Hons), Economics", ranking: "Top Commerce College", fees: "₹50,000", placements: "₹8-25 LPA average" },
-    { name: "St. Xavier's College Mumbai", courses: "B.Com, BMS, Economics", ranking: "Premier Commerce College", fees: "₹75,000", placements: "₹6-20 LPA average" },
-    { name: "NARSEE MONJEE Institute of Management", courses: "MBA Finance, BBA Finance", ranking: "Top Private Institute", fees: "₹15-20 LPA", placements: "₹8-30 LPA average" }
+    { name: "Indian Institutes of Management (IIMs)", courses: "MBA Finance, PGDM", ranking: "Top Tier", fees: "â‚¹20-25 LPA", placements: "â‚¹25-80 LPA average" },
+    { name: "Indian School of Business (ISB)", courses: "MBA, Executive MBA", ranking: "Premier B-School", fees: "â‚¹35-40 LPA", placements: "â‚¹30-70 LPA average" },
+    { name: "XLRI Jamshedpur", courses: "MBA Finance", ranking: "Top Private B-School", fees: "â‚¹25 LPA", placements: "â‚¹20-50 LPA average" },
+    { name: "Shri Ram College of Commerce (SRCC)", courses: "B.Com (Hons), Economics", ranking: "Top Commerce College", fees: "â‚¹50,000", placements: "â‚¹8-25 LPA average" },
+    { name: "St. Xavier's College Mumbai", courses: "B.Com, BMS, Economics", ranking: "Premier Commerce College", fees: "â‚¹75,000", placements: "â‚¹6-20 LPA average" },
+    { name: "NARSEE MONJEE Institute of Management", courses: "MBA Finance, BBA Finance", ranking: "Top Private Institute", fees: "â‚¹15-20 LPA", placements: "â‚¹8-30 LPA average" }
   ];
 
   const technicalSkills = [
@@ -250,12 +265,12 @@ export default function FinancialAnalystPage() {
   ];
 
   const careerProgression = [
-    { level: "Analyst", experience: "0-3 years", salary: "₹3-10 LPA", focus: "Learning fundamentals, supporting analysis, building technical skills" },
-    { level: "Senior Analyst", experience: "3-6 years", salary: "₹8-18 LPA", focus: "Independent analysis, client interaction, specialized expertise" },
-    { level: "Associate/Assistant VP", experience: "6-10 years", salary: "₹15-30 LPA", focus: "Team leadership, business development, strategic analysis" },
-    { level: "Vice President", experience: "10-15 years", salary: "₹25-60 LPA", focus: "P&L responsibility, client management, business strategy" },
-    { level: "Senior VP/Director", experience: "15-20 years", salary: "₹50-1.5 Cr", focus: "Business unit leadership, strategic partnerships, organizational development" },
-    { level: "Managing Director/CFO", experience: "20+ years", salary: "₹1-10 Cr", focus: "Executive leadership, corporate strategy, stakeholder management" }
+    { level: "Analyst", experience: "0-3 years", salary: "â‚¹3-10 LPA", focus: "Learning fundamentals, supporting analysis, building technical skills" },
+    { level: "Senior Analyst", experience: "3-6 years", salary: "â‚¹8-18 LPA", focus: "Independent analysis, client interaction, specialized expertise" },
+    { level: "Associate/Assistant VP", experience: "6-10 years", salary: "â‚¹15-30 LPA", focus: "Team leadership, business development, strategic analysis" },
+    { level: "Vice President", experience: "10-15 years", salary: "â‚¹25-60 LPA", focus: "P&L responsibility, client management, business strategy" },
+    { level: "Senior VP/Director", experience: "15-20 years", salary: "â‚¹50-1.5 Cr", focus: "Business unit leadership, strategic partnerships, organizational development" },
+    { level: "Managing Director/CFO", experience: "20+ years", salary: "â‚¹1-10 Cr", focus: "Executive leadership, corporate strategy, stakeholder management" }
   ];
 
   const emergingTrends = [
@@ -316,7 +331,7 @@ export default function FinancialAnalystPage() {
       cert: "Chartered Accountant (CA)",
       provider: "Institute of Chartered Accountants of India",
       duration: "3-5 years",
-      cost: "₹50,000-2 LPA",
+      cost: "â‚¹50,000-2 LPA",
       description: "Premier accounting and finance qualification in India"
     },
     { 
@@ -330,20 +345,20 @@ export default function FinancialAnalystPage() {
       cert: "Investment Banking Certificate",
       provider: "Various institutes and universities",
       duration: "6 months - 1 year",
-      cost: "₹50,000-3 LPA",
+      cost: "â‚¹50,000-3 LPA",
       description: "Specialized training in investment banking and capital markets"
     }
   ];
 
   const salaryRanges = [
-    { sector: "Investment Banking", fresher: "₹8-15 LPA", experienced: "₹15-50 LPA", senior: "₹40-2 Crores" },
-    { sector: "Asset Management", fresher: "₹6-12 LPA", experienced: "₹12-40 LPA", senior: "₹30-1.5 Crores" },
-    { sector: "Commercial Banking", fresher: "₹4-9 LPA", experienced: "₹9-25 LPA", senior: "₹20-80 LPA" },
-    { sector: "Insurance", fresher: "₹5-10 LPA", experienced: "₹10-30 LPA", senior: "₹25-1 Crore" },
-    { sector: "Consulting", fresher: "₹6-14 LPA", experienced: "₹14-35 LPA", senior: "₹30-2 Crores" },
-    { sector: "Fintech", fresher: "₹8-16 LPA", experienced: "₹16-45 LPA", senior: "₹35-3 Crores" },
-    { sector: "Corporate Finance", fresher: "₹5-12 LPA", experienced: "₹12-30 LPA", senior: "₹25-1.5 Crores" },
-    { sector: "Private Equity/VC", fresher: "₹10-20 LPA", experienced: "₹20-60 LPA", senior: "₹50-5 Crores" }
+    { sector: "Investment Banking", fresher: "â‚¹8-15 LPA", experienced: "â‚¹15-50 LPA", senior: "â‚¹40-2 Crores" },
+    { sector: "Asset Management", fresher: "â‚¹6-12 LPA", experienced: "â‚¹12-40 LPA", senior: "â‚¹30-1.5 Crores" },
+    { sector: "Commercial Banking", fresher: "â‚¹4-9 LPA", experienced: "â‚¹9-25 LPA", senior: "â‚¹20-80 LPA" },
+    { sector: "Insurance", fresher: "â‚¹5-10 LPA", experienced: "â‚¹10-30 LPA", senior: "â‚¹25-1 Crore" },
+    { sector: "Consulting", fresher: "â‚¹6-14 LPA", experienced: "â‚¹14-35 LPA", senior: "â‚¹30-2 Crores" },
+    { sector: "Fintech", fresher: "â‚¹8-16 LPA", experienced: "â‚¹16-45 LPA", senior: "â‚¹35-3 Crores" },
+    { sector: "Corporate Finance", fresher: "â‚¹5-12 LPA", experienced: "â‚¹12-30 LPA", senior: "â‚¹25-1.5 Crores" },
+    { sector: "Private Equity/VC", fresher: "â‚¹10-20 LPA", experienced: "â‚¹20-60 LPA", senior: "â‚¹50-5 Crores" }
   ];
 
   const preparationTips = [
@@ -362,37 +377,37 @@ export default function FinancialAnalystPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Investment Advisory Services",
-      investment: "₹5-25 lakhs",
+      investment: "â‚¹5-25 lakhs",
       description: "Independent investment advice, portfolio management, and financial planning",
       potential: "Growing affluent population seeking professional financial advice"
     },
     { 
       business: "Fintech Startup",
-      investment: "₹10 lakhs-5 crores",
+      investment: "â‚¹10 lakhs-5 crores",
       description: "Technology solutions for financial services, payments, or investing",
       potential: "High growth potential with digital adoption and regulatory support"
     },
     { 
       business: "Financial Consulting Firm",
-      investment: "₹8-40 lakhs",
+      investment: "â‚¹8-40 lakhs",
       description: "Corporate finance consulting, M&A advisory, and strategic planning",
       potential: "Strong demand from growing businesses and regulatory requirements"
     },
     { 
       business: "Alternative Investment Platform",
-      investment: "₹25 lakhs-2 crores",
+      investment: "â‚¹25 lakhs-2 crores",
       description: "Platform for alternative investments like P2P lending, real estate, commodities",
       potential: "Emerging market with high returns and diversification demand"
     },
     { 
       business: "Financial Education & Training",
-      investment: "₹5-30 lakhs",
+      investment: "â‚¹5-30 lakhs",
       description: "Professional training, certification courses, and financial literacy programs",
       potential: "Growing awareness of financial planning and professional development needs"
     },
     { 
       business: "Risk Management Solutions",
-      investment: "₹15-75 lakhs",
+      investment: "â‚¹15-75 lakhs",
       description: "Risk assessment tools, compliance solutions, and regulatory technology",
       potential: "Increasing regulatory requirements and risk awareness across industries"
     }
@@ -827,3 +842,5 @@ export default function FinancialAnalystPage() {
     </main>
   );
 }
+
+

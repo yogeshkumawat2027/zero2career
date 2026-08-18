@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCalendarAlt, 
   FaGraduationCap, 
   FaUsers, 
@@ -79,6 +82,18 @@ import {
   FaGlassCheers
 } from 'react-icons/fa';
 
+const careerSlug = 'event-manager';
+const careerTitle = 'Event Manager Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function EventManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree in Event Management/MBA" },
@@ -93,7 +108,7 @@ export default function EventManagerPage() {
       duration: "3-4 years",
       program: "Event Management, Hospitality, Mass Communication, Business Administration",
       focus: "Event planning, project management, communication skills, vendor management",
-      cost: "₹1-6 LPA (government to private colleges)",
+      cost: "â‚¹1-6 LPA (government to private colleges)",
       outcomes: "Event coordinator, assistant event manager, entry-level event planning roles"
     },
     { 
@@ -101,7 +116,7 @@ export default function EventManagerPage() {
       duration: "2 years",
       program: "MBA in Event Management, M.A. Event Management, Hospitality Management",
       focus: "Strategic event planning, business development, advanced project management",
-      cost: "₹2-15 LPA for MBA programs",
+      cost: "â‚¹2-15 LPA for MBA programs",
       outcomes: "Event manager, senior coordinator, specialized event planning roles"
     },
     { 
@@ -109,7 +124,7 @@ export default function EventManagerPage() {
       duration: "3-12 months",
       program: "CMP, CSEP, event planning certifications, project management",
       focus: "Industry standards, professional networking, specialized event types",
-      cost: "₹15,000-2 LPA per certification",
+      cost: "â‚¹15,000-2 LPA per certification",
       outcomes: "Career advancement, credibility, specialization recognition"
     },
     { 
@@ -117,7 +132,7 @@ export default function EventManagerPage() {
       duration: "6 months - 1 year",
       program: "Event management diplomas, wedding planning, corporate events",
       focus: "Practical skills, hands-on experience, industry exposure",
-      cost: "₹25,000-2 LPA for specialized programs",
+      cost: "â‚¹25,000-2 LPA for specialized programs",
       outcomes: "Quick entry into event industry, specialized skills, portfolio building"
     }
   ];
@@ -172,62 +187,62 @@ export default function EventManagerPage() {
       sector: "Event Management Companies",
       companies: "Wizcraft, 70 EMG, Fountainhead MKTG, Event Capital, Percept, Geometry Encompass",
       roles: "Event Manager, Event Coordinator, Account Manager, Creative Director",
-      salary: "₹3-20 LPA",
+      salary: "â‚¹3-20 LPA",
       growth: "Steady growth with increasing corporate and social events"
     },
     { 
       sector: "Corporate Organizations",
       companies: "TCS, Infosys, Wipro, Reliance, Tata Group, HUL, Accenture, IBM",
       roles: "Corporate Event Manager, Internal Communications Manager, HR Event Coordinator",
-      salary: "₹5-25 LPA",
+      salary: "â‚¹5-25 LPA",
       growth: "Growing emphasis on employee engagement and corporate culture"
     },
     { 
       sector: "Hospitality & Hotels",
       companies: "Taj Hotels, Oberoi, ITC, Marriott, Hyatt, Radisson, Lemon Tree Hotels",
       roles: "Banquet Manager, Conference Manager, Sales & Events Manager, MICE Coordinator",
-      salary: "₹4-18 LPA",
+      salary: "â‚¹4-18 LPA",
       growth: "Strong growth with hospitality industry expansion"
     },
     { 
       sector: "Wedding Planning Industry",
       companies: "WedMeGood, ShaadiSaga, Wedniksha, Celebrate Relations, independent planners",
       roles: "Wedding Planner, Destination Wedding Coordinator, Bridal Consultant, Vendor Manager",
-      salary: "₹3-30 LPA",
+      salary: "â‚¹3-30 LPA",
       growth: "Booming industry with increasing wedding expenditure"
     },
     { 
       sector: "Exhibition & Trade Show",
       companies: "Informa Markets, UBM India, Messe Frankfurt, Reed Exhibitions, Conference & More",
       roles: "Exhibition Manager, Trade Show Coordinator, B2B Event Manager, Fair Organizer",
-      salary: "₹4-22 LPA",
+      salary: "â‚¹4-22 LPA",
       growth: "Growing B2B networking and industry exhibitions"
     },
     { 
       sector: "Entertainment & Sports",
       companies: "BookMyShow, Zomato Live, Paytm Insider, Star Sports, ESPN, Sony Entertainment",
       roles: "Entertainment Manager, Sports Event Coordinator, Festival Manager, Show Producer",
-      salary: "₹5-35 LPA",
+      salary: "â‚¹5-35 LPA",
       growth: "Expanding entertainment and sports event industry"
     }
   ];
 
   const jobProfiles = [
-    { post: "Event Coordinator", experience: "0-2 years", salary: "₹2-5 LPA", duties: "Event support, vendor coordination, logistics management, client assistance" },
-    { post: "Event Manager", experience: "2-5 years", salary: "₹5-12 LPA", duties: "Event planning, budget management, team coordination, client relationship management" },
-    { post: "Senior Event Manager", experience: "5-8 years", salary: "₹10-20 LPA", duties: "Strategic planning, large event management, business development, team leadership" },
-    { post: "Event Director", experience: "8-12 years", salary: "₹18-35 LPA", duties: "Portfolio management, strategic partnerships, business growth, organizational leadership" },
-    { post: "VP Events/General Manager", experience: "12-18 years", salary: "₹30-60 LPA", duties: "Business strategy, organizational development, industry partnerships, executive leadership" },
-    { post: "Event Company Owner/CEO", experience: "15+ years", salary: "₹40 LPA-5 Crores", duties: "Business ownership, industry leadership, strategic vision, company growth" }
+    { post: "Event Coordinator", experience: "0-2 years", salary: "â‚¹2-5 LPA", duties: "Event support, vendor coordination, logistics management, client assistance" },
+    { post: "Event Manager", experience: "2-5 years", salary: "â‚¹5-12 LPA", duties: "Event planning, budget management, team coordination, client relationship management" },
+    { post: "Senior Event Manager", experience: "5-8 years", salary: "â‚¹10-20 LPA", duties: "Strategic planning, large event management, business development, team leadership" },
+    { post: "Event Director", experience: "8-12 years", salary: "â‚¹18-35 LPA", duties: "Portfolio management, strategic partnerships, business growth, organizational leadership" },
+    { post: "VP Events/General Manager", experience: "12-18 years", salary: "â‚¹30-60 LPA", duties: "Business strategy, organizational development, industry partnerships, executive leadership" },
+    { post: "Event Company Owner/CEO", experience: "15+ years", salary: "â‚¹40 LPA-5 Crores", duties: "Business ownership, industry leadership, strategic vision, company growth" }
   ];
 
   const topColleges = [
-    { name: "National Institute of Event Management", courses: "Event Management Programs", ranking: "Specialized Institute", fees: "₹3-8 LPA", placements: "₹4-12 LPA average" },
-    { name: "Indian Institute of Hotel Management", courses: "Hotel Management with Event Specialization", ranking: "Premier Hospitality Institute", fees: "₹2-5 LPA", placements: "₹5-15 LPA average" },
-    { name: "Amity University", courses: "Event Management, Mass Communication", ranking: "Top Private University", fees: "₹6-12 LPA", placements: "₹4-14 LPA average" },
-    { name: "Christ University", courses: "Event Management & PR, Mass Communication", ranking: "Premier Private University", fees: "₹4-8 LPA", placements: "₹5-16 LPA average" },
-    { name: "Symbiosis International", courses: "Event Management, Mass Communication", ranking: "Top Private Institute", fees: "₹8-15 LPA", placements: "₹6-18 LPA average" },
-    { name: "Lovely Professional University", courses: "Event Management, Hospitality", ranking: "Large Private University", fees: "₹3-6 LPA", placements: "₹3-10 LPA average" }
+    { name: "National Institute of Event Management", courses: "Event Management Programs", ranking: "Specialized Institute", fees: "â‚¹3-8 LPA", placements: "â‚¹4-12 LPA average" },
+    { name: "Indian Institute of Hotel Management", courses: "Hotel Management with Event Specialization", ranking: "Premier Hospitality Institute", fees: "â‚¹2-5 LPA", placements: "â‚¹5-15 LPA average" },
+    { name: "Amity University", courses: "Event Management, Mass Communication", ranking: "Top Private University", fees: "â‚¹6-12 LPA", placements: "â‚¹4-14 LPA average" },
+    { name: "Christ University", courses: "Event Management & PR, Mass Communication", ranking: "Premier Private University", fees: "â‚¹4-8 LPA", placements: "â‚¹5-16 LPA average" },
+    { name: "Symbiosis International", courses: "Event Management, Mass Communication", ranking: "Top Private Institute", fees: "â‚¹8-15 LPA", placements: "â‚¹6-18 LPA average" },
+    { name: "Lovely Professional University", courses: "Event Management, Hospitality", ranking: "Large Private University", fees: "â‚¹3-6 LPA", placements: "â‚¹3-10 LPA average" }
   ];
 
   const technicalSkills = [
@@ -250,12 +265,12 @@ export default function EventManagerPage() {
   ];
 
   const careerProgression = [
-    { level: "Event Coordinator", experience: "0-2 years", salary: "₹2-5 LPA", focus: "Learning event basics, supporting senior staff, gaining industry experience" },
-    { level: "Junior Event Manager", experience: "2-4 years", salary: "₹4-8 LPA", focus: "Managing small events, building client relationships, developing specialization" },
-    { level: "Event Manager", experience: "4-8 years", salary: "₹7-15 LPA", focus: "Independent event management, team leadership, business development" },
-    { level: "Senior Event Manager", experience: "8-12 years", salary: "₹12-25 LPA", focus: "Large event portfolios, strategic planning, organizational leadership" },
-    { level: "Event Director", experience: "12-18 years", salary: "₹20-40 LPA", focus: "Business strategy, partnership development, industry leadership" },
-    { level: "VP/CEO Events", experience: "15+ years", salary: "₹35-5 Cr", focus: "Business ownership, industry influence, strategic vision, company growth" }
+    { level: "Event Coordinator", experience: "0-2 years", salary: "â‚¹2-5 LPA", focus: "Learning event basics, supporting senior staff, gaining industry experience" },
+    { level: "Junior Event Manager", experience: "2-4 years", salary: "â‚¹4-8 LPA", focus: "Managing small events, building client relationships, developing specialization" },
+    { level: "Event Manager", experience: "4-8 years", salary: "â‚¹7-15 LPA", focus: "Independent event management, team leadership, business development" },
+    { level: "Senior Event Manager", experience: "8-12 years", salary: "â‚¹12-25 LPA", focus: "Large event portfolios, strategic planning, organizational leadership" },
+    { level: "Event Director", experience: "12-18 years", salary: "â‚¹20-40 LPA", focus: "Business strategy, partnership development, industry leadership" },
+    { level: "VP/CEO Events", experience: "15+ years", salary: "â‚¹35-5 Cr", focus: "Business ownership, industry influence, strategic vision, company growth" }
   ];
 
   const emergingTrends = [
@@ -330,20 +345,20 @@ export default function EventManagerPage() {
       cert: "Wedding Planning Certificate",
       provider: "Various institutes and organizations",
       duration: "3-6 months",
-      cost: "₹25,000-1 LPA",
+      cost: "â‚¹25,000-1 LPA",
       description: "Specialized training in wedding and social event planning"
     }
   ];
 
   const salaryRanges = [
-    { sector: "Event Management Companies", fresher: "₹3-6 LPA", experienced: "₹6-20 LPA", senior: "₹15-40 LPA" },
-    { sector: "Corporate Organizations", fresher: "₹5-9 LPA", experienced: "₹9-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Hospitality & Hotels", fresher: "₹4-7 LPA", experienced: "₹7-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Wedding Planning", fresher: "₹3-8 LPA", experienced: "₹8-30 LPA", senior: "₹25-80 LPA" },
-    { sector: "Exhibition & Trade Shows", fresher: "₹4-8 LPA", experienced: "₹8-22 LPA", senior: "₹18-40 LPA" },
-    { sector: "Entertainment & Sports", fresher: "₹5-10 LPA", experienced: "₹10-35 LPA", senior: "₹30-75 LPA" },
-    { sector: "Freelance/Independent", fresher: "₹2-12 LPA", experienced: "₹12-50 LPA", senior: "₹40-5 Crores" },
-    { sector: "Government Events", fresher: "₹3-6 LPA", experienced: "₹6-15 LPA", senior: "₹12-25 LPA" }
+    { sector: "Event Management Companies", fresher: "â‚¹3-6 LPA", experienced: "â‚¹6-20 LPA", senior: "â‚¹15-40 LPA" },
+    { sector: "Corporate Organizations", fresher: "â‚¹5-9 LPA", experienced: "â‚¹9-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Hospitality & Hotels", fresher: "â‚¹4-7 LPA", experienced: "â‚¹7-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Wedding Planning", fresher: "â‚¹3-8 LPA", experienced: "â‚¹8-30 LPA", senior: "â‚¹25-80 LPA" },
+    { sector: "Exhibition & Trade Shows", fresher: "â‚¹4-8 LPA", experienced: "â‚¹8-22 LPA", senior: "â‚¹18-40 LPA" },
+    { sector: "Entertainment & Sports", fresher: "â‚¹5-10 LPA", experienced: "â‚¹10-35 LPA", senior: "â‚¹30-75 LPA" },
+    { sector: "Freelance/Independent", fresher: "â‚¹2-12 LPA", experienced: "â‚¹12-50 LPA", senior: "â‚¹40-5 Crores" },
+    { sector: "Government Events", fresher: "â‚¹3-6 LPA", experienced: "â‚¹6-15 LPA", senior: "â‚¹12-25 LPA" }
   ];
 
   const preparationTips = [
@@ -362,37 +377,37 @@ export default function EventManagerPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Event Management Company",
-      investment: "₹5-25 lakhs",
+      investment: "â‚¹5-25 lakhs",
       description: "Full-service event planning and management for corporate and social events",
       potential: "High growth potential with established client relationships and repeat business"
     },
     { 
       business: "Wedding Planning Business",
-      investment: "₹3-15 lakhs",
+      investment: "â‚¹3-15 lakhs",
       description: "Specialized wedding and social event planning services",
       potential: "Lucrative market with high client spending and emotional value"
     },
     { 
       business: "Virtual Event Platform",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Technology platform for hosting virtual and hybrid events",
       potential: "Growing market with recurring revenue and scalability"
     },
     { 
       business: "Event Equipment Rental",
-      investment: "₹20 lakhs-1 crore",
+      investment: "â‚¹20 lakhs-1 crore",
       description: "Audio-visual, furniture, and decorative equipment rental for events",
       potential: "Steady revenue with repeat customers and asset-based returns"
     },
     { 
       business: "Specialty Event Services",
-      investment: "₹5-30 lakhs",
+      investment: "â‚¹5-30 lakhs",
       description: "Niche services like destination weddings, corporate retreats, or cultural events",
       potential: "Premium pricing with specialized expertise and unique positioning"
     },
     { 
       business: "Event Training Institute",
-      investment: "₹8-35 lakhs",
+      investment: "â‚¹8-35 lakhs",
       description: "Professional training and certification programs for event management",
       potential: "Growing demand for skilled professionals and recurring course revenue"
     }
@@ -827,3 +842,5 @@ export default function EventManagerPage() {
     </main>
   );
 }
+
+

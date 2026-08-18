@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaPalette, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -39,6 +42,18 @@ import {
   FaVectorSquare,
   FaShapes
 } from 'react-icons/fa';
+
+const careerSlug = 'graphic-designer';
+const careerTitle = 'Complete Guide to Becoming a Graphic Designer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function GraphicDesignerPage() {
   const eligibilityData = [
@@ -80,14 +95,14 @@ export default function GraphicDesignerPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Graphic Designer", years: "0-2 years", salary: "₹12,000 - ₹25,000" },
-    { rank: "Graphic Designer", years: "2-4 years", salary: "₹25,000 - ₹45,000" },
-    { rank: "Senior Graphic Designer", years: "4-7 years", salary: "₹45,000 - ₹70,000" },
-    { rank: "Lead Designer", years: "7-10 years", salary: "₹70,000 - ₹1,20,000" },
-    { rank: "Design Manager", years: "10-12 years", salary: "₹1,20,000 - ₹2,00,000" },
-    { rank: "Art Director", years: "12-15 years", salary: "₹2,00,000 - ₹3,50,000" },
-    { rank: "Creative Director", years: "15+ years", salary: "₹3,50,000 - ₹5,00,000" },
-    { rank: "Design Consultant", years: "12+ years", salary: "₹2,50,000 - ₹6,00,000" }
+    { rank: "Junior Graphic Designer", years: "0-2 years", salary: "â‚¹12,000 - â‚¹25,000" },
+    { rank: "Graphic Designer", years: "2-4 years", salary: "â‚¹25,000 - â‚¹45,000" },
+    { rank: "Senior Graphic Designer", years: "4-7 years", salary: "â‚¹45,000 - â‚¹70,000" },
+    { rank: "Lead Designer", years: "7-10 years", salary: "â‚¹70,000 - â‚¹1,20,000" },
+    { rank: "Design Manager", years: "10-12 years", salary: "â‚¹1,20,000 - â‚¹2,00,000" },
+    { rank: "Art Director", years: "12-15 years", salary: "â‚¹2,00,000 - â‚¹3,50,000" },
+    { rank: "Creative Director", years: "15+ years", salary: "â‚¹3,50,000 - â‚¹5,00,000" },
+    { rank: "Design Consultant", years: "12+ years", salary: "â‚¹2,50,000 - â‚¹6,00,000" }
   ];
 
   const skillsRequired = [
@@ -577,3 +592,5 @@ export default function GraphicDesignerPage() {
     </main>
   );
 }
+
+

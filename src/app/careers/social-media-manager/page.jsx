@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaHashtag, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -31,6 +34,18 @@ import {
   FaVideo
 } from 'react-icons/fa';
 
+const careerSlug = 'social-media-manager';
+const careerTitle = 'Complete Guide to Becoming a Social Media Manager';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function SocialMediaManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree in Marketing, Communications, or related field" },
@@ -44,39 +59,39 @@ export default function SocialMediaManagerPage() {
       level: "Entry Level (Fresher)", 
       duration: "0-1 year", 
       requirement: "Basic social media knowledge",
-      salary: "₹2-4 lakhs/year",
+      salary: "â‚¹2-4 lakhs/year",
       description: "Content creation and community management basics"
     },
     { 
       level: "Junior Social Media Manager", 
       duration: "1-2 years", 
       requirement: "Platform management experience",
-      salary: "₹4-7 lakhs/year",
+      salary: "â‚¹4-7 lakhs/year",
       description: "Managing brand accounts and creating content strategies"
     },
     { 
       level: "Social Media Manager", 
       duration: "2-4 years", 
       requirement: "Campaign management skills",
-      salary: "₹7-12 lakhs/year",
+      salary: "â‚¹7-12 lakhs/year",
       description: "Leading social media campaigns and team coordination"
     },
     { 
       level: "Senior Social Media Manager", 
       duration: "4-6 years", 
       requirement: "Strategic planning expertise",
-      salary: "₹12-20 lakhs/year",
+      salary: "â‚¹12-20 lakhs/year",
       description: "Developing comprehensive social media strategies"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Social Media Intern", years: "0-6 months", salary: "₹10-20k/month" },
-    { rank: "Social Media Executive", years: "6 months-2 years", salary: "₹25-50k/month" },
-    { rank: "Social Media Manager", years: "2-4 years", salary: "₹50k-1 lakh/month" },
-    { rank: "Senior Social Media Manager", years: "4-6 years", salary: "₹1-1.5 lakhs/month" },
-    { rank: "Social Media Head/Director", years: "6-10 years", salary: "₹1.5-3 lakhs/month" },
-    { rank: "Chief Marketing Officer", years: "10+ years", salary: "₹3-10 lakhs/month" }
+    { rank: "Social Media Intern", years: "0-6 months", salary: "â‚¹10-20k/month" },
+    { rank: "Social Media Executive", years: "6 months-2 years", salary: "â‚¹25-50k/month" },
+    { rank: "Social Media Manager", years: "2-4 years", salary: "â‚¹50k-1 lakh/month" },
+    { rank: "Senior Social Media Manager", years: "4-6 years", salary: "â‚¹1-1.5 lakhs/month" },
+    { rank: "Social Media Head/Director", years: "6-10 years", salary: "â‚¹1.5-3 lakhs/month" },
+    { rank: "Chief Marketing Officer", years: "10+ years", salary: "â‚¹3-10 lakhs/month" }
   ];
 
   const platformSkills = [
@@ -114,9 +129,9 @@ export default function SocialMediaManagerPage() {
     { cert: "Facebook Social Media Marketing", provider: "Facebook Blueprint", duration: "2-3 months", cost: "Free" },
     { cert: "Google Analytics Certification", provider: "Google", duration: "1 month", cost: "Free" },
     { cert: "HubSpot Content Marketing", provider: "HubSpot Academy", duration: "2 months", cost: "Free" },
-    { cert: "Hootsuite Social Media Marketing", provider: "Hootsuite", duration: "1-2 months", cost: "₹15-25k" },
-    { cert: "Digital Marketing Specialist", provider: "CDMM/IIDE", duration: "3-6 months", cost: "₹50k-1 lakh" },
-    { cert: "Social Media Strategy", provider: "Coursera/EdX", duration: "2-4 months", cost: "₹5-15k" }
+    { cert: "Hootsuite Social Media Marketing", provider: "Hootsuite", duration: "1-2 months", cost: "â‚¹15-25k" },
+    { cert: "Digital Marketing Specialist", provider: "CDMM/IIDE", duration: "3-6 months", cost: "â‚¹50k-1 lakh" },
+    { cert: "Social Media Strategy", provider: "Coursera/EdX", duration: "2-4 months", cost: "â‚¹5-15k" }
   ];
 
   return (
@@ -507,3 +522,5 @@ export default function SocialMediaManagerPage() {
     </main>
   );
 }
+
+

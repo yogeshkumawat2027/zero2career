@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaChalkboardTeacher, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -124,6 +127,18 @@ import {
   FaGoogleDrive
 } from 'react-icons/fa';
 
+const careerSlug = 'teacher-professor';
+const careerTitle = 'Complete Guide to Teaching & Professor Career';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function TeacherProfessorPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's degree + B.Ed/M.Ed for teaching certification" },
@@ -154,14 +169,14 @@ export default function TeacherProfessorPage() {
   ];
 
   const careerHierarchy = [
-    { position: "Primary Teacher (PRT)", years: "0-5 years", salary: "₹2.5-5 LPA", level: "Entry Level" },
-    { position: "Trained Graduate Teacher (TGT)", years: "3-10 years", salary: "₹4-8 LPA", level: "Secondary" },
-    { position: "Post Graduate Teacher (PGT)", years: "5-15 years", salary: "₹6-12 LPA", level: "Senior Secondary" },
-    { position: "Assistant Professor", years: "Ph.D + 0-5 years", salary: "₹8-18 LPA", level: "Higher Education" },
-    { position: "Associate Professor", years: "Ph.D + 5-12 years", salary: "₹15-30 LPA", level: "Senior Faculty" },
-    { position: "Professor", years: "Ph.D + 12-20 years", salary: "₹25-50 LPA", level: "Senior Professor" },
-    { position: "Dean/Director", years: "20-30 years", salary: "₹40-80 LPA", level: "Administrative" },
-    { position: "Vice Chancellor", years: "25+ years", salary: "₹60 LPA - 1 Cr+", level: "Executive" }
+    { position: "Primary Teacher (PRT)", years: "0-5 years", salary: "â‚¹2.5-5 LPA", level: "Entry Level" },
+    { position: "Trained Graduate Teacher (TGT)", years: "3-10 years", salary: "â‚¹4-8 LPA", level: "Secondary" },
+    { position: "Post Graduate Teacher (PGT)", years: "5-15 years", salary: "â‚¹6-12 LPA", level: "Senior Secondary" },
+    { position: "Assistant Professor", years: "Ph.D + 0-5 years", salary: "â‚¹8-18 LPA", level: "Higher Education" },
+    { position: "Associate Professor", years: "Ph.D + 5-12 years", salary: "â‚¹15-30 LPA", level: "Senior Faculty" },
+    { position: "Professor", years: "Ph.D + 12-20 years", salary: "â‚¹25-50 LPA", level: "Senior Professor" },
+    { position: "Dean/Director", years: "20-30 years", salary: "â‚¹40-80 LPA", level: "Administrative" },
+    { position: "Vice Chancellor", years: "25+ years", salary: "â‚¹60 LPA - 1 Cr+", level: "Executive" }
   ];
 
   const keyResponsibilities = [
@@ -594,3 +609,5 @@ export default function TeacherProfessorPage() {
     </main>
   );
 }
+
+

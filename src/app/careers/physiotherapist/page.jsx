@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaHeartbeat, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -144,6 +147,18 @@ import {
   FaXRay
 } from 'react-icons/fa';
 
+const careerSlug = 'physiotherapist';
+const careerTitle = 'Complete Guide to Physiotherapy Career';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function PhysiotherapistPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Physiotherapy (BPT) from recognized college" },
@@ -174,13 +189,13 @@ export default function PhysiotherapistPage() {
   ];
 
   const careerHierarchy = [
-    { position: "Junior Physiotherapist", years: "0-2 years", salary: "₹2.5-5 LPA", level: "Entry Level" },
-    { position: "Physiotherapist", years: "2-5 years", salary: "₹5-10 LPA", level: "Professional Level" },
-    { position: "Senior Physiotherapist", years: "5-10 years", salary: "₹10-18 LPA", level: "Senior Level" },
-    { position: "Clinical Specialist", years: "10-15 years", salary: "₹18-30 LPA", level: "Specialist Level" },
-    { position: "Department Head/Manager", years: "15-20 years", salary: "₹30-50 LPA", level: "Management Level" },
-    { position: "Clinical Director", years: "20-25 years", salary: "₹50-80 LPA", level: "Director Level" },
-    { position: "Chief Physiotherapist/Owner", years: "25+ years", salary: "₹80 LPA - 1.5 Cr", level: "Executive Level" }
+    { position: "Junior Physiotherapist", years: "0-2 years", salary: "â‚¹2.5-5 LPA", level: "Entry Level" },
+    { position: "Physiotherapist", years: "2-5 years", salary: "â‚¹5-10 LPA", level: "Professional Level" },
+    { position: "Senior Physiotherapist", years: "5-10 years", salary: "â‚¹10-18 LPA", level: "Senior Level" },
+    { position: "Clinical Specialist", years: "10-15 years", salary: "â‚¹18-30 LPA", level: "Specialist Level" },
+    { position: "Department Head/Manager", years: "15-20 years", salary: "â‚¹30-50 LPA", level: "Management Level" },
+    { position: "Clinical Director", years: "20-25 years", salary: "â‚¹50-80 LPA", level: "Director Level" },
+    { position: "Chief Physiotherapist/Owner", years: "25+ years", salary: "â‚¹80 LPA - 1.5 Cr", level: "Executive Level" }
   ];
 
   const keyResponsibilities = [
@@ -634,3 +649,5 @@ export default function PhysiotherapistPage() {
     </main>
   );
 }
+
+

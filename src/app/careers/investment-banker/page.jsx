@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaChartLine, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -66,6 +69,18 @@ import {
   FaLandmark
 } from 'react-icons/fa';
 
+const careerSlug = 'investment-banker';
+const careerTitle = 'Complete Guide to Investment Banking Career';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function InvestmentBankerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Finance, Economics, Business, or Engineering" },
@@ -96,12 +111,12 @@ export default function InvestmentBankerPage() {
   ];
 
   const careerHierarchy = [
-    { position: "Investment Banking Analyst", years: "0-3 years", salary: "₹15-25 LPA", level: "Entry Level" },
-    { position: "Investment Banking Associate", years: "3-6 years", salary: "₹25-50 LPA", level: "Mid Level" },
-    { position: "Vice President (VP)", years: "6-10 years", salary: "₹50-1 Cr", level: "Senior Level" },
-    { position: "Director/Principal", years: "10-15 years", salary: "₹1-2 Cr", level: "Leadership" },
-    { position: "Managing Director (MD)", years: "15-20 years", salary: "₹2-5 Cr", level: "Executive" },
-    { position: "Senior MD/Partner", years: "20+ years", salary: "₹5-10+ Cr", level: "Senior Executive" }
+    { position: "Investment Banking Analyst", years: "0-3 years", salary: "â‚¹15-25 LPA", level: "Entry Level" },
+    { position: "Investment Banking Associate", years: "3-6 years", salary: "â‚¹25-50 LPA", level: "Mid Level" },
+    { position: "Vice President (VP)", years: "6-10 years", salary: "â‚¹50-1 Cr", level: "Senior Level" },
+    { position: "Director/Principal", years: "10-15 years", salary: "â‚¹1-2 Cr", level: "Leadership" },
+    { position: "Managing Director (MD)", years: "15-20 years", salary: "â‚¹2-5 Cr", level: "Executive" },
+    { position: "Senior MD/Partner", years: "20+ years", salary: "â‚¹5-10+ Cr", level: "Senior Executive" }
   ];
 
   const keyResponsibilities = [
@@ -150,10 +165,10 @@ export default function InvestmentBankerPage() {
   ];
 
   const compensationStructure = [
-    { component: "Base Salary", description: "Fixed annual compensation", range: "₹8-25 LPA (Analyst), ₹15-50 LPA (Associate)" },
+    { component: "Base Salary", description: "Fixed annual compensation", range: "â‚¹8-25 LPA (Analyst), â‚¹15-50 LPA (Associate)" },
     { component: "Performance Bonus", description: "Variable compensation based on individual/team performance", range: "50-150% of base salary" },
-    { component: "Signing Bonus", description: "One-time payment for joining (experienced hires)", range: "₹2-10 LPA" },
-    { component: "Retention Bonus", description: "Long-term incentive to retain talent", range: "₹5-25 LPA (deferred)" },
+    { component: "Signing Bonus", description: "One-time payment for joining (experienced hires)", range: "â‚¹2-10 LPA" },
+    { component: "Retention Bonus", description: "Long-term incentive to retain talent", range: "â‚¹5-25 LPA (deferred)" },
     { component: "Carried Interest", description: "Profit sharing in private equity/hedge funds", range: "1-20% of fund profits (senior levels)" }
   ];
 
@@ -524,3 +539,5 @@ export default function InvestmentBankerPage() {
     </main>
   );
 }
+
+

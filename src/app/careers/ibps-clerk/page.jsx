@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUniversity, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -27,6 +30,18 @@ import {
   FaLaptop,
   FaHandshake
 } from 'react-icons/fa';
+
+const careerSlug = 'ibps-clerk';
+const careerTitle = 'IBPS Clerk Complete Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function IBPSClerkPage() {
   const eligibilityData = [
@@ -68,11 +83,11 @@ export default function IBPSClerkPage() {
   ];
 
   const jobProfiles = [
-    { post: "Clerk", bank: "Public Sector Banks", salary: "₹19,900-63,200", duties: "Customer service, cash handling, data entry" },
-    { post: "Cashier", bank: "Regional Rural Banks", salary: "₹19,900-63,200", duties: "Cash transactions, vault operations" },
-    { post: "Data Entry Operator", bank: "Cooperative Banks", salary: "₹19,900-63,200", duties: "Digital data management, file handling" },
-    { post: "Customer Service Officer", bank: "Various Banks", salary: "₹19,900-63,200", duties: "Customer assistance, query resolution" },
-    { post: "Junior Associate", bank: "Public Sector Banks", salary: "₹19,900-63,200", duties: "Banking operations, administrative work" }
+    { post: "Clerk", bank: "Public Sector Banks", salary: "â‚¹19,900-63,200", duties: "Customer service, cash handling, data entry" },
+    { post: "Cashier", bank: "Regional Rural Banks", salary: "â‚¹19,900-63,200", duties: "Cash transactions, vault operations" },
+    { post: "Data Entry Operator", bank: "Cooperative Banks", salary: "â‚¹19,900-63,200", duties: "Digital data management, file handling" },
+    { post: "Customer Service Officer", bank: "Various Banks", salary: "â‚¹19,900-63,200", duties: "Customer assistance, query resolution" },
+    { post: "Junior Associate", bank: "Public Sector Banks", salary: "â‚¹19,900-63,200", duties: "Banking operations, administrative work" }
   ];
 
   const syllabus = [
@@ -110,12 +125,12 @@ export default function IBPSClerkPage() {
   ];
 
   const careerGrowth = [
-    { level: "Clerk/Junior Associate", experience: "0-2 years", salary: "₹19,900-63,200" },
-    { level: "Senior Clerk", experience: "2-5 years", salary: "₹23,700-74,200" },
-    { level: "Officer Scale I", experience: "Through IBPS PO", salary: "₹23,700-42,020" },
-    { level: "Assistant Manager", experience: "5-8 years", salary: "₹31,705-45,950" },
-    { level: "Manager", experience: "8-12 years", salary: "₹42,020-66,070" },
-    { level: "Senior Manager", experience: "12+ years", salary: "₹50,030-90,820" }
+    { level: "Clerk/Junior Associate", experience: "0-2 years", salary: "â‚¹19,900-63,200" },
+    { level: "Senior Clerk", experience: "2-5 years", salary: "â‚¹23,700-74,200" },
+    { level: "Officer Scale I", experience: "Through IBPS PO", salary: "â‚¹23,700-42,020" },
+    { level: "Assistant Manager", experience: "5-8 years", salary: "â‚¹31,705-45,950" },
+    { level: "Manager", experience: "8-12 years", salary: "â‚¹42,020-66,070" },
+    { level: "Senior Manager", experience: "12+ years", salary: "â‚¹50,030-90,820" }
   ];
 
   const participatingBanks = [
@@ -352,7 +367,7 @@ export default function IBPSClerkPage() {
                   <div className="space-y-2">
                     {category.banks.slice(0, 4).map((bank, bankIndex) => (
                       <div key={bankIndex} className="text-sm text-gray-600">
-                        • {bank}
+                        â€¢ {bank}
                       </div>
                     ))}
                     {category.banks.length > 4 && (
@@ -522,3 +537,5 @@ export default function IBPSClerkPage() {
     </main>
   );
 }
+
+

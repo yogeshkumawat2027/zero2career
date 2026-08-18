@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaBolt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -68,6 +71,18 @@ import {
   FaMobile
 } from 'react-icons/fa';
 
+const careerSlug = 'electrical-engineer';
+const careerTitle = 'Electrical Engineer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function ElectricalEngineerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.E/B.Tech in Electrical Engineering" },
@@ -126,53 +141,53 @@ export default function ElectricalEngineerPage() {
       sector: "Power & Energy",
       companies: "NTPC, Coal India, Adani Power, Tata Power, BHEL",
       roles: "Power Engineer, Electrical Designer, Protection Engineer, Project Engineer",
-      salary: "₹4-25 LPA",
+      salary: "â‚¹4-25 LPA",
       growth: "Stable sector with renewable energy transformation"
     },
     { 
       sector: "Electronics & Semiconductor",
       companies: "Intel, Qualcomm, Broadcom, Texas Instruments, Samsung",
       roles: "Design Engineer, Verification Engineer, VLSI Engineer, Test Engineer",
-      salary: "₹6-40 LPA",
+      salary: "â‚¹6-40 LPA",
       growth: "High growth with semiconductor manufacturing push"
     },
     { 
       sector: "Telecommunications",
       companies: "Ericsson, Nokia, Huawei, Jio, Airtel, Vi",
       roles: "RF Engineer, Network Engineer, System Engineer, Field Engineer",
-      salary: "₹5-30 LPA",
+      salary: "â‚¹5-30 LPA",
       growth: "Expanding with 5G deployment and digital infrastructure"
     },
     { 
       sector: "Automotive & EV",
       companies: "Tata Motors, Mahindra, Tesla, Ola Electric, Ather Energy",
       roles: "Electrical Designer, Battery Engineer, Controls Engineer, Test Engineer",
-      salary: "₹5-35 LPA",
+      salary: "â‚¹5-35 LPA",
       growth: "Rapidly growing electric vehicle market"
     },
     { 
       sector: "Aerospace & Defense",
       companies: "HAL, BEL, DRDO, Boeing, Airbus, L&T Defense",
       roles: "Systems Engineer, Avionics Engineer, Radar Engineer, Test Engineer",
-      salary: "₹6-30 LPA",
+      salary: "â‚¹6-30 LPA",
       growth: "Steady growth with defense modernization"
     },
     { 
       sector: "IT & Software Services",
       companies: "TCS, Infosys, Wipro, Accenture, IBM, Microsoft",
       roles: "Software Engineer, Systems Analyst, Technical Consultant, Project Manager",
-      salary: "₹4-50 LPA",
+      salary: "â‚¹4-50 LPA",
       growth: "Continuous high demand for technical talent"
     }
   ];
 
   const jobProfiles = [
-    { post: "Junior Engineer", experience: "0-2 years", salary: "₹3-6 LPA", duties: "Design assistance, testing, documentation, learning on-the-job" },
-    { post: "Engineer", experience: "2-5 years", salary: "₹5-12 LPA", duties: "System design, project execution, team coordination, client interaction" },
-    { post: "Senior Engineer", experience: "5-8 years", salary: "₹8-20 LPA", duties: "Project leadership, technical mentoring, advanced design work" },
-    { post: "Principal Engineer", experience: "8-12 years", salary: "₹15-35 LPA", duties: "Technology leadership, innovation, strategic planning, team management" },
-    { post: "Engineering Manager", experience: "10-15 years", salary: "₹25-60 LPA", duties: "Department management, budget planning, business development" },
-    { post: "Director/VP Engineering", experience: "15+ years", salary: "₹50-1.5 Crores", duties: "Organizational strategy, technology vision, executive leadership" }
+    { post: "Junior Engineer", experience: "0-2 years", salary: "â‚¹3-6 LPA", duties: "Design assistance, testing, documentation, learning on-the-job" },
+    { post: "Engineer", experience: "2-5 years", salary: "â‚¹5-12 LPA", duties: "System design, project execution, team coordination, client interaction" },
+    { post: "Senior Engineer", experience: "5-8 years", salary: "â‚¹8-20 LPA", duties: "Project leadership, technical mentoring, advanced design work" },
+    { post: "Principal Engineer", experience: "8-12 years", salary: "â‚¹15-35 LPA", duties: "Technology leadership, innovation, strategic planning, team management" },
+    { post: "Engineering Manager", experience: "10-15 years", salary: "â‚¹25-60 LPA", duties: "Department management, budget planning, business development" },
+    { post: "Director/VP Engineering", experience: "15+ years", salary: "â‚¹50-1.5 Crores", duties: "Organizational strategy, technology vision, executive leadership" }
   ];
 
   const educationPath = [
@@ -181,7 +196,7 @@ export default function ElectricalEngineerPage() {
       duration: "4 years",
       program: "B.E/B.Tech in Electrical Engineering or related field",
       focus: "Circuit analysis, power systems, electronics, control systems, mathematics",
-      cost: "₹50,000-8 LPA (government to private colleges)",
+      cost: "â‚¹50,000-8 LPA (government to private colleges)",
       outcomes: "Entry-level engineering positions, foundation for specialization"
     },
     { 
@@ -189,7 +204,7 @@ export default function ElectricalEngineerPage() {
       duration: "2 years",
       program: "M.E/M.Tech in specialized electrical engineering fields",
       focus: "Advanced specialization, research methodology, thesis work",
-      cost: "₹1-5 LPA for M.Tech programs",
+      cost: "â‚¹1-5 LPA for M.Tech programs",
       outcomes: "Specialized roles, research positions, higher starting salaries"
     },
     { 
@@ -197,7 +212,7 @@ export default function ElectricalEngineerPage() {
       duration: "Ongoing",
       program: "Industry certifications, vendor-specific training",
       focus: "Practical skills, latest technologies, industry standards",
-      cost: "₹10,000-2 LPA per certification",
+      cost: "â‚¹10,000-2 LPA per certification",
       outcomes: "Career advancement, salary increment, specialization credibility"
     },
     { 
@@ -234,7 +249,7 @@ export default function ElectricalEngineerPage() {
       cert: "Professional Engineer (PE) License",
       provider: "State Engineering Boards (US)/Institution of Engineers (India)",
       duration: "Exam preparation: 6-12 months",
-      cost: "$375 (US), ₹15,000-25,000 (India)",
+      cost: "$375 (US), â‚¹15,000-25,000 (India)",
       description: "Professional engineering license for independent practice and consulting"
     },
     { 
@@ -255,7 +270,7 @@ export default function ElectricalEngineerPage() {
       cert: "Six Sigma Green/Black Belt",
       provider: "Various organizations (ASQ, IASSC)",
       duration: "3-6 months",
-      cost: "₹25,000-75,000",
+      cost: "â‚¹25,000-75,000",
       description: "Quality management and process improvement methodology"
     },
     { 
@@ -268,12 +283,12 @@ export default function ElectricalEngineerPage() {
   ];
 
   const careerProgression = [
-    { level: "Junior Engineer", experience: "0-2 years", salary: "₹3-6 LPA", focus: "Learning fundamentals, hands-on experience, mentorship" },
-    { level: "Engineer", experience: "2-5 years", salary: "₹5-12 LPA", focus: "Independent work, specialization development, project contributions" },
-    { level: "Senior Engineer", experience: "5-8 years", salary: "₹8-20 LPA", focus: "Technical leadership, mentoring, complex problem solving" },
-    { level: "Principal Engineer", experience: "8-12 years", salary: "₹15-35 LPA", focus: "Innovation leadership, strategic technical decisions" },
-    { level: "Engineering Manager", experience: "10-15 years", salary: "₹25-60 LPA", focus: "Team management, business interface, resource planning" },
-    { level: "Director/VP", experience: "15+ years", salary: "₹50 LPA-1.5 Cr", focus: "Organizational leadership, vision setting, strategic planning" }
+    { level: "Junior Engineer", experience: "0-2 years", salary: "â‚¹3-6 LPA", focus: "Learning fundamentals, hands-on experience, mentorship" },
+    { level: "Engineer", experience: "2-5 years", salary: "â‚¹5-12 LPA", focus: "Independent work, specialization development, project contributions" },
+    { level: "Senior Engineer", experience: "5-8 years", salary: "â‚¹8-20 LPA", focus: "Technical leadership, mentoring, complex problem solving" },
+    { level: "Principal Engineer", experience: "8-12 years", salary: "â‚¹15-35 LPA", focus: "Innovation leadership, strategic technical decisions" },
+    { level: "Engineering Manager", experience: "10-15 years", salary: "â‚¹25-60 LPA", focus: "Team management, business interface, resource planning" },
+    { level: "Director/VP", experience: "15+ years", salary: "â‚¹50 LPA-1.5 Cr", focus: "Organizational leadership, vision setting, strategic planning" }
   ];
 
   const emergingTrends = [
@@ -316,12 +331,12 @@ export default function ElectricalEngineerPage() {
   ];
 
   const topColleges = [
-    { name: "IIT (All Campuses)", courses: "B.Tech/M.Tech Electrical Engineering", ranking: "Top Tier", fees: "₹8-12 LPA", placements: "₹15-50 LPA average" },
-    { name: "NIT (All Campuses)", courses: "B.Tech/M.Tech Electrical Engineering", ranking: "Tier 1", fees: "₹5-8 LPA", placements: "₹8-25 LPA average" },
-    { name: "BITS Pilani", courses: "B.E Electrical & Electronics Engineering", ranking: "Top Private", fees: "₹19-25 LPA", placements: "₹12-40 LPA average" },
-    { name: "Delhi Technological University (DTU)", courses: "B.Tech Electrical Engineering", ranking: "Top State University", fees: "₹7-9 LPA", placements: "₹8-30 LPA average" },
-    { name: "Jadavpur University", courses: "B.E Electrical Engineering", ranking: "Premier State University", fees: "₹2-4 LPA", placements: "₹6-20 LPA average" },
-    { name: "VIT/SRM/Manipal", courses: "B.Tech Electrical Engineering", ranking: "Top Private Universities", fees: "₹15-20 LPA", placements: "₹5-18 LPA average" }
+    { name: "IIT (All Campuses)", courses: "B.Tech/M.Tech Electrical Engineering", ranking: "Top Tier", fees: "â‚¹8-12 LPA", placements: "â‚¹15-50 LPA average" },
+    { name: "NIT (All Campuses)", courses: "B.Tech/M.Tech Electrical Engineering", ranking: "Tier 1", fees: "â‚¹5-8 LPA", placements: "â‚¹8-25 LPA average" },
+    { name: "BITS Pilani", courses: "B.E Electrical & Electronics Engineering", ranking: "Top Private", fees: "â‚¹19-25 LPA", placements: "â‚¹12-40 LPA average" },
+    { name: "Delhi Technological University (DTU)", courses: "B.Tech Electrical Engineering", ranking: "Top State University", fees: "â‚¹7-9 LPA", placements: "â‚¹8-30 LPA average" },
+    { name: "Jadavpur University", courses: "B.E Electrical Engineering", ranking: "Premier State University", fees: "â‚¹2-4 LPA", placements: "â‚¹6-20 LPA average" },
+    { name: "VIT/SRM/Manipal", courses: "B.Tech Electrical Engineering", ranking: "Top Private Universities", fees: "â‚¹15-20 LPA", placements: "â‚¹5-18 LPA average" }
   ];
 
   const governmentOpportunities = [
@@ -358,14 +373,14 @@ export default function ElectricalEngineerPage() {
   ];
 
   const salaryRanges = [
-    { sector: "Power & Utilities", fresher: "₹4-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "Electronics & Semiconductor", fresher: "₹6-12 LPA", experienced: "₹12-40 LPA", senior: "₹35-80 LPA" },
-    { sector: "Automotive & EV", fresher: "₹5-10 LPA", experienced: "₹10-35 LPA", senior: "₹30-70 LPA" },
-    { sector: "IT Services", fresher: "₹4-8 LPA", experienced: "₹8-30 LPA", senior: "₹25-1.2 Crores" },
-    { sector: "Telecommunications", fresher: "₹5-9 LPA", experienced: "₹9-30 LPA", senior: "₹25-60 LPA" },
-    { sector: "Government/PSU", fresher: "₹4-7 LPA", experienced: "₹7-20 LPA", senior: "₹18-40 LPA" },
-    { sector: "Consulting", fresher: "₹6-12 LPA", experienced: "₹12-50 LPA", senior: "₹40-2 Crores" },
-    { sector: "Research & Development", fresher: "₹5-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-45 LPA" }
+    { sector: "Power & Utilities", fresher: "â‚¹4-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "Electronics & Semiconductor", fresher: "â‚¹6-12 LPA", experienced: "â‚¹12-40 LPA", senior: "â‚¹35-80 LPA" },
+    { sector: "Automotive & EV", fresher: "â‚¹5-10 LPA", experienced: "â‚¹10-35 LPA", senior: "â‚¹30-70 LPA" },
+    { sector: "IT Services", fresher: "â‚¹4-8 LPA", experienced: "â‚¹8-30 LPA", senior: "â‚¹25-1.2 Crores" },
+    { sector: "Telecommunications", fresher: "â‚¹5-9 LPA", experienced: "â‚¹9-30 LPA", senior: "â‚¹25-60 LPA" },
+    { sector: "Government/PSU", fresher: "â‚¹4-7 LPA", experienced: "â‚¹7-20 LPA", senior: "â‚¹18-40 LPA" },
+    { sector: "Consulting", fresher: "â‚¹6-12 LPA", experienced: "â‚¹12-50 LPA", senior: "â‚¹40-2 Crores" },
+    { sector: "Research & Development", fresher: "â‚¹5-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-45 LPA" }
   ];
 
   const preparationTips = [
@@ -384,37 +399,37 @@ export default function ElectricalEngineerPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Electrical Consulting Services",
-      investment: "₹5-20 lakhs",
+      investment: "â‚¹5-20 lakhs",
       description: "Design consulting for electrical systems, power quality analysis",
       potential: "Good margins with established client base"
     },
     { 
       business: "Solar Installation & Maintenance",
-      investment: "₹10-50 lakhs",
+      investment: "â‚¹10-50 lakhs",
       description: "Solar panel installation, maintenance, and energy auditing services",
       potential: "High growth potential with government incentives"
     },
     { 
       business: "Electronics Product Development",
-      investment: "₹20 lakhs - 2 crores",
+      investment: "â‚¹20 lakhs - 2 crores",
       description: "Custom electronics products, IoT solutions, embedded systems",
       potential: "High-tech startup potential with scalability"
     },
     { 
       business: "Automation Solutions Provider",
-      investment: "₹15-75 lakhs",
+      investment: "â‚¹15-75 lakhs",
       description: "Industrial automation, SCADA systems, process control solutions",
       potential: "Growing market with Industry 4.0 adoption"
     },
     { 
       business: "EV Charging Infrastructure",
-      investment: "₹25 lakhs - 5 crores",
+      investment: "â‚¹25 lakhs - 5 crores",
       description: "Electric vehicle charging stations, battery swapping solutions",
       potential: "Rapidly expanding market with government support"
     },
     { 
       business: "Technical Training Institute",
-      investment: "₹10-40 lakhs",
+      investment: "â‚¹10-40 lakhs",
       description: "Professional training in electrical engineering, skill development",
       potential: "Steady demand for upskilling and certification training"
     }
@@ -877,3 +892,5 @@ export default function ElectricalEngineerPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUniversity, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -31,6 +34,18 @@ import {
   FaBalanceScale
 } from 'react-icons/fa';
 
+const careerSlug = 'bank-po';
+const careerTitle = 'Complete Guide to Becoming a Bank PO';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function BankPOPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's degree in any discipline" },
@@ -44,39 +59,39 @@ export default function BankPOPage() {
       exam: "SBI PO", 
       frequency: "Annual", 
       vacancies: "2000-2500",
-      salary: "₹8.2-13.08 lakhs/year",
+      salary: "â‚¹8.2-13.08 lakhs/year",
       description: "State Bank of India Probationary Officer"
     },
     { 
       exam: "IBPS PO", 
       frequency: "Annual", 
       vacancies: "4000-5000",
-      salary: "₹7.2-13.08 lakhs/year", 
+      salary: "â‚¹7.2-13.08 lakhs/year", 
       description: "Institute of Banking Personnel Selection"
     },
     { 
       exam: "RBI Grade B", 
       frequency: "Annual", 
       vacancies: "200-300",
-      salary: "₹12-15 lakhs/year",
+      salary: "â‚¹12-15 lakhs/year",
       description: "Reserve Bank of India Grade B Officer"
     },
     { 
       exam: "NABARD Grade A", 
       frequency: "Annual", 
       vacancies: "100-150",
-      salary: "₹11-14 lakhs/year",
+      salary: "â‚¹11-14 lakhs/year",
       description: "National Bank for Agriculture & Rural Development"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Probationary Officer (PO)", years: "0-2 years", salary: "₹7.2-8.5 lakhs/year" },
-    { rank: "Assistant Manager", years: "2-5 years", salary: "₹9-12 lakhs/year" },
-    { rank: "Manager", years: "5-10 years", salary: "₹12-18 lakhs/year" },
-    { rank: "Senior Manager", years: "10-15 years", salary: "₹18-25 lakhs/year" },
-    { rank: "Deputy General Manager", years: "15-20 years", salary: "₹25-35 lakhs/year" },
-    { rank: "General Manager", years: "20-25 years", salary: "₹35-50 lakhs/year" }
+    { rank: "Probationary Officer (PO)", years: "0-2 years", salary: "â‚¹7.2-8.5 lakhs/year" },
+    { rank: "Assistant Manager", years: "2-5 years", salary: "â‚¹9-12 lakhs/year" },
+    { rank: "Manager", years: "5-10 years", salary: "â‚¹12-18 lakhs/year" },
+    { rank: "Senior Manager", years: "10-15 years", salary: "â‚¹18-25 lakhs/year" },
+    { rank: "Deputy General Manager", years: "15-20 years", salary: "â‚¹25-35 lakhs/year" },
+    { rank: "General Manager", years: "20-25 years", salary: "â‚¹35-50 lakhs/year" }
   ];
 
   const keySubjects = [
@@ -528,3 +543,5 @@ export default function BankPOPage() {
     </main>
   );
 }
+
+

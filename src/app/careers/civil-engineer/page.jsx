@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaHardHat, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -29,6 +32,18 @@ import {
   FaCalculator
 } from 'react-icons/fa';
 
+const careerSlug = 'civil-engineer';
+const careerTitle = 'Complete Guide to Becoming a Civil Engineer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function CivilEngineerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "10+2 with Physics, Chemistry, Mathematics (min 50%)" },
@@ -42,53 +57,53 @@ export default function CivilEngineerPage() {
       specialization: "Structural Engineering", 
       duration: "4 years BTech", 
       requirement: "JEE/State CET + BTech Civil",
-      salary: "₹4-12 lakhs/year",
+      salary: "â‚¹4-12 lakhs/year",
       description: "Design and analysis of buildings, bridges, towers"
     },
     { 
       specialization: "Transportation Engineering", 
       duration: "4 years BTech", 
       requirement: "JEE/State CET + BTech Civil",
-      salary: "₹5-15 lakhs/year",
+      salary: "â‚¹5-15 lakhs/year",
       description: "Design highways, railways, airports, traffic systems"
     },
     { 
       specialization: "Water Resources Engineering", 
       duration: "4 years BTech", 
       requirement: "JEE/State CET + BTech Civil",
-      salary: "₹4-10 lakhs/year",
+      salary: "â‚¹4-10 lakhs/year",
       description: "Manage water supply, irrigation, flood control"
     },
     { 
       specialization: "Geotechnical Engineering", 
       duration: "4 years BTech", 
       requirement: "JEE/State CET + BTech Civil",
-      salary: "₹5-12 lakhs/year",
+      salary: "â‚¹5-12 lakhs/year",
       description: "Study soil behavior for foundation design"
     },
     { 
       specialization: "Environmental Engineering", 
       duration: "4 years BTech", 
       requirement: "JEE/State CET + BTech Civil",
-      salary: "₹6-14 lakhs/year",
+      salary: "â‚¹6-14 lakhs/year",
       description: "Design waste treatment and pollution control systems"
     },
     { 
       specialization: "Construction Management", 
       duration: "4 years BTech", 
       requirement: "JEE/State CET + BTech Civil",
-      salary: "₹7-20 lakhs/year",
+      salary: "â‚¹7-20 lakhs/year",
       description: "Project planning, cost estimation, site management"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Junior Engineer", years: "0-2 years", salary: "₹3-6 lakhs/year" },
-    { rank: "Assistant Engineer", years: "2-5 years", salary: "₹6-10 lakhs/year" },
-    { rank: "Civil Engineer", years: "5-8 years", salary: "₹10-18 lakhs/year" },
-    { rank: "Senior Engineer", years: "8-12 years", salary: "₹18-30 lakhs/year" },
-    { rank: "Project Manager", years: "12-18 years", salary: "₹30-50 lakhs/year" },
-    { rank: "Chief Engineer/Director", years: "18+ years", salary: "₹50-80 lakhs/year" }
+    { rank: "Junior Engineer", years: "0-2 years", salary: "â‚¹3-6 lakhs/year" },
+    { rank: "Assistant Engineer", years: "2-5 years", salary: "â‚¹6-10 lakhs/year" },
+    { rank: "Civil Engineer", years: "5-8 years", salary: "â‚¹10-18 lakhs/year" },
+    { rank: "Senior Engineer", years: "8-12 years", salary: "â‚¹18-30 lakhs/year" },
+    { rank: "Project Manager", years: "12-18 years", salary: "â‚¹30-50 lakhs/year" },
+    { rank: "Chief Engineer/Director", years: "18+ years", salary: "â‚¹50-80 lakhs/year" }
   ];
 
   const skillRequirements = [
@@ -136,12 +151,12 @@ export default function CivilEngineerPage() {
   ];
 
   const governmentOpportunities = [
-    { department: "Public Works Department (PWD)", role: "Assistant/Executive Engineer", salary: "₹4-8 lakhs/year" },
-    { department: "Indian Railways", role: "Junior/Assistant Engineer", salary: "₹4-7 lakhs/year" },
-    { department: "National Highways Authority of India", role: "Deputy Manager/Manager", salary: "₹6-12 lakhs/year" },
-    { department: "Central Water Commission", role: "Assistant Engineer", salary: "₹4-8 lakhs/year" },
-    { department: "Border Roads Organisation", role: "Junior Engineer", salary: "₹4-7 lakhs/year" },
-    { department: "Airport Authority of India", role: "Junior Executive", salary: "₹5-9 lakhs/year" }
+    { department: "Public Works Department (PWD)", role: "Assistant/Executive Engineer", salary: "â‚¹4-8 lakhs/year" },
+    { department: "Indian Railways", role: "Junior/Assistant Engineer", salary: "â‚¹4-7 lakhs/year" },
+    { department: "National Highways Authority of India", role: "Deputy Manager/Manager", salary: "â‚¹6-12 lakhs/year" },
+    { department: "Central Water Commission", role: "Assistant Engineer", salary: "â‚¹4-8 lakhs/year" },
+    { department: "Border Roads Organisation", role: "Junior Engineer", salary: "â‚¹4-7 lakhs/year" },
+    { department: "Airport Authority of India", role: "Junior Executive", salary: "â‚¹5-9 lakhs/year" }
   ];
 
   return (
@@ -541,3 +556,5 @@ export default function CivilEngineerPage() {
     </main>
   );
 }
+
+

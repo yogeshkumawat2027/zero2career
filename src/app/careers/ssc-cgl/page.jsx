@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUniversity, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -25,6 +28,18 @@ import {
   FaGlobe,
   FaUserTie
 } from 'react-icons/fa';
+
+const careerSlug = 'ssc-cgl';
+const careerTitle = 'SSC CGL Officer Complete Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function SSCCGLPage() {
   const eligibilityData = [
@@ -59,14 +74,14 @@ export default function SSCCGLPage() {
   ];
 
   const jobProfiles = [
-    { post: "Assistant Audit Officer", department: "CAG", salary: "₹44,900-1,42,400", grade: "Group B" },
-    { post: "Accounts Officer", department: "Various Ministries", salary: "₹44,900-1,42,400", grade: "Group B" },
-    { post: "Income Tax Inspector", department: "CBDT", salary: "₹44,900-1,42,400", grade: "Group B" },
-    { post: "Central Excise Inspector", department: "CBIC", salary: "₹44,900-1,42,400", grade: "Group B" },
-    { post: "Preventive Officer", department: "CBIC", salary: "₹44,900-1,42,400", grade: "Group B" },
-    { post: "Examiner", department: "CBIC", salary: "₹44,900-1,42,400", grade: "Group B" },
-    { post: "Sub Inspector", department: "CBI, NIA", salary: "₹35,400-1,12,400", grade: "Group C" },
-    { post: "Assistant", department: "Various Ministries", salary: "₹25,500-81,100", grade: "Group C" }
+    { post: "Assistant Audit Officer", department: "CAG", salary: "â‚¹44,900-1,42,400", grade: "Group B" },
+    { post: "Accounts Officer", department: "Various Ministries", salary: "â‚¹44,900-1,42,400", grade: "Group B" },
+    { post: "Income Tax Inspector", department: "CBDT", salary: "â‚¹44,900-1,42,400", grade: "Group B" },
+    { post: "Central Excise Inspector", department: "CBIC", salary: "â‚¹44,900-1,42,400", grade: "Group B" },
+    { post: "Preventive Officer", department: "CBIC", salary: "â‚¹44,900-1,42,400", grade: "Group B" },
+    { post: "Examiner", department: "CBIC", salary: "â‚¹44,900-1,42,400", grade: "Group B" },
+    { post: "Sub Inspector", department: "CBI, NIA", salary: "â‚¹35,400-1,12,400", grade: "Group C" },
+    { post: "Assistant", department: "Various Ministries", salary: "â‚¹25,500-81,100", grade: "Group C" }
   ];
 
   const syllabus = [
@@ -100,12 +115,12 @@ export default function SSCCGLPage() {
   ];
 
   const careerGrowth = [
-    { level: "Assistant/Inspector", experience: "0-5 years", salary: "₹25,500-81,100" },
-    { level: "Section Officer", experience: "5-10 years", salary: "₹44,900-1,42,400" },
-    { level: "Under Secretary", experience: "10-15 years", salary: "₹56,100-1,77,500" },
-    { level: "Deputy Secretary", experience: "15-20 years", salary: "₹67,700-2,08,700" },
-    { level: "Director", experience: "20-25 years", salary: "₹78,800-2,09,200" },
-    { level: "Joint Secretary", experience: "25+ years", salary: "₹1,18,500-2,14,100" }
+    { level: "Assistant/Inspector", experience: "0-5 years", salary: "â‚¹25,500-81,100" },
+    { level: "Section Officer", experience: "5-10 years", salary: "â‚¹44,900-1,42,400" },
+    { level: "Under Secretary", experience: "10-15 years", salary: "â‚¹56,100-1,77,500" },
+    { level: "Deputy Secretary", experience: "15-20 years", salary: "â‚¹67,700-2,08,700" },
+    { level: "Director", experience: "20-25 years", salary: "â‚¹78,800-2,09,200" },
+    { level: "Joint Secretary", experience: "25+ years", salary: "â‚¹1,18,500-2,14,100" }
   ];
 
   return (
@@ -373,3 +388,5 @@ export default function SSCCGLPage() {
     </main>
   );
 }
+
+

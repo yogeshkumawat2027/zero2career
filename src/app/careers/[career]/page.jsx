@@ -1,6 +1,16 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+export const metadata = {
+  title: 'Career Guide Unavailable | Zero2Career',
+  description:
+    'This career guide is not published yet. Explore other complete career guides on Zero2Career.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
 export default function CareerFallbackPage({ params }) {
   const slug = params?.career;
 

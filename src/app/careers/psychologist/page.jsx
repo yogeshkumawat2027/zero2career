@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUserTie, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -22,6 +25,18 @@ import {
   FaComments,
   FaHeart
 } from 'react-icons/fa';
+
+const careerSlug = 'psychologist';
+const careerTitle = 'Complete Guide to Becoming a Psychologist';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function PsychologistPage() {
   const eligibilityData = [
@@ -56,12 +71,12 @@ export default function PsychologistPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Psychology Assistant/Trainee", years: "Entry Level", salary: "₹20,000 - ₹35,000" },
-    { rank: "Licensed Psychologist", years: "2-4 years", salary: "₹35,000 - ₹60,000" },
-    { rank: "Senior Psychologist", years: "5-8 years", salary: "₹50,000 - ₹80,000" },
-    { rank: "Principal Psychologist", years: "8-12 years", salary: "₹70,000 - ₹1,20,000" },
-    { rank: "Chief Psychologist/Director", years: "12-15 years", salary: "₹1,00,000 - ₹2,00,000" },
-    { rank: "Private Practice/Consultant", years: "15+ years", salary: "₹1,50,000 - ₹5,00,000+" }
+    { rank: "Psychology Assistant/Trainee", years: "Entry Level", salary: "â‚¹20,000 - â‚¹35,000" },
+    { rank: "Licensed Psychologist", years: "2-4 years", salary: "â‚¹35,000 - â‚¹60,000" },
+    { rank: "Senior Psychologist", years: "5-8 years", salary: "â‚¹50,000 - â‚¹80,000" },
+    { rank: "Principal Psychologist", years: "8-12 years", salary: "â‚¹70,000 - â‚¹1,20,000" },
+    { rank: "Chief Psychologist/Director", years: "12-15 years", salary: "â‚¹1,00,000 - â‚¹2,00,000" },
+    { rank: "Private Practice/Consultant", years: "15+ years", salary: "â‚¹1,50,000 - â‚¹5,00,000+" }
   ];
 
   const specializations = [
@@ -494,3 +509,5 @@ export default function PsychologistPage() {
     </main>
   );
 }
+
+

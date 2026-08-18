@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -28,6 +31,18 @@ import {
   FaUserShield,
   FaGavel
 } from 'react-icons/fa';
+
+const careerSlug = 'bsf-officer';
+const careerTitle = 'BSF Officer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function BSFOfficerPage() {
   const eligibilityData = [
@@ -69,11 +84,11 @@ export default function BSFOfficerPage() {
   ];
 
   const jobProfiles = [
-    { post: "Assistant Commandant", level: "Group A", salary: "₹56,100-1,77,500", duties: "Border security operations, leadership, administration" },
-    { post: "Inspector", level: "Group B", salary: "₹35,400-1,12,400", duties: "Field operations, team supervision, border patrolling" },
-    { post: "Sub Inspector", level: "Group B", salary: "₹29,200-92,300", duties: "Ground operations, border surveillance, documentation" },
-    { post: "Head Constable", level: "Group C", salary: "₹25,500-81,100", duties: "Direct border duty, patrolling, equipment handling" },
-    { post: "Constable", level: "Group C", salary: "₹21,700-69,100", duties: "Border security, patrolling, basic operations" }
+    { post: "Assistant Commandant", level: "Group A", salary: "â‚¹56,100-1,77,500", duties: "Border security operations, leadership, administration" },
+    { post: "Inspector", level: "Group B", salary: "â‚¹35,400-1,12,400", duties: "Field operations, team supervision, border patrolling" },
+    { post: "Sub Inspector", level: "Group B", salary: "â‚¹29,200-92,300", duties: "Ground operations, border surveillance, documentation" },
+    { post: "Head Constable", level: "Group C", salary: "â‚¹25,500-81,100", duties: "Direct border duty, patrolling, equipment handling" },
+    { post: "Constable", level: "Group C", salary: "â‚¹21,700-69,100", duties: "Border security, patrolling, basic operations" }
   ];
 
   const syllabus = [
@@ -107,12 +122,12 @@ export default function BSFOfficerPage() {
   ];
 
   const careerGrowth = [
-    { level: "Constable", experience: "0-5 years", salary: "₹21,700-35,000" },
-    { level: "Head Constable", experience: "5-10 years", salary: "₹25,500-40,000" },
-    { level: "Sub Inspector", experience: "10-15 years", salary: "₹29,200-50,000" },
-    { level: "Inspector", experience: "15-20 years", salary: "₹35,400-60,000" },
-    { level: "Assistant Commandant", experience: "20-25 years", salary: "₹56,100-90,000" },
-    { level: "Commandant & Above", experience: "25+ years", salary: "₹78,800-1,50,000" }
+    { level: "Constable", experience: "0-5 years", salary: "â‚¹21,700-35,000" },
+    { level: "Head Constable", experience: "5-10 years", salary: "â‚¹25,500-40,000" },
+    { level: "Sub Inspector", experience: "10-15 years", salary: "â‚¹29,200-50,000" },
+    { level: "Inspector", experience: "15-20 years", salary: "â‚¹35,400-60,000" },
+    { level: "Assistant Commandant", experience: "20-25 years", salary: "â‚¹56,100-90,000" },
+    { level: "Commandant & Above", experience: "25+ years", salary: "â‚¹78,800-1,50,000" }
   ];
 
   const physicalStandards = [
@@ -576,3 +591,5 @@ export default function BSFOfficerPage() {
     </main>
   );
 }
+
+

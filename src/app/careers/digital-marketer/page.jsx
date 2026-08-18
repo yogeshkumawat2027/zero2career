@@ -1,7 +1,10 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 
     import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaLaptopCode, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -32,6 +35,18 @@ import {
   FaMousePointer
 } from 'react-icons/fa';
 
+const careerSlug = 'digital-marketer';
+const careerTitle = 'Complete Guide to Becoming a Digital Marketer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function DigitalMarketerPage() {
   const eligibilityData = [
     { icon: FaGraduationCap, title: "Education", detail: "Bachelor's degree in any field (preferred)" },
@@ -45,53 +60,53 @@ export default function DigitalMarketerPage() {
       specialization: "Search Engine Optimization (SEO)", 
       duration: "3-6 months", 
       requirement: "Google Analytics certification",
-      cost: "₹20,000-50,000",
+      cost: "â‚¹20,000-50,000",
       description: "Optimize websites for search engine rankings"
     },
     { 
       specialization: "Pay-Per-Click (PPC) Advertising", 
       duration: "2-4 months", 
       requirement: "Google Ads certification",
-      cost: "₹15,000-40,000",
+      cost: "â‚¹15,000-40,000",
       description: "Manage paid advertising campaigns on search engines"
     },
     { 
       specialization: "Social Media Marketing", 
       duration: "2-3 months", 
       requirement: "Platform-specific certifications",
-      cost: "₹10,000-30,000",
+      cost: "â‚¹10,000-30,000",
       description: "Create and manage social media campaigns"
     },
     { 
       specialization: "Content Marketing", 
       duration: "3-5 months", 
       requirement: "Content strategy certification",
-      cost: "₹25,000-60,000",
+      cost: "â‚¹25,000-60,000",
       description: "Develop content strategies and create engaging content"
     },
     { 
       specialization: "Email Marketing", 
       duration: "1-2 months", 
       requirement: "Marketing automation tools",
-      cost: "₹8,000-20,000",
+      cost: "â‚¹8,000-20,000",
       description: "Design and execute email marketing campaigns"
     },
     { 
       specialization: "Digital Analytics", 
       duration: "2-4 months", 
       requirement: "Google Analytics & Data Studio",
-      cost: "₹20,000-45,000",
+      cost: "â‚¹20,000-45,000",
       description: "Analyze and interpret digital marketing data"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Digital Marketing Intern", years: "0-6 months", salary: "₹8,000-15,000/month" },
-    { rank: "Junior Digital Marketer", years: "6 months-2 years", salary: "₹15,000-35,000/month" },
-    { rank: "Digital Marketing Executive", years: "2-4 years", salary: "₹35,000-60,000/month" },
-    { rank: "Senior Digital Marketer", years: "4-6 years", salary: "₹60,000-1,00,000/month" },
-    { rank: "Digital Marketing Manager", years: "6-10 years", salary: "₹1,00,000-2,00,000/month" },
-    { rank: "Digital Marketing Head/Director", years: "10+ years", salary: "₹2,00,000-5,00,000/month" }
+    { rank: "Digital Marketing Intern", years: "0-6 months", salary: "â‚¹8,000-15,000/month" },
+    { rank: "Junior Digital Marketer", years: "6 months-2 years", salary: "â‚¹15,000-35,000/month" },
+    { rank: "Digital Marketing Executive", years: "2-4 years", salary: "â‚¹35,000-60,000/month" },
+    { rank: "Senior Digital Marketer", years: "4-6 years", salary: "â‚¹60,000-1,00,000/month" },
+    { rank: "Digital Marketing Manager", years: "6-10 years", salary: "â‚¹1,00,000-2,00,000/month" },
+    { rank: "Digital Marketing Head/Director", years: "10+ years", salary: "â‚¹2,00,000-5,00,000/month" }
   ];
 
   const skillsRequired = [
@@ -482,4 +497,6 @@ export default function DigitalMarketerPage() {
     </main>
   );
 }
+
+
 

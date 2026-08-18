@@ -126,13 +126,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
+                  <Link
                     href={link.href}
                     className="text-blue-100 hover:text-white hover:translate-x-1 transform transition-all duration-200 flex items-center gap-2 group"
                   >
                     <HiArrowRight className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -167,13 +167,13 @@ export default function Footer() {
             <ul className="space-y-3 mb-8">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a 
+                  <Link
                     href={service.href}
                     className="text-blue-100 hover:text-white hover:translate-x-1 transform transition-all duration-200 flex items-center gap-2 group"
                   >
                     <HiArrowRight className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

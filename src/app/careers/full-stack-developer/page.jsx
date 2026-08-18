@@ -1,3 +1,4 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
 import { 
@@ -120,7 +121,21 @@ import {
   FaDocker,
   FaAws
 } from 'react-icons/fa';
-import { 
+
+const careerSlug = 'full-stack-developer';
+const careerTitle = 'Full Stack Developer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+import {
+
+
   SiTypescript, 
   SiNextdotjs, 
   SiMongodb, 
@@ -158,7 +173,7 @@ export default function FullStackDeveloperPage() {
       duration: "3-4 years",
       program: "B.Tech/B.E. Computer Science, BCA, B.Sc. IT, Self-learning bootcamps",
       focus: "Programming fundamentals, data structures, algorithms, web development basics",
-      cost: "₹50,000-8 LPA (government to private colleges), ₹25,000-2 LPA (bootcamps)",
+      cost: "â‚¹50,000-8 LPA (government to private colleges), â‚¹25,000-2 LPA (bootcamps)",
       outcomes: "Junior developer, trainee software engineer, full stack intern positions"
     },
     { 
@@ -166,7 +181,7 @@ export default function FullStackDeveloperPage() {
       duration: "2 years",
       program: "M.Tech/MCA/M.Sc. Computer Science, specialized tech programs",
       focus: "Advanced programming, system design, specialized technologies, research",
-      cost: "₹1-10 LPA for advanced programs",
+      cost: "â‚¹1-10 LPA for advanced programs",
       outcomes: "Senior developer roles, tech lead positions, specialized engineer roles"
     },
     { 
@@ -174,7 +189,7 @@ export default function FullStackDeveloperPage() {
       duration: "3-18 months",
       program: "AWS, Google Cloud, Azure, MongoDB, React, Angular, DevOps certifications",
       focus: "Industry-specific skills, cloud computing, modern frameworks, deployment",
-      cost: "₹10,000-3 LPA for multiple certifications",
+      cost: "â‚¹10,000-3 LPA for multiple certifications",
       outcomes: "Career advancement, salary hikes, specialized roles, cloud architect positions"
     },
     { 
@@ -182,7 +197,7 @@ export default function FullStackDeveloperPage() {
       duration: "Ongoing",
       program: "Online courses, tech conferences, open source contribution, side projects",
       focus: "Latest technologies, emerging frameworks, AI/ML integration, best practices",
-      cost: "₹5,000-1 LPA for continuous learning resources",
+      cost: "â‚¹5,000-1 LPA for continuous learning resources",
       outcomes: "Expert developer, tech lead, architect, CTO track, startup founder"
     }
   ];
@@ -243,62 +258,62 @@ export default function FullStackDeveloperPage() {
       sector: "Technology Startups",
       companies: "Zerodha, Razorpay, Freshworks, Zomato, Swiggy, Byju's, Unacademy, CRED",
       roles: "Full Stack Developer, Senior Developer, Tech Lead, Engineering Manager",
-      salary: "₹6-50 LPA",
+      salary: "â‚¹6-50 LPA",
       benefits: "Stock options, rapid growth, learning opportunities, flexible work culture"
     },
     { 
       sector: "Product-Based Companies",
       companies: "Google, Microsoft, Amazon, Meta, Adobe, Netflix, Spotify, Atlassian",
       roles: "Software Engineer, Senior SDE, Principal Engineer, Staff Engineer",
-      salary: "₹15-2 Cr LPA",
+      salary: "â‚¹15-2 Cr LPA",
       benefits: "High compensation, global exposure, cutting-edge technology, career advancement"
     },
     { 
       sector: "Service-Based IT Companies",
       companies: "TCS, Infosys, Wipro, HCL, Cognizant, Accenture, Capgemini, LTI",
       roles: "Software Developer, Senior Analyst, Project Lead, Module Lead",
-      salary: "₹3-25 LPA",
+      salary: "â‚¹3-25 LPA",
       benefits: "Job security, global projects, diverse domain exposure, structured career path"
     },
     { 
       sector: "E-commerce & Fintech",
       companies: "Flipkart, Amazon India, Paytm, PhonePe, Myntra, Nykaa, PolicyBazaar",
       roles: "Full Stack Engineer, Platform Engineer, Senior Developer, Architect",
-      salary: "₹8-60 LPA",
+      salary: "â‚¹8-60 LPA",
       benefits: "Scale challenges, business impact, performance bonuses, growth opportunities"
     },
     { 
       sector: "Consulting & Digital Agencies",
       companies: "Deloitte Digital, PwC, EY, KPMG Digital, McKinsey Digital, ThoughtWorks",
       roles: "Technology Consultant, Digital Developer, Solutions Engineer, Technical Architect",
-      salary: "₹6-40 LPA",
+      salary: "â‚¹6-40 LPA",
       benefits: "Client exposure, diverse projects, business understanding, leadership development"
     },
     { 
       sector: "Banking & Financial Services",
       companies: "Goldman Sachs, JP Morgan, HDFC Bank, ICICI, SBI, Kotak Mahindra, Axis Bank",
       roles: "Application Developer, Full Stack Engineer, Technical Analyst, System Engineer",
-      salary: "₹5-35 LPA",
+      salary: "â‚¹5-35 LPA",
       benefits: "Stable industry, regulatory compliance experience, domain expertise, job security"
     }
   ];
 
   const careerProgression = [
-    { level: "Junior Full Stack Developer", experience: "0-2 years", salary: "₹3-8 LPA", focus: "Learning tech stack, basic feature development, code quality, debugging skills" },
-    { level: "Full Stack Developer", experience: "2-4 years", salary: "₹6-15 LPA", focus: "End-to-end feature development, database design, API integration, testing" },
-    { level: "Senior Full Stack Developer", experience: "4-7 years", salary: "₹12-30 LPA", focus: "Complex system design, mentoring juniors, architecture decisions, performance optimization" },
-    { level: "Tech Lead/Senior Engineer", experience: "7-10 years", salary: "₹20-50 LPA", focus: "Team leadership, technical roadmap, system architecture, cross-functional collaboration" },
-    { level: "Engineering Manager/Principal Engineer", experience: "10-15 years", salary: "₹35-80 LPA", focus: "People management, technical strategy, product planning, organizational impact" },
-    { level: "Director/VP Engineering/CTO", experience: "15+ years", salary: "₹60 LPA-3 Cr", focus: "Engineering organization, technology vision, business strategy, executive leadership" }
+    { level: "Junior Full Stack Developer", experience: "0-2 years", salary: "â‚¹3-8 LPA", focus: "Learning tech stack, basic feature development, code quality, debugging skills" },
+    { level: "Full Stack Developer", experience: "2-4 years", salary: "â‚¹6-15 LPA", focus: "End-to-end feature development, database design, API integration, testing" },
+    { level: "Senior Full Stack Developer", experience: "4-7 years", salary: "â‚¹12-30 LPA", focus: "Complex system design, mentoring juniors, architecture decisions, performance optimization" },
+    { level: "Tech Lead/Senior Engineer", experience: "7-10 years", salary: "â‚¹20-50 LPA", focus: "Team leadership, technical roadmap, system architecture, cross-functional collaboration" },
+    { level: "Engineering Manager/Principal Engineer", experience: "10-15 years", salary: "â‚¹35-80 LPA", focus: "People management, technical strategy, product planning, organizational impact" },
+    { level: "Director/VP Engineering/CTO", experience: "15+ years", salary: "â‚¹60 LPA-3 Cr", focus: "Engineering organization, technology vision, business strategy, executive leadership" }
   ];
 
   const topInstitutions = [
-    { name: "Indian Institutes of Technology (IITs)", courses: "B.Tech/M.Tech Computer Science", ranking: "Premier Technical Institutes", fees: "₹2-3 LPA", placements: "₹20-2 Cr LPA" },
-    { name: "National Institutes of Technology (NITs)", courses: "B.Tech Computer Science, IT", ranking: "Top Government Institutes", fees: "₹1.5-2 LPA", placements: "₹8-50 LPA" },
-    { name: "Indian Institutes of Information Technology", courses: "B.Tech IT, Computer Science", ranking: "Specialized IT Institutes", fees: "₹2-4 LPA", placements: "₹6-40 LPA" },
-    { name: "Delhi University, Mumbai University", courses: "BCA, MCA, B.Sc. Computer Science", ranking: "Premier Universities", fees: "₹25,000-1 LPA", placements: "₹4-25 LPA" },
-    { name: "Coding Bootcamps (Masai, Scaler, etc.)", courses: "Full Stack Development Programs", ranking: "Intensive Skill Programs", fees: "₹2-4 LPA", placements: "₹4-20 LPA" },
-    { name: "Online Platforms (Coursera, Udemy)", courses: "Self-paced learning programs", ranking: "Flexible Learning", fees: "₹5,000-50,000", placements: "Self-driven career growth" }
+    { name: "Indian Institutes of Technology (IITs)", courses: "B.Tech/M.Tech Computer Science", ranking: "Premier Technical Institutes", fees: "â‚¹2-3 LPA", placements: "â‚¹20-2 Cr LPA" },
+    { name: "National Institutes of Technology (NITs)", courses: "B.Tech Computer Science, IT", ranking: "Top Government Institutes", fees: "â‚¹1.5-2 LPA", placements: "â‚¹8-50 LPA" },
+    { name: "Indian Institutes of Information Technology", courses: "B.Tech IT, Computer Science", ranking: "Specialized IT Institutes", fees: "â‚¹2-4 LPA", placements: "â‚¹6-40 LPA" },
+    { name: "Delhi University, Mumbai University", courses: "BCA, MCA, B.Sc. Computer Science", ranking: "Premier Universities", fees: "â‚¹25,000-1 LPA", placements: "â‚¹4-25 LPA" },
+    { name: "Coding Bootcamps (Masai, Scaler, etc.)", courses: "Full Stack Development Programs", ranking: "Intensive Skill Programs", fees: "â‚¹2-4 LPA", placements: "â‚¹4-20 LPA" },
+    { name: "Online Platforms (Coursera, Udemy)", courses: "Self-paced learning programs", ranking: "Flexible Learning", fees: "â‚¹5,000-50,000", placements: "Self-driven career growth" }
   ];
 
   const technicalSkills = [
@@ -326,7 +341,7 @@ export default function FullStackDeveloperPage() {
       technologies: "MongoDB, Express.js, React, Node.js",
       description: "Popular JavaScript-based full stack for modern web applications",
       companies: "Facebook, Netflix, Airbnb, Uber",
-      salaryRange: "₹6-40 LPA",
+      salaryRange: "â‚¹6-40 LPA",
       learning: "3-6 months for proficiency"
     },
     { 
@@ -334,7 +349,7 @@ export default function FullStackDeveloperPage() {
       technologies: "MongoDB, Express.js, Angular, Node.js",
       description: "Enterprise-grade stack with Angular for complex applications",
       companies: "Google, IBM, Samsung, Deutsche Bank",
-      salaryRange: "₹5-35 LPA",
+      salaryRange: "â‚¹5-35 LPA",
       learning: "4-8 months for proficiency"
     },
     { 
@@ -342,7 +357,7 @@ export default function FullStackDeveloperPage() {
       technologies: "Python Django, React.js, PostgreSQL",
       description: "Robust backend with modern frontend for scalable applications",
       companies: "Instagram, Pinterest, Mozilla, Spotify",
-      salaryRange: "₹7-45 LPA",
+      salaryRange: "â‚¹7-45 LPA",
       learning: "4-7 months for proficiency"
     },
     { 
@@ -350,7 +365,7 @@ export default function FullStackDeveloperPage() {
       technologies: "Next.js, Vercel, AWS Lambda, MongoDB",
       description: "Modern JAMstack approach with serverless architecture",
       companies: "TikTok, Twitch, Hulu, Netflix",
-      salaryRange: "₹8-50 LPA",
+      salaryRange: "â‚¹8-50 LPA",
       learning: "3-5 months for proficiency"
     },
     { 
@@ -358,7 +373,7 @@ export default function FullStackDeveloperPage() {
       technologies: "Java Spring Boot, React, MySQL/PostgreSQL",
       description: "Enterprise Java backend with modern React frontend",
       companies: "Enterprise companies, banks, large corporations",
-      salaryRange: "₹6-40 LPA",
+      salaryRange: "â‚¹6-40 LPA",
       learning: "5-8 months for proficiency"
     },
     { 
@@ -366,20 +381,20 @@ export default function FullStackDeveloperPage() {
       technologies: "ASP.NET Core, React/Angular, SQL Server",
       description: "Microsoft ecosystem for enterprise applications",
       companies: "Microsoft, Stack Overflow, GoDaddy",
-      salaryRange: "₹5-38 LPA",
+      salaryRange: "â‚¹5-38 LPA",
       learning: "4-6 months for proficiency"
     }
   ];
 
   const salaryRanges = [
-    { sector: "Technology Startups", fresher: "₹6-12 LPA", experienced: "₹15-40 LPA", senior: "₹30-80 LPA" },
-    { sector: "Product Companies", fresher: "₹15-30 LPA", experienced: "₹25-80 LPA", senior: "₹60-2 Cr" },
-    { sector: "Service Companies", fresher: "₹3-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" },
-    { sector: "E-commerce/Fintech", fresher: "₹8-18 LPA", experienced: "₹18-50 LPA", senior: "₹40-1 Cr" },
-    { sector: "Consulting Firms", fresher: "₹6-15 LPA", experienced: "₹15-40 LPA", senior: "₹30-75 LPA" },
-    { sector: "Banking/Finance", fresher: "₹5-12 LPA", experienced: "₹12-35 LPA", senior: "₹25-60 LPA" },
-    { sector: "International Remote", fresher: "₹10-25 LPA", experienced: "₹25-80 LPA", senior: "₹60-3 Cr" },
-    { sector: "Freelancing/Consulting", fresher: "₹2-10 LPA", experienced: "₹10-50 LPA", senior: "₹30-2 Cr" }
+    { sector: "Technology Startups", fresher: "â‚¹6-12 LPA", experienced: "â‚¹15-40 LPA", senior: "â‚¹30-80 LPA" },
+    { sector: "Product Companies", fresher: "â‚¹15-30 LPA", experienced: "â‚¹25-80 LPA", senior: "â‚¹60-2 Cr" },
+    { sector: "Service Companies", fresher: "â‚¹3-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" },
+    { sector: "E-commerce/Fintech", fresher: "â‚¹8-18 LPA", experienced: "â‚¹18-50 LPA", senior: "â‚¹40-1 Cr" },
+    { sector: "Consulting Firms", fresher: "â‚¹6-15 LPA", experienced: "â‚¹15-40 LPA", senior: "â‚¹30-75 LPA" },
+    { sector: "Banking/Finance", fresher: "â‚¹5-12 LPA", experienced: "â‚¹12-35 LPA", senior: "â‚¹25-60 LPA" },
+    { sector: "International Remote", fresher: "â‚¹10-25 LPA", experienced: "â‚¹25-80 LPA", senior: "â‚¹60-3 Cr" },
+    { sector: "Freelancing/Consulting", fresher: "â‚¹2-10 LPA", experienced: "â‚¹10-50 LPA", senior: "â‚¹30-2 Cr" }
   ];
 
   const emergingTrends = [
@@ -462,37 +477,37 @@ export default function FullStackDeveloperPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "SaaS Product Development",
-      investment: "₹5 lakhs-2 crores",
+      investment: "â‚¹5 lakhs-2 crores",
       description: "Build and sell software-as-a-service solutions to businesses",
       potential: "High scalability with recurring revenue and global market reach"
     },
     { 
       business: "Web Development Agency",
-      investment: "₹2-25 lakhs",
+      investment: "â‚¹2-25 lakhs",
       description: "Provide custom web development services to businesses and startups",
       potential: "Steady demand with potential for high-value enterprise clients"
     },
     { 
       business: "E-commerce Platform/Marketplace",
-      investment: "₹10 lakhs-5 crores",
+      investment: "â‚¹10 lakhs-5 crores",
       description: "Create online marketplace or specialized e-commerce solutions",
       potential: "Large market with network effects and transaction-based revenue"
     },
     { 
       business: "Mobile App Development",
-      investment: "₹3-50 lakhs",
+      investment: "â‚¹3-50 lakhs",
       description: "Develop mobile applications for consumer or business markets",
       potential: "Growing mobile market with app store monetization opportunities"
     },
     { 
       business: "EdTech Platform",
-      investment: "₹5 lakhs-3 crores",
+      investment: "â‚¹5 lakhs-3 crores",
       description: "Online learning platforms and educational technology solutions",
       potential: "Expanding education market with subscription and course-based revenue"
     },
     { 
       business: "Freelance/Consulting Practice",
-      investment: "₹50,000-5 lakhs",
+      investment: "â‚¹50,000-5 lakhs",
       description: "Independent consulting and development services for clients globally",
       potential: "Low startup cost with high hourly rates and flexible work arrangements"
     }
@@ -973,3 +988,5 @@ export default function FullStackDeveloperPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -55,6 +58,18 @@ import {
   FaClipboard,
   FaStopwatch
 } from 'react-icons/fa';
+
+const careerSlug = 'delhi-police-constable';
+const careerTitle = 'Delhi Police Constable Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function DelhiPoliceConstablePage() {
   const eligibilityData = [
@@ -211,12 +226,12 @@ export default function DelhiPoliceConstablePage() {
   ];
 
   const careerProgression = [
-    { level: "Police Constable", experience: "0-5 years", salary: "₹21,700-69,100", next: "Head Constable" },
-    { level: "Head Constable", experience: "5-10 years", salary: "₹25,500-81,100", next: "Assistant Sub Inspector" },
-    { level: "Assistant Sub Inspector (ASI)", experience: "10-15 years", salary: "₹35,400-1,12,400", next: "Sub Inspector" },
-    { level: "Sub Inspector (SI)", experience: "15-20 years", salary: "₹44,900-1,42,400", next: "Inspector" },
-    { level: "Inspector", experience: "20-25 years", salary: "₹56,100-1,77,500", next: "ACP" },
-    { level: "Assistant Commissioner of Police (ACP)", experience: "25+ years", salary: "₹67,700-2,08,700", next: "DCP" }
+    { level: "Police Constable", experience: "0-5 years", salary: "â‚¹21,700-69,100", next: "Head Constable" },
+    { level: "Head Constable", experience: "5-10 years", salary: "â‚¹25,500-81,100", next: "Assistant Sub Inspector" },
+    { level: "Assistant Sub Inspector (ASI)", experience: "10-15 years", salary: "â‚¹35,400-1,12,400", next: "Sub Inspector" },
+    { level: "Sub Inspector (SI)", experience: "15-20 years", salary: "â‚¹44,900-1,42,400", next: "Inspector" },
+    { level: "Inspector", experience: "20-25 years", salary: "â‚¹56,100-1,77,500", next: "ACP" },
+    { level: "Assistant Commissioner of Police (ACP)", experience: "25+ years", salary: "â‚¹67,700-2,08,700", next: "DCP" }
   ];
 
   const benefits = [
@@ -233,12 +248,12 @@ export default function DelhiPoliceConstablePage() {
   const allowances = [
     { allowance: "Dearness Allowance (DA)", rate: "Current ~38%", description: "Inflation adjustment allowance revised twice yearly" },
     { allowance: "House Rent Allowance (HRA)", rate: "24% in Delhi", description: "For accommodation if government quarter not provided" },
-    { allowance: "Transport Allowance", rate: "₹7,200", description: "For daily commuting to duty location" },
-    { allowance: "City Compensatory Allowance", rate: "₹1,800", description: "For serving in metropolitan city" },
-    { allowance: "Washing Allowance", rate: "₹300", description: "For uniform washing and maintenance" },
-    { allowance: "Risk Allowance", rate: "₹4,200", description: "For hazardous and risky duties" },
-    { allowance: "Night Duty Allowance", rate: "₹70 per night", description: "Additional payment for night shifts" },
-    { allowance: "Court Duty Allowance", rate: "₹150 per day", description: "When performing court-related duties" }
+    { allowance: "Transport Allowance", rate: "â‚¹7,200", description: "For daily commuting to duty location" },
+    { allowance: "City Compensatory Allowance", rate: "â‚¹1,800", description: "For serving in metropolitan city" },
+    { allowance: "Washing Allowance", rate: "â‚¹300", description: "For uniform washing and maintenance" },
+    { allowance: "Risk Allowance", rate: "â‚¹4,200", description: "For hazardous and risky duties" },
+    { allowance: "Night Duty Allowance", rate: "â‚¹70 per night", description: "Additional payment for night shifts" },
+    { allowance: "Court Duty Allowance", rate: "â‚¹150 per day", description: "When performing court-related duties" }
   ];
 
   const specialUnits = [
@@ -365,14 +380,14 @@ export default function DelhiPoliceConstablePage() {
   ];
 
   const salaryBreakdown = [
-    { component: "Basic Pay", amount: "₹21,700", description: "Starting basic salary as per 7th Pay Commission" },
-    { component: "Dearness Allowance (DA)", amount: "₹8,246", description: "Current DA at 38% of basic pay" },
-    { component: "House Rent Allowance (HRA)", amount: "₹5,208", description: "24% of basic pay for Delhi posting" },
-    { component: "Transport Allowance", amount: "₹7,200", description: "Fixed transport allowance for all" },
-    { component: "Other Allowances", amount: "₹2,100", description: "CCA, washing, risk allowances combined" },
-    { component: "Gross Salary", amount: "₹44,454", description: "Total monthly salary (approximate)" },
-    { component: "Deductions", amount: "₹5,000", description: "PF, insurance, other deductions" },
-    { component: "In-hand Salary", amount: "₹39,454", description: "Net take-home salary (approximate)" }
+    { component: "Basic Pay", amount: "â‚¹21,700", description: "Starting basic salary as per 7th Pay Commission" },
+    { component: "Dearness Allowance (DA)", amount: "â‚¹8,246", description: "Current DA at 38% of basic pay" },
+    { component: "House Rent Allowance (HRA)", amount: "â‚¹5,208", description: "24% of basic pay for Delhi posting" },
+    { component: "Transport Allowance", amount: "â‚¹7,200", description: "Fixed transport allowance for all" },
+    { component: "Other Allowances", amount: "â‚¹2,100", description: "CCA, washing, risk allowances combined" },
+    { component: "Gross Salary", amount: "â‚¹44,454", description: "Total monthly salary (approximate)" },
+    { component: "Deductions", amount: "â‚¹5,000", description: "PF, insurance, other deductions" },
+    { component: "In-hand Salary", amount: "â‚¹39,454", description: "Net take-home salary (approximate)" }
   ];
 
   return (
@@ -886,3 +901,5 @@ export default function DelhiPoliceConstablePage() {
     </main>
   );
 }
+
+

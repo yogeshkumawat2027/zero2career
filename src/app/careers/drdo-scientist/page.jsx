@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaRocket, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -59,6 +62,18 @@ import {
   FaCrosshairs,
   FaRadar
 } from 'react-icons/fa';
+
+const careerSlug = 'drdo-scientist';
+const careerTitle = 'DRDO Scientist Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function DRDOScientistPage() {
   const eligibilityData = [
@@ -145,12 +160,12 @@ export default function DRDOScientistPage() {
   ];
 
   const jobProfiles = [
-    { post: "Scientist 'B'", experience: "Fresh graduates", salary: "₹56,100-1,77,500", duties: "Research & development, project execution, technical analysis" },
-    { post: "Scientist 'C'", experience: "3-8 years", salary: "₹67,700-2,08,700", duties: "Project leadership, team management, advanced research" },
-    { post: "Scientist 'D'", experience: "8-13 years", salary: "₹78,800-2,09,200", duties: "Program management, strategic planning, innovation leadership" },
-    { post: "Scientist 'E'", experience: "13-18 years", salary: "₹1,31,100-2,16,600", duties: "Technology development, policy formulation, institutional planning" },
-    { post: "Scientist 'F'", experience: "18-25 years", salary: "₹1,44,200-2,18,200", duties: "Directorial roles, national program leadership" },
-    { post: "Scientist 'G'", experience: "25+ years", salary: "₹1,82,200-2,24,100", duties: "Distinguished scientist, apex level positions" }
+    { post: "Scientist 'B'", experience: "Fresh graduates", salary: "â‚¹56,100-1,77,500", duties: "Research & development, project execution, technical analysis" },
+    { post: "Scientist 'C'", experience: "3-8 years", salary: "â‚¹67,700-2,08,700", duties: "Project leadership, team management, advanced research" },
+    { post: "Scientist 'D'", experience: "8-13 years", salary: "â‚¹78,800-2,09,200", duties: "Program management, strategic planning, innovation leadership" },
+    { post: "Scientist 'E'", experience: "13-18 years", salary: "â‚¹1,31,100-2,16,600", duties: "Technology development, policy formulation, institutional planning" },
+    { post: "Scientist 'F'", experience: "18-25 years", salary: "â‚¹1,44,200-2,18,200", duties: "Directorial roles, national program leadership" },
+    { post: "Scientist 'G'", experience: "25+ years", salary: "â‚¹1,82,200-2,24,100", duties: "Distinguished scientist, apex level positions" }
   ];
 
   const majorLaboratories = [
@@ -256,12 +271,12 @@ export default function DRDOScientistPage() {
   ];
 
   const careerProgression = [
-    { level: "Scientist 'B'", experience: "0-3 years", salary: "₹56,100-80,000", focus: "Learning, project contribution, skill development" },
-    { level: "Scientist 'C'", experience: "3-8 years", salary: "₹67,700-1,20,000", focus: "Project leadership, team building, specialization" },
-    { level: "Scientist 'D'", experience: "8-13 years", salary: "₹78,800-1,50,000", focus: "Program management, innovation, technology transfer" },
-    { level: "Scientist 'E'", experience: "13-18 years", salary: "₹1,31,100-1,80,000", focus: "Strategic planning, institutional development" },
-    { level: "Scientist 'F'", experience: "18-25 years", salary: "₹1,44,200-2,00,000", focus: "Directorial roles, policy formulation" },
-    { level: "Scientist 'G'", experience: "25+ years", salary: "₹1,82,200-2,24,100", focus: "Apex leadership, national programs" }
+    { level: "Scientist 'B'", experience: "0-3 years", salary: "â‚¹56,100-80,000", focus: "Learning, project contribution, skill development" },
+    { level: "Scientist 'C'", experience: "3-8 years", salary: "â‚¹67,700-1,20,000", focus: "Project leadership, team building, specialization" },
+    { level: "Scientist 'D'", experience: "8-13 years", salary: "â‚¹78,800-1,50,000", focus: "Program management, innovation, technology transfer" },
+    { level: "Scientist 'E'", experience: "13-18 years", salary: "â‚¹1,31,100-1,80,000", focus: "Strategic planning, institutional development" },
+    { level: "Scientist 'F'", experience: "18-25 years", salary: "â‚¹1,44,200-2,00,000", focus: "Directorial roles, policy formulation" },
+    { level: "Scientist 'G'", experience: "25+ years", salary: "â‚¹1,82,200-2,24,100", focus: "Apex leadership, national programs" }
   ];
 
   const benefits = [
@@ -278,12 +293,12 @@ export default function DRDOScientistPage() {
   const allowances = [
     { allowance: "Dearness Allowance (DA)", rate: "Current ~38%", description: "Inflation adjustment revised twice yearly" },
     { allowance: "House Rent Allowance (HRA)", rate: "8-24% of basic", description: "Based on city classification (X/Y/Z)" },
-    { allowance: "Transport Allowance", rate: "₹3,600-7,200", description: "Based on grade and city classification" },
-    { allowance: "Research Allowance", rate: "₹3,000-10,000", description: "For active research participation and projects" },
+    { allowance: "Transport Allowance", rate: "â‚¹3,600-7,200", description: "Based on grade and city classification" },
+    { allowance: "Research Allowance", rate: "â‚¹3,000-10,000", description: "For active research participation and projects" },
     { allowance: "Overtime Allowance", rate: "As applicable", description: "For extended working hours and special projects" },
     { allowance: "Field Allowance", rate: "Variable", description: "For field trials, testing, and outdoor assignments" },
-    { allowance: "Risk Allowance", rate: "₹2,000-5,000", description: "For hazardous research work and testing activities" },
-    { allowance: "Professional Development", rate: "₹25,000-50,000", description: "Annual budget for training, conferences, courses" }
+    { allowance: "Risk Allowance", rate: "â‚¹2,000-5,000", description: "For hazardous research work and testing activities" },
+    { allowance: "Professional Development", rate: "â‚¹25,000-50,000", description: "Annual budget for training, conferences, courses" }
   ];
 
   const skillsRequired = [
@@ -926,3 +941,5 @@ export default function DRDOScientistPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaBullhorn, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -104,6 +107,18 @@ import {
   FaFunnelDollar
 } from 'react-icons/fa';
 
+const careerSlug = 'marketing-manager';
+const careerTitle = 'Complete Guide to Marketing Manager Career';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function MarketingManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in Marketing, Business, Communications, or related field" },
@@ -134,13 +149,13 @@ export default function MarketingManagerPage() {
   ];
 
   const careerHierarchy = [
-    { position: "Marketing Executive/Associate", years: "0-2 years", salary: "₹3-8 LPA", level: "Entry Level" },
-    { position: "Marketing Specialist", years: "2-4 years", salary: "₹8-15 LPA", level: "Specialist" },
-    { position: "Marketing Manager", years: "4-7 years", salary: "₹15-30 LPA", level: "Manager" },
-    { position: "Senior Marketing Manager", years: "7-10 years", salary: "₹30-50 LPA", level: "Senior Manager" },
-    { position: "Marketing Director", years: "10-15 years", salary: "₹50-80 LPA", level: "Director" },
-    { position: "VP of Marketing", years: "15-20 years", salary: "₹80 LPA - 1.5 Cr", level: "Vice President" },
-    { position: "Chief Marketing Officer (CMO)", years: "20+ years", salary: "₹1.5-3+ Cr", level: "C-Level Executive" }
+    { position: "Marketing Executive/Associate", years: "0-2 years", salary: "â‚¹3-8 LPA", level: "Entry Level" },
+    { position: "Marketing Specialist", years: "2-4 years", salary: "â‚¹8-15 LPA", level: "Specialist" },
+    { position: "Marketing Manager", years: "4-7 years", salary: "â‚¹15-30 LPA", level: "Manager" },
+    { position: "Senior Marketing Manager", years: "7-10 years", salary: "â‚¹30-50 LPA", level: "Senior Manager" },
+    { position: "Marketing Director", years: "10-15 years", salary: "â‚¹50-80 LPA", level: "Director" },
+    { position: "VP of Marketing", years: "15-20 years", salary: "â‚¹80 LPA - 1.5 Cr", level: "Vice President" },
+    { position: "Chief Marketing Officer (CMO)", years: "20+ years", salary: "â‚¹1.5-3+ Cr", level: "C-Level Executive" }
   ];
 
   const keyResponsibilities = [
@@ -558,3 +573,5 @@ export default function MarketingManagerPage() {
     </main>
   );
 }
+
+

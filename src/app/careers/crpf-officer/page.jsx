@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -48,6 +51,18 @@ import {
   FaHelicopter,
   FaDumbbell
 } from 'react-icons/fa';
+
+const careerSlug = 'crpf-officer';
+const careerTitle = 'CRPF Officer Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function CRPFOfficerPage() {
   const eligibilityData = [
@@ -97,12 +112,12 @@ export default function CRPFOfficerPage() {
   ];
 
   const jobProfiles = [
-    { post: "Assistant Sub Inspector (ASI)", level: "Group C", salary: "₹35,400-1,12,400", duties: "Field operations, security duties, crowd control" },
-    { post: "Sub Inspector (SI)", level: "Group C", salary: "₹44,900-1,42,400", duties: "Team leadership, operations supervision, administrative duties" },
-    { post: "Inspector", level: "Group B", salary: "₹56,100-1,77,500", duties: "Unit command, strategic operations, training supervision" },
-    { post: "Assistant Commandant", level: "Group A", salary: "₹67,700-2,08,700", duties: "Battalion operations, policy implementation, leadership roles" },
-    { post: "Deputy Commandant", level: "Group A", salary: "₹78,800-2,09,200", duties: "Senior operations management, inter-agency coordination" },
-    { post: "Commandant", level: "Group A", salary: "₹1,18,500-2,14,100", duties: "Force command, strategic planning, administrative control" }
+    { post: "Assistant Sub Inspector (ASI)", level: "Group C", salary: "â‚¹35,400-1,12,400", duties: "Field operations, security duties, crowd control" },
+    { post: "Sub Inspector (SI)", level: "Group C", salary: "â‚¹44,900-1,42,400", duties: "Team leadership, operations supervision, administrative duties" },
+    { post: "Inspector", level: "Group B", salary: "â‚¹56,100-1,77,500", duties: "Unit command, strategic operations, training supervision" },
+    { post: "Assistant Commandant", level: "Group A", salary: "â‚¹67,700-2,08,700", duties: "Battalion operations, policy implementation, leadership roles" },
+    { post: "Deputy Commandant", level: "Group A", salary: "â‚¹78,800-2,09,200", duties: "Senior operations management, inter-agency coordination" },
+    { post: "Commandant", level: "Group A", salary: "â‚¹1,18,500-2,14,100", duties: "Force command, strategic planning, administrative control" }
   ];
 
   const crpfUnits = [
@@ -257,21 +272,21 @@ export default function CRPFOfficerPage() {
   const allowancesIncentives = [
     { allowance: "Dearness Allowance (DA)", rate: "Current rate ~38%", description: "Inflation adjustment allowance" },
     { allowance: "House Rent Allowance (HRA)", rate: "8-24% of basic pay", description: "Based on posting location classification" },
-    { allowance: "Transport Allowance", rate: "₹3,600-7,200", description: "For commuting expenses" },
+    { allowance: "Transport Allowance", rate: "â‚¹3,600-7,200", description: "For commuting expenses" },
     { allowance: "Special Area Allowance", rate: "25-50% of basic pay", description: "For postings in difficult areas" },
-    { allowance: "Risk Allowance", rate: "₹4,200-17,300", description: "For hazardous duty postings" },
-    { allowance: "Field Area Allowance", rate: "₹2,700-6,000", description: "For field postings in operational areas" },
-    { allowance: "High Altitude Allowance", rate: "₹1,350-3,150", description: "For high altitude postings" },
-    { allowance: "Uniform Allowance", rate: "₹20,000 annually", description: "For uniform and equipment maintenance" }
+    { allowance: "Risk Allowance", rate: "â‚¹4,200-17,300", description: "For hazardous duty postings" },
+    { allowance: "Field Area Allowance", rate: "â‚¹2,700-6,000", description: "For field postings in operational areas" },
+    { allowance: "High Altitude Allowance", rate: "â‚¹1,350-3,150", description: "For high altitude postings" },
+    { allowance: "Uniform Allowance", rate: "â‚¹20,000 annually", description: "For uniform and equipment maintenance" }
   ];
 
   const careerProgression = [
-    { level: "Assistant Sub Inspector (ASI)", experience: "0-5 years", salary: "₹35,400-60,000" },
-    { level: "Sub Inspector (SI)", experience: "5-10 years", salary: "₹44,900-75,000" },
-    { level: "Inspector", experience: "10-15 years", salary: "₹56,100-90,000" },
-    { level: "Assistant Commandant", experience: "15-20 years", salary: "₹67,700-1,20,000" },
-    { level: "Deputy Commandant", experience: "20-25 years", salary: "₹78,800-1,50,000" },
-    { level: "Commandant", experience: "25+ years", salary: "₹1,18,500-2,00,000" }
+    { level: "Assistant Sub Inspector (ASI)", experience: "0-5 years", salary: "â‚¹35,400-60,000" },
+    { level: "Sub Inspector (SI)", experience: "5-10 years", salary: "â‚¹44,900-75,000" },
+    { level: "Inspector", experience: "10-15 years", salary: "â‚¹56,100-90,000" },
+    { level: "Assistant Commandant", experience: "15-20 years", salary: "â‚¹67,700-1,20,000" },
+    { level: "Deputy Commandant", experience: "20-25 years", salary: "â‚¹78,800-1,50,000" },
+    { level: "Commandant", experience: "25+ years", salary: "â‚¹1,18,500-2,00,000" }
   ];
 
   const preparationTips = [
@@ -370,7 +385,7 @@ export default function CRPFOfficerPage() {
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-700">
                     <FaCheckCircle className="text-green-500 mr-3" />
-                    "Service and Loyalty" (सेवा और निष्ठा)
+                    "Service and Loyalty" (à¤¸à¥‡à¤µà¤¾ à¤”à¤° à¤¨à¤¿à¤·à¥à¤ à¤¾)
                   </li>
                   <li className="flex items-center text-gray-700">
                     <FaCheckCircle className="text-green-500 mr-3" />
@@ -828,3 +843,5 @@ export default function CRPFOfficerPage() {
     </main>
   );
 }
+
+

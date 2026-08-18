@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaShieldAlt, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -38,6 +41,18 @@ import {
   FaGavel
 } from 'react-icons/fa';
 
+const careerSlug = 'upsc-nda';
+const careerTitle = 'Complete Guide to UPSC NDA & NA Examination';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function UPSCNDAPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Nationality", detail: "Indian Citizenship required" },
@@ -74,15 +89,15 @@ export default function UPSCNDAPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Lieutenant", years: "0-2 years", salary: "₹56,100 - ₹1,77,500", level: "Officer Entry" },
-    { rank: "Captain", years: "2-6 years", salary: "₹61,300 - ₹1,93,900", level: "Company Commander" },
-    { rank: "Major", years: "6-13 years", salary: "₹69,400 - ₹2,07,200", level: "Battalion Staff" },
-    { rank: "Lieutenant Colonel", years: "13-18 years", salary: "₹1,21,200 - ₹2,12,400", level: "Commanding Officer" },
-    { rank: "Colonel", years: "18-26 years", salary: "₹1,30,600 - ₹2,15,900", level: "Brigade Staff" },
-    { rank: "Brigadier", years: "26-30 years", salary: "₹1,39,600 - ₹2,17,600", level: "Brigade Commander" },
-    { rank: "Major General", years: "30+ years", salary: "₹1,44,200 - ₹2,18,200", level: "Division Commander" },
-    { rank: "Lieutenant General", years: "32+ years", salary: "₹1,82,200 - ₹2,24,100", level: "Corps Commander" },
-    { rank: "General/Admiral/Air Chief Marshal", years: "35+ years", salary: "₹2,50,000 (Fixed)", level: "Service Chief" }
+    { rank: "Lieutenant", years: "0-2 years", salary: "â‚¹56,100 - â‚¹1,77,500", level: "Officer Entry" },
+    { rank: "Captain", years: "2-6 years", salary: "â‚¹61,300 - â‚¹1,93,900", level: "Company Commander" },
+    { rank: "Major", years: "6-13 years", salary: "â‚¹69,400 - â‚¹2,07,200", level: "Battalion Staff" },
+    { rank: "Lieutenant Colonel", years: "13-18 years", salary: "â‚¹1,21,200 - â‚¹2,12,400", level: "Commanding Officer" },
+    { rank: "Colonel", years: "18-26 years", salary: "â‚¹1,30,600 - â‚¹2,15,900", level: "Brigade Staff" },
+    { rank: "Brigadier", years: "26-30 years", salary: "â‚¹1,39,600 - â‚¹2,17,600", level: "Brigade Commander" },
+    { rank: "Major General", years: "30+ years", salary: "â‚¹1,44,200 - â‚¹2,18,200", level: "Division Commander" },
+    { rank: "Lieutenant General", years: "32+ years", salary: "â‚¹1,82,200 - â‚¹2,24,100", level: "Corps Commander" },
+    { rank: "General/Admiral/Air Chief Marshal", years: "35+ years", salary: "â‚¹2,50,000 (Fixed)", level: "Service Chief" }
   ];
 
   const keySubjects = [
@@ -432,3 +447,5 @@ export default function UPSCNDAPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaCamera, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -36,6 +39,18 @@ import {
   FaCogs
 } from 'react-icons/fa';
 
+const careerSlug = 'photographer';
+const careerTitle = 'Complete Guide to Becoming a Professional Photographer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function PhotographerPage() {
   const eligibilityData = [
     { icon: FaEye, title: "Creative Vision", detail: "Strong artistic eye and visual composition skills" },
@@ -49,7 +64,7 @@ export default function PhotographerPage() {
       type: "Portrait Photography", 
       duration: "2-4 hours", 
       equipment: "Studio lights, backdrops",
-      earnings: "₹15,000 - ₹1,00,000",
+      earnings: "â‚¹15,000 - â‚¹1,00,000",
       market: "Individual & Family",
       specialization: "Posing and lighting mastery"
     },
@@ -57,7 +72,7 @@ export default function PhotographerPage() {
       type: "Wedding Photography", 
       duration: "8-12 hours", 
       equipment: "Multiple cameras, lenses",
-      earnings: "₹75,000 - ₹8,00,000",
+      earnings: "â‚¹75,000 - â‚¹8,00,000",
       market: "Wedding Industry",
       specialization: "Event documentation"
     },
@@ -65,19 +80,19 @@ export default function PhotographerPage() {
       type: "Commercial Photography", 
       duration: "4-8 hours", 
       equipment: "Professional setup",
-      earnings: "₹25,000 - ₹3,00,000",
+      earnings: "â‚¹25,000 - â‚¹3,00,000",
       market: "Business & Advertising",
       specialization: "Brand storytelling"
     }
   ];
 
   const careerHierarchy = [
-    { rank: "Assistant Photographer", years: "0-2 years", salary: "₹15,000 - ₹25,000", level: "Learning Phase" },
-    { rank: "Junior Photographer", years: "2-4 years", salary: "₹25,000 - ₹50,000", level: "Building Portfolio" },
-    { rank: "Professional Photographer", years: "4-7 years", salary: "₹50,000 - ₹1,50,000", level: "Established Freelancer" },
-    { rank: "Senior Photographer", years: "7-10 years", salary: "₹1,50,000 - ₹3,00,000", level: "Specialized Expert" },
-    { rank: "Photography Director", years: "10-15 years", salary: "₹3,00,000 - ₹5,00,000", level: "Creative Leadership" },
-    { rank: "Studio Owner", years: "15+ years", salary: "₹5,00,000 - ₹10,00,000+", level: "Business Owner" }
+    { rank: "Assistant Photographer", years: "0-2 years", salary: "â‚¹15,000 - â‚¹25,000", level: "Learning Phase" },
+    { rank: "Junior Photographer", years: "2-4 years", salary: "â‚¹25,000 - â‚¹50,000", level: "Building Portfolio" },
+    { rank: "Professional Photographer", years: "4-7 years", salary: "â‚¹50,000 - â‚¹1,50,000", level: "Established Freelancer" },
+    { rank: "Senior Photographer", years: "7-10 years", salary: "â‚¹1,50,000 - â‚¹3,00,000", level: "Specialized Expert" },
+    { rank: "Photography Director", years: "10-15 years", salary: "â‚¹3,00,000 - â‚¹5,00,000", level: "Creative Leadership" },
+    { rank: "Studio Owner", years: "15+ years", salary: "â‚¹5,00,000 - â‚¹10,00,000+", level: "Business Owner" }
   ];
 
   const keySkills = [
@@ -94,10 +109,10 @@ export default function PhotographerPage() {
   ];
 
   const equipmentCategories = [
-    { phase: "Basic Setup", duration: "Beginner", items: "Entry-level DSLR, kit lens, tripod", cost: "₹50,000 - ₹1,00,000", focus: "Learning fundamentals and basic photography" },
-    { phase: "Intermediate Kit", duration: "Developing", items: "Mid-range camera, multiple lenses, lighting", cost: "₹2,00,000 - ₹4,00,000", focus: "Professional quality work and client projects" },
-    { phase: "Professional Suite", duration: "Established", items: "Full-frame cameras, pro lenses, studio setup", cost: "₹5,00,000 - ₹10,00,000", focus: "High-end commercial and wedding photography" },
-    { phase: "Studio Business", duration: "Advanced", items: "Multiple camera systems, complete lighting", cost: "₹10,00,000+", focus: "Running professional photography business" }
+    { phase: "Basic Setup", duration: "Beginner", items: "Entry-level DSLR, kit lens, tripod", cost: "â‚¹50,000 - â‚¹1,00,000", focus: "Learning fundamentals and basic photography" },
+    { phase: "Intermediate Kit", duration: "Developing", items: "Mid-range camera, multiple lenses, lighting", cost: "â‚¹2,00,000 - â‚¹4,00,000", focus: "Professional quality work and client projects" },
+    { phase: "Professional Suite", duration: "Established", items: "Full-frame cameras, pro lenses, studio setup", cost: "â‚¹5,00,000 - â‚¹10,00,000", focus: "High-end commercial and wedding photography" },
+    { phase: "Studio Business", duration: "Advanced", items: "Multiple camera systems, complete lighting", cost: "â‚¹10,00,000+", focus: "Running professional photography business" }
   ];
 
   const photographyRoles = [
@@ -435,3 +450,5 @@ export default function PhotographerPage() {
     </main>
   );
 }
+
+

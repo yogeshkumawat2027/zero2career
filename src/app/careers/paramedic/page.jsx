@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUserTie, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -22,6 +25,18 @@ import {
   FaStethoscope,
   FaFirstAid
 } from 'react-icons/fa';
+
+const careerSlug = 'paramedic';
+const careerTitle = 'Complete Guide to Becoming a Paramedic';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function ParamedicPage() {
   const eligibilityData = [
@@ -56,12 +71,12 @@ export default function ParamedicPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Emergency Medical Technician (EMT)", years: "Entry Level", salary: "₹15,000 - ₹25,000" },
-    { rank: "Advanced EMT / Paramedic", years: "1-3 years", salary: "₹20,000 - ₹35,000" },
-    { rank: "Senior Paramedic", years: "3-5 years", salary: "₹30,000 - ₹50,000" },
-    { rank: "Paramedic Supervisor", years: "5-8 years", salary: "₹40,000 - ₹65,000" },
-    { rank: "Emergency Services Manager", years: "8-12 years", salary: "₹60,000 - ₹1,00,000" },
-    { rank: "Chief of Emergency Services", years: "12+ years", salary: "₹80,000 - ₹1,50,000" }
+    { rank: "Emergency Medical Technician (EMT)", years: "Entry Level", salary: "â‚¹15,000 - â‚¹25,000" },
+    { rank: "Advanced EMT / Paramedic", years: "1-3 years", salary: "â‚¹20,000 - â‚¹35,000" },
+    { rank: "Senior Paramedic", years: "3-5 years", salary: "â‚¹30,000 - â‚¹50,000" },
+    { rank: "Paramedic Supervisor", years: "5-8 years", salary: "â‚¹40,000 - â‚¹65,000" },
+    { rank: "Emergency Services Manager", years: "8-12 years", salary: "â‚¹60,000 - â‚¹1,00,000" },
+    { rank: "Chief of Emergency Services", years: "12+ years", salary: "â‚¹80,000 - â‚¹1,50,000" }
   ];
 
   const keySubjects = [
@@ -464,3 +479,5 @@ export default function ParamedicPage() {
     </main>
   );
 }
+
+

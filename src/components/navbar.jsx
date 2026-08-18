@@ -172,7 +172,7 @@ function Navbar() {
           </div>
 
           <Link
-            href="/aboutus"
+            href="/about"
             className={`
               px-3 py-2 rounded-lg font-medium transition-all duration-200 relative overflow-hidden group
               ${isScrolled 
@@ -352,7 +352,7 @@ function Navbar() {
             </div>
 
             <Link
-              href="/aboutus"
+              href="/about"
               onClick={() => setIsMenuOpen(false)}
               className={`
                 flex items-center gap-3 px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 

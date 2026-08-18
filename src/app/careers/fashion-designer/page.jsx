@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaPalette, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -31,6 +34,18 @@ import {
   FaBrush,
   FaGem
 } from 'react-icons/fa';
+
+const careerSlug = 'fashion-designer';
+const careerTitle = 'Complete Guide to Becoming a Fashion Designer';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
 
 export default function FashionDesignerPage() {
   const eligibilityData = [
@@ -72,14 +87,14 @@ export default function FashionDesignerPage() {
   ];
 
   const careerHierarchy = [
-    { rank: "Fashion Design Intern", years: "0-1 years", salary: "₹10,000 - ₹20,000" },
-    { rank: "Assistant Fashion Designer", years: "1-3 years", salary: "₹20,000 - ₹35,000" },
-    { rank: "Fashion Designer", years: "3-5 years", salary: "₹35,000 - ₹60,000" },
-    { rank: "Senior Fashion Designer", years: "5-8 years", salary: "₹60,000 - ₹1,00,000" },
-    { rank: "Lead Designer", years: "8-12 years", salary: "₹1,00,000 - ₹1,50,000" },
-    { rank: "Creative Director", years: "10-15 years", salary: "₹1,50,000 - ₹2,50,000" },
-    { rank: "Fashion Brand Owner", years: "12+ years", salary: "₹2,00,000 - ₹5,00,000" },
-    { rank: "Fashion House Director", years: "15+ years", salary: "₹3,00,000 - ₹8,00,000" }
+    { rank: "Fashion Design Intern", years: "0-1 years", salary: "â‚¹10,000 - â‚¹20,000" },
+    { rank: "Assistant Fashion Designer", years: "1-3 years", salary: "â‚¹20,000 - â‚¹35,000" },
+    { rank: "Fashion Designer", years: "3-5 years", salary: "â‚¹35,000 - â‚¹60,000" },
+    { rank: "Senior Fashion Designer", years: "5-8 years", salary: "â‚¹60,000 - â‚¹1,00,000" },
+    { rank: "Lead Designer", years: "8-12 years", salary: "â‚¹1,00,000 - â‚¹1,50,000" },
+    { rank: "Creative Director", years: "10-15 years", salary: "â‚¹1,50,000 - â‚¹2,50,000" },
+    { rank: "Fashion Brand Owner", years: "12+ years", salary: "â‚¹2,00,000 - â‚¹5,00,000" },
+    { rank: "Fashion House Director", years: "15+ years", salary: "â‚¹3,00,000 - â‚¹8,00,000" }
   ];
 
   const skillsRequired = [
@@ -515,3 +530,5 @@ export default function FashionDesignerPage() {
     </main>
   );
 }
+
+

@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaLeaf, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -83,6 +86,18 @@ import {
   FaBird
 } from 'react-icons/fa';
 
+const careerSlug = 'environmental-scientist';
+const careerTitle = 'Environmental Scientist Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function EnvironmentalScientistPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "B.Sc in Environmental Science/Biology/Chemistry" },
@@ -97,7 +112,7 @@ export default function EnvironmentalScientistPage() {
       duration: "3-4 years",
       program: "B.Sc Environmental Science, Biology, Chemistry, Geography",
       focus: "Environmental chemistry, ecology, geology, statistics, research methods",
-      cost: "₹50,000-3 LPA (government to private colleges)",
+      cost: "â‚¹50,000-3 LPA (government to private colleges)",
       outcomes: "Entry-level environmental scientist, research assistant positions"
     },
     { 
@@ -105,7 +120,7 @@ export default function EnvironmentalScientistPage() {
       duration: "2 years",
       program: "M.Sc Environmental Science or specialized fields",
       focus: "Advanced specialization, research methodology, thesis work",
-      cost: "₹1-5 LPA for M.Sc programs",
+      cost: "â‚¹1-5 LPA for M.Sc programs",
       outcomes: "Specialized roles, research positions, higher starting salaries"
     },
     { 
@@ -113,7 +128,7 @@ export default function EnvironmentalScientistPage() {
       duration: "Ongoing",
       program: "Environmental impact assessment, GIS, laboratory techniques",
       focus: "Practical skills, latest technologies, industry standards",
-      cost: "₹10,000-1 LPA per certification",
+      cost: "â‚¹10,000-1 LPA per certification",
       outcomes: "Career advancement, salary increment, specialization credibility"
     },
     { 
@@ -176,62 +191,62 @@ export default function EnvironmentalScientistPage() {
       sector: "Government & Regulatory",
       companies: "Ministry of Environment, Pollution Control Boards, Forest Department, CPCB, SPCB",
       roles: "Environmental Officer, Scientist, Policy Analyst, Research Officer",
-      salary: "₹3-15 LPA",
+      salary: "â‚¹3-15 LPA",
       growth: "Stable sector with regular promotions and job security"
     },
     { 
       sector: "Environmental Consulting",
       companies: "ERM India, Ramky Enviro, IL&FS Environment, Feedback Infra, WAPCOS",
       roles: "Environmental Consultant, EIA Specialist, Project Manager, Technical Lead",
-      salary: "₹4-18 LPA",
+      salary: "â‚¹4-18 LPA",
       growth: "High growth with increasing environmental compliance needs"
     },
     { 
       sector: "Research & Academia",
       companies: "CSIR, ICRISAT, Universities, TERI, CEE, IISc, Research Institutes",
       roles: "Research Scientist, Professor, Research Associate, Post-doc Fellow",
-      salary: "₹3-25 LPA",
+      salary: "â‚¹3-25 LPA",
       growth: "Research-based progression with international opportunities"
     },
     { 
       sector: "Industrial & Corporate",
       companies: "Tata Steel, Reliance, ONGC, Coal India, Vedanta, L&T, Adani Group",
       roles: "Environmental Manager, Sustainability Officer, HSE Specialist, Compliance Manager",
-      salary: "₹5-22 LPA",
+      salary: "â‚¹5-22 LPA",
       growth: "Corporate advancement with sustainability focus"
     },
     { 
       sector: "NGOs & International Bodies",
       companies: "WWF India, Greenpeace, UNDP, World Bank, GIZ, USAID, British Council",
       roles: "Program Manager, Field Coordinator, Policy Researcher, Project Officer",
-      salary: "₹4-16 LPA",
+      salary: "â‚¹4-16 LPA",
       growth: "Impact-driven career with global exposure"
     },
     { 
       sector: "Renewable Energy",
       companies: "Suzlon, ReNew Power, Adani Green, Tata Power Solar, Azure Power",
       roles: "Environmental Specialist, Site Assessment Expert, Compliance Manager, Sustainability Lead",
-      salary: "₹6-20 LPA",
+      salary: "â‚¹6-20 LPA",
       growth: "Rapidly expanding green energy sector"
     }
   ];
 
   const jobProfiles = [
-    { post: "Junior Environmental Scientist", experience: "0-2 years", salary: "₹3-5 LPA", duties: "Data collection, field sampling, basic analysis, report assistance" },
-    { post: "Environmental Scientist", experience: "2-5 years", salary: "₹5-8 LPA", duties: "Project management, environmental assessments, client interaction, team coordination" },
-    { post: "Senior Environmental Scientist", experience: "5-8 years", salary: "₹8-12 LPA", duties: "Complex project leadership, technical mentoring, business development" },
-    { post: "Environmental Manager", experience: "8-12 years", salary: "₹12-18 LPA", duties: "Department management, policy development, strategic planning, regulatory compliance" },
-    { post: "Principal Scientist", experience: "12-18 years", salary: "₹18-28 LPA", duties: "Research direction, innovation leadership, organizational strategy" },
-    { post: "Chief Environmental Officer", experience: "18+ years", salary: "₹25-50 LPA", duties: "Executive leadership, policy influence, industry representation, board interaction" }
+    { post: "Junior Environmental Scientist", experience: "0-2 years", salary: "â‚¹3-5 LPA", duties: "Data collection, field sampling, basic analysis, report assistance" },
+    { post: "Environmental Scientist", experience: "2-5 years", salary: "â‚¹5-8 LPA", duties: "Project management, environmental assessments, client interaction, team coordination" },
+    { post: "Senior Environmental Scientist", experience: "5-8 years", salary: "â‚¹8-12 LPA", duties: "Complex project leadership, technical mentoring, business development" },
+    { post: "Environmental Manager", experience: "8-12 years", salary: "â‚¹12-18 LPA", duties: "Department management, policy development, strategic planning, regulatory compliance" },
+    { post: "Principal Scientist", experience: "12-18 years", salary: "â‚¹18-28 LPA", duties: "Research direction, innovation leadership, organizational strategy" },
+    { post: "Chief Environmental Officer", experience: "18+ years", salary: "â‚¹25-50 LPA", duties: "Executive leadership, policy influence, industry representation, board interaction" }
   ];
 
   const topColleges = [
-    { name: "Jawaharlal Nehru University (JNU)", courses: "M.Sc Environmental Sciences", ranking: "Top Tier", fees: "₹50,000-1 LPA", placements: "₹4-12 LPA average" },
-    { name: "University of Delhi", courses: "B.Sc/M.Sc Environmental Studies", ranking: "Premier University", fees: "₹75,000-1.5 LPA", placements: "₹3-10 LPA average" },
-    { name: "TERI School of Advanced Studies", courses: "M.Sc Environmental Studies", ranking: "Specialized Institute", fees: "₹3-4 LPA", placements: "₹5-15 LPA average" },
-    { name: "Banaras Hindu University", courses: "M.Sc Environmental Science", ranking: "Central University", fees: "₹60,000-1 LPA", placements: "₹3-8 LPA average" },
-    { name: "Pondicherry University", courses: "M.Sc Ecology & Environmental Sciences", ranking: "Central University", fees: "₹45,000-80,000", placements: "₹3-9 LPA average" },
-    { name: "Tata Institute of Social Sciences", courses: "MA Natural Resources Management", ranking: "Premier Institute", fees: "₹2.5-3 LPA", placements: "₹4-12 LPA average" }
+    { name: "Jawaharlal Nehru University (JNU)", courses: "M.Sc Environmental Sciences", ranking: "Top Tier", fees: "â‚¹50,000-1 LPA", placements: "â‚¹4-12 LPA average" },
+    { name: "University of Delhi", courses: "B.Sc/M.Sc Environmental Studies", ranking: "Premier University", fees: "â‚¹75,000-1.5 LPA", placements: "â‚¹3-10 LPA average" },
+    { name: "TERI School of Advanced Studies", courses: "M.Sc Environmental Studies", ranking: "Specialized Institute", fees: "â‚¹3-4 LPA", placements: "â‚¹5-15 LPA average" },
+    { name: "Banaras Hindu University", courses: "M.Sc Environmental Science", ranking: "Central University", fees: "â‚¹60,000-1 LPA", placements: "â‚¹3-8 LPA average" },
+    { name: "Pondicherry University", courses: "M.Sc Ecology & Environmental Sciences", ranking: "Central University", fees: "â‚¹45,000-80,000", placements: "â‚¹3-9 LPA average" },
+    { name: "Tata Institute of Social Sciences", courses: "MA Natural Resources Management", ranking: "Premier Institute", fees: "â‚¹2.5-3 LPA", placements: "â‚¹4-12 LPA average" }
   ];
 
   const technicalSkills = [
@@ -254,12 +269,12 @@ export default function EnvironmentalScientistPage() {
   ];
 
   const careerProgression = [
-    { level: "Junior Scientist", experience: "0-2 years", salary: "₹3-5 LPA", focus: "Learning fundamentals, field experience, data collection" },
-    { level: "Environmental Scientist", experience: "2-5 years", salary: "₹5-8 LPA", focus: "Independent projects, specialization development, client work" },
-    { level: "Senior Scientist", experience: "5-8 years", salary: "₹8-12 LPA", focus: "Team leadership, complex assessments, business development" },
-    { level: "Environmental Manager", experience: "8-12 years", salary: "₹12-18 LPA", focus: "Department management, strategic planning, policy development" },
-    { level: "Principal Scientist", experience: "12-18 years", salary: "₹18-28 LPA", focus: "Research leadership, innovation, organizational direction" },
-    { level: "Director/Chief Officer", experience: "18+ years", salary: "₹25-50 LPA", focus: "Executive leadership, industry influence, strategic vision" }
+    { level: "Junior Scientist", experience: "0-2 years", salary: "â‚¹3-5 LPA", focus: "Learning fundamentals, field experience, data collection" },
+    { level: "Environmental Scientist", experience: "2-5 years", salary: "â‚¹5-8 LPA", focus: "Independent projects, specialization development, client work" },
+    { level: "Senior Scientist", experience: "5-8 years", salary: "â‚¹8-12 LPA", focus: "Team leadership, complex assessments, business development" },
+    { level: "Environmental Manager", experience: "8-12 years", salary: "â‚¹12-18 LPA", focus: "Department management, strategic planning, policy development" },
+    { level: "Principal Scientist", experience: "12-18 years", salary: "â‚¹18-28 LPA", focus: "Research leadership, innovation, organizational direction" },
+    { level: "Director/Chief Officer", experience: "18+ years", salary: "â‚¹25-50 LPA", focus: "Executive leadership, industry influence, strategic vision" }
   ];
 
   const governmentOpportunities = [
@@ -267,25 +282,25 @@ export default function EnvironmentalScientistPage() {
       organization: "Central Pollution Control Board (CPCB)",
       positions: "Environmental Engineer, Scientist B/C/D, Research Officer",
       selection: "GATE score, written examination, interview",
-      benefits: "₹56,100-1,77,500 pay scale, government benefits, research opportunities"
+      benefits: "â‚¹56,100-1,77,500 pay scale, government benefits, research opportunities"
     },
     { 
       organization: "State Pollution Control Boards",
       positions: "Environmental Officer, Assistant Environmental Engineer, Scientist",
       selection: "State PSC examinations, technical interviews",
-      benefits: "₹35,400-1,12,400 pay scale, job security, field postings"
+      benefits: "â‚¹35,400-1,12,400 pay scale, job security, field postings"
     },
     { 
       organization: "Ministry of Environment & Forests",
       positions: "Under Secretary, Deputy Secretary, Scientific Officer, Research Officer",
       selection: "UPSC examinations, departmental recruitment",
-      benefits: "₹56,100-2,25,000 pay scale, policy influence, national projects"
+      benefits: "â‚¹56,100-2,25,000 pay scale, policy influence, national projects"
     },
     { 
       organization: "Forest Survey of India",
       positions: "Forest Research Officer, Deputy Director, Assistant Director",
       selection: "Civil Services, technical recruitment",
-      benefits: "₹56,100-1,44,200 pay scale, forest conservation work, field experience"
+      benefits: "â‚¹56,100-1,44,200 pay scale, forest conservation work, field experience"
     },
     { 
       organization: "National Environmental Engineering Research Institute",
@@ -346,41 +361,41 @@ export default function EnvironmentalScientistPage() {
       cert: "Environmental Impact Assessment Certification",
       provider: "Various state boards and institutes",
       duration: "3-6 months",
-      cost: "₹25,000-75,000",
+      cost: "â‚¹25,000-75,000",
       description: "Specialized certification for EIA consultancy work"
     },
     { 
       cert: "GIS Professional Certification",
       provider: "ESRI, various GIS institutes",
       duration: "6-8 months",
-      cost: "₹50,000-1.5 LPA",
+      cost: "â‚¹50,000-1.5 LPA",
       description: "Geographic Information Systems for environmental mapping and analysis"
     },
     { 
       cert: "ISO 14001 Environmental Management",
       provider: "Various certification bodies",
       duration: "2-4 months",
-      cost: "₹15,000-40,000",
+      cost: "â‚¹15,000-40,000",
       description: "Environmental management systems for corporate sustainability"
     },
     { 
       cert: "Hazardous Waste Management Certification",
       provider: "Pollution Control Boards",
       duration: "1-3 months",
-      cost: "₹10,000-25,000",
+      cost: "â‚¹10,000-25,000",
       description: "Specialized certification for hazardous waste handling and disposal"
     }
   ];
 
   const salaryRanges = [
-    { sector: "Government/Regulatory", fresher: "₹3-6 LPA", experienced: "₹6-15 LPA", senior: "₹12-25 LPA" },
-    { sector: "Environmental Consulting", fresher: "₹4-7 LPA", experienced: "₹7-18 LPA", senior: "₹15-35 LPA" },
-    { sector: "Research & Academia", fresher: "₹3-5 LPA", experienced: "₹5-15 LPA", senior: "₹12-30 LPA" },
-    { sector: "Industrial/Corporate", fresher: "₹5-8 LPA", experienced: "₹8-22 LPA", senior: "₹18-40 LPA" },
-    { sector: "NGOs/International", fresher: "₹4-6 LPA", experienced: "₹6-16 LPA", senior: "₹12-28 LPA" },
-    { sector: "Renewable Energy", fresher: "₹6-9 LPA", experienced: "₹9-20 LPA", senior: "₹16-35 LPA" },
-    { sector: "Environmental Health", fresher: "₹4-7 LPA", experienced: "₹7-16 LPA", senior: "₹14-30 LPA" },
-    { sector: "Private Consulting", fresher: "₹5-8 LPA", experienced: "₹8-25 LPA", senior: "₹20-50 LPA" }
+    { sector: "Government/Regulatory", fresher: "â‚¹3-6 LPA", experienced: "â‚¹6-15 LPA", senior: "â‚¹12-25 LPA" },
+    { sector: "Environmental Consulting", fresher: "â‚¹4-7 LPA", experienced: "â‚¹7-18 LPA", senior: "â‚¹15-35 LPA" },
+    { sector: "Research & Academia", fresher: "â‚¹3-5 LPA", experienced: "â‚¹5-15 LPA", senior: "â‚¹12-30 LPA" },
+    { sector: "Industrial/Corporate", fresher: "â‚¹5-8 LPA", experienced: "â‚¹8-22 LPA", senior: "â‚¹18-40 LPA" },
+    { sector: "NGOs/International", fresher: "â‚¹4-6 LPA", experienced: "â‚¹6-16 LPA", senior: "â‚¹12-28 LPA" },
+    { sector: "Renewable Energy", fresher: "â‚¹6-9 LPA", experienced: "â‚¹9-20 LPA", senior: "â‚¹16-35 LPA" },
+    { sector: "Environmental Health", fresher: "â‚¹4-7 LPA", experienced: "â‚¹7-16 LPA", senior: "â‚¹14-30 LPA" },
+    { sector: "Private Consulting", fresher: "â‚¹5-8 LPA", experienced: "â‚¹8-25 LPA", senior: "â‚¹20-50 LPA" }
   ];
 
   const preparationTips = [
@@ -399,37 +414,37 @@ export default function EnvironmentalScientistPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "Environmental Consulting Services",
-      investment: "₹5-25 lakhs",
+      investment: "â‚¹5-25 lakhs",
       description: "EIA consulting, pollution monitoring, compliance services",
       potential: "High demand with increasing environmental regulations"
     },
     { 
       business: "Waste Management Solutions",
-      investment: "₹15-75 lakhs",
+      investment: "â‚¹15-75 lakhs",
       description: "Recycling plants, composting units, waste treatment systems",
       potential: "Growing market with government support"
     },
     { 
       business: "Air & Water Quality Testing Labs",
-      investment: "₹20 lakhs-1 crore",
+      investment: "â‚¹20 lakhs-1 crore",
       description: "Independent testing services, calibration, monitoring equipment",
       potential: "Steady demand from industries and government"
     },
     { 
       business: "Renewable Energy Consulting",
-      investment: "₹10-40 lakhs",
+      investment: "â‚¹10-40 lakhs",
       description: "Site assessment, environmental clearances, project management",
       potential: "Rapidly expanding renewable energy sector"
     },
     { 
       business: "Organic & Sustainable Agriculture",
-      investment: "₹25 lakhs-2 crores",
+      investment: "â‚¹25 lakhs-2 crores",
       description: "Organic farming, soil health improvement, sustainable practices",
       potential: "Growing organic food market and government incentives"
     },
     { 
       business: "Environmental Training Institute",
-      investment: "₹8-30 lakhs",
+      investment: "â‚¹8-30 lakhs",
       description: "Professional training, certification courses, skill development",
       potential: "Increasing need for environmental awareness and compliance"
     }
@@ -892,3 +907,5 @@ export default function EnvironmentalScientistPage() {
     </main>
   );
 }
+
+

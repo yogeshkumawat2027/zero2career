@@ -1,6 +1,9 @@
+﻿import { buildCareerMetadata } from '@/utils/careerSeo';
 import Link from 'next/link';
 import React from 'react';
-import { 
+import {
+
+
   FaUsers, 
   FaGraduationCap, 
   FaCalendarAlt, 
@@ -134,6 +137,18 @@ import {
   FaMap
 } from 'react-icons/fa';
 
+const careerSlug = 'hr-manager';
+const careerTitle = 'HR Manager Career Guide';
+
+export const metadata = buildCareerMetadata({
+  title: careerTitle,
+  slug: careerSlug,
+  description:
+    careerTitle + ' career guide with eligibility, roadmap, skills, salary context, and career opportunities in India.',
+});
+
+
+
 export default function HRManagerPage() {
   const eligibilityData = [
     { icon: FaUserTie, title: "Education", detail: "Bachelor's in HR, Management, Psychology, or related field" },
@@ -148,7 +163,7 @@ export default function HRManagerPage() {
       duration: "3-4 years",
       program: "BBA/B.Com HR, Psychology, Management Studies, Industrial Relations",
       focus: "HR fundamentals, organizational behavior, labor laws, recruitment, employee relations",
-      cost: "₹30,000-5 LPA (government to private colleges)",
+      cost: "â‚¹30,000-5 LPA (government to private colleges)",
       outcomes: "HR executive, recruiter, training coordinator, admin roles"
     },
     { 
@@ -156,7 +171,7 @@ export default function HRManagerPage() {
       duration: "2 years",
       program: "MBA HR, M.A. Psychology, MSW, PGDM Human Resources",
       focus: "Strategic HR, talent management, organizational development, compensation design",
-      cost: "₹2-25 LPA for premium B-schools and HR specializations",
+      cost: "â‚¹2-25 LPA for premium B-schools and HR specializations",
       outcomes: "HR manager, talent acquisition lead, HRBP, compensation analyst"
     },
     { 
@@ -164,7 +179,7 @@ export default function HRManagerPage() {
       duration: "3-18 months",
       program: "SHRM, PHR, CHRP, Certified Recruiter, Leadership Development",
       focus: "Specialized HR skills, global practices, advanced certifications",
-      cost: "₹15,000-8 LPA for international and premium certifications",
+      cost: "â‚¹15,000-8 LPA for international and premium certifications",
       outcomes: "Senior HR roles, specialist positions, consultant roles, leadership track"
     },
     { 
@@ -172,7 +187,7 @@ export default function HRManagerPage() {
       duration: "1-12 months",
       program: "Executive MBA, Leadership programs from IIMs, global HR certifications",
       focus: "Strategic leadership, change management, digital HR transformation",
-      cost: "₹5-35 LPA for executive programs and global certifications",
+      cost: "â‚¹5-35 LPA for executive programs and global certifications",
       outcomes: "CHRO, VP HR, director roles, independent consulting, board positions"
     }
   ];
@@ -227,62 +242,62 @@ export default function HRManagerPage() {
       sector: "Technology Companies",
       companies: "TCS, Infosys, Wipro, Google, Microsoft, Amazon, Flipkart, Zomato, Byju's",
       roles: "HRBP, Talent Acquisition Lead, People Analytics Manager, Culture Lead",
-      salary: "₹8-80 LPA",
+      salary: "â‚¹8-80 LPA",
       benefits: "Innovation culture, global exposure, stock options, flexible work, cutting-edge HR practices"
     },
     { 
       sector: "Banking & Financial Services",
       companies: "HDFC, ICICI, SBI, Kotak, NPCI, Paytm, PhonePe, Razorpay, Zerodha",
       roles: "VP HR, Talent Manager, Learning Head, Employee Relations Manager",
-      salary: "₹6-60 LPA",
+      salary: "â‚¹6-60 LPA",
       benefits: "Stable industry, structured career paths, comprehensive benefits, regulatory expertise"
     },
     { 
       sector: "Manufacturing & Automotive",
       companies: "Tata Motors, Mahindra, Bajaj, Maruti Suzuki, L&T, Reliance Industries, JSW",
       roles: "Plant HR Manager, Industrial Relations Head, Safety Manager, Talent Development Lead",
-      salary: "₹5-45 LPA",
+      salary: "â‚¹5-45 LPA",
       benefits: "Industrial exposure, union relations experience, safety focus, diverse locations"
     },
     { 
       sector: "Consulting Firms",
       companies: "Deloitte, PwC, EY, KPMG, McKinsey, BCG, Accenture, Capgemini",
       roles: "HR Consultant, People Advisory, Change Management Lead, Organizational Development",
-      salary: "₹8-70 LPA",
+      salary: "â‚¹8-70 LPA",
       benefits: "Client exposure, diverse projects, strategic thinking, global opportunities, premium brands"
     },
     { 
       sector: "Healthcare & Pharmaceuticals",
       companies: "Apollo Hospitals, Fortis, Dr. Reddy's, Cipla, Sun Pharma, Biocon, Narayana Health",
       roles: "HR Manager, Medical Affairs HR, Clinical Research HR, Healthcare Talent Lead",
-      salary: "₹4-50 LPA",
+      salary: "â‚¹4-50 LPA",
       benefits: "Healthcare industry expertise, regulatory knowledge, social impact, specialized roles"
     },
     { 
       sector: "Startups & Unicorns",
       companies: "Ola, Swiggy, Razorpay, CRED, Meesho, Unacademy, Vedantu, Nykaa",
       roles: "People Operations Manager, Culture Lead, Talent Partner, Employee Experience Manager",
-      salary: "₹6-1.2 Cr (with equity)",
+      salary: "â‚¹6-1.2 Cr (with equity)",
       benefits: "Equity participation, fast-paced environment, innovation, leadership opportunities, impact"
     }
   ];
 
   const careerProgression = [
-    { level: "HR Executive/Coordinator", experience: "0-2 years", salary: "₹2.5-6 LPA", focus: "Basic HR operations, recruitment support, employee records, policy implementation" },
-    { level: "HR Manager/Senior Executive", experience: "2-6 years", salary: "₹4-18 LPA", focus: "Department management, recruitment ownership, employee relations, process improvement" },
-    { level: "Assistant General Manager HR", experience: "6-10 years", salary: "₹12-35 LPA", focus: "Strategic HR initiatives, team leadership, business partnering, organizational development" },
-    { level: "General Manager/HR Head", experience: "10-15 years", salary: "₹25-65 LPA", focus: "HR strategy, leadership development, culture transformation, business alignment" },
-    { level: "Vice President HR/CHRO", experience: "15-20 years", salary: "₹50-1.5 Cr", focus: "Executive leadership, board interaction, organizational strategy, talent philosophy" },
-    { level: "Chief People Officer/Consultant", experience: "20+ years", salary: "₹80 LPA-3 Cr", focus: "Enterprise transformation, board advisory, independent consulting, industry thought leadership" }
+    { level: "HR Executive/Coordinator", experience: "0-2 years", salary: "â‚¹2.5-6 LPA", focus: "Basic HR operations, recruitment support, employee records, policy implementation" },
+    { level: "HR Manager/Senior Executive", experience: "2-6 years", salary: "â‚¹4-18 LPA", focus: "Department management, recruitment ownership, employee relations, process improvement" },
+    { level: "Assistant General Manager HR", experience: "6-10 years", salary: "â‚¹12-35 LPA", focus: "Strategic HR initiatives, team leadership, business partnering, organizational development" },
+    { level: "General Manager/HR Head", experience: "10-15 years", salary: "â‚¹25-65 LPA", focus: "HR strategy, leadership development, culture transformation, business alignment" },
+    { level: "Vice President HR/CHRO", experience: "15-20 years", salary: "â‚¹50-1.5 Cr", focus: "Executive leadership, board interaction, organizational strategy, talent philosophy" },
+    { level: "Chief People Officer/Consultant", experience: "20+ years", salary: "â‚¹80 LPA-3 Cr", focus: "Enterprise transformation, board advisory, independent consulting, industry thought leadership" }
   ];
 
   const topColleges = [
-    { name: "XLRI Jamshedpur", courses: "PGDM HRM, Executive Programs", ranking: "Premier HR School", fees: "₹25 LPA", placements: "Top corporate HR roles" },
-    { name: "TISS Mumbai", courses: "MA HRM, M.Phil HR", ranking: "Top Social Sciences Institute", fees: "₹2 LPA", placements: "Excellent HR & development sector" },
-    { name: "SCMHRD Pune", courses: "PGDM HRM", ranking: "Specialized HR Institute", fees: "₹19 LPA", placements: "Strong industry connections" },
-    { name: "IIM Ahmedabad/Bangalore/Calcutta", courses: "MBA (HR specialization)", ranking: "Premier Management Schools", fees: "₹23-28 LPA", placements: "Leadership track positions" },
-    { name: "MDI Gurgaon", courses: "PGPM (HR)", ranking: "Top Management Institute", fees: "₹21 LPA", placements: "Corporate HR leadership roles" },
-    { name: "NMIMS Mumbai", courses: "MBA HR", ranking: "Reputed Private University", fees: "₹19 LPA", placements: "Good corporate placements" }
+    { name: "XLRI Jamshedpur", courses: "PGDM HRM, Executive Programs", ranking: "Premier HR School", fees: "â‚¹25 LPA", placements: "Top corporate HR roles" },
+    { name: "TISS Mumbai", courses: "MA HRM, M.Phil HR", ranking: "Top Social Sciences Institute", fees: "â‚¹2 LPA", placements: "Excellent HR & development sector" },
+    { name: "SCMHRD Pune", courses: "PGDM HRM", ranking: "Specialized HR Institute", fees: "â‚¹19 LPA", placements: "Strong industry connections" },
+    { name: "IIM Ahmedabad/Bangalore/Calcutta", courses: "MBA (HR specialization)", ranking: "Premier Management Schools", fees: "â‚¹23-28 LPA", placements: "Leadership track positions" },
+    { name: "MDI Gurgaon", courses: "PGPM (HR)", ranking: "Top Management Institute", fees: "â‚¹21 LPA", placements: "Corporate HR leadership roles" },
+    { name: "NMIMS Mumbai", courses: "MBA HR", ranking: "Reputed Private University", fees: "â‚¹19 LPA", placements: "Good corporate placements" }
   ];
 
   const technicalSkills = [
@@ -305,14 +320,14 @@ export default function HRManagerPage() {
   ];
 
   const salaryRanges = [
-    { sector: "Technology Sector", fresher: "₹4-10 LPA", experienced: "₹12-45 LPA", senior: "₹35-1.2 Cr" },
-    { sector: "Banking & Finance", fresher: "₹3-8 LPA", experienced: "₹8-35 LPA", senior: "₹25-80 LPA" },
-    { sector: "Manufacturing", fresher: "₹3-7 LPA", experienced: "₹7-30 LPA", senior: "₹20-60 LPA" },
-    { sector: "Consulting", fresher: "₹5-12 LPA", experienced: "₹15-50 LPA", senior: "₹40-1.5 Cr" },
-    { sector: "Healthcare", fresher: "₹3-6 LPA", experienced: "₹6-25 LPA", senior: "₹18-50 LPA" },
-    { sector: "Startups", fresher: "₹4-8 LPA", experienced: "₹10-40 LPA", senior: "₹30-2 Cr" },
-    { sector: "Government/PSU", fresher: "₹3-6 LPA", experienced: "₹6-20 LPA", senior: "₹15-40 LPA" },
-    { sector: "Independent Consulting", fresher: "₹3-8 LPA", experienced: "₹15-60 LPA", senior: "₹40-3 Cr" }
+    { sector: "Technology Sector", fresher: "â‚¹4-10 LPA", experienced: "â‚¹12-45 LPA", senior: "â‚¹35-1.2 Cr" },
+    { sector: "Banking & Finance", fresher: "â‚¹3-8 LPA", experienced: "â‚¹8-35 LPA", senior: "â‚¹25-80 LPA" },
+    { sector: "Manufacturing", fresher: "â‚¹3-7 LPA", experienced: "â‚¹7-30 LPA", senior: "â‚¹20-60 LPA" },
+    { sector: "Consulting", fresher: "â‚¹5-12 LPA", experienced: "â‚¹15-50 LPA", senior: "â‚¹40-1.5 Cr" },
+    { sector: "Healthcare", fresher: "â‚¹3-6 LPA", experienced: "â‚¹6-25 LPA", senior: "â‚¹18-50 LPA" },
+    { sector: "Startups", fresher: "â‚¹4-8 LPA", experienced: "â‚¹10-40 LPA", senior: "â‚¹30-2 Cr" },
+    { sector: "Government/PSU", fresher: "â‚¹3-6 LPA", experienced: "â‚¹6-20 LPA", senior: "â‚¹15-40 LPA" },
+    { sector: "Independent Consulting", fresher: "â‚¹3-8 LPA", experienced: "â‚¹15-60 LPA", senior: "â‚¹40-3 Cr" }
   ];
 
   const emergingTrends = [
@@ -395,37 +410,37 @@ export default function HRManagerPage() {
   const entrepreneurialOpportunities = [
     { 
       business: "HR Consulting & Advisory",
-      investment: "₹3-25 lakhs",
+      investment: "â‚¹3-25 lakhs",
       description: "Provide HR strategy, policy development, and organizational consulting services",
       potential: "High demand from SMEs and growing companies needing HR expertise"
     },
     { 
       business: "Talent Acquisition & Staffing",
-      investment: "₹5-50 lakhs",
+      investment: "â‚¹5-50 lakhs",
       description: "Executive search, recruitment process outsourcing, and specialized staffing services",
       potential: "Strong market with skills shortage and competitive talent landscape"
     },
     { 
       business: "Learning & Development Solutions",
-      investment: "₹8-75 lakhs",
+      investment: "â‚¹8-75 lakhs",
       description: "Corporate training, e-learning platforms, and skill development programs",
       potential: "Growing market with upskilling needs and digital learning adoption"
     },
     { 
       business: "HR Technology Solutions",
-      investment: "₹10 lakhs-2 crores",
+      investment: "â‚¹10 lakhs-2 crores",
       description: "Develop HRIS, recruitment software, or HR analytics platforms",
       potential: "High growth potential with digital transformation in HR"
     },
     { 
       business: "Employee Wellness & Engagement",
-      investment: "₹5-40 lakhs",
+      investment: "â‚¹5-40 lakhs",
       description: "Wellness programs, engagement surveys, and employee experience consulting",
       potential: "Expanding market with focus on employee wellbeing and retention"
     },
     { 
       business: "Diversity & Inclusion Consulting",
-      investment: "₹3-20 lakhs",
+      investment: "â‚¹3-20 lakhs",
       description: "DEI strategy, bias training, inclusive hiring, and culture transformation services",
       potential: "Growing demand with corporate focus on diversity and inclusion"
     }
@@ -873,3 +888,5 @@ export default function HRManagerPage() {
     </main>
   );
 }
+
+
