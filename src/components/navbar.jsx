@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { HiHome, HiBriefcase, HiInformationCircle, HiPhone, HiStar, HiMagnifyingGlass, HiChevronDown, HiNewspaper } from 'react-icons/hi2';
 import { useRouter } from 'next/navigation';
 import { careersList } from '../app/career';
+import z2clogo from '../../public/z2clogo.png';
 
 
 function Navbar() {
@@ -55,7 +56,7 @@ function Navbar() {
         setSearch('');
         setSuggestions([]);
         setActiveIndex(-1);
-        router.push(selected.path);
+        router.push(selected.link || selected.path || `/careers/${selected.slug || selected.id}`);
       }
     }
   };
@@ -75,7 +76,7 @@ function Navbar() {
             <Link href="/" className="flex items-center gap-2" suppressHydrationWarning>
               <span className="relative w-10 h-10 block">
                 <Image
-                  src={require('../../public/z2clogo.png')}
+                  src={z2clogo}
                   alt="Zero2Career Logo"
                   width={40}
                   height={40}
@@ -226,7 +227,7 @@ function Navbar() {
                       setSearch('');
                       setSuggestions([]);
                       setActiveIndex(-1);
-                      router.push(career.path || career.link || `/careers/${career.id}`);
+                      router.push(career.link || career.path || `/careers/${career.slug || career.id}`);
                     }}
                     onMouseEnter={() => setActiveIndex(idx)}
                   >
