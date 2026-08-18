@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Zero2Career - India's Most Trusted Career Guidance Platform",
+    default: "Zero2Career - Career Guidance, Career Options & Roadmaps",
     template: "%s | Zero2Career",
   },
 
@@ -69,7 +69,7 @@ export const metadata = {
     locale: "en_IN",
     url: "https://zero2career.in",
     siteName: "Zero2Career",
-    title: "Zero2Career - India's Most Trusted Career Guidance Platform",
+    title: "Zero2Career - Career Guidance, Career Options & Roadmaps",
     description:
       "Explore 100+ career options after 10th & 12th. Get expert guidance on careers with salary, eligibility & complete roadmaps.",
     images: [
@@ -84,7 +84,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Zero2Career - India's Most Trusted Career Guidance Platform",
+    title: "Zero2Career - Career Guidance, Career Options & Roadmaps",
     description:
       "Explore 100+ career options after 10th & 12th. Get expert guidance on careers with salary, eligibility & complete roadmaps.",
     images: ["/og-image.jpg"],
@@ -137,9 +137,10 @@ export default function RootLayout({ children }) {
 
         <StructuredData type="WebSite" />
 
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <Navbar />
 
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
 
         <Footer />
 

@@ -22,6 +22,13 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const selectCareer = (career) => {
+    setSearch('');
+    setSuggestions([]);
+    setActiveIndex(-1);
+    router.push(career.link || career.path || `/careers/${career.slug || career.id}`);
+  };
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -47,17 +54,19 @@ function Navbar() {
   const handleKeyDown = (e) => {
     if (!suggestions.length) return;
     if (e.key === 'ArrowDown') {
+      e.preventDefault();
       setActiveIndex(prev => (prev + 1) % suggestions.length);
     } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
       setActiveIndex(prev => (prev - 1 + suggestions.length) % suggestions.length);
     } else if (e.key === 'Enter') {
+      e.preventDefault();
       if (activeIndex >= 0 && activeIndex < suggestions.length) {
-        const selected = suggestions[activeIndex];
-        setSearch('');
-        setSuggestions([]);
-        setActiveIndex(-1);
-        router.push(selected.link || selected.path || `/careers/${selected.slug || selected.id}`);
+        selectCareer(suggestions[activeIndex]);
       }
+    } else if (e.key === 'Escape') {
+      setSuggestions([]);
+      setActiveIndex(-1);
     }
   };
 
@@ -127,8 +136,16 @@ function Navbar() {
             className="relative"
             onMouseEnter={() => setIsUpdatesOpen(true)}
             onMouseLeave={() => setIsUpdatesOpen(false)}
+            onFocus={() => setIsUpdatesOpen(true)}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget)) setIsUpdatesOpen(false);
+            }}
           >
             <button
+              type="button"
+              aria-expanded={isUpdatesOpen}
+              aria-controls="job-updates-menu"
+              onClick={() => setIsUpdatesOpen((open) => !open)}
               className={`
                 px-3 py-2 rounded-lg font-medium transition-all duration-200 relative overflow-hidden group flex items-center gap-1
                 ${isScrolled 
@@ -144,7 +161,7 @@ function Navbar() {
             </button>
             
             {/* Dropdown Menu */}
-            <div className={`
+            <div id="job-updates-menu" className={`
               absolute top-full left-0 mt-0 pt-2 w-64 z-50
               transition-all duration-300 ease-out
               ${isUpdatesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
@@ -204,7 +221,9 @@ function Navbar() {
         {/* Centered Search Bar (desktop only) */}
         <div className="flex-1 flex justify-center ml-6">
           <div className="relative w-full max-w-xs md:max-w-sm lg:max-w-md ">
+            <label htmlFor="desktop-career-search" className="sr-only">Search career guides</label>
             <input
+              id="desktop-career-search"
               type="text"
               value={search}
               onChange={e => {
@@ -213,26 +232,28 @@ function Navbar() {
               }}
               onKeyDown={handleKeyDown}
               placeholder="Search careers..."
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded={suggestions.length > 0}
+              aria-controls="desktop-career-suggestions"
               className="w-full px-4 py-2 pl-10 border-2 border-gray-300 rounded-full focus:outline-none focus:border-blue-500 text-gray-800 shadow-sm bg-white"
               autoComplete="off"
             />
             <HiMagnifyingGlass className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none" />
             {suggestions.length > 0 && (
-              <div className="absolute left-0 mt-2 w-full bg-white rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto border border-gray-200">
+              <div id="desktop-career-suggestions" role="listbox" aria-label="Career suggestions" className="absolute left-0 mt-2 w-full bg-white rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto border border-gray-200">
                 {suggestions.map((career, idx) => (
-                  <div
+                  <button
+                    type="button"
+                    role="option"
+                    aria-selected={activeIndex === idx}
                     key={career.path || career.link || career.id || idx}
-                    className={`px-4 py-2 cursor-pointer border-b border-gray-100 transition-colors duration-200 ${activeIndex === idx ? 'bg-blue-600 text-white' : 'hover:bg-blue-50 text-gray-900'}`}
-                    onClick={() => {
-                      setSearch('');
-                      setSuggestions([]);
-                      setActiveIndex(-1);
-                      router.push(career.link || career.path || `/careers/${career.slug || career.id}`);
-                    }}
+                    className={`w-full px-4 py-2 text-left cursor-pointer border-b border-gray-100 transition-colors duration-200 ${activeIndex === idx ? 'bg-blue-600 text-white' : 'hover:bg-blue-50 text-gray-900'}`}
+                    onClick={() => selectCareer(career)}
                     onMouseEnter={() => setActiveIndex(idx)}
                   >
                     {career.title}
-                  </div>
+                  </button>
                 ))}
               </div>
             )}
@@ -252,7 +273,11 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
+            type="button"
             onClick={toggleMenu}
+            aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation-menu"
             className={`
               custom885:hidden p-2 rounded-lg transition-colors duration-200
               ${isScrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white hover:bg-white/10'}
@@ -277,7 +302,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`
+      <div id="mobile-navigation-menu" className={`
         custom885:hidden absolute top-full left-0 w-full transition-all duration-300 ease-in-out
         ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
       `}>
@@ -404,7 +429,9 @@ function Navbar() {
       {/* Mobile Search Bar always visible below navbar */}
       <div className="block custom885:hidden w-full bg-white py-2 px-4 shadow z-[999]">
         <div className="relative w-full max-w-xs mx-auto">
+          <label htmlFor="mobile-career-search" className="sr-only">Search career guides</label>
           <input
+            id="mobile-career-search"
             type="text"
             value={search}
             onChange={e => {
@@ -413,26 +440,28 @@ function Navbar() {
             }}
             onKeyDown={handleKeyDown}
             placeholder="Search careers..."
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded={suggestions.length > 0}
+            aria-controls="mobile-career-suggestions"
             className="w-full px-4 py-2 pl-10 border-2 border-gray-300 rounded-full focus:outline-none focus:border-blue-500 text-gray-800 shadow-sm bg-white"
             autoComplete="off"
           />
           <HiMagnifyingGlass className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none" />
           {suggestions.length > 0 && (
-            <div className="absolute left-0 mt-2 w-full bg-white rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto border border-gray-200">
+            <div id="mobile-career-suggestions" role="listbox" aria-label="Career suggestions" className="absolute left-0 mt-2 w-full bg-white rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto border border-gray-200">
               {suggestions.map((career, idx) => (
-                <div
+                <button
+                  type="button"
+                  role="option"
+                  aria-selected={activeIndex === idx}
                   key={career.path || career.link || career.id || idx}
-                  className={`px-4 py-2 cursor-pointer border-b border-gray-100 transition-colors duration-200 ${activeIndex === idx ? 'bg-blue-600 text-white' : 'hover:bg-blue-50 text-gray-900'}`}
-                  onClick={() => {
-                    setSearch('');
-                    setSuggestions([]);
-                    setActiveIndex(-1);
-                    router.push(career.path || career.link || `/careers/${career.id}`);
-                  }}
+                  className={`w-full px-4 py-2 text-left cursor-pointer border-b border-gray-100 transition-colors duration-200 ${activeIndex === idx ? 'bg-blue-600 text-white' : 'hover:bg-blue-50 text-gray-900'}`}
+                  onClick={() => selectCareer(career)}
                   onMouseEnter={() => setActiveIndex(idx)}
                 >
                   {career.title}
-                </div>
+                </button>
               ))}
             </div>
           )}

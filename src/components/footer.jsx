@@ -4,20 +4,10 @@ import {
   HiPhone, 
   HiMapPin, 
   HiArrowRight,
-  HiStar,
   HiAcademicCap,
   HiBriefcase,
-  HiUsers,
   HiGlobeAlt
 } from 'react-icons/hi2';
-import { 
-  FaFacebookF, 
-  FaTwitter, 
-  FaInstagram, 
-  FaLinkedinIn, 
-  FaYoutube,
-  FaTelegramPlane
-} from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
 import z2clogo from '../../public/z2clogo.png';
@@ -49,15 +39,6 @@ export default function Footer() {
     { name: 'Skill Development', href: '/services' },
     // { name: 'Job Placement', href: '/services/placement' },
     { name: 'Mentorship Program', href: '/services' }
-  ];
-
-  const socialLinks = [
-    { Icon: FaFacebookF, href: '#', color: 'hover:text-blue-500' },
-    { Icon: FaTwitter, href: '#', color: 'hover:text-sky-400' },
-    { Icon: FaInstagram, href: '#', color: 'hover:text-pink-500' },
-    { Icon: FaLinkedinIn, href: '#', color: 'hover:text-blue-600' },
-    { Icon: FaYoutube, href: '#', color: 'hover:text-red-500' },
-    { Icon: FaTelegramPlane, href: '#', color: 'hover:text-blue-400' }
   ];
 
   return (
@@ -100,7 +81,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-blue-100">
                 <HiEnvelope className="text-xl text-blue-400" />
-                <a href="mailto:support@zero2career.com" className="hover:text-white transition-colors">
+                <a href="mailto:zero2careerofficial@gmail.com" className="hover:text-white transition-colors">
                   zero2careerofficial@gmail.com
                 </a>
               </div>
@@ -216,38 +197,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="flex flex-wrap items-center justify-center md:justify-end gap-3">
-              <span className="text-blue-100 text-xs sm:text-sm mr-1 sm:mr-2 w-full text-center md:w-auto md:text-left">Follow us:</span>
-              <div className="flex gap-2 sm:gap-3">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    className={`w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center text-white/80 ${social.color} transform hover:scale-110 transition-all duration-300 backdrop-blur-sm hover:bg-white/20`}
-                  >
-                    <social.Icon className="text-sm sm:text-lg" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 mt-8 pt-8 border-t border-white/10">
-            <div className="flex items-center gap-2 text-blue-100 text-xs sm:text-sm">
-              <HiUsers className="text-base sm:text-xl text-blue-400 flex-shrink-0" />
-              <span>5,000+ Students</span>
-            </div>
-            <div className="flex items-center gap-2 text-blue-100 text-xs sm:text-sm">
-              <HiStar className="text-base sm:text-xl text-yellow-400 flex-shrink-0" />
-              <span>4.8/5 Success</span>
-            </div>
-            <div className="flex items-center gap-2 text-blue-100 text-xs sm:text-sm">
-              <HiAcademicCap className="text-base sm:text-xl text-green-400 flex-shrink-0" />
-              <span>200+ Careers</span>
-            </div>
-           
           </div>
         </div>
       </div>
