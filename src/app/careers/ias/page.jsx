@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { CareerRoadmapList, CareerSectionCard } from '@/components/CareerPageTemplate';
-import AdBanner from '@/components/AdBanner';
+// import AdBanner from '@/components/AdBanner'; // Re-enable after AdSense approval.
 import {
   FaUniversity,
   FaGraduationCap,
@@ -255,12 +255,12 @@ export default function IASPage() {
           </div>
         </section>
 
-        <AdBanner
+        {/* <AdBanner
           dataAdSlot="3753621711"
           minHeight={250}
           fallbackTitle="Sponsored"
           fallbackDescription="Ad space is reserved here, but the ad may not be available in this browser or region right now."
-        />
+        /> */}
 
         {/* Eligibility Criteria */}
         <section className="mb-16">

@@ -1,6 +1,6 @@
 "use client";
 import '../styles/navbar.css';
-import React, { useState, useEffect } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiHome, HiBriefcase, HiInformationCircle, HiPhone, HiStar, HiMagnifyingGlass, HiChevronDown, HiNewspaper } from 'react-icons/hi2';
@@ -13,7 +13,6 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [search, setSearch] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isUpdatesOpen, setIsUpdatesOpen] = useState(false);
   const router = useRouter();  
@@ -24,7 +23,6 @@ function Navbar() {
 
   const selectCareer = (career) => {
     setSearch('');
-    setSuggestions([]);
     setActiveIndex(-1);
     router.push(career.link || career.path || `/careers/${career.slug || career.id}`);
   };
@@ -38,16 +36,9 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Search suggestions
-  useEffect(() => {
-    if (search.trim().length === 0) {
-      setSuggestions([]);
-      return;
-    }
-    const filtered = careersList.filter(career =>
-      career.title && career.title.toLowerCase().includes(search.trim().toLowerCase())
-    );
-    setSuggestions(filtered);
+  const suggestions = useMemo(() => {
+    const query = search.trim().toLowerCase();
+    return query ? careersList.filter((career) => career.title?.toLowerCase().includes(query)) : [];
   }, [search]);
 
   // Keyboard navigation for search
@@ -65,7 +56,7 @@ function Navbar() {
         selectCareer(suggestions[activeIndex]);
       }
     } else if (e.key === 'Escape') {
-      setSuggestions([]);
+      setSearch('');
       setActiveIndex(-1);
     }
   };

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { HiArrowRight, HiStar, HiUsers, HiAcademicCap, HiArrowTrendingUp } from 'react-icons/hi2';
 import { careersList } from './careers/careers-data';
 import StructuredData from '@/components/structured-data';
-import AdBanner from '@/components/AdBanner';
+// import AdBanner from '@/components/AdBanner'; // Re-enable after AdSense approval.
 
 // This will be handled by layout.js metadata for homepage
 
@@ -134,7 +134,7 @@ export default function MainBody() {
         </div>
       </section>
 
-      <AdBanner />
+      {/* <AdBanner /> */}
 
       {/* Job Updates Section */}
       <section className="py-8 md:py-12 bg-gradient-to-br from-blue-50 via-white to-purple-50">
