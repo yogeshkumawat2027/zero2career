@@ -54,7 +54,7 @@ export default function CareersPage() {
 					</p>
 				</div>
 
-				<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+				<div className="relative grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					{careersList.map((career, index) => (
 						<React.Fragment key={`${career.id}-${career.link}`}>
 							<Link
@@ -100,7 +100,7 @@ export default function CareersPage() {
 								</div>
 							</Link>
 
-							{(index + 1) % 10 === 0 ? <InArticleAd /> : null}
+							{index === 4 ? <InArticleAd /> : null}
 						</React.Fragment>
 					))}
 				</div>
