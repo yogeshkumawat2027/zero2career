@@ -30,7 +30,7 @@ export default function CareerBreadcrumbs() {
   }
 
   return (
-    <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-4 pb-3 pt-24 text-sm text-slate-600 sm:px-6 lg:px-8">
+    <nav aria-label="Breadcrumb" className="mx-auto w-full px-4 pb-3 bg-white pt-24 text-sm text-slate-600 sm:px-6 lg:px-8">
       <ol className="flex flex-wrap items-center gap-2">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
