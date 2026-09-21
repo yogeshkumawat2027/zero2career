@@ -100,7 +100,7 @@ export default function CareersPage() {
 								</div>
 							</Link>
 
-							{index === 4 ? <InArticleAd /> : null}
+							{index >= 3 && (index - 3) % 8 === 0 ? <InArticleAd /> : null}
 						</React.Fragment>
 					))}
 				</div>
