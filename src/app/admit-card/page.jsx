@@ -1,0 +1,4 @@
+import ContentListingPage from "@/components/ContentListingPage";
+import { sortedCareerUpdates } from "@/data/careerUpdates";
+export const metadata = { title: "Admit Card Updates", description: "Check exam admit card release updates, dates and download guidance from Zero2Career.", alternates: { canonical: "https://zero2career.in/admit-card" } };
+export default function AdmitCardsPage() { return <ContentListingPage title="Admit Card Updates" subtitle="Find release status, exam dates and simple download instructions for major exams." updates={sortedCareerUpdates.filter((update) => update.type === "admit-card")} />; }

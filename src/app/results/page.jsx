@@ -1,0 +1,4 @@
+import ContentListingPage from "@/components/ContentListingPage";
+import { sortedCareerUpdates } from "@/data/careerUpdates";
+export const metadata = { title: "Exam Results Updates", description: "Latest exam result status and official result-checking guidance for students and job seekers.", alternates: { canonical: "https://zero2career.in/results" } };
+export default function ResultsPage() { return <ContentListingPage title="Exam Results" subtitle="Result status and clear steps to check official exam results online." updates={sortedCareerUpdates.filter((update) => update.type === "result")} />; }

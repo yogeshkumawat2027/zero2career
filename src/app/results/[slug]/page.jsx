@@ -1,0 +1,8 @@
+import { notFound } from "next/navigation";
+import StructuredData from "@/components/structured-data";
+import ContentDetailLayout from "@/components/ContentDetailLayout";
+import { careerUpdates, getCareerUpdate } from "@/data/careerUpdates";
+export const dynamicParams = false;
+export function generateStaticParams() { return careerUpdates.filter((update) => update.type === "result").map((update) => ({ slug: update.slug })); }
+export async function generateMetadata({ params }) { const update = getCareerUpdate((await params).slug); if (!update) return {}; return { title: `${update.title} | Zero2Career`, description: `${update.title} status, result date and official result-checking guidance.`, alternates: { canonical: `https://zero2career.in/results/${update.slug}` }, openGraph: { type: "article", title: update.title, description: update.shortDescription, url: `https://zero2career.in/results/${update.slug}` }, twitter: { card: "summary", title: update.title, description: update.shortDescription } }; }
+export default async function ResultDetailPage({ params }) { const update = getCareerUpdate((await params).slug); if (!update || update.type !== "result") notFound(); return <><StructuredData type="Article" data={{ title: update.title, description: update.shortDescription, url: `https://zero2career.in/results/${update.slug}`, datePublished: update.publishedAt, dateModified: update.publishedAt }} /><ContentDetailLayout update={update} kind="result" /></>; }

@@ -5,6 +5,9 @@ import React, { useState, useEffect } from 'react';
 import { HiArrowRight, HiStar, HiUsers, HiAcademicCap, HiArrowTrendingUp } from 'react-icons/hi2';
 import { careersList } from './careers/careers-data';
 import StructuredData from '@/components/structured-data';
+import ContentUpdateCard from '@/components/ContentUpdateCard';
+import { sortedCareerUpdates } from '@/data/careerUpdates';
+import { sortedTechUpdates } from '@/data/techUpdates';
 // import AdBanner from '@/components/AdBanner'; // Re-enable after AdSense approval.
 
 // This will be handled by layout.js metadata for homepage
@@ -134,61 +137,39 @@ export default function MainBody() {
         </div>
       </section>
 
-      {/* <AdBanner /> */}
-
-      {/* Job Updates Section */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-4 md:mb-8 hidden md:block">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-3">
-              Latest <span className="text-blue-600">Job Updates</span>
-            </h2>
-            <p className="text-gray-600 text-base md:text-lg">Stay updated with the latest opportunities</p>
+      {/* Latest Career Updates */}
+      <section className="bg-white py-12 md:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">Latest Career Updates</p>
+              <h2 className="mt-1 text-2xl font-bold text-gray-900 md:text-3xl">Jobs, Admit Cards, Results &amp; Exam Updates</h2>
+            </div>
+            <Link href="/updates" className="text-sm font-semibold text-blue-700 hover:underline">View all updates →</Link>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
-            {/* Government Updates Button */}
-            <Link href="/govt-updates">
-              <div className="group relative overflow-hidden bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-500 p-6 md:p-8">
-                <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-blue-100 rounded-full -mr-12 md:-mr-16 -mt-12 md:-mt-16 group-hover:scale-150 transition-transform duration-500"></div>
-                <div className="relative z-10">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">
-                    Government Updates
-                  </h3>
-                  <p className="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">
-                    Jobs, Admit Cards, Results & More
-                  </p>
-                  <div className="flex items-center text-blue-600 font-semibold text-sm md:text-base">
-                    View Updates
-                    <HiArrowRight className="ml-2 group-hover:translate-x-2 transition-transform duration-300" />
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Professional Updates Button */}
-            <Link href="/professional-updates">
-              <div className="group relative overflow-hidden bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-500 p-6 md:p-8">
-                <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-blue-100 rounded-full -mr-12 md:-mr-16 -mt-12 md:-mt-16 group-hover:scale-150 transition-transform duration-500"></div>
-                <div className="relative z-10">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors">
-                    Professional Updates
-                  </h3>
-                  <p className="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">
-                    Jobs, Internships & Career Resources
-                  </p>
-                  <div className="flex items-center text-blue-600 font-semibold text-sm md:text-base">
-                    View Updates
-                    <HiArrowRight className="ml-2 group-hover:translate-x-2 transition-transform duration-300" />
-                  </div>
-                </div>
-              </div>
-            </Link>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {sortedCareerUpdates.slice(0, 6).map((update) => <ContentUpdateCard key={update.slug} update={update} />)}
           </div>
         </div>
       </section>
 
-     
+      {/* <AdBanner /> */}
+
+      {/* Tech Updates */}
+      <section className="border-y border-gray-100 bg-blue-50/40 py-12 md:py-14">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">Tech Updates</p>
+              <h2 className="mt-1 text-2xl font-bold text-gray-900 md:text-3xl">What&apos;s happening in the technology industry</h2>
+            </div>
+            <Link href="/tech-updates" className="text-sm font-semibold text-blue-700 hover:underline">View all tech updates →</Link>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {sortedTechUpdates.slice(0, 4).map((update) => <ContentUpdateCard key={update.slug} update={update} tech />)}
+          </div>
+        </div>
+      </section>
 
       {/* Career Cards Section */}
       <section className="py-16">

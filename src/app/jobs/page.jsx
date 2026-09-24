@@ -1,0 +1,4 @@
+import ContentListingPage from "@/components/ContentListingPage";
+import { sortedCareerUpdates } from "@/data/careerUpdates";
+export const metadata = { title: "Government Jobs and Recruitment Updates", description: "Concise government job recruitment updates, eligibility, dates and official application guidance from Zero2Career.", alternates: { canonical: "https://zero2career.in/jobs" } };
+export default function JobsPage() { return <ContentListingPage title="Government Jobs" subtitle="Recruitment updates, eligibility and application details in a quick, easy-to-scan format." updates={sortedCareerUpdates.filter((update) => update.type === "job")} />; }

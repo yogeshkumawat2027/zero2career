@@ -9,7 +9,7 @@ export default function StructuredData({ data, type = "Organization" }) {
           "@type": "Organization",
           "name": "Zero2Career",
           "url": "https://zero2career.in",
-          "logo": "https://zero2career.in/logo.png",
+          "logo": "https://zero2career.in/z2clogo.png",
           "description": "India's most trusted career guidance platform for students after 10th & 12th",
           "founder": {
             "@type": "Person", 
@@ -71,7 +71,7 @@ export default function StructuredData({ data, type = "Organization" }) {
           "@type": "Article",
           "headline": data.title,
           "description": data.description,
-          "image": data.image,
+          "image": data.image || "https://zero2career.in/z2clogo.png",
           "author": {
             "@type": "Organization",
             "name": "Zero2Career"
@@ -81,7 +81,7 @@ export default function StructuredData({ data, type = "Organization" }) {
             "name": "Zero2Career",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://zero2career.in/logo.png"
+              "url": "https://zero2career.in/z2clogo.png"
             }
           },
           "datePublished": data.datePublished || new Date().toISOString(),
@@ -89,7 +89,9 @@ export default function StructuredData({ data, type = "Organization" }) {
           "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": data.url
-          }
+          },
+          "articleSection": data.articleSection,
+          "inLanguage": "en-IN"
         };
 
       case "FAQPage":
@@ -128,7 +130,7 @@ export function CareerStructuredData({ career }) {
     "@type": "Article",
     "headline": career.title,
     "description": career.description,
-    "image": career.image,
+    "image": career.image || "https://zero2career.in/z2clogo.png",
     "author": {
       "@type": "Organization",
       "name": "Zero2Career"
@@ -138,7 +140,7 @@ export function CareerStructuredData({ career }) {
       "name": "Zero2Career",
       "logo": {
         "@type": "ImageObject", 
-        "url": "https://zero2career.in/logo.png"
+        "url": "https://zero2career.in/z2clogo.png"
       }
     },
     "datePublished": new Date().toISOString(),

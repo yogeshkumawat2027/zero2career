@@ -1,4 +1,6 @@
 import { careersList } from '../career';
+import { careerUpdates } from '@/data/careerUpdates';
+import { techUpdates } from '@/data/techUpdates';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || process.env.API_URL || 'https://zero2career.in';
 
@@ -14,6 +16,19 @@ export async function GET() {
     .filter((link) => typeof link === 'string' && link.startsWith('/careers/'))
     .filter((link) => link !== '/careers/demo')
     .map((link) => link.replace('/careers/', ''));
+
+  const contentIndexUrls = ['/updates', '/jobs', '/admit-card', '/results', '/tech-updates'].map((path) => `  <url>
+    <loc>${baseUrl}${path}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>`).join('\n');
+  const contentDetailUrls = [...careerUpdates.map((update) => ({ path: `/${update.type === 'job' ? 'jobs' : update.type === 'admit-card' ? 'admit-card' : 'results'}/${update.slug}`, date: update.publishedAt })), ...techUpdates.map((update) => ({ path: `/tech-updates/${update.slug}`, date: update.publishedAt }))].map(({ path, date }) => `  <url>
+    <loc>${baseUrl}${path}</loc>
+    <lastmod>${new Date(date).toISOString()}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join('\n');
 
   // Initialize empty arrays for updates
   let govtUpdates = [];
@@ -73,6 +88,12 @@ export async function GET() {
   </url>
   <url>
     <loc>${baseUrl}/careers</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/updates</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -143,6 +164,8 @@ ${careerPaths.map(career => `  <url>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`).join('\n')}
+${contentIndexUrls}
+${contentDetailUrls}
 ${govtUpdateUrls}
 ${profUpdateUrls}
 </urlset>`;
@@ -237,6 +260,8 @@ ${careerPaths.map(career => `  <url>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`).join('\n')}
+${contentIndexUrls}
+${contentDetailUrls}
 </urlset>`;
 
     return new Response(sitemap, {

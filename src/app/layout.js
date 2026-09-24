@@ -19,12 +19,12 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Zero2Career - Career Guidance, Career Options & Roadmaps",
+    default: "Career Guidance, Government Jobs & Tech Updates | Zero2Career",
     template: "%s | Zero2Career",
   },
 
   description:
-    "Explore 100+ career options after 10th & 12th. Get expert guidance on IAS, Pilot, Engineer, Doctor, Advocate, and more careers with salary, eligibility & complete roadmaps.",
+    "Explore career options, government jobs, admit cards, exam results and tech updates for students and job seekers in India.",
 
   keywords: [
     "career guidance",
@@ -36,6 +36,10 @@ export const metadata = {
     "medical careers",
     "government jobs",
     "career planning",
+    "government job updates",
+    "exam results",
+    "admit card updates",
+    "tech updates",
   ],
 
   authors: [{ name: "Zero2Career Team" }],
@@ -69,9 +73,9 @@ export const metadata = {
     locale: "en_IN",
     url: "https://zero2career.in",
     siteName: "Zero2Career",
-    title: "Zero2Career - Career Guidance, Career Options & Roadmaps",
+    title: "Career Guidance, Government Jobs & Tech Updates | Zero2Career",
     description:
-      "Explore 100+ career options after 10th & 12th. Get expert guidance on careers with salary, eligibility & complete roadmaps.",
+      "Explore career options, government jobs, admit cards, exam results and tech updates for students and job seekers in India.",
     images: [
       {
         url: "/og-image.jpg",

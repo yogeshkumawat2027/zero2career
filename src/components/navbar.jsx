@@ -3,7 +3,7 @@ import '../styles/navbar.css';
 import React, { useMemo, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HiHome, HiBriefcase, HiInformationCircle, HiPhone, HiStar, HiMagnifyingGlass, HiChevronDown, HiNewspaper } from 'react-icons/hi2';
+import { HiHome, HiBriefcase, HiInformationCircle, HiPhone, HiStar, HiMagnifyingGlass, HiNewspaper } from 'react-icons/hi2';
 import { useRouter } from 'next/navigation';
 import { careersList } from '../app/career';
 import z2clogo from '../../public/z2clogo.png';
@@ -14,7 +14,6 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [search, setSearch] = useState('');
   const [activeIndex, setActiveIndex] = useState(-1);
-  const [isUpdatesOpen, setIsUpdatesOpen] = useState(false);
   const router = useRouter();  
 
   const toggleMenu = () => {
@@ -122,62 +121,10 @@ function Navbar() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-200 rounded-lg"></div>
           </Link>
 
-          {/* Updates Dropdown */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setIsUpdatesOpen(true)}
-            onMouseLeave={() => setIsUpdatesOpen(false)}
-            onFocus={() => setIsUpdatesOpen(true)}
-            onBlur={(event) => {
-              if (!event.currentTarget.contains(event.relatedTarget)) setIsUpdatesOpen(false);
-            }}
-          >
-            <button
-              type="button"
-              aria-expanded={isUpdatesOpen}
-              aria-controls="job-updates-menu"
-              onClick={() => setIsUpdatesOpen((open) => !open)}
-              className={`
-                px-3 py-2 rounded-lg font-medium transition-all duration-200 relative overflow-hidden group flex items-center gap-1
-                ${isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50' 
-                  : 'text-white/90 hover:text-white hover:bg-white/10'
-                }
-              `}
-            >
-              <span className="relative z-10">Job Updates</span>
-              <span className="relative z-10 ml-1 px-2 py-0.5 text-[10px] font-bold bg-red-500 text-white rounded-full animate-pulse">NEW</span>
-              <HiChevronDown className={`text-lg transition-transform duration-200 ${isUpdatesOpen ? 'rotate-180' : ''}`} />
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-200 rounded-lg"></div>
-            </button>
-            
-            {/* Dropdown Menu */}
-            <div id="job-updates-menu" className={`
-              absolute top-full left-0 mt-0 pt-2 w-64 z-50
-              transition-all duration-300 ease-out
-              ${isUpdatesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
-            `}>
-              <div className="bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden">
-                <div className="py-2">
-                  <Link
-                    href="/govt-updates"
-                    className="flex items-center gap-3 px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-200 group"
-                  >
-                    <div className="w-2 h-2 rounded-full bg-blue-500 group-hover:scale-125 transition-transform duration-200"></div>
-                    <span className="font-medium">Govt Updates</span>
-                  </Link>
-                  <div className="mx-4 border-t border-gray-100"></div>
-                  <Link
-                    href="/professional-updates"
-                    className="flex items-center gap-3 px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-200 group"
-                  >
-                    <div className="w-2 h-2 rounded-full bg-purple-500 group-hover:scale-125 transition-transform duration-200"></div>
-                    <span className="font-medium">Professional Updates</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Link href="/updates" className={`px-3 py-2 rounded-lg font-medium transition-all duration-200 ${isScrolled ? 'text-gray-700 hover:text-blue-600 hover:bg-blue-50' : 'text-white/90 hover:text-white hover:bg-white/10'}`}>
+            <span>Updates</span>
+            <span className="ml-2 px-2 py-0.5 text-[10px] font-bold bg-red-500 text-white rounded-full">NEW</span>
+          </Link>
 
           <Link
             href="/about"
@@ -332,38 +279,10 @@ function Navbar() {
 
             {/* Updates Section */}
             <div className="pt-1 pb-1">
-              <div className="px-4 py-1.5 flex items-center gap-2">
+              <Link href="/updates" onClick={() => setIsMenuOpen(false)} className="px-4 py-1.5 flex items-center gap-2 text-gray-700 hover:text-blue-600">
                 <HiNewspaper className="text-lg text-gray-600" />
-                <span className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Job Updates</span>
+                <span className="text-sm font-semibold uppercase tracking-wider">Updates</span>
                 <span className="px-2 py-0.5 text-[10px] font-bold bg-red-500 text-white rounded-full animate-pulse">NEW</span>
-              </div>
-              <Link
-                href="/govt-updates"
-                onClick={() => setIsMenuOpen(false)}
-                className={`
-                  flex items-center gap-3 px-4 py-2 pl-8 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 
-                  transition-all duration-200 transform hover:translate-x-1
-                  ${isMenuOpen ? 'animate-slideIn' : ''}
-                `}
-                style={{ animationDelay: '150ms' }}
-                suppressHydrationWarning
-              >
-                <div className="w-1.5 h-1.5 rounded-full bg-gray-400"></div>
-                <span className="font-medium">Govt Updates</span>
-              </Link>
-              <Link
-                href="/professional-updates"
-                onClick={() => setIsMenuOpen(false)}
-                className={`
-                  flex items-center gap-3 px-4 py-2 pl-8 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 
-                  transition-all duration-200 transform hover:translate-x-1
-                  ${isMenuOpen ? 'animate-slideIn' : ''}
-                `}
-                style={{ animationDelay: '200ms' }}
-                suppressHydrationWarning
-              >
-                <div className="w-1.5 h-1.5 rounded-full bg-gray-400"></div>
-                <span className="font-medium">Professional Updates</span>
               </Link>
             </div>
 

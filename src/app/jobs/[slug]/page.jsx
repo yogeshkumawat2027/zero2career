@@ -1,0 +1,9 @@
+import { notFound } from "next/navigation";
+import StructuredData from "@/components/structured-data";
+import ContentDetailLayout from "@/components/ContentDetailLayout";
+import { careerUpdates, getCareerUpdate } from "@/data/careerUpdates";
+
+export const dynamicParams = false;
+export function generateStaticParams() { return careerUpdates.filter((update) => update.type === "job").map((update) => ({ slug: update.slug })); }
+export async function generateMetadata({ params }) { const update = getCareerUpdate((await params).slug); if (!update) return {}; return { title: `${update.title} | Zero2Career`, description: `${update.title} details including vacancies, eligibility, important dates and official application guidance.`, keywords: ["government jobs", "recruitment updates", update.title], alternates: { canonical: `https://zero2career.in/jobs/${update.slug}` }, openGraph: { type: "article", title: update.title, description: update.shortDescription, url: `https://zero2career.in/jobs/${update.slug}`, siteName: "Zero2Career" }, twitter: { card: "summary", title: update.title, description: update.shortDescription }, robots: { index: true, follow: true } }; }
+export default async function JobDetailPage({ params }) { const update = getCareerUpdate((await params).slug); if (!update || update.type !== "job") notFound(); return <><StructuredData type="BreadcrumbList" data={[{ name: "Home", url: "https://zero2career.in" }, { name: "Government Jobs", url: "https://zero2career.in/jobs" }, { name: update.title, url: `https://zero2career.in/jobs/${update.slug}` }]} /><StructuredData type="Article" data={{ title: update.title, description: update.shortDescription, url: `https://zero2career.in/jobs/${update.slug}`, datePublished: update.publishedAt, dateModified: update.publishedAt }} /><ContentDetailLayout update={update} kind="job" /></>; }

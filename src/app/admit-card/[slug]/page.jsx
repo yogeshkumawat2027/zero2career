@@ -1,0 +1,8 @@
+import { notFound } from "next/navigation";
+import StructuredData from "@/components/structured-data";
+import ContentDetailLayout from "@/components/ContentDetailLayout";
+import { careerUpdates, getCareerUpdate } from "@/data/careerUpdates";
+export const dynamicParams = false;
+export function generateStaticParams() { return careerUpdates.filter((update) => update.type === "admit-card").map((update) => ({ slug: update.slug })); }
+export async function generateMetadata({ params }) { const update = getCareerUpdate((await params).slug); if (!update) return {}; return { title: `${update.title} | Zero2Career`, description: `${update.title} release status, exam date and download instructions.`, alternates: { canonical: `https://zero2career.in/admit-card/${update.slug}` }, openGraph: { type: "article", title: update.title, description: update.shortDescription, url: `https://zero2career.in/admit-card/${update.slug}` }, twitter: { card: "summary", title: update.title, description: update.shortDescription } }; }
+export default async function AdmitCardDetailPage({ params }) { const update = getCareerUpdate((await params).slug); if (!update || update.type !== "admit-card") notFound(); return <><StructuredData type="Article" data={{ title: update.title, description: update.shortDescription, url: `https://zero2career.in/admit-card/${update.slug}`, datePublished: update.publishedAt, dateModified: update.publishedAt }} /><ContentDetailLayout update={update} kind="admit-card" /></>; }
