@@ -96,6 +96,12 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>${baseUrl}/naukri-profile-optimization</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>${baseUrl}/about</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
@@ -181,6 +187,12 @@ ${profUpdateUrls}
     <loc>${baseUrl}/services</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/naukri-profile-optimization</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
