@@ -438,7 +438,7 @@ export default function AboutUs() {
                       <FaLinkedin className="text-white text-xl group-hover:text-blue-200" />
                     </a>
                     <a 
-                      href="https://www.instagram.com/__yogesh___prajapat__/" 
+                      href="https://www.instagram.com/zero2career_official/"
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-white/20 backdrop-blur-sm border border-white/30 p-4 rounded-full hover:bg-white/30 transform hover:scale-110 transition-all duration-300 group"

@@ -29,7 +29,7 @@ export default function ContactPage() {
       title: "Follow on Instagram",
       description: "Get daily career tips, success stories, and updates on our Instagram",
       contact: "@zero2career_official",
-      action: "https://instagram.com/zero2career_",
+      action: "https://www.instagram.com/zero2career_official/",
       buttonText: "Follow Us",
       color: "pink"
     },

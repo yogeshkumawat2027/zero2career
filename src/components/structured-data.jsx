@@ -21,7 +21,7 @@ export default function StructuredData({ data, type = "Organization" }) {
             "addressCountry": "India"
           },
           "sameAs": [
-            "https://www.instagram.com/zero2career",
+            "https://www.instagram.com/zero2career_official/",
             "https://www.youtube.com/@zero2career",
             "https://www.linkedin.com/company/zero2career"
           ],
@@ -91,7 +91,7 @@ export default function StructuredData({ data, type = "Organization" }) {
             "@id": data.url
           },
           "articleSection": data.articleSection,
-          "inLanguage": "en-IN"
+          "inLanguage": data.inLanguage || "en-IN"
         };
 
       case "FAQPage":
