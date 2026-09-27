@@ -141,7 +141,7 @@ export default function RajasthanWorkFromHomePage() {
               apply करने का तरीका देख सकते हैं।
             </p>
 
-            <div className="mt-7 flex flex-wrap gap-3">
+            {/* <div className="mt-7 flex flex-wrap gap-3">
               <a
                 href="https://mahilawfh.rajasthan.gov.in/"
                 target="_blank"
@@ -157,7 +157,7 @@ export default function RajasthanWorkFromHomePage() {
               >
                 Current Opportunities
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -385,7 +385,14 @@ export default function RajasthanWorkFromHomePage() {
               rel="noopener noreferrer"
               className="block rounded-lg border border-gray-200 bg-white p-4 font-semibold text-orange-600 hover:border-orange-300"
             >
-              → Rajasthan Work From Home Official Portal
+              Official Portal पर जाएं
+            </a>
+
+            <a
+              href="#opportunities"
+              className="block rounded-lg border border-gray-200 bg-white p-4 font-semibold text-orange-600 hover:border-orange-300"
+            >
+              Current Opportunities
             </a>
 
             <a
